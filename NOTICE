@@ -1,0 +1,78 @@
+NOTICE
+
+jib-ai-wingmate
+Copyright (c) 2026 Frank Besch
+
+The code in this repository is under the MIT License (see LICENSE), except
+for the paths listed below.
+
+Texas Railroad Commission public records
+----------------------------------------
+
+The paths below are derived from public records of the Railroad Commission
+of Texas (RRC): one night's Drilling Permit (W-1) imaged files, the Drilling
+Permit Master daily file (daf420.dat), and the RRC record-layout manual
+OGA049M. They remain under the RRC's terms. They are excluded from the MIT
+License, and the MIT grant in LICENSE does not apply to them.
+
+The terms as recorded when the files were fetched (corpus/manifest.json,
+line 7): "Texas public record (Tex. Gov't Code ch. 552); RRC data sets
+published free of charge; site policy: copy for noncommercial use,
+unaltered". Check the RRC's current terms before any reuse.
+
+1. corpus/manifest.json
+   Source URLs, hashes, page counts, and class labels of the RRC files.
+   Evidence, corpus/manifest.json line 6:
+     "url": "https://mft.rrc.texas.gov/link/f11363bb-8120-4e8c-bbc0-a253ec0a85d4",
+
+2. truth/ascii/*.json (9 files, one per permit)
+   Fields from the RRC Drilling Permit Master daily file.
+   Evidence, build_corpus.py line 14:
+     truth/ascii/<permit>.json       RRC ASCII master fields (SYSTEM-EXTRACTED, the different hand)
+   Evidence, truth/ascii/918133.json line 75:
+     "basis": "RRC daf420.dat 2026-09-04, OGA049M positions"
+
+3. truth/w1/*.json (9 files, one per permit)
+   W-1 form fields and word boxes from the RRC facsimile text layer.
+   Evidence, build_corpus.py line 15:
+     truth/w1/<permit>.json          W-1 form fields from the facsimile text layer + word boxes (SYSTEM-EXTRACTED)
+   Evidence, truth/w1/918133.json line 312:
+     "basis": "RRC W-1 facsimile text layer (pdftotext -layout / -bbox-layout); boxes normalized to page",
+
+4. truth/split/*.json (9 files, one per permit)
+   Page ranges per class, with the RRC file names of each packet.
+   Evidence, build_corpus.py line 16:
+     truth/split/<permit>.json       true page ranges per class (OBSERVED from packet assembly)
+
+5. truth/classify/*.json (26 files, one per RRC document)
+   The class of each RRC document; each file name carries the RRC file name.
+   Evidence, build_corpus.py line 17:
+     truth/classify/<permit>.json    true class per raw document (OBSERVED from RRC file naming)
+
+6. fixtures/responses/<permit>.json (9 files: 907829, 917176, 917669,
+   918133, 918151, 918203, 918233, 918289, 918387)
+   Synthetic parser responses generated from the truth files above, so they
+   carry RRC values and RRC file names. The fixtures/responses/synth/
+   folder is not included here; it is synthetic.
+   Evidence, make_fixtures.py line 4:
+     Every fixture is derived from truth plus labeled perturbations. The perturbation list is written into each
+   Evidence, fixtures/responses/918133.json line 9:
+     "file": "918133_W1_AsApprovedW1-9-3-2026_LTR.pdf",
+
+Not shipped
+-----------
+
+The RRC permit PDFs (corpus/raw/), the assembled packets (corpus/packets/),
+and the permit master daily file are not in this repository.
+build_corpus.py rebuilds them from local copies; its source URLs, on
+mft.rrc.texas.gov and www.rrc.texas.gov, are at build_corpus.py lines 31-33.
+
+Not covered by this notice
+--------------------------
+
+Code and docs that name a permit number or an API well number as an
+example (for instance build_corpus.py, pipeline.py, and mcp/) stay under
+the MIT License. The synthetic Caprock month (synth/, truth/synth/,
+truth/synth-interim-sonnet/), the held-out sets (synth-pilot/,
+synth-heldout/, heldout2/), and the scorer selftest (tests/selftest/) are
+fictional and built in this repository.
