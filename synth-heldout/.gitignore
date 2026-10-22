@@ -1,0 +1,9 @@
+tmp/
+audit/rendered/
+audit/ocr/
+audit/text/
+blind/pdfs/
+codex-*.log
+blind/codex-*.log
+fixtures/
+src/__pycache__/

@@ -1,0 +1,13 @@
+{
+  "$comment": "Pulse /split split_config for the joint-interest month (SYNTHETIC corpus). Topic names match the month record's split keys. Two field tickets ride in the day12 packet, so the ticket class is split into two ordered topics; see pipeline.run_synth for the mapping and the one-ticket fallback.",
+  "split_input": [
+    {"name": "afe_cover", "description": "Operator cover letter pages transmitting an AFE to a working-interest owner for election."},
+    {"name": "afe", "description": "Authorization for Expenditure pages: AFE header block and the account-coded cost estimate table."},
+    {"name": "field_ticket_1", "description": "Pages of the FIRST vendor field ticket in this packet, in page order. A field ticket has a ticket number, a service date, and a small table of charge rows with quantity, unit, rate, and amount."},
+    {"name": "field_ticket_2", "description": "Pages of the SECOND vendor field ticket in this packet, in page order. Use this topic only for a ticket whose ticket number differs from the first ticket's; leave it empty when the packet holds only one ticket."},
+    {"name": "hauling_log", "description": "Fluid hauling or vacuum truck log pages: numbered loads with time, fluid type, barrels, and destination."},
+    {"name": "invoice", "description": "Vendor invoice pages: invoice number, ticket-referenced rows, subtotal, tax, total."},
+    {"name": "jib_statement", "description": "Joint Interest Billing statement pages: owner header block and billing lines with gross amount, owner decimal, and net amount."},
+    {"name": "other", "description": "Anything else, including blank, illegible, or transmittal pages."}
+  ]
+}

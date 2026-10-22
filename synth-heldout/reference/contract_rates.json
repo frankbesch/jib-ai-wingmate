@@ -1,0 +1,22 @@
+{
+  "vendor_name": "Brelquor Field Services LLC",
+  "effective_date": "2026-01-01",
+  "rates": [
+    {
+      "description": "Pressure unit service",
+      "unit": "hour",
+      "contract_rate": 175
+    },
+    {
+      "description": "Hose kit rental",
+      "unit": "day",
+      "contract_rate": 90
+    },
+    {
+      "description": "Gauge kit rental",
+      "unit": "day",
+      "contract_rate": 90
+    }
+  ],
+  "synthetic": true
+}

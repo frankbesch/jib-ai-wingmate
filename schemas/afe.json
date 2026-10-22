@@ -1,0 +1,23 @@
+{
+  "$comment": "Pulse /schema input_schema for an Authorization for Expenditure (AFE). JSON Schema, nested depth <= 3. SYNTHETIC demonstration corpus.",
+  "type": "object",
+  "properties": {
+    "afe_number": {"type": "string", "description": "AFE number printed in the header, exactly as printed including prefix and hyphens."},
+    "operator_name": {"type": "string", "description": "Operator name printed in the header, exactly as printed."},
+    "well_name": {"type": "string", "description": "Well name printed in the header, exactly as printed."},
+    "api_number": {"type": "string", "description": "API well number as printed, e.g. NN-NNN-NNNNN."},
+    "county": {"type": "string", "description": "County name as printed, without the word County."},
+    "state": {"type": "string", "description": "State as printed, e.g. TX."},
+    "afe_date": {"type": "string", "description": "AFE date as printed."},
+    "afe_type": {"type": "string", "description": "Type of operation the AFE authorizes, as printed, e.g. Recompletion, Drill, Workover."},
+    "total_estimate": {"type": "number", "description": "Total estimated cost as printed on the total line. Digits only. Copy the printed total; never add the cost lines yourself."},
+    "cost_lines": {"type": "array", "description": "One item per printed row of the cost estimate table, in printed order. Return every printed row, including zero-dollar rows.", "items": {"type": "object", "properties": {
+      "line_no": {"type": "integer", "description": "Line number printed on the row."},
+      "account_code": {"type": "string", "description": "Account or AFE code printed on the row, exactly as printed."},
+      "description": {"type": "string", "description": "Cost description printed on the row, exactly as printed."},
+      "category": {"type": "string", "enum": ["intangible", "tangible"], "description": "The intangible or tangible grouping the row is printed under, lowercase."},
+      "amount": {"type": "number", "description": "Row amount as printed. Digits only."}
+    }}}
+  },
+  "required": ["afe_number", "operator_name", "well_name", "afe_date", "afe_type", "total_estimate", "cost_lines"]
+}

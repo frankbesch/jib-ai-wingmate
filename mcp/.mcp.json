@@ -1,0 +1,1 @@
+{ "mcpServers": { "pulse": { "type": "http", "url": "${PARSER_MCP_URL}", "headers": { "x-api-key": "${PULSE_API_KEY}" } } } }

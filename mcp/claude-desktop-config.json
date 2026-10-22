@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "pulse": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "${PARSER_MCP_URL}", "--header", "x-api-key:${PULSE_API_KEY}"],
+      "env": { "PULSE_API_KEY": "YOUR_PULSE_API_KEY", "PARSER_MCP_URL": "YOUR_PARSER_MCP_URL" }
+    }
+  }
+}

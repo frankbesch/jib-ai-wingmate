@@ -1,0 +1,406 @@
+{
+ "synthetic": true,
+ "story": "Caprock Resources LLC, a non-operator, holds a 25.000000% working interest in one horizontal well. Over one month it receives an AFE, the field paper behind a vendor invoice, and a JIB statement that is overbilled twice.",
+ "entities": {
+  "operator_name": "Sablewind Operating LLC",
+  "owner_name": "Caprock Resources LLC",
+  "owner_number": "OW-10287",
+  "property_number": "TX-04412",
+  "well_name": "Caprock 14-2H",
+  "api_number": "42-389-41207",
+  "county": "Reeves",
+  "state": "TX",
+  "vendor_name": "Pecos Ridge Well Services LLC",
+  "hauler_name": "Sandhill Vacuum Transport LLC",
+  "afe_number": "AFE-2026-0417",
+  "wi_decimal": 0.25
+ },
+ "documents": {
+  "afe_cover": {
+   "letter_date": "June 1, 2026",
+   "operator_name": "Sablewind Operating LLC",
+   "addressee": "Caprock Resources LLC",
+   "afe_number": "AFE-2026-0417",
+   "well_name": "Caprock 14-2H",
+   "response_due_date": "June 16, 2026",
+   "wi_decimal_stated": 0.25,
+   "net_share_stated": 121700.0
+  },
+  "afe": {
+   "afe_number": "AFE-2026-0417",
+   "operator_name": "Sablewind Operating LLC",
+   "well_name": "Caprock 14-2H",
+   "api_number": "42-389-41207",
+   "county": "Reeves",
+   "state": "TX",
+   "afe_date": "June 1, 2026",
+   "afe_type": "Recompletion",
+   "total_estimate": 486800.0,
+   "cost_lines": [
+    {
+     "line_no": 1,
+     "account_code": "4310",
+     "description": "Recompletion rig and daily rate",
+     "category": "intangible",
+     "amount": 128400.0
+    },
+    {
+     "line_no": 2,
+     "account_code": "4315",
+     "description": "Wireline and perforating",
+     "category": "intangible",
+     "amount": 96750.0
+    },
+    {
+     "line_no": 3,
+     "account_code": "4320",
+     "description": "Stimulation and treating services",
+     "category": "intangible",
+     "amount": 142500.0
+    },
+    {
+     "line_no": 4,
+     "account_code": "4325",
+     "description": "Fluid hauling and disposal",
+     "category": "intangible",
+     "amount": 38200.0
+    },
+    {
+     "line_no": 5,
+     "account_code": "4410",
+     "description": "Tubing and downhole equipment",
+     "category": "tangible",
+     "amount": 52300.0
+    },
+    {
+     "line_no": 6,
+     "account_code": "4420",
+     "description": "Wellhead and surface equipment",
+     "category": "tangible",
+     "amount": 28650.0
+    }
+   ]
+  },
+  "ticket_a": {
+   "ticket_number": "PRW-88421",
+   "vendor_name": "Pecos Ridge Well Services LLC",
+   "service_date": "2026-06-09",
+   "well_name": "Caprock 14-2H",
+   "afe_number": "AFE-2026-0417",
+   "line_items": [
+    {
+     "description": "Workover rig operator, hourly",
+     "quantity": 11,
+     "unit": "hour",
+     "rate": 145.0,
+     "amount": 1595.0
+    },
+    {
+     "description": "Rig fuel surcharge",
+     "quantity": 1,
+     "unit": "each",
+     "rate": 385.0,
+     "amount": 385.0
+    },
+    {
+     "description": "Tool rental, packer assembly",
+     "quantity": 2,
+     "unit": "day",
+     "rate": 425.0,
+     "amount": 850.0
+    }
+   ],
+   "total": 2830.0,
+   "customer_signature_present": false
+  },
+  "ticket_b": {
+   "ticket_number": "PRW-88437",
+   "vendor_name": "Pecos Ridge Well Services LLC",
+   "service_date": "2026-06-10",
+   "well_name": "Caprock 14-2H",
+   "afe_number": "AFE-2026-0417",
+   "line_items": [
+    {
+     "description": "Pump truck, hourly",
+     "quantity": 6,
+     "unit": "hour",
+     "rate": 310.0,
+     "amount": 1860.0
+    },
+    {
+     "description": "Fluid pumped, treated water",
+     "quantity": 240,
+     "unit": "bbl",
+     "rate": 4.75,
+     "amount": 1140.0
+    },
+    {
+     "description": "Standby time",
+     "quantity": 1.5,
+     "unit": "hour",
+     "rate": 190.0,
+     "amount": 285.0
+    }
+   ],
+   "total": 3285.0,
+   "customer_signature_present": false
+  },
+  "hauling_log": {
+   "log_number": "SVT-4471",
+   "hauler_name": "Sandhill Vacuum Transport LLC",
+   "log_date": "2026-06-10",
+   "well_name": "Caprock 14-2H",
+   "loads": [
+    {
+     "load_no": 1,
+     "time": "06:40",
+     "fluid_type": "Produced water",
+     "barrels": 118.0,
+     "destination": "Sandhill SWD No. 3"
+    },
+    {
+     "load_no": 2,
+     "time": "09:15",
+     "fluid_type": "Produced water",
+     "barrels": 122.5,
+     "destination": "Sandhill SWD No. 3"
+    },
+    {
+     "load_no": 3,
+     "time": "11:50",
+     "fluid_type": "Flowback water",
+     "barrels": 115.0,
+     "destination": "Sandhill SWD No. 3"
+    },
+    {
+     "load_no": 4,
+     "time": "14:20",
+     "fluid_type": "Flowback water",
+     "barrels": 124.5,
+     "destination": "Sandhill SWD No. 3"
+    },
+    {
+     "load_no": 5,
+     "time": "16:35",
+     "fluid_type": "Produced water",
+     "barrels": 110.0,
+     "destination": "Sandhill SWD No. 3"
+    }
+   ],
+   "total_barrels": 590.0
+  },
+  "invoice": {
+   "invoice_number": "INV-20260612-PRW",
+   "vendor_name": "Pecos Ridge Well Services LLC",
+   "invoice_date": "2026-06-12",
+   "afe_number": "AFE-2026-0417",
+   "well_name": "Caprock 14-2H",
+   "line_items": [
+    {
+     "ticket_ref": "PRW-88421",
+     "description": "Workover rig operator, hourly",
+     "quantity": 11,
+     "unit": "hour",
+     "rate": 145.0,
+     "amount": 1595.0
+    },
+    {
+     "ticket_ref": "PRW-88421",
+     "description": "Rig fuel surcharge",
+     "quantity": 1,
+     "unit": "each",
+     "rate": 385.0,
+     "amount": 385.0
+    },
+    {
+     "ticket_ref": "PRW-88421",
+     "description": "Tool rental, packer assembly",
+     "quantity": 2,
+     "unit": "day",
+     "rate": 425.0,
+     "amount": 850.0
+    },
+    {
+     "ticket_ref": "PRW-88437",
+     "description": "Pump truck, hourly",
+     "quantity": 6,
+     "unit": "hour",
+     "rate": 310.0,
+     "amount": 1860.0
+    },
+    {
+     "ticket_ref": "PRW-88437",
+     "description": "Fluid pumped, treated water",
+     "quantity": 240,
+     "unit": "bbl",
+     "rate": 4.75,
+     "amount": 1140.0
+    },
+    {
+     "ticket_ref": "PRW-88437",
+     "description": "Standby time",
+     "quantity": 1.5,
+     "unit": "hour",
+     "rate": 190.0,
+     "amount": 285.0
+    }
+   ],
+   "subtotal": 6115.0,
+   "tax": 504.49,
+   "total": 6619.49
+  },
+  "jib": {
+   "statement_period": "June 2026",
+   "operator_name": "Sablewind Operating LLC",
+   "property_number": "TX-04412",
+   "well_name": "Caprock 14-2H",
+   "owner_name": "Caprock Resources LLC",
+   "owner_number": "OW-10287",
+   "wi_decimal": 0.25,
+   "lines": [
+    {
+     "line_no": 1,
+     "afe_ref": "AFE-2026-0417",
+     "account_code": "4310",
+     "description": "Recompletion rig and daily rate",
+     "gross_amount": 74320.0,
+     "owner_decimal": 0.25,
+     "net_amount": 18580.0
+    },
+    {
+     "line_no": 2,
+     "afe_ref": "AFE-2026-0417",
+     "account_code": "4315",
+     "description": "Wireline and perforating",
+     "gross_amount": 51880.0,
+     "owner_decimal": 0.25,
+     "net_amount": 12970.0
+    },
+    {
+     "line_no": 3,
+     "afe_ref": "AFE-2026-0417",
+     "account_code": "4320",
+     "description": "Stimulation and treating services",
+     "gross_amount": 96440.0,
+     "owner_decimal": 0.26,
+     "net_amount": 25074.4
+    },
+    {
+     "line_no": 4,
+     "afe_ref": "AFE-2026-0417",
+     "account_code": "4325",
+     "description": "Fluid hauling and disposal",
+     "gross_amount": 22150.0,
+     "owner_decimal": 0.25,
+     "net_amount": 5537.5
+    },
+    {
+     "line_no": 5,
+     "afe_ref": "AFE-2026-0417",
+     "account_code": "4410",
+     "description": "Tubing and downhole equipment",
+     "gross_amount": 43760.0,
+     "owner_decimal": 0.25,
+     "net_amount": 10940.0
+    },
+    {
+     "line_no": 6,
+     "afe_ref": "AFE-2026-0417",
+     "account_code": "4420",
+     "description": "Wellhead and surface equipment",
+     "gross_amount": 18900.0,
+     "owner_decimal": 0.25,
+     "net_amount": 4725.0
+    },
+    {
+     "line_no": 7,
+     "afe_ref": "AFE-2026-0417",
+     "account_code": "4310",
+     "description": "Rig supervision and site services",
+     "gross_amount": 12480.0,
+     "owner_decimal": 0.25,
+     "net_amount": 3120.0
+    },
+    {
+     "line_no": 8,
+     "afe_ref": "AFE-2026-0417",
+     "account_code": "4320",
+     "description": "Chemicals and treating fluids",
+     "gross_amount": 9640.0,
+     "owner_decimal": 0.25,
+     "net_amount": 2410.0
+    }
+   ],
+   "gross_total": 329570.0,
+   "net_total": 83356.9,
+   "due_date": "2026-07-30",
+   "statement_date": "2026-06-30"
+  }
+ },
+ "handwriting": {
+  "doc_id": "ticket_b",
+  "line_index": 1,
+  "field": "quantity",
+  "true_value": 240
+ },
+ "reference": {
+  "doi": {
+   "property_number": "TX-04412",
+   "well_name": "Caprock 14-2H",
+   "owners": [
+    {
+     "owner_name": "Caprock Resources LLC",
+     "owner_number": "OW-10287",
+     "interest_type": "WI",
+     "decimal": 0.25
+    }
+   ],
+   "synthetic": true
+  },
+  "contract_rates": {
+   "vendor_name": "Pecos Ridge Well Services LLC",
+   "effective_date": "2026-01-01",
+   "rates": [
+    {
+     "description": "Workover rig operator, hourly",
+     "unit": "hour",
+     "contract_rate": 145.0
+    },
+    {
+     "description": "Rig fuel surcharge",
+     "unit": "each",
+     "contract_rate": 385.0
+    },
+    {
+     "description": "Tool rental, packer assembly",
+     "unit": "day",
+     "contract_rate": 425.0
+    },
+    {
+     "description": "Pump truck, hourly",
+     "unit": "hour",
+     "contract_rate": 285.0
+    },
+    {
+     "description": "Fluid pumped, treated water",
+     "unit": "bbl",
+     "contract_rate": 4.75
+    },
+    {
+     "description": "Standby time",
+     "unit": "hour",
+     "contract_rate": 190.0
+    }
+   ],
+   "synthetic": true
+  },
+  "afe_election": {
+   "afe_number": "AFE-2026-0417",
+   "owner_name": "Caprock Resources LLC",
+   "election": "participate",
+   "wi_decimal": 0.25,
+   "election_date": "2026-06-08",
+   "synthetic": true
+  }
+ }
+}

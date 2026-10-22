@@ -1,0 +1,28 @@
+OPERATIONS / OWNER RECORD
+
+
+# Vendor invoice
+
+
+Bill To: Zelvori Basin Operations LLC
+
+
+See ticket OV-8311 in the prior packet. Ticket OV-8312 is enclosed.
+
+
+Account request: OVI-642
+Remit to: Orvessa Field Services LLC
+Issued: 2026-08-16
+Ref:
+Service location: Nacrevale 7-QH
+
+
+<table><thead><tr><td>Ticket ref</td><td>Description</td><td>Qty</td><td>Unit</td><td>Rate</td><td>Amount</td></tr></thead><tbody><tr><td>OV-8311</td><td>Field service bundle</td><td>1</td><td>each</td><td>790.00</td><td>790.00</td></tr><tr><td>OV-8312</td><td>Field service bundle</td><td>1</td><td>each</td><td>1,140.00</td><td>1,140.00</td></tr></tbody></table>
+
+
+Pre-tax amount: 1,930.00
+Sales levy: 0.00
+Remittance due:
+
+
+SYNTHETIC STUDY DOCUMENT - NOT VALID FOR PAYMENT

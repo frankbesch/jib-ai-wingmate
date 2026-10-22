@@ -1,0 +1,1666 @@
+{
+  "synthetic": true,
+  "traps": [
+    {
+      "doc_id": "ticket_07",
+      "trap_id": "T3",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "well_name"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Body spelling conflicts with the well header.",
+      "correct": {
+        "value": "Nacrevale 7-QH",
+        "printed": true,
+        "rules": [
+          "R3"
+        ]
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "ticket_07",
+      "trap_id": "T10",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "ticket_number",
+        "vendor_name",
+        "service_date",
+        "well_name",
+        "afe_number",
+        "total"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Alternate service and accounting labels carry the frozen fields.",
+      "correct": {
+        "printed": true
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "ticket_08",
+      "trap_id": "T3",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "well_name"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Body spelling conflicts with the well header.",
+      "correct": {
+        "value": "Nacrevale 7-QH",
+        "printed": true,
+        "rules": [
+          "R3"
+        ]
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "ticket_08",
+      "trap_id": "T10",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "ticket_number",
+        "vendor_name",
+        "service_date",
+        "well_name",
+        "afe_number",
+        "total"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Alternate service and accounting labels carry the frozen fields.",
+      "correct": {
+        "printed": true
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "ticket_09",
+      "trap_id": "T4",
+      "pages": [
+        1
+      ],
+      "fields": [],
+      "rows": [
+        5
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Replacement copy retains its ticket number.",
+      "correct": {
+        "distinct_tickets_in_packet": 1
+      },
+      "packet": "ticket_05"
+    },
+    {
+      "doc_id": "ticket_09",
+      "trap_id": "T10",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "service_date"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Serviced and Ref denote the frozen fields.",
+      "correct": {
+        "printed": true,
+        "rules": [
+          "R3"
+        ]
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "ticket_09",
+      "trap_id": "T6",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "afe_number"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Ref is labelled but blank.",
+      "correct": {
+        "afe_number": null,
+        "printed": false,
+        "rules": [
+          "R2"
+        ]
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "ticket_09",
+      "trap_id": "T10",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "ticket_number",
+        "vendor_name",
+        "service_date",
+        "well_name",
+        "total"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Alternate service and accounting labels carry the frozen fields.",
+      "correct": {
+        "printed": true
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "ticket_10",
+      "trap_id": "T4",
+      "pages": [
+        1
+      ],
+      "fields": [],
+      "rows": [
+        5
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Replacement copy retains its ticket number.",
+      "correct": {
+        "distinct_tickets_in_packet": 1
+      },
+      "packet": "ticket_06"
+    },
+    {
+      "doc_id": "ticket_10",
+      "trap_id": "T10",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "service_date",
+        "afe_number"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Serviced and Ref denote the frozen fields.",
+      "correct": {
+        "printed": true,
+        "rules": [
+          "R3"
+        ]
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "ticket_10",
+      "trap_id": "T4",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "line_items[0].unit"
+      ],
+      "rows": [],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Bare quantity has an empty unit cell.",
+      "correct": {
+        "value": null,
+        "printed": false,
+        "rules": [
+          "R2"
+        ]
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "ticket_10",
+      "trap_id": "T10",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "ticket_number",
+        "vendor_name",
+        "service_date",
+        "well_name",
+        "afe_number",
+        "total"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Alternate service and accounting labels carry the frozen fields.",
+      "correct": {
+        "printed": true
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "ticket_11",
+      "trap_id": "T4",
+      "pages": [
+        1
+      ],
+      "fields": [],
+      "rows": [
+        5
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Replacement copy retains its ticket number.",
+      "correct": {
+        "distinct_tickets_in_packet": 1
+      },
+      "packet": "ticket_07"
+    },
+    {
+      "doc_id": "ticket_11",
+      "trap_id": "T10",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "service_date"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Serviced and Ref denote the frozen fields.",
+      "correct": {
+        "printed": true,
+        "rules": [
+          "R3"
+        ]
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "ticket_11",
+      "trap_id": "T6",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "afe_number"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Ref is labelled but blank.",
+      "correct": {
+        "afe_number": null,
+        "printed": false,
+        "rules": [
+          "R2"
+        ]
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "ticket_11",
+      "trap_id": "T6",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "well_name"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "N/A is literal printed content.",
+      "correct": {
+        "value": "N/A",
+        "printed": true,
+        "rules": [
+          "R4"
+        ]
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "ticket_11",
+      "trap_id": "T3",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "service_date"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Struck service date remains visible; dispatch date differs.",
+      "correct": {
+        "value": "2026-08-10",
+        "printed": true,
+        "rules": [
+          "R5"
+        ]
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "ticket_11",
+      "trap_id": "T10",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "ticket_number",
+        "vendor_name",
+        "service_date",
+        "well_name",
+        "total"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Alternate service and accounting labels carry the frozen fields.",
+      "correct": {
+        "printed": true
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "ticket_12",
+      "trap_id": "T4",
+      "pages": [
+        1
+      ],
+      "fields": [],
+      "rows": [
+        5
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Replacement copy retains its ticket number.",
+      "correct": {
+        "distinct_tickets_in_packet": 1
+      },
+      "packet": "ticket_08"
+    },
+    {
+      "doc_id": "ticket_12",
+      "trap_id": "T10",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "service_date",
+        "afe_number"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Serviced and Ref denote the frozen fields.",
+      "correct": {
+        "printed": true,
+        "rules": [
+          "R3"
+        ]
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "ticket_12",
+      "trap_id": "T8",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "total"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Only Subtotal is printed; the Total field is blank.",
+      "correct": {
+        "value": null,
+        "printed": false,
+        "rules": [
+          "R2"
+        ]
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "ticket_12",
+      "trap_id": "T10",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "ticket_number",
+        "vendor_name",
+        "service_date",
+        "well_name",
+        "afe_number"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Alternate service and accounting labels carry the frozen fields.",
+      "correct": {
+        "printed": true
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "ticket_07",
+      "trap_id": "T5",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "ticket_number"
+      ],
+      "rows": [
+        5
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Paired tickets differ in ticket number and one charge description.",
+      "correct": {
+        "distinct_tickets_in_packet": 2
+      },
+      "packet": "ticket_04"
+    },
+    {
+      "doc_id": "ticket_08",
+      "trap_id": "T5",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "ticket_number"
+      ],
+      "rows": [
+        5
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Paired tickets differ in ticket number and one charge description.",
+      "correct": {
+        "distinct_tickets_in_packet": 2
+      },
+      "packet": "ticket_04"
+    },
+    {
+      "doc_id": "haul_02",
+      "trap_id": "T7",
+      "pages": [
+        1
+      ],
+      "fields": [],
+      "rows": [
+        1,
+        4,
+        5
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "A reference to a missing ticket is not a field ticket.",
+      "correct": {
+        "class": "hauling_log",
+        "distinct_tickets_in_packet": 1
+      },
+      "packet": "ticket_05"
+    },
+    {
+      "doc_id": "haul_02",
+      "trap_id": "T6",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "well_name"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Well is labelled but blank.",
+      "correct": {
+        "value": null,
+        "printed": false,
+        "rules": [
+          "R2"
+        ]
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "haul_02",
+      "trap_id": "T10",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "log_number",
+        "hauler_name",
+        "log_date",
+        "total_barrels"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Alternate movement labels carry the frozen fields.",
+      "correct": {
+        "printed": true
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "haul_03",
+      "trap_id": "T10",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "hauler_name",
+        "log_date",
+        "well_name"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Alternate dispatch labels retain field meaning.",
+      "correct": {
+        "printed": true
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "haul_03",
+      "trap_id": "T10",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "log_number",
+        "hauler_name",
+        "log_date",
+        "well_name",
+        "total_barrels"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Alternate movement labels carry the frozen fields.",
+      "correct": {
+        "printed": true
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "invoice_02",
+      "trap_id": "T7",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "line_items[0].ticket_ref"
+      ],
+      "rows": [
+        1,
+        4,
+        5
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Printed reference points to another packet.",
+      "correct": {
+        "value": "OV-8311",
+        "printed": true,
+        "distinct_tickets_in_packet": 1
+      },
+      "packet": "ticket_08"
+    },
+    {
+      "doc_id": "invoice_02",
+      "trap_id": "T8",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "total"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Subtotal is present; Total is labelled blank.",
+      "correct": {
+        "value": null,
+        "printed": false,
+        "rules": [
+          "R2"
+        ]
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "invoice_02",
+      "trap_id": "T6",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "afe_number"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "AFE number is labelled blank.",
+      "correct": {
+        "value": null,
+        "printed": false,
+        "rules": [
+          "R2"
+        ]
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "invoice_02",
+      "trap_id": "T10",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "vendor_name",
+        "invoice_date",
+        "well_name"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Remit to, Issued, and Service location carry field values.",
+      "correct": {
+        "printed": true
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "invoice_02",
+      "trap_id": "T10",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "invoice_number",
+        "vendor_name",
+        "invoice_date",
+        "well_name",
+        "subtotal",
+        "tax"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Alternate billing labels carry the frozen fields.",
+      "correct": {
+        "printed": true
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "cover_01",
+      "trap_id": "T8",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "wi_decimal"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Stated letter share is not a JIB header decimal or billed net total.",
+      "correct": {
+        "printed": false,
+        "value": null
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "cover_01",
+      "trap_id": "T8",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "net_total"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Stated letter share is not a JIB header decimal or billed net total.",
+      "correct": {
+        "printed": false,
+        "value": null
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "afe_01",
+      "trap_id": "T6",
+      "pages": [
+        2
+      ],
+      "fields": [
+        "well_name",
+        "operator_name",
+        "afe_number"
+      ],
+      "rows": [],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Header fields do not repeat on the cost schedule.",
+      "correct": {
+        "page_printed": false,
+        "document_printed": true,
+        "rules": [
+          "R3"
+        ]
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "afe_01",
+      "trap_id": "T9",
+      "pages": [
+        2
+      ],
+      "fields": [],
+      "rows": [
+        4
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Cost schedule continues the AFE without a page banner.",
+      "correct": {
+        "topic": "afe",
+        "rules": [
+          "R6"
+        ]
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "cover_02",
+      "trap_id": "T2",
+      "pages": [
+        1
+      ],
+      "fields": [],
+      "rows": [
+        1,
+        4
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Letter contains the attached AFE cost table.",
+      "correct": {
+        "class": "afe_cover",
+        "topic": "afe_cover",
+        "rules": [
+          "R7"
+        ]
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "cover_02",
+      "trap_id": "T10",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "operator_name",
+        "afe_number",
+        "well_name"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Letter uses From, Ref, and Subject well.",
+      "correct": {
+        "printed": true
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "cover_02",
+      "trap_id": "T6",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "response_due_date"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "TBD is printed, not a blank.",
+      "correct": {
+        "value": "TBD",
+        "printed": true,
+        "rules": [
+          "R4"
+        ]
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "cover_02",
+      "trap_id": "T10",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "letter_date",
+        "operator_name",
+        "addressee",
+        "afe_number",
+        "well_name",
+        "response_due_date",
+        "wi_decimal_stated",
+        "net_share_stated"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Alternate owner correspondence labels retain field meaning.",
+      "correct": {
+        "printed": true
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "cover_02",
+      "trap_id": "T8",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "wi_decimal"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Stated letter share is not a JIB header decimal or billed net total.",
+      "correct": {
+        "printed": false,
+        "value": null
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "cover_02",
+      "trap_id": "T8",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "net_total"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Stated letter share is not a JIB header decimal or billed net total.",
+      "correct": {
+        "printed": false,
+        "value": null
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "afe_02",
+      "trap_id": "T6",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "api_number"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "API number is labelled blank.",
+      "correct": {
+        "printed": false,
+        "value": null,
+        "rules": [
+          "R2"
+        ]
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "afe_02",
+      "trap_id": "T10",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "operator_name",
+        "afe_number",
+        "afe_date",
+        "afe_type"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Alternate labels identify the same frozen fields.",
+      "correct": {
+        "printed": true
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "afe_02",
+      "trap_id": "T10",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "operator_name",
+        "afe_number",
+        "afe_date",
+        "afe_type",
+        "well_name",
+        "county",
+        "state"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Alternate AFE identification labels retain field meaning.",
+      "correct": {
+        "printed": true
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "afe_02",
+      "trap_id": "T10",
+      "pages": [
+        2
+      ],
+      "fields": [
+        "total_estimate"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Authorized estimate is the printed total.",
+      "correct": {
+        "printed": true
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "afe_02",
+      "trap_id": "T6",
+      "pages": [
+        2
+      ],
+      "fields": [
+        "well_name",
+        "operator_name",
+        "afe_number"
+      ],
+      "rows": [],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Header fields do not repeat on the cost schedule.",
+      "correct": {
+        "page_printed": false,
+        "document_printed": true,
+        "rules": [
+          "R3"
+        ]
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "afe_02",
+      "trap_id": "T9",
+      "pages": [
+        2
+      ],
+      "fields": [],
+      "rows": [
+        4
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Cost schedule continues the AFE without a page banner.",
+      "correct": {
+        "topic": "afe",
+        "rules": [
+          "R6"
+        ]
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "jib_01",
+      "trap_id": "T10",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "statement_period",
+        "operator_name",
+        "owner_name"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Alternate statement identity labels retain field meaning.",
+      "correct": {
+        "printed": true
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "jib_01",
+      "trap_id": "T9",
+      "pages": [
+        2
+      ],
+      "fields": [],
+      "rows": [
+        4
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Billing rows and totals continue without a page N of M banner.",
+      "correct": {
+        "topic": "jib_statement",
+        "rules": [
+          "R6"
+        ]
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "jib_01",
+      "trap_id": "T6",
+      "pages": [
+        2
+      ],
+      "fields": [
+        "well_name",
+        "operator_name",
+        "wi_decimal"
+      ],
+      "rows": [],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "Header fields do not repeat; row decimals cannot supply the header.",
+      "correct": {
+        "page_printed": false,
+        "document_printed": true,
+        "rules": [
+          "R3"
+        ]
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "jib_01",
+      "trap_id": "T3",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "wi_decimal"
+      ],
+      "rows": [
+        8
+      ],
+      "sets": [
+        "clean",
+        "scan"
+      ],
+      "reason": "A line decimal differs from the statement header.",
+      "correct": {
+        "value": 0.2,
+        "printed": true
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "ticket_07",
+      "trap_id": "T1",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "ticket_number",
+        "vendor_name",
+        "service_date",
+        "well_name",
+        "afe_number",
+        "total"
+      ],
+      "rows": [
+        1,
+        4,
+        8
+      ],
+      "sets": [
+        "scan"
+      ],
+      "reason": "150 dpi gray; seeded noise, skew, translucent stamp across first value, clipped paper margin.",
+      "correct": {
+        "rule": "Read the visible value; unreadable units require adjudication/drop.",
+        "angle_degrees": 2.4
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "ticket_09",
+      "trap_id": "T1",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "ticket_number",
+        "vendor_name",
+        "service_date",
+        "well_name",
+        "afe_number",
+        "total"
+      ],
+      "rows": [
+        1,
+        4,
+        8
+      ],
+      "sets": [
+        "scan"
+      ],
+      "reason": "150 dpi gray; seeded noise, skew, translucent stamp across first value, clipped paper margin.",
+      "correct": {
+        "rule": "Read the visible value; unreadable units require adjudication/drop.",
+        "angle_degrees": -2.8
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "haul_02",
+      "trap_id": "T1",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "log_number",
+        "hauler_name",
+        "log_date",
+        "well_name",
+        "total_barrels"
+      ],
+      "rows": [
+        1,
+        4,
+        8
+      ],
+      "sets": [
+        "scan"
+      ],
+      "reason": "150 dpi gray; seeded noise, skew, translucent stamp across first value, clipped paper margin.",
+      "correct": {
+        "rule": "Read the visible value; unreadable units require adjudication/drop.",
+        "angle_degrees": 3.1
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "cover_02",
+      "trap_id": "T1",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "letter_date",
+        "operator_name",
+        "addressee",
+        "afe_number",
+        "well_name",
+        "response_due_date",
+        "wi_decimal_stated",
+        "net_share_stated"
+      ],
+      "rows": [
+        1,
+        4,
+        8
+      ],
+      "sets": [
+        "scan"
+      ],
+      "reason": "150 dpi gray; seeded noise, skew, translucent stamp across first value, clipped paper margin.",
+      "correct": {
+        "rule": "Read the visible value; unreadable units require adjudication/drop.",
+        "angle_degrees": -2.3
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "afe_02",
+      "trap_id": "T1",
+      "pages": [
+        1
+      ],
+      "fields": [
+        "afe_number",
+        "operator_name",
+        "well_name",
+        "api_number",
+        "county",
+        "state",
+        "afe_date",
+        "afe_type",
+        "total_estimate"
+      ],
+      "rows": [
+        1,
+        4,
+        8
+      ],
+      "sets": [
+        "scan"
+      ],
+      "reason": "150 dpi gray; seeded noise, skew, translucent stamp across first value, clipped paper margin.",
+      "correct": {
+        "rule": "Read the visible value; unreadable units require adjudication/drop.",
+        "angle_degrees": 2.6
+      },
+      "packet": null
+    },
+    {
+      "doc_id": "jib_01",
+      "trap_id": "T1",
+      "pages": [
+        2
+      ],
+      "fields": [
+        "gross_total",
+        "net_total",
+        "due_date"
+      ],
+      "rows": [
+        1,
+        4,
+        8
+      ],
+      "sets": [
+        "scan"
+      ],
+      "reason": "150 dpi gray; seeded noise, skew, translucent stamp across first value, clipped paper margin.",
+      "correct": {
+        "rule": "Read the visible value; unreadable units require adjudication/drop.",
+        "angle_degrees": -3.0
+      },
+      "packet": null
+    }
+  ],
+  "documents": [
+    {
+      "doc_id": "ticket_01",
+      "trap_ids": []
+    },
+    {
+      "doc_id": "ticket_02",
+      "trap_ids": []
+    },
+    {
+      "doc_id": "haul_01",
+      "trap_ids": []
+    },
+    {
+      "doc_id": "ticket_03",
+      "trap_ids": []
+    },
+    {
+      "doc_id": "ticket_04",
+      "trap_ids": []
+    },
+    {
+      "doc_id": "invoice_01",
+      "trap_ids": []
+    },
+    {
+      "doc_id": "ticket_05",
+      "trap_ids": []
+    },
+    {
+      "doc_id": "ticket_06",
+      "trap_ids": []
+    },
+    {
+      "doc_id": "ticket_07",
+      "trap_ids": [
+        "T1",
+        "T10",
+        "T3",
+        "T5"
+      ]
+    },
+    {
+      "doc_id": "ticket_08",
+      "trap_ids": [
+        "T10",
+        "T3",
+        "T5"
+      ]
+    },
+    {
+      "doc_id": "ticket_09",
+      "trap_ids": [
+        "T1",
+        "T10",
+        "T4",
+        "T6"
+      ]
+    },
+    {
+      "doc_id": "haul_02",
+      "trap_ids": [
+        "T1",
+        "T10",
+        "T6",
+        "T7"
+      ]
+    },
+    {
+      "doc_id": "ticket_10",
+      "trap_ids": [
+        "T10",
+        "T4"
+      ]
+    },
+    {
+      "doc_id": "ticket_11",
+      "trap_ids": [
+        "T10",
+        "T3",
+        "T4",
+        "T6"
+      ]
+    },
+    {
+      "doc_id": "haul_03",
+      "trap_ids": [
+        "T10"
+      ]
+    },
+    {
+      "doc_id": "ticket_12",
+      "trap_ids": [
+        "T10",
+        "T4",
+        "T8"
+      ]
+    },
+    {
+      "doc_id": "invoice_02",
+      "trap_ids": [
+        "T10",
+        "T6",
+        "T7",
+        "T8"
+      ]
+    },
+    {
+      "doc_id": "cover_01",
+      "trap_ids": [
+        "T8"
+      ]
+    },
+    {
+      "doc_id": "afe_01",
+      "trap_ids": [
+        "T6",
+        "T9"
+      ]
+    },
+    {
+      "doc_id": "cover_02",
+      "trap_ids": [
+        "T1",
+        "T10",
+        "T2",
+        "T6",
+        "T8"
+      ]
+    },
+    {
+      "doc_id": "afe_02",
+      "trap_ids": [
+        "T1",
+        "T10",
+        "T6",
+        "T9"
+      ]
+    },
+    {
+      "doc_id": "jib_01",
+      "trap_ids": [
+        "T1",
+        "T10",
+        "T3",
+        "T6",
+        "T9"
+      ]
+    }
+  ],
+  "unit_policy": "Only explicitly mapped row/field/page units carry traps; list-cell and page-presence extras do not enlarge row 8."
+}

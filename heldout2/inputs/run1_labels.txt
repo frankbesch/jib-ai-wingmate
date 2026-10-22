@@ -1,0 +1,2 @@
+Labels used in the earlier corpus, do not reuse for the approval reference or the other header fields:
+AFE number, Ref, Bill To, Serviced, Dispatch docket, Account request, Service firm, Asset, Ticket number, Vendor, Service date, Well, Total, Amount due

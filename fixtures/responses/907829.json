@@ -1,0 +1,307 @@
+{
+ "permit": "907829",
+ "synthetic": true,
+ "perturbations": [
+  "county: null (required field missing \u2192 review)",
+  "citations dropped: nearest_town, abstract_number"
+ ],
+ "classify": [
+  {
+   "file": "907829_W1_AsApprovedW1-9-3-2026_LTR.pdf",
+   "predicted": "w1_permit",
+   "seconds": 1.265
+  }
+ ],
+ "extract": {
+  "extraction_id": "fixture-907829",
+  "page_count": 1,
+  "credits_used": 1.0,
+  "failed_pages": [],
+  "seconds": 3.739,
+  "words": null,
+  "tables": null,
+  "selection_marks": null
+ },
+ "split": {
+  "split_id": "fixture-split-907829",
+  "splits": {
+   "w1_permit": [
+    1
+   ]
+  },
+  "seconds": 1.9
+ },
+ "schema_w1": {
+  "schema_id": "fixture-schema-907829",
+  "values": {
+   "api_number": "42-003-49159",
+   "permit_number": "907829",
+   "permit_status": "Approved",
+   "operator_number": "263696",
+   "operator_name": "FASKEN OIL AND RANCH, LTD.",
+   "lease_name": "FEE 'CG' SWD",
+   "well_number": "1",
+   "total_depth": "8500",
+   "district": "08",
+   "county": null,
+   "miles_from_town": "6.2",
+   "direction_from_town": "NE",
+   "nearest_town": "Gardendale,TX",
+   "lease_perpendiculars": {
+    "feet_1": "2640",
+    "direction_1": "NORTH",
+    "feet_2": "6554",
+    "direction_2": "EAST"
+   },
+   "survey_perpendiculars": {
+    "feet_1": "2640",
+    "direction_1": "NORTH",
+    "feet_2": "500",
+    "direction_2": "EAST"
+   },
+   "abstract_number": "A-217",
+   "contiguous_acres": "3888.09",
+   "purpose_of_filing": [
+    "New Drill"
+   ],
+   "wellbore_profile": [
+    "Vertical"
+   ],
+   "rule_36_h2s": false,
+   "fields": [
+    {
+     "district": "08",
+     "field_number": "82275500",
+     "field_name": "SERIO (GRAYBURG)",
+     "well_type": "Oil Well",
+     "completion_depth": "8500",
+     "distance_to_nearest_well": "0.00",
+     "wells_on_lease": "1"
+    }
+   ],
+   "filer_name": "Viola Vasquez",
+   "date_submitted": "Aug 31, 2026",
+   "data_validation_timestamp": "Sep 3, 2026 4:04 PM"
+  },
+  "citations": {
+   "api_number": {
+    "page": 1,
+    "bbox": [
+     0.1216,
+     0.0507,
+     0.1953,
+     0.0649
+    ]
+   },
+   "permit_number": {
+    "page": 1,
+    "bbox": [
+     0.1355,
+     0.088,
+     0.1776,
+     0.1031
+    ]
+   },
+   "permit_status": {
+    "page": 1,
+    "bbox": [
+     0.8751,
+     0.0822,
+     0.9292,
+     0.0974
+    ]
+   },
+   "operator_number": {
+    "page": 1,
+    "bbox": [
+     0.1109,
+     0.1754,
+     0.153,
+     0.1905
+    ]
+   },
+   "operator_name": {
+    "page": 1,
+    "bbox": [
+     0.3375,
+     0.1762,
+     0.5248,
+     0.1913
+    ]
+   },
+   "well_number": {
+    "page": 1,
+    "bbox": [
+     0.5769,
+     0.2089,
+     0.5839,
+     0.224
+    ]
+   },
+   "total_depth": {
+    "page": 1,
+    "bbox": [
+     0.0865,
+     0.3543,
+     0.1146,
+     0.3694
+    ]
+   },
+   "district": {
+    "page": 1,
+    "bbox": [
+     0.1375,
+     0.4098,
+     0.1515,
+     0.425
+    ]
+   },
+   "county": {
+    "page": 1,
+    "bbox": [
+     0.2664,
+     0.409,
+     0.3309,
+     0.4242
+    ]
+   },
+   "miles_from_town": {
+    "page": 1,
+    "bbox": [
+     0.1948,
+     0.437,
+     0.2101,
+     0.4502
+    ]
+   },
+   "direction_from_town": {
+    "page": 1,
+    "bbox": [
+     0.327,
+     0.437,
+     0.3424,
+     0.4502
+    ]
+   },
+   "lease_perpendiculars.feet_1": {
+    "page": 1,
+    "bbox": [
+     0.1918,
+     0.5152,
+     0.2198,
+     0.5304
+    ]
+   },
+   "lease_perpendiculars.direction_1": {
+    "page": 1,
+    "bbox": [
+     0.3672,
+     0.5152,
+     0.4121,
+     0.5304
+    ]
+   },
+   "lease_perpendiculars.feet_2": {
+    "page": 1,
+    "bbox": [
+     0.5366,
+     0.5152,
+     0.5647,
+     0.5304
+    ]
+   },
+   "lease_perpendiculars.direction_2": {
+    "page": 1,
+    "bbox": [
+     0.7051,
+     0.5152,
+     0.7381,
+     0.5304
+    ]
+   },
+   "survey_perpendiculars.feet_1": {
+    "page": 1,
+    "bbox": [
+     0.1905,
+     0.5381,
+     0.2186,
+     0.5532
+    ]
+   },
+   "survey_perpendiculars.direction_1": {
+    "page": 1,
+    "bbox": [
+     0.3672,
+     0.5152,
+     0.4121,
+     0.5304
+    ]
+   },
+   "survey_perpendiculars.feet_2": {
+    "page": 1,
+    "bbox": [
+     0.5389,
+     0.5381,
+     0.5599,
+     0.5532
+    ]
+   },
+   "survey_perpendiculars.direction_2": {
+    "page": 1,
+    "bbox": [
+     0.7038,
+     0.5381,
+     0.7368,
+     0.5532
+    ]
+   },
+   "contiguous_acres": {
+    "page": 1,
+    "bbox": [
+     0.9047,
+     0.4874,
+     0.9475,
+     0.5015
+    ]
+   },
+   "filer_name": {
+    "page": 1,
+    "bbox": [
+     0.6796,
+     0.8883,
+     0.7603,
+     0.9034
+    ]
+   },
+   "date_submitted": {
+    "page": 1,
+    "bbox": [
+     0.0683,
+     0.8357,
+     0.1284,
+     0.8478
+    ]
+   }
+  },
+  "seconds": 3.6
+ },
+ "schema_plat": {
+  "schema_id": "fixture-plat-907829",
+  "values": {},
+  "citations": {},
+  "seconds": 2.5,
+  "note": "plat truth is PLANNED (human keying); fixture returns nothing so no plat number can be quoted"
+ },
+ "timing": {
+  "extract": 3.739,
+  "split": 1.9,
+  "schema_w1": 3.6,
+  "schema_plat": 2.5
+ },
+ "credits": {
+  "extract": 1.0
+ },
+ "cycle_seconds": 13.004,
+ "cost_usd_at_list": 0.0825,
+ "cost_note": "documented list rates: classify 0.5 + extract 1 + split 2 + schema 1 + schema 1 credits per page at $0.015"
+}

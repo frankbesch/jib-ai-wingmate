@@ -1,0 +1,27 @@
+{
+  "doc_id": "afe_cover",
+  "source_file": "pdfs/clean/01_afe_cover.pdf",
+  "keyed_by": "sonnet-5 interim keyer (Claude family) — to be replaced by a Codex pass",
+  "keyed_from": "page images",
+  "values": {
+    "letter_date": "June 1, 2026",
+    "operator_name": "Sablewind Operating LLC",
+    "addressee": "Caprock Resources LLC",
+    "afe_number": "AFE-2026-0417",
+    "well_name": "Caprock 14-2H",
+    "response_due_date": "June 16, 2026",
+    "wi_decimal_stated": 0.25,
+    "net_share_stated": 121700.00
+  },
+  "page_of": {
+    "letter_date": 1,
+    "operator_name": 1,
+    "addressee": 1,
+    "afe_number": 1,
+    "well_name": 1,
+    "response_due_date": 1,
+    "wi_decimal_stated": 1,
+    "net_share_stated": 1
+  },
+  "uncertain": []
+}

@@ -1,0 +1,27 @@
+{
+  "doc_id": "cover_02",
+  "source_file": "synth-heldout/clean/61_cover_02.pdf",
+  "keyed_by": "codex (author key, layer A)",
+  "keyed_from": "rendered PDF",
+  "values": {
+    "letter_date": "2026-09-02",
+    "operator_name": "Darsenne Basin Operations LLC",
+    "addressee": "Ultraven Fold Interests LLC",
+    "afe_number": "DB-26-902",
+    "well_name": "Ostrand 4-KH",
+    "response_due_date": "TBD",
+    "wi_decimal_stated": 0.2,
+    "net_share_stated": 4000
+  },
+  "page_of": {
+    "letter_date": 1,
+    "operator_name": 1,
+    "addressee": 1,
+    "afe_number": 1,
+    "well_name": 1,
+    "response_due_date": 1,
+    "wi_decimal_stated": 1,
+    "net_share_stated": 1
+  },
+  "uncertain": []
+}

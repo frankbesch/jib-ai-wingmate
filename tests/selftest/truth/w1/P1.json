@@ -1,0 +1,61 @@
+{
+ "permit": "P1",
+ "page_size_pt": [
+  792.0,
+  612.0
+ ],
+ "values": {
+  "api_number": "42-001-00001",
+  "permit_number": "1",
+  "operator_name": "ACME OIL LLC",
+  "lease_name": "SMITH",
+  "well_number": "1",
+  "county": "ANDERSON",
+  "district": "06",
+  "total_depth": "5000",
+  "nearest_town": "PALESTINE",
+  "purpose_of_filing": [
+   "New Drill"
+  ],
+  "wellbore_profile": [
+   "Vertical"
+  ],
+  "fields": [
+   {
+    "field_number": "11111111",
+    "field_name": "ALPHA",
+    "well_type": "Oil Well",
+    "completion_depth": "4900"
+   }
+  ]
+ },
+ "citation_truth": {
+  "api_number": {
+   "page": 1,
+   "bbox": [
+    0.1,
+    0.1,
+    0.2,
+    0.12
+   ]
+  },
+  "lease_name": {
+   "page": 1,
+   "bbox": [
+    0.3,
+    0.3,
+    0.4,
+    0.32
+   ]
+  },
+  "county": {
+   "page": 1,
+   "bbox": [
+    0.5,
+    0.5,
+    0.6,
+    0.52
+   ]
+  }
+ }
+}

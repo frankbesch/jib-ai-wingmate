@@ -1,0 +1,13 @@
+{
+  "property_number": "ZV-6071",
+  "well_name": "Nacrevale 7-QH",
+  "owners": [
+    {
+      "owner_name": "Mavren Fold Interests LLC",
+      "owner_number": "MF-204",
+      "interest_type": "WI",
+      "decimal": 0.2
+    }
+  ],
+  "synthetic": true
+}

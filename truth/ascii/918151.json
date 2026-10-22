@@ -1,0 +1,49 @@
+{
+ "permit_number": "918151",
+ "sequence": "99",
+ "county_code": "383",
+ "county": "REAGAN",
+ "lease_name": "NORTH CREEK F",
+ "district": "7C",
+ "operator_number": "220855",
+ "application_received_date": "2026-08-24",
+ "operator_name": "DISCOVERY NATURAL RESOURCES LLC",
+ "application_status": "Approved",
+ "permit_issue_date": "2026-09-03",
+ "fields": [
+  {
+   "field_number": "85279200",
+   "application_well_code": "O",
+   "completion_well_code": " "
+  }
+ ],
+ "well_number": "0402MB",
+ "total_depth": 8500,
+ "type_of_application_code": "01",
+ "type_of_application": "New Drill",
+ "surface_section": "22",
+ "surface_block": "1",
+ "surface_survey": "T&P RR CO / ISGRIG, B F",
+ "surface_abstract": "227",
+ "contiguous_acres": 2863.36,
+ "miles_from_town": 16.7,
+ "direction_from_town": "NE",
+ "nearest_town": "BIG LAKE",
+ "lease_perpendiculars": {
+  "feet_1": 927.0,
+  "direction_1": "NORTH",
+  "feet_2": 146.0,
+  "direction_2": "EAST"
+ },
+ "survey_perpendiculars": {
+  "feet_1": 927.0,
+  "direction_1": "NORTH",
+  "feet_2": 146.0,
+  "direction_2": "WEST"
+ },
+ "horizontal_well_flag": true,
+ "directional_well_flag": false,
+ "api_number": "42-383-42459",
+ "grade": "SYSTEM-EXTRACTED",
+ "basis": "RRC daf420.dat 2026-09-04, OGA049M positions"
+}

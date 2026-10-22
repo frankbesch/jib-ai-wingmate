@@ -1,0 +1,280 @@
+{
+  "values": {
+    "api_number": "42-329-48535",
+    "permit_number": "917669",
+    "permit_status": "Approved",
+    "operator_number": "217012",
+    "operator_name": "DIAMONDBACK E&P LLC",
+    "lease_name": "RUTTER 1-12 C",
+    "well_number": "1JM",
+    "total_depth": "12500",
+    "district": "08",
+    "county": "MIDLAND",
+    "miles_from_town": "7.31",
+    "direction_from_town": "SW",
+    "nearest_town": "STANTON",
+    "lease_perpendiculars": {
+      "feet_1": "1270",
+      "direction_1": "N",
+      "feet_2": "734",
+      "direction_2": "E"
+    },
+    "survey_perpendiculars": {
+      "feet_1": "1270",
+      "direction_1": "N",
+      "feet_2": "734",
+      "direction_2": "E"
+    },
+    "abstract_number": "A-1374",
+    "contiguous_acres": "490",
+    "purpose_of_filing": [
+      "New Drill"
+    ],
+    "wellbore_profile": [
+      "Horizontal"
+    ],
+    "rule_36_h2s": false,
+    "fields": [
+      {
+        "district": "08",
+        "field_number": "85280300",
+        "field_name": "SPRABERRY (TREND AREA)",
+        "well_type": "Oil or Gas Well",
+        "completion_depth": "12500",
+        "distance_to_nearest_well": "440.00",
+        "wells_on_lease": "3"
+      }
+    ],
+    "filer_name": "Mary Cook, Sr. Regulatory Analyst",
+    "date_submitted": "Aug 05, 2026",
+    "data_validation_timestamp": "Sep 3, 2026 10:28 AM"
+  },
+  "citation_truth": {
+    "api_number": {
+      "page": 1,
+      "bbox": [
+        0.1216,
+        0.0507,
+        0.1953,
+        0.0649
+      ]
+    },
+    "permit_number": {
+      "page": 1,
+      "bbox": [
+        0.1355,
+        0.088,
+        0.1776,
+        0.1031
+      ]
+    },
+    "permit_status": {
+      "page": 1,
+      "bbox": [
+        0.8751,
+        0.0822,
+        0.9292,
+        0.0974
+      ]
+    },
+    "operator_number": {
+      "page": 1,
+      "bbox": [
+        0.1109,
+        0.1754,
+        0.153,
+        0.1905
+      ]
+    },
+    "lease_name": {
+      "page": 1,
+      "bbox": [
+        0.5491,
+        0.188,
+        0.6417,
+        0.2031
+      ]
+    },
+    "well_number": {
+      "page": 1,
+      "bbox": [
+        0.8719,
+        0.1861,
+        0.8957,
+        0.2012
+      ]
+    },
+    "total_depth": {
+      "page": 1,
+      "bbox": [
+        0.083,
+        0.3543,
+        0.1181,
+        0.3694
+      ]
+    },
+    "district": {
+      "page": 1,
+      "bbox": [
+        0.1375,
+        0.4098,
+        0.1515,
+        0.425
+      ]
+    },
+    "county": {
+      "page": 1,
+      "bbox": [
+        0.2702,
+        0.409,
+        0.327,
+        0.4242
+      ]
+    },
+    "miles_from_town": {
+      "page": 1,
+      "bbox": [
+        0.1917,
+        0.437,
+        0.2132,
+        0.4502
+      ]
+    },
+    "direction_from_town": {
+      "page": 1,
+      "bbox": [
+        0.3258,
+        0.437,
+        0.3436,
+        0.4502
+      ]
+    },
+    "nearest_town": {
+      "page": 1,
+      "bbox": [
+        0.5491,
+        0.437,
+        0.6018,
+        0.4502
+      ]
+    },
+    "lease_perpendiculars.feet_1": {
+      "page": 1,
+      "bbox": [
+        0.1918,
+        0.5152,
+        0.2198,
+        0.5304
+      ]
+    },
+    "lease_perpendiculars.direction_1": {
+      "page": 1,
+      "bbox": [
+        0.3851,
+        0.5152,
+        0.3942,
+        0.5304
+      ]
+    },
+    "lease_perpendiculars.feet_2": {
+      "page": 1,
+      "bbox": [
+        0.5401,
+        0.5152,
+        0.5612,
+        0.5304
+      ]
+    },
+    "lease_perpendiculars.direction_2": {
+      "page": 1,
+      "bbox": [
+        0.7174,
+        0.5152,
+        0.7258,
+        0.5304
+      ]
+    },
+    "survey_perpendiculars.feet_1": {
+      "page": 1,
+      "bbox": [
+        0.1905,
+        0.5381,
+        0.2186,
+        0.5532
+      ]
+    },
+    "survey_perpendiculars.direction_1": {
+      "page": 1,
+      "bbox": [
+        0.3851,
+        0.5152,
+        0.3942,
+        0.5304
+      ]
+    },
+    "survey_perpendiculars.feet_2": {
+      "page": 1,
+      "bbox": [
+        0.5401,
+        0.5152,
+        0.5612,
+        0.5304
+      ]
+    },
+    "survey_perpendiculars.direction_2": {
+      "page": 1,
+      "bbox": [
+        0.7174,
+        0.5152,
+        0.7258,
+        0.5304
+      ]
+    },
+    "abstract_number": {
+      "page": 1,
+      "bbox": [
+        0.5354,
+        0.4866,
+        0.5761,
+        0.5017
+      ]
+    },
+    "contiguous_acres": {
+      "page": 1,
+      "bbox": [
+        0.9163,
+        0.4874,
+        0.936,
+        0.5015
+      ]
+    },
+    "filer_name": {
+      "page": 1,
+      "bbox": [
+        0.6231,
+        0.8883,
+        0.8167,
+        0.9034
+      ]
+    },
+    "date_submitted": {
+      "page": 1,
+      "bbox": [
+        0.8488,
+        0.8872,
+        0.924,
+        0.9024
+      ]
+    }
+  },
+  "page_size_pt": [
+    792.0,
+    612.0
+  ],
+  "permit": "917669",
+  "grade": "SYSTEM-EXTRACTED",
+  "basis": "RRC W-1 facsimile text layer (pdftotext -layout / -bbox-layout); boxes normalized to page",
+  "notes": [
+    "2026-09-05: rule_36_h2s re-derived by column-aligned X (build_corpus._rule36); old regex never matched, page image checked for all 9"
+  ]
+}

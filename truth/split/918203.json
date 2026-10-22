@@ -1,0 +1,66 @@
+{
+ "permit": "918203",
+ "total_pages": 8,
+ "splits": {
+  "w1_permit": [
+   1,
+   2,
+   3
+  ],
+  "plat": [
+   4,
+   5,
+   6,
+   7,
+   8
+  ]
+ },
+ "documents": [
+  {
+   "class": "w1_permit",
+   "file": "918203_W1_AsApprovedW1-9-3-2026_LTR.pdf",
+   "pages": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "class": "plat",
+   "file": "918203_Plat_EDIN10 LSE PLAT_LGL.pdf",
+   "pages": [
+    4
+   ]
+  },
+  {
+   "class": "plat",
+   "file": "918203_Plat_EDIN10 PLATW1_LGL.pdf",
+   "pages": [
+    5
+   ]
+  },
+  {
+   "class": "plat",
+   "file": "918203_Plat_EDIN10 PLAT_LGL.pdf",
+   "pages": [
+    6
+   ]
+  },
+  {
+   "class": "plat",
+   "file": "918203_Plat_EDIN10PLAT OVERALL_LTR.pdf",
+   "pages": [
+    7
+   ]
+  },
+  {
+   "class": "plat",
+   "file": "918203_Plat_EGU 10 PLATCLOSER_LTR.pdf",
+   "pages": [
+    8
+   ]
+  }
+ ],
+ "grade": "OBSERVED",
+ "basis": "packet assembled from separately published RRC files"
+}

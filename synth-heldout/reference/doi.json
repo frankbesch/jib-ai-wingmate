@@ -1,0 +1,13 @@
+{
+  "property_number": "DS-8093",
+  "well_name": "Tressaline 9-VH",
+  "owners": [
+    {
+      "owner_name": "Ultraven Fold Interests LLC",
+      "owner_number": "UF-306",
+      "interest_type": "WI",
+      "decimal": 0.2
+    }
+  ],
+  "synthetic": true
+}

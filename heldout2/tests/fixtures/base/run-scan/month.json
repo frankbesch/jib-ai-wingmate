@@ -1,0 +1,284 @@
+{
+ "classify": [
+  {
+   "doc_id": "cover_01",
+   "predicted": "afe_cover"
+  },
+  {
+   "doc_id": "afe_01",
+   "predicted": "afe"
+  },
+  {
+   "doc_id": "afe_02",
+   "predicted": "afe"
+  },
+  {
+   "doc_id": "t10",
+   "predicted": "field_ticket"
+  },
+  {
+   "doc_id": "t11",
+   "predicted": "field_ticket"
+  },
+  {
+   "doc_id": "t12",
+   "predicted": "field_ticket"
+  },
+  {
+   "doc_id": "t13",
+   "predicted": "field_ticket"
+  },
+  {
+   "doc_id": "t20",
+   "predicted": "field_ticket"
+  },
+  {
+   "doc_id": "t21",
+   "predicted": "field_ticket"
+  },
+  {
+   "doc_id": "t22",
+   "predicted": "field_ticket"
+  },
+  {
+   "doc_id": "t23",
+   "predicted": "field_ticket"
+  },
+  {
+   "doc_id": "t30",
+   "predicted": "field_ticket"
+  },
+  {
+   "doc_id": "t31",
+   "predicted": "field_ticket"
+  },
+  {
+   "doc_id": "t32",
+   "predicted": "field_ticket"
+  },
+  {
+   "doc_id": "t33",
+   "predicted": "field_ticket"
+  },
+  {
+   "doc_id": "t40",
+   "predicted": "field_ticket"
+  },
+  {
+   "doc_id": "t41",
+   "predicted": "field_ticket"
+  },
+  {
+   "doc_id": "t42",
+   "predicted": "field_ticket"
+  },
+  {
+   "doc_id": "t43",
+   "predicted": "field_ticket"
+  },
+  {
+   "doc_id": "t50",
+   "predicted": "field_ticket"
+  },
+  {
+   "doc_id": "t51",
+   "predicted": "field_ticket"
+  },
+  {
+   "doc_id": "t52",
+   "predicted": "field_ticket"
+  },
+  {
+   "doc_id": "t53",
+   "predicted": "field_ticket"
+  },
+  {
+   "doc_id": "po_01",
+   "predicted": "field_ticket"
+  },
+  {
+   "doc_id": "near_01",
+   "predicted": "field_ticket"
+  }
+ ],
+ "documents": {
+  "cover_01": {
+   "class": "afe_cover",
+   "packet": "afe_01",
+   "values": {
+    "afe_number": "DB-26-901",
+    "well_name": "Tressaline 9-VH"
+   }
+  },
+  "afe_01": {
+   "class": "afe",
+   "packet": "afe_01",
+   "values": {
+    "afe_number": "DB-26-901",
+    "well_name": "Tressaline 9-VH"
+   }
+  },
+  "afe_02": {
+   "class": "afe",
+   "packet": "afe_02",
+   "values": {
+    "afe_number": "DB-26-902",
+    "well_name": "Orlin 2-H"
+   }
+  },
+  "t10": {
+   "class": "field_ticket",
+   "packet": "tk_1",
+   "values": {
+    "ticket_number": "TK-10"
+   }
+  },
+  "t11": {
+   "class": "field_ticket",
+   "packet": "tk_1",
+   "values": {
+    "ticket_number": "TK-11"
+   }
+  },
+  "t12": {
+   "class": "field_ticket",
+   "packet": "tk_1",
+   "values": {
+    "ticket_number": "TK-12"
+   }
+  },
+  "t13": {
+   "class": "field_ticket",
+   "packet": "tk_1",
+   "values": {
+    "ticket_number": "TK-13"
+   }
+  },
+  "t20": {
+   "class": "field_ticket",
+   "packet": "tk_2",
+   "values": {
+    "ticket_number": "TK-20"
+   }
+  },
+  "t21": {
+   "class": "field_ticket",
+   "packet": "tk_2",
+   "values": {
+    "ticket_number": "TK-21"
+   }
+  },
+  "t22": {
+   "class": "field_ticket",
+   "packet": "tk_2",
+   "values": {
+    "ticket_number": "TK-22"
+   }
+  },
+  "t23": {
+   "class": "field_ticket",
+   "packet": "tk_2",
+   "values": {
+    "ticket_number": "TK-23"
+   }
+  },
+  "t30": {
+   "class": "field_ticket",
+   "packet": "tk_3",
+   "values": {
+    "ticket_number": "TK-30"
+   }
+  },
+  "t31": {
+   "class": "field_ticket",
+   "packet": "tk_3",
+   "values": {
+    "ticket_number": "TK-31"
+   }
+  },
+  "t32": {
+   "class": "field_ticket",
+   "packet": "tk_3",
+   "values": {
+    "ticket_number": "TK-32"
+   }
+  },
+  "t33": {
+   "class": "field_ticket",
+   "packet": "tk_3",
+   "values": {
+    "ticket_number": "TK-33"
+   }
+  },
+  "t40": {
+   "class": "field_ticket",
+   "packet": "tk_4",
+   "values": {
+    "ticket_number": "TK-40"
+   }
+  },
+  "t41": {
+   "class": "field_ticket",
+   "packet": "tk_4",
+   "values": {
+    "ticket_number": "TK-41"
+   }
+  },
+  "t42": {
+   "class": "field_ticket",
+   "packet": "tk_4",
+   "values": {
+    "ticket_number": "TK-42"
+   }
+  },
+  "t43": {
+   "class": "field_ticket",
+   "packet": "tk_4",
+   "values": {
+    "ticket_number": "TK-43"
+   }
+  },
+  "t50": {
+   "class": "field_ticket",
+   "packet": "tk_5",
+   "values": {
+    "ticket_number": "TK-50"
+   }
+  },
+  "t51": {
+   "class": "field_ticket",
+   "packet": "tk_5",
+   "values": {
+    "ticket_number": "TK-51"
+   }
+  },
+  "t52": {
+   "class": "field_ticket",
+   "packet": "tk_5",
+   "values": {
+    "ticket_number": "TK-52"
+   }
+  },
+  "t53": {
+   "class": "field_ticket",
+   "packet": "tk_5",
+   "values": {
+    "ticket_number": "TK-53"
+   }
+  },
+  "po_01": {
+   "class": "field_ticket",
+   "packet": "tk_6",
+   "values": {
+    "ticket_number": "TK-61"
+   }
+  },
+  "near_01": {
+   "class": "field_ticket",
+   "packet": "tk_6",
+   "values": {
+    "ticket_number": "TK-62"
+   }
+  }
+ }
+}

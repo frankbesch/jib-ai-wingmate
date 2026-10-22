@@ -1,0 +1,989 @@
+[
+  {
+    "id": "afe_01.afe_type",
+    "printed": true,
+    "value": "Workover",
+    "page": 1,
+    "where": "Operation",
+    "confidence": "high"
+  },
+  {
+    "id": "afe_02.afe_date",
+    "printed": true,
+    "value": "2026-09-02",
+    "page": 1,
+    "where": "Prepared",
+    "confidence": "high"
+  },
+  {
+    "id": "afe_02.afe_number",
+    "printed": true,
+    "value": "DB-26-902",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "afe_02.afe_type",
+    "printed": true,
+    "value": "Workover",
+    "page": 1,
+    "where": "Scope",
+    "confidence": "high"
+  },
+  {
+    "id": "afe_02.county",
+    "printed": true,
+    "value": "Lumereth",
+    "page": 1,
+    "where": "Parish / county",
+    "confidence": "high"
+  },
+  {
+    "id": "afe_02.well_name",
+    "printed": true,
+    "value": "Ostrand 4-KH",
+    "page": 1,
+    "where": "Asset",
+    "confidence": "high"
+  },
+  {
+    "id": "afe_03.afe_type",
+    "printed": true,
+    "value": "Workover",
+    "page": 1,
+    "where": "Operation",
+    "confidence": "high"
+  },
+  {
+    "id": "afe_04.afe_date",
+    "printed": true,
+    "value": "2026-09-04",
+    "page": 1,
+    "where": "Prepared",
+    "confidence": "high"
+  },
+  {
+    "id": "afe_04.afe_number",
+    "printed": true,
+    "value": "DB-26-904",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "afe_04.afe_type",
+    "printed": true,
+    "value": "Workover",
+    "page": 1,
+    "where": "Scope",
+    "confidence": "high"
+  },
+  {
+    "id": "afe_04.county",
+    "printed": true,
+    "value": "Lumereth",
+    "page": 1,
+    "where": "Parish / county",
+    "confidence": "high"
+  },
+  {
+    "id": "afe_04.operator_name",
+    "printed": true,
+    "value": "Darsenne Basin Operations LLC",
+    "page": 1,
+    "where": "Bill To",
+    "confidence": "high"
+  },
+  {
+    "id": "afe_04.well_name",
+    "printed": true,
+    "value": "Ostrand 4-KH",
+    "page": 1,
+    "where": "Asset",
+    "confidence": "high"
+  },
+  {
+    "id": "cover_02.afe_number",
+    "printed": true,
+    "value": "DB-26-902",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "cover_02.net_share_stated",
+    "printed": true,
+    "value": "4,000.00",
+    "page": 1,
+    "where": "Stated owner share",
+    "confidence": "high"
+  },
+  {
+    "id": "cover_04.afe_number",
+    "printed": true,
+    "value": "DB-26-904",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "cover_04.net_share_stated",
+    "printed": true,
+    "value": "4,000.00",
+    "page": 1,
+    "where": "Stated owner share",
+    "confidence": "high"
+  },
+  {
+    "id": "haul_03.hauler_name",
+    "printed": true,
+    "value": "Sovarek Fluid Transit LLC",
+    "page": 1,
+    "where": "Transport by",
+    "confidence": "high"
+  },
+  {
+    "id": "haul_03.log_date",
+    "printed": true,
+    "value": "2026-09-05",
+    "page": 1,
+    "where": "Moved on",
+    "confidence": "high"
+  },
+  {
+    "id": "haul_03.log_number",
+    "printed": true,
+    "value": "SF-913",
+    "page": 1,
+    "where": "Movement sheet",
+    "confidence": "high"
+  },
+  {
+    "id": "haul_03.total_barrels",
+    "printed": true,
+    "value": "240.00",
+    "page": 1,
+    "where": "Volume moved (barrels)",
+    "confidence": "high"
+  },
+  {
+    "id": "haul_03.well_name",
+    "printed": true,
+    "value": "Tressaline 9-VH",
+    "page": 1,
+    "where": "Origin",
+    "confidence": "high"
+  },
+  {
+    "id": "haul_04.hauler_name",
+    "printed": true,
+    "value": "Sovarek Fluid Transit LLC",
+    "page": 1,
+    "where": "Transport by",
+    "confidence": "high"
+  },
+  {
+    "id": "haul_04.log_date",
+    "printed": true,
+    "value": "2026-09-06",
+    "page": 1,
+    "where": "Moved on",
+    "confidence": "high"
+  },
+  {
+    "id": "haul_04.log_number",
+    "printed": true,
+    "value": "SF-914",
+    "page": 1,
+    "where": "Movement sheet",
+    "confidence": "high"
+  },
+  {
+    "id": "haul_04.total_barrels",
+    "printed": true,
+    "value": "240.00",
+    "page": 1,
+    "where": "Volume moved (barrels)",
+    "confidence": "high"
+  },
+  {
+    "id": "haul_06.hauler_name",
+    "printed": true,
+    "value": "Sovarek Fluid Transit LLC",
+    "page": 1,
+    "where": "Transport by",
+    "confidence": "high"
+  },
+  {
+    "id": "haul_06.log_date",
+    "printed": true,
+    "value": "2026-09-08",
+    "page": 1,
+    "where": "Moved on",
+    "confidence": "high"
+  },
+  {
+    "id": "haul_06.log_number",
+    "printed": true,
+    "value": "SF-916",
+    "page": 1,
+    "where": "Movement sheet",
+    "confidence": "high"
+  },
+  {
+    "id": "haul_06.total_barrels",
+    "printed": true,
+    "value": "240.00",
+    "page": 1,
+    "where": "Volume moved (barrels)",
+    "confidence": "high"
+  },
+  {
+    "id": "haul_06.well_name",
+    "printed": true,
+    "value": "Tressaline 9-VH",
+    "page": 1,
+    "where": "Origin",
+    "confidence": "high"
+  },
+  {
+    "id": "haul_07.hauler_name",
+    "printed": true,
+    "value": "Sovarek Fluid Transit LLC",
+    "page": 1,
+    "where": "Transport by",
+    "confidence": "high"
+  },
+  {
+    "id": "haul_07.log_date",
+    "printed": true,
+    "value": "2026-09-09",
+    "page": 1,
+    "where": "Moved on",
+    "confidence": "high"
+  },
+  {
+    "id": "haul_07.log_number",
+    "printed": true,
+    "value": "SF-917",
+    "page": 1,
+    "where": "Movement sheet",
+    "confidence": "high"
+  },
+  {
+    "id": "haul_07.total_barrels",
+    "printed": true,
+    "value": "240.00",
+    "page": 1,
+    "where": "Volume moved (barrels)",
+    "confidence": "high"
+  },
+  {
+    "id": "haul_09.hauler_name",
+    "printed": true,
+    "value": "Sovarek Fluid Transit LLC",
+    "page": 1,
+    "where": "Transport by",
+    "confidence": "high"
+  },
+  {
+    "id": "haul_09.log_date",
+    "printed": true,
+    "value": "2026-09-11",
+    "page": 1,
+    "where": "Moved on",
+    "confidence": "high"
+  },
+  {
+    "id": "haul_09.log_number",
+    "printed": true,
+    "value": "SF-919",
+    "page": 1,
+    "where": "Movement sheet",
+    "confidence": "high"
+  },
+  {
+    "id": "haul_09.total_barrels",
+    "printed": true,
+    "value": "240.00",
+    "page": 1,
+    "where": "Volume moved (barrels)",
+    "confidence": "high"
+  },
+  {
+    "id": "invoice_02.invoice_date",
+    "printed": true,
+    "value": "2026-09-16",
+    "page": 1,
+    "where": "Issued",
+    "confidence": "high"
+  },
+  {
+    "id": "invoice_02.invoice_number",
+    "printed": true,
+    "value": "BQI-642",
+    "page": 1,
+    "where": "Account request",
+    "confidence": "high"
+  },
+  {
+    "id": "invoice_02.subtotal",
+    "printed": true,
+    "value": "2,105.00",
+    "page": 1,
+    "where": "Pre-tax amount",
+    "confidence": "high"
+  },
+  {
+    "id": "invoice_02.well_name",
+    "printed": true,
+    "value": "Tressaline 9-VH",
+    "page": 1,
+    "where": "Service location",
+    "confidence": "high"
+  },
+  {
+    "id": "jib_01.operator_name",
+    "printed": true,
+    "value": "Darsenne Basin Operations LLC",
+    "page": 1,
+    "where": "Operating company",
+    "confidence": "high"
+  },
+  {
+    "id": "jib_01.statement_period",
+    "printed": true,
+    "value": "September 2026",
+    "page": 1,
+    "where": "Accounting month",
+    "confidence": "high"
+  },
+  {
+    "id": "jib_02.operator_name",
+    "printed": true,
+    "value": "Darsenne Basin Operations LLC",
+    "page": 1,
+    "where": "Operating company",
+    "confidence": "high"
+  },
+  {
+    "id": "jib_02.owner_name",
+    "printed": true,
+    "value": "Ultraven Fold Interests LLC",
+    "page": 1,
+    "where": "Interest holder",
+    "confidence": "high"
+  },
+  {
+    "id": "jib_02.statement_period",
+    "printed": true,
+    "value": "September 2026",
+    "page": 1,
+    "where": "Accounting month",
+    "confidence": "high"
+  },
+  {
+    "id": "jib_03.operator_name",
+    "printed": true,
+    "value": "Darsenne Basin Operations LLC",
+    "page": 1,
+    "where": "Operating company",
+    "confidence": "high"
+  },
+  {
+    "id": "jib_03.statement_period",
+    "printed": true,
+    "value": "September 2026",
+    "page": 1,
+    "where": "Accounting month",
+    "confidence": "high"
+  },
+  {
+    "id": "jib_04.operator_name",
+    "printed": true,
+    "value": "Darsenne Basin Operations LLC",
+    "page": 1,
+    "where": "Operating company",
+    "confidence": "high"
+  },
+  {
+    "id": "jib_04.statement_period",
+    "printed": true,
+    "value": "September 2026",
+    "page": 1,
+    "where": "Accounting month",
+    "confidence": "high"
+  },
+  {
+    "id": "jib_05.operator_name",
+    "printed": true,
+    "value": "Darsenne Basin Operations LLC",
+    "page": 1,
+    "where": "Operating company",
+    "confidence": "high"
+  },
+  {
+    "id": "row1.cover_02",
+    "answer": "afe_cover",
+    "page": 1,
+    "where": "Owner election letter; text transmits the enclosed authorization for review and says it does not authorize billing.",
+    "confidence": "high"
+  },
+  {
+    "id": "row1.cover_04",
+    "answer": "afe_cover",
+    "page": 1,
+    "where": "Owner election letter; text transmits the enclosed authorization for review and says it does not authorize billing.",
+    "confidence": "high"
+  },
+  {
+    "id": "row5.jib_01",
+    "answer": false,
+    "page": null,
+    "where": "Both pages contain Joint Interest Billing and Billing detail; neither contains a field ticket.",
+    "confidence": "high"
+  },
+  {
+    "id": "row5.ticket_28",
+    "answer": false,
+    "page": 1,
+    "where": "The only page contains one reprinted field service ticket, Dispatch docket BQ-9643.",
+    "confidence": "high"
+  },
+  {
+    "id": "row5.ticket_30",
+    "answer": false,
+    "page": 2,
+    "where": "Page 1 contains ticket BQ-9645. Page 2 is an invoice referencing BQ-9644 in a prior packet.",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_01.ticket_number",
+    "printed": true,
+    "value": "BQ-9601",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_01.vendor_name",
+    "printed": true,
+    "value": "Brelquor Field Services LLC",
+    "page": 1,
+    "where": "Service firm",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_01.well_name",
+    "printed": true,
+    "value": "Tressaline 9-VH",
+    "page": 1,
+    "where": "Asset",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_02.ticket_number",
+    "printed": true,
+    "value": "BQ-9602",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_02.vendor_name",
+    "printed": true,
+    "value": "Brelquor Field Services LLC",
+    "page": 1,
+    "where": "Service firm",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_02.well_name",
+    "printed": true,
+    "value": "Tressaline 9-VH",
+    "page": 1,
+    "where": "Asset",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_05.ticket_number",
+    "printed": true,
+    "value": "BQ-9605",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_05.vendor_name",
+    "printed": true,
+    "value": "Brelquor Field Services LLC",
+    "page": 1,
+    "where": "Service firm",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_05.well_name",
+    "printed": true,
+    "value": "Tressaline 9-VH",
+    "page": 1,
+    "where": "Asset",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_06.ticket_number",
+    "printed": true,
+    "value": "BQ-9606",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_06.vendor_name",
+    "printed": true,
+    "value": "Brelquor Field Services LLC",
+    "page": 1,
+    "where": "Service firm",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_06.well_name",
+    "printed": true,
+    "value": "Tressaline 9-VH",
+    "page": 1,
+    "where": "Asset",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_09.ticket_number",
+    "printed": true,
+    "value": "BQ-9609",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_09.well_name",
+    "printed": true,
+    "value": "Tressaline 9-VH",
+    "page": 1,
+    "where": "Asset",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_10.ticket_number",
+    "printed": true,
+    "value": "BQ-9610",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_10.vendor_name",
+    "printed": true,
+    "value": "Brelquor Field Services LLC",
+    "page": 1,
+    "where": "Service firm",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_10.well_name",
+    "printed": true,
+    "value": "Tressaline 9-VH",
+    "page": 1,
+    "where": "Asset",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_13.ticket_number",
+    "printed": true,
+    "value": "BQ-9613",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_13.vendor_name",
+    "printed": true,
+    "value": "Brelquor Field Services LLC",
+    "page": 1,
+    "where": "Service firm",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_13.well_name",
+    "printed": true,
+    "value": "Tressaline 9-VH",
+    "page": 1,
+    "where": "Asset",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_14.ticket_number",
+    "printed": true,
+    "value": "BQ-9614",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_14.vendor_name",
+    "printed": true,
+    "value": "Brelquor Field Services LLC",
+    "page": 1,
+    "where": "Service firm",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_14.well_name",
+    "printed": true,
+    "value": "Tressaline 9-VH",
+    "page": 1,
+    "where": "Asset",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_17.ticket_number",
+    "printed": true,
+    "value": "BQ-9617",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_17.vendor_name",
+    "printed": true,
+    "value": "Brelquor Field Services LLC",
+    "page": 1,
+    "where": "Service firm",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_17.well_name",
+    "printed": true,
+    "value": "Tressaline 9-VH",
+    "page": 1,
+    "where": "Asset",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_18.ticket_number",
+    "printed": true,
+    "value": "BQ-9618",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_18.vendor_name",
+    "printed": true,
+    "value": "Brelquor Field Services LLC",
+    "page": 1,
+    "where": "Service firm",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_18.well_name",
+    "printed": true,
+    "value": "Tressaline 9-VH",
+    "page": 1,
+    "where": "Asset",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_19.log_number",
+    "printed": false,
+    "value": null,
+    "page": null,
+    "where": "No hauling log number appears on the page.",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_19.ticket_number",
+    "printed": true,
+    "value": "BQ-9619",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_20.ticket_number",
+    "printed": true,
+    "value": "BQ-9620",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_21.ticket_number",
+    "printed": true,
+    "value": "BQ-9621",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_22.ticket_number",
+    "printed": true,
+    "value": "BQ-9622",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_23.log_number",
+    "printed": false,
+    "value": null,
+    "page": null,
+    "where": "No hauling log number appears on the page.",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_23.ticket_number",
+    "printed": true,
+    "value": "BQ-9623",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_24.afe_number",
+    "printed": true,
+    "value": "DB-26-901",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_24.ticket_number",
+    "printed": true,
+    "value": "BQ-9624",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_25.ticket_number",
+    "printed": true,
+    "value": "BQ-9625",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_26.ticket_number",
+    "printed": true,
+    "value": "BQ-9626",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_27.afe_number",
+    "printed": true,
+    "value": "DB-26-901",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_27.ticket_number",
+    "printed": true,
+    "value": "BQ-9627",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_28.ticket_number",
+    "printed": true,
+    "value": "BQ-9628",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_29.afe_number",
+    "printed": true,
+    "value": "DB-26-901",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_29.ticket_number",
+    "printed": true,
+    "value": "BQ-9629",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_30.afe_number",
+    "printed": true,
+    "value": "DB-26-901",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_30.ticket_number",
+    "printed": true,
+    "value": "BQ-9630",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_40.ticket_number",
+    "printed": true,
+    "value": "BQ-9640",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_40.well_name",
+    "printed": true,
+    "value": "Tressaline 9-VH",
+    "page": 1,
+    "where": "Asset",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_41.log_number",
+    "printed": false,
+    "value": null,
+    "page": null,
+    "where": "No hauling log number appears on the page.",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_41.ticket_number",
+    "printed": true,
+    "value": "BQ-9641",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_41.total",
+    "printed": false,
+    "value": null,
+    "page": null,
+    "where": "Amount due is blank; the printed Subtotal is not a grand total.",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_41.well_name",
+    "printed": true,
+    "value": "Tressaline 9-VH",
+    "page": 1,
+    "where": "Asset",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_42.log_number",
+    "printed": false,
+    "value": null,
+    "page": null,
+    "where": "No hauling log number appears on the page.",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_42.ticket_number",
+    "printed": true,
+    "value": "BQ-9642",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_42.well_name",
+    "printed": true,
+    "value": "Tressaline 9-VH",
+    "page": 1,
+    "where": "Asset",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_43.log_number",
+    "printed": false,
+    "value": null,
+    "page": null,
+    "where": "No hauling log number appears on the page.",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_43.ticket_number",
+    "printed": true,
+    "value": "BQ-9643",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_43.total",
+    "printed": false,
+    "value": null,
+    "page": null,
+    "where": "Amount due is blank; the printed Subtotal is not a grand total.",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_43.well_name",
+    "printed": true,
+    "value": "Tressaline 9-VH",
+    "page": 1,
+    "where": "Asset",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_44.log_number",
+    "printed": false,
+    "value": null,
+    "page": null,
+    "where": "No hauling log number appears on the page.",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_44.ticket_number",
+    "printed": true,
+    "value": "BQ-9644",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_45.log_number",
+    "printed": false,
+    "value": null,
+    "page": null,
+    "where": "No hauling log number appears on the page.",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_45.ticket_number",
+    "printed": true,
+    "value": "BQ-9645",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_45.total",
+    "printed": false,
+    "value": null,
+    "page": null,
+    "where": "Amount due is blank; the printed Subtotal is not a grand total.",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_45.well_name",
+    "printed": true,
+    "value": "Tressaline 9-VH",
+    "page": 1,
+    "where": "Asset",
+    "confidence": "high"
+  }
+]

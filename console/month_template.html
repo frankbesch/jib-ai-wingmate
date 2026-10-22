@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Month console — non-operator JV accounting (synthetic)</title>
+<style>
+:root{--paper:#F7F5F2;--card:#FFFFFF;--ink:#2F3437;--slate:#67727A;--rule:#D7D2CB;--rule2:#E9E5DF;--moss:#5F7A61;--teal:#5B7F87;--ochre:#C8923B;--terra:#B55D43;--navy:#50687A;--moss-bg:#EEF2EC;--teal-bg:#EAF0F1;--ochre-bg:#F7EEDD;--terra-bg:#F5E6E1;--navy-bg:#E9EDF0;--mute-bg:#EFEDE9;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#1E2022;--card:#26292C;--ink:#E7E3DD;--slate:#A9AFB4;--rule:#3B4044;--rule2:#33383C;--moss:#8FB08F;--teal:#86AEB6;--ochre:#D9AB5E;--terra:#D08468;--navy:#8FA6B8;--moss-bg:#26312A;--teal-bg:#24333A;--ochre-bg:#3B3223;--terra-bg:#3C2A24;--navy-bg:#283139;--mute-bg:#2E3235;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#1E2022;--card:#26292C;--ink:#E7E3DD;--slate:#A9AFB4;--rule:#3B4044;--rule2:#33383C;--moss:#8FB08F;--teal:#86AEB6;--ochre:#D9AB5E;--terra:#D08468;--navy:#8FA6B8;--moss-bg:#26312A;--teal-bg:#24333A;--ochre-bg:#3B3223;--terra-bg:#3C2A24;--navy-bg:#283139;--mute-bg:#2E3235;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,"Avenir Next","IBM Plex Sans","Helvetica Neue",Arial,sans-serif;font-size:14.5px;line-height:1.45;display:flex;flex-direction:column;min-height:100vh}
+header{display:flex;align-items:center;gap:14px;padding:10px 18px;border-bottom:1px solid var(--rule);flex-wrap:wrap}
+.kicker{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--ochre);font-weight:600}
+header h1{font-size:16px;margin:0;font-weight:600}
+.banner{background:var(--ochre);color:#2F3437;padding:3px 10px;border-radius:4px;font-weight:600;font-size:12.5px}
+.banner.live{background:var(--moss);color:#fff}
+select,input,button{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--rule);border-radius:5px;padding:5px 9px}
+button{cursor:pointer} button:hover{border-color:var(--navy)} button.primary{background:var(--navy);color:#fff;border-color:var(--navy)}
+button.ghost{background:transparent}
+.spacer{flex:1}
+.steps{display:flex;gap:4px;padding:8px 18px;border-bottom:1px solid var(--rule);overflow-x:auto}
+.step{flex:0 0 auto;padding:6px 11px;border-radius:20px;border:1px solid var(--rule);font-size:12.5px;color:var(--slate);cursor:pointer;white-space:nowrap;background:var(--card)}
+.step .n{display:inline-block;width:18px;height:18px;border-radius:50%;background:var(--mute-bg);text-align:center;line-height:18px;font-size:11px;margin-right:6px;color:var(--ink)}
+.step.on{border-color:var(--ochre);color:var(--ink);box-shadow:0 0 0 2px var(--ochre-bg)} .step.on .n{background:var(--ochre);color:#2F3437}
+.step.done .n{background:var(--moss);color:#fff}
+main{flex:1;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(320px,0.9fr);gap:14px;padding:14px 18px;min-height:0}
+.panel{background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:14px 16px;min-width:0;overflow:auto;animation:rise .35s ease}
+@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+h2{font-size:18px;margin:0 0 4px} h3{font-size:13px;color:var(--navy);margin:14px 0 6px;text-transform:uppercase;letter-spacing:.05em}
+.lede{color:var(--slate);margin:0 0 10px;max-width:70ch}
+.stage{position:relative;display:inline-block;max-width:100%}
+.stage img{display:block;max-width:100%;border:1px solid var(--rule);border-radius:4px}
+.box{position:absolute;border:2px solid var(--teal);background:rgba(91,127,135,.10);border-radius:2px;transition:all .25s;pointer-events:none}
+.box.sel{border-color:var(--terra);background:rgba(181,93,67,.20);box-shadow:0 0 0 4px rgba(181,93,67,.18);animation:pulse 1.2s ease-in-out 2}
+.box.null{border-style:dashed;border-color:var(--terra)}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 4px rgba(181,93,67,.18)}50%{box-shadow:0 0 0 10px rgba(181,93,67,.05)}}
+.thumbs{display:flex;gap:10px;flex-wrap:wrap}
+.thumb{width:150px;border:1px solid var(--rule);border-radius:6px;overflow:hidden;background:var(--card);font-size:12px;transition:transform .2s}
+.thumb img{display:block;width:100%} .thumb .cap{padding:5px 8px;border-top:1px solid var(--rule2);display:flex;justify-content:space-between;gap:6px}
+.thumb.other{outline:2px solid var(--terra)}
+.chip{display:inline-block;padding:1px 8px;border-radius:10px;font-size:11.5px;font-weight:600;white-space:nowrap}
+.chip.moss{background:var(--moss-bg);color:var(--moss)} .chip.teal{background:var(--teal-bg);color:var(--teal)} .chip.terra{background:var(--terra-bg);color:var(--terra)} .chip.ochre{background:var(--ochre-bg);color:var(--ochre)} .chip.navy{background:var(--navy-bg);color:var(--navy)}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{text-align:left;vertical-align:top;padding:6px 8px;border-bottom:1px solid var(--rule2)}
+th{color:var(--slate);font-weight:600;font-size:12px}
+tr.f{cursor:pointer} tr.f:hover td{background:var(--mute-bg)} tr.f.sel td{background:var(--terra-bg)} tr.flag td.v{color:var(--terra);font-weight:600}
+td.v{font-variant-numeric:tabular-nums}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.tile{background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:10px 12px}
+.tile .n{font-size:26px;font-weight:600;color:var(--navy);font-variant-numeric:tabular-nums;line-height:1.1} .tile .l{font-size:12px;color:var(--slate);margin-top:3px}
+.tile.req{border-left:3px solid var(--moss)}
+.bar{height:6px;background:var(--mute-bg);border-radius:3px;overflow:hidden;margin-top:6px} .bar i{display:block;height:100%;background:var(--teal);width:0;transition:width .9s ease}
+.flow{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.flow .b{flex:1 1 120px;border:1px solid var(--rule);border-radius:6px;padding:7px 9px;font-size:12.5px;background:var(--paper)} .flow .b b{display:block;color:var(--navy)} .flow .b.pulse{border-color:var(--teal);background:var(--teal-bg)} .flow .b.on{outline:2px solid var(--ochre)}
+.rule{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--rule2);font-size:13px}
+.chat{display:flex;flex-direction:column;gap:8px}
+.msg{padding:9px 12px;border-radius:10px;max-width:92%;font-size:13.5px;animation:rise .3s ease} .msg.q{align-self:flex-end;background:var(--navy-bg)} .msg.a{align-self:flex-start;background:var(--mute-bg)} .msg.a.refuse{background:var(--terra-bg)}
+.cite{display:inline-block;margin-left:6px;padding:0 6px;border-radius:8px;background:var(--teal-bg);color:var(--teal);font-size:11px;cursor:pointer}
+.qs{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px} .qs button{font-size:12.5px}
+.calc{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px} .calc label{display:block;font-size:12px;color:var(--slate);margin:6px 0 2px} .calc input{width:100%}
+.out{background:var(--navy-bg);border-radius:8px;padding:10px 12px;margin-top:10px;font-size:13.5px} .out b{font-variant-numeric:tabular-nums}
+.audit{font-size:12px;color:var(--slate);max-height:120px;overflow:auto;border-top:1px solid var(--rule2);margin-top:8px;padding-top:6px}
+.notes{position:fixed;left:18px;right:18px;bottom:14px;background:var(--ink);color:var(--paper);border-radius:8px;padding:10px 14px;font-size:13.5px;box-shadow:0 8px 24px rgba(0,0,0,.25);display:none;z-index:9} .notes.show{display:block} .notes b{color:var(--ochre)}
+footer{padding:6px 18px;border-top:1px solid var(--rule);font-size:11.5px;color:var(--slate);display:flex;gap:14px;flex-wrap:wrap}
+.muted{color:var(--slate)} .small{font-size:12.5px}
+kbd{font-family:inherit;border:1px solid var(--rule);border-radius:4px;padding:0 5px;font-size:11px}
+@media (max-width:860px){main{grid-template-columns:minmax(0,1fr)} .panel{max-height:none}}
+</style>
+<style>
+/* month console additions — tokens above are unchanged */
+.tw{overflow-x:auto;max-width:100%}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11.5px;word-break:break-all}
+.timer{font-variant-numeric:tabular-nums;border:1px solid var(--rule);border-radius:5px;padding:4px 9px;font-size:12.5px;background:var(--card);cursor:pointer}
+.timer.run{border-color:var(--teal);color:var(--teal)} .timer.over{border-color:var(--terra);color:var(--terra)}
+.docpick{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px}
+.docpick button{font-size:12.5px} .docpick button.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.col{border:1px solid var(--rule);border-radius:8px;padding:9px 11px;background:var(--paper);min-width:0}
+.col h4{margin:0 0 6px;font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--navy)}
+.exc{border:1px solid var(--rule);border-radius:6px;padding:7px 9px;margin-bottom:7px;background:var(--card);font-size:12.5px}
+.exc.sel{border-color:var(--terra);box-shadow:0 0 0 2px var(--terra-bg)}
+.exc .h{display:flex;justify-content:space-between;gap:6px;align-items:center;cursor:pointer}
+.exc b{font-variant-numeric:tabular-nums}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;font-size:12.5px;margin-top:6px}
+.kv div:nth-child(odd){color:var(--slate)}
+.warn{background:var(--ochre-bg);border-left:3px solid var(--ochre);border-radius:6px;padding:8px 11px;font-size:12.5px;margin:10px 0}
+@media (max-width:520px){.thumb{width:100%} header{gap:8px} .steps{padding:8px 10px} main{padding:10px}}
+</style>
+</head>
+<body>
+<header>
+  <div><div class="kicker">Document parser × non-operator JV accounting · one month of well paper</div><h1>Month console</h1></div>
+  <span id="banner" class="banner">SYNTHETIC — not an actual record</span>
+  <span class="spacer"></span>
+  <span id="timer" class="timer" title="start / stop the cycle timer (T)">00:00 / 08:00</span>
+  <button id="prev" class="ghost">◀</button><button id="next" class="primary">Next ▶</button>
+  <button id="notesBtn" class="ghost" title="presenter notes (N)">Notes</button>
+</header>
+<div class="steps" id="steps"></div>
+<main><section class="panel" id="left"></section><section class="panel" id="right"></section></main>
+<div class="notes" id="notes"></div>
+<footer><span id="foot"></span><span class="spacer"></span><span><kbd>→</kbd> next · <kbd>←</kbd> back · <kbd>N</kbd> notes · <kbd>T</kbd> timer</span></footer>
+<script>
+const DATA = /*__DATA__*/null;
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const M = DATA.month, EX = DATA.exceptions, SC = DATA.scorecard, MAN = DATA.manifest;
+const SYN = !!(M.synthetic_documents || M.synthetic_responses);
+const FIXTURE = M.mode !== 'live';
+const PKIDS = Object.keys(M.packets);
+const DOCIDS = Object.keys(M.documents);
+const HAND = new Set((DATA.handwritten || []).map(h => h.doc_id + '|' + h.field_path));
+const EXCS = (EX && EX.exceptions) || [];
+const CLEAN = (EX && EX.clean_lines) || [];
+const ROLES = [['jv_accountant', 'JV accountant'], ['supply_chain', 'Supply chain'], ['field', 'Field']];
+const RULES = [
+  ['rule_1_decimal', 'Owner decimal on every JIB line', 'net = gross × the division-order decimal, to the cent', 'jv_accountant'],
+  ['rule_2_rate', 'Ticket rate against the contract rate sheet', 'a billed rate above the sheet, beyond half a cent', 'supply_chain'],
+  ['rule_3_afe_ref', 'AFE reference and account code on every JIB line', 'the approved AFE number and an account code from the AFE', 'jv_accountant']
+];
+const STEPS = ['The month', 'Go/no-go', 'Classify', 'Split', 'Extract', 'Reconcile', 'Queue', 'Audit pack', 'Scorecard', 'Value'];
+const NOTES = ['', '', '', '', '', '', '', '', '', ''];   // presenter notes removed
+const HONEST = {
+  5: 'The three rules are customer code, not a document parser feature. The parser supplies extracted values and citations.',
+  6: 'Decisions made here are local to this page. The real, append-only log is reviewer/queue.html writing audit/decisions.jsonl.',
+  7: 'This pack is a demo artifact. The audit window and the operator’s dispute process belong to the joint operating agreement, not to the software.',
+  8: M.synthetic_responses ? 'These are fixture numbers with synthetic documents. They show the structure of the scorecard, never document parser accuracy.' : (M.synthetic_documents ? 'Live document parser responses on synthetic documents. Truth was keyed by a model outside the author\'s family from the PDFs alone; say whether your thirty-field check is done. One month shows the method; a proof of concept scores a frozen set under a signed charter.' : 'Live numbers on this set. Say the set size out loud; a customer proof of concept scores a frozen set under a signed charter.')
+};
+
+let cur = 0, selDoc = DOCIDS[0], selField = null, selEx = null, localDec = [], t0 = null, tRun = false, tAcc = 0;
+
+/* ---------- helpers ---------- */
+function flat(o, pre) {
+  pre = pre || ''; const out = {};
+  if (o === null || typeof o !== 'object') { out[pre] = o; return out; }
+  if (Array.isArray(o)) { o.forEach((v, i) => Object.assign(out, flat(v, pre + '[' + i + ']'))); return out; }
+  for (const [k, v] of Object.entries(o)) {
+    const key = pre ? pre + '.' + k : k;
+    if (v && typeof v === 'object') Object.assign(out, flat(v, key)); else out[key] = v;
+  }
+  return out;
+}
+function normBox(b) { if (!b) return null; if (b.length !== 4) return null; if (Math.max.apply(null, b) > 1) return null; return b; }
+function pageView(pk, pageNo, boxes) {
+  const pages = DATA.packets[pk] ? DATA.packets[pk].pages : [];
+  const pg = pages[pageNo - 1];
+  if (!pg) return '<p class="muted">no page image</p>';
+  const bx = (boxes || []).map(c => {
+    const b = normBox(c.bbox); if (!b || c.page !== pageNo) return '';
+    return '<div class="box ' + (c.sel ? 'sel' : '') + ' ' + (c.isnull ? 'null' : '') + '" title="' + esc(c.key) + '" style="left:' + (b[0] * 100) + '%;top:' + (b[1] * 100) + '%;width:' + ((b[2] - b[0]) * 100) + '%;height:' + ((b[3] - b[1]) * 100) + '%"></div>';
+  }).join('');
+  return '<div class="stage"><img src="' + pg.src + '" alt="' + esc(pk) + ' page ' + pageNo + '">' + bx + '</div>';
+}
+function money(n) { return '$' + Math.round(n).toLocaleString('en-US'); }
+function money2(n) { return '$' + Number(n).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+function docPacket(d) { return M.documents[d].packet; }
+function truthClass(d) { const r = (MAN.documents || []).find(x => x.doc_id === d); return r ? r.class : (M.documents[d] || {}).class; }
+function splitTruth(pk) { const r = (MAN.packets || []).find(x => x.packet_id === pk); return (r && r.split_truth) || {}; }
+function pkSha(pk) { const r = (MAN.packets || []).find(x => x.packet_id === pk); return r ? r.sha256 : ''; }
+function ruleCounts(rid) {
+  const fired = EXCS.filter(x => x.rule === rid).length;
+  const clean = CLEAN.filter(x => x.rule === rid).length;
+  return { fired: fired, clean: clean, checked: fired + clean };
+}
+function pkLabel(pk) { return { day01: 'Day 1', day12: 'Day 12', day30: 'Day 30' }[pk] || pk; }
+function pkStory(pk) {
+  return { day01: 'The operator mails an AFE cover letter and the AFE for a recompletion.',
+           day12: 'Two field tickets and a hauling log arrive behind the vendor invoice.',
+           day30: 'The operator’s joint interest billing statement arrives.' }[pk] || '';
+}
+
+/* ---------- steps ---------- */
+const VIEWS = {
+  0() {
+    const thumbs = PKIDS.map(pk => {
+      const p = DATA.packets[pk], first = p.pages[0];
+      return '<div class="thumb"><img src="' + (first ? first.src : '') + '" alt="' + esc(pk) + ' first page">' +
+        '<div class="cap"><span>' + pkLabel(pk) + '</span><span class="muted">' + M.packets[pk].pages + ' pp</span></div></div>';
+    }).join('');
+    return ['<h2>One month of well paper</h2><p class="lede">' + esc(MAN.story || '') + '</p><div class="thumbs">' + thumbs + '</div>' +
+      '<h3>The month in one line</h3><p class="small">' + PKIDS.map(pk => '<b>' + pkLabel(pk) + '</b> ' + pkStory(pk)).join('<br>') + '</p>',
+      '<h2>What is known before any call</h2><div class="tw"><table><tr><th>Packet</th><th>Pages</th><th>sha256</th></tr>' +
+      PKIDS.map(pk => '<tr><td>' + pkLabel(pk) + ' <span class="muted small">' + esc(pk) + '</span></td><td class="v">' + M.packets[pk].pages + '</td><td class="mono">' + esc(pkSha(pk).slice(0, 32)) + '…</td></tr>').join('') +
+      '</table></div><h3>Documents</h3><div class="tw"><table><tr><th>Document</th><th>Class</th><th>Packet</th><th>Pages</th></tr>' +
+      DOCIDS.map(d => '<tr><td>' + esc(d) + '</td><td>' + esc(truthClass(d)) + '</td><td>' + pkLabel(docPacket(d)) + '</td><td class="v">' + (M.documents[d].pages || []).join(', ') + '</td></tr>').join('') +
+      '</table></div><h3>Flags on this run</h3><div class="tw"><table>' +
+      '<tr><td>Mode</td><td>' + esc(M.mode) + '</td></tr><tr><td>Set</td><td>' + esc(M.set) + '</td></tr>' +
+      '<tr><td>Synthetic documents</td><td>' + (M.synthetic_documents ? 'true' : 'false') + '</td></tr>' +
+      '<tr><td>Synthetic responses</td><td>' + (M.synthetic_responses ? 'true' : 'false') + '</td></tr>' +
+      '<tr><td>Reference data held by the accountant</td><td class="small">division order, contract rate sheet, AFE election</td></tr></table></div>' +
+      '<p class="small muted" style="margin-top:10px">Synthetic demonstration document — not an actual record.</p>'];
+  },
+  1() {
+    const lines = (SC.go_no_go || (SC.summary && SC.summary.go_no_go) || []);
+    return ['<h2>Go/no-go, declared before the run</h2><p class="lede">Targets only on this slide. The run answers them at step 9.</p>' +
+      '<div class="tw"><table><tr><th>Line</th><th>Target</th><th>Source</th></tr>' +
+      lines.map(l => '<tr><td>' + esc(l.line) + '</td><td class="v">' + (l.target == null ? '<span class="chip navy">report only</span>' : esc(l.target)) + '</td><td class="small muted">' + esc(l.target_source || '') + '</td></tr>').join('') +
+      '</table></div><p class="small"><span class="chip ochre">declared before the run</span> No measurement appears on this slide.</p>',
+      '<h2>How to read a line</h2><ul class="small"><li>A target with no measurement is <b>not-measurable</b>, never a pass.</li><li>A report-only line has no target; it is context, not a gate.</li><li>The buyer sets each target in the charter. Defaults here are the builder’s.</li></ul>' +
+      '<h3>Cycle line</h3><p class="small">The presenter timer at the top runs against an eight-minute cycle. Start it with <kbd>T</kbd>.</p>'];
+  },
+  2() {
+    const cl = M.classify || [];
+    return ['<h2>Classify: one class per document</h2><p class="lede">Forced choice, no confidence score. An <i>unrecognized</i> result is the refusal path.</p>' +
+      '<div class="tw"><table><tr><th>Document</th><th>Predicted</th><th>Class</th><th>Credits</th><th>Seconds</th></tr>' +
+      cl.map(c => {
+        const t = truthClass(c.doc_id), bad = c.predicted === 'unrecognized' || c.predicted !== t;
+        return '<tr class="' + (bad ? 'flag' : '') + '"><td>' + esc(c.doc_id) + '</td><td class="v">' + (bad ? '<span class="chip terra">' + esc(c.predicted) + '</span>' : '<span class="chip moss">' + esc(c.predicted) + '</span>') + '</td><td>' + esc(t) + '</td><td class="v">' + esc(c.credits_used) + '</td><td class="v">' + (c.seconds != null ? c.seconds.toFixed(2) : '—') + '</td></tr>';
+      }).join('') + '</table></div>',
+      '<h2>Result</h2><div class="tiles"><div class="tile"><div class="n">' + cl.length + '</div><div class="l">documents classified</div></div>' +
+      '<div class="tile"><div class="n">' + cl.filter(c => c.predicted === truthClass(c.doc_id)).length + '</div><div class="l">match the class</div></div>' +
+      '<div class="tile"><div class="n">' + cl.filter(c => c.predicted === 'unrecognized').length + '</div><div class="l">unrecognized → review</div></div></div>' +
+      '<p class="small muted" style="margin-top:10px">A class that carries no downstream schema is a routing signal, not a failure.</p>'];
+  },
+  3() {
+    return ['<h2>Split: the packet becomes documents again</h2><p class="lede">Predicted page lists against the split truth recorded when the packets were merged.</p>' +
+      PKIDS.map(pk => {
+        const s = (M.packets[pk].split || {}).splits || {}, t = splitTruth(pk);
+        const keys = Array.from(new Set(Object.keys(s).concat(Object.keys(t))));
+        return '<h3>' + pkLabel(pk) + ' <span class="chip teal">' + M.packets[pk].pages + ' pages</span></h3><div class="tw"><table><tr><th>Class</th><th>Predicted pages</th><th>True pages</th></tr>' +
+          keys.map(c => {
+            const p = (s[c] || []).join(', ') || '—', tt = (t[c] || []).join(', ') || '—';
+            return '<tr class="' + (p === tt ? '' : 'flag') + '"><td>' + esc(c) + '</td><td class="v">' + p + '</td><td class="v">' + tt + '</td></tr>';
+          }).join('') + '</table></div>';
+      }).join(''),
+      '<h2>Pages</h2><div class="tw"><table><tr><th>Packet</th><th>split_id</th><th>Credits</th><th>Seconds</th></tr>' +
+      PKIDS.map(pk => { const sp = M.packets[pk].split || {}; return '<tr><td>' + pkLabel(pk) + '</td><td class="mono">' + esc(sp.split_id) + '</td><td class="v">' + esc(sp.credits_used) + '</td><td class="v">' + esc(sp.seconds) + '</td></tr>'; }).join('') +
+      '</table></div><p class="small muted" style="margin-top:10px">Split truth is page ranges per class, recorded at merge time by the corpus builder.</p>'];
+  },
+  4() {
+    const d = M.documents[selDoc], pk = d.packet;
+    const vals = flat(d.values), cites = d.citations || {};
+    let page = (d.pages && d.pages[0]) || 1;
+    if (selField && cites[selField] && cites[selField].page) page = cites[selField].page;
+    const boxes = Object.entries(cites).map(([k, c]) => ({ key: k, page: c.page, bbox: c.bbox, sel: k === selField, isnull: vals[k] === null || vals[k] === undefined }));
+    const rows = Object.entries(vals).map(([k, v]) => {
+      const nul = v === null || v === undefined || v === '';
+      const hand = HAND.has(selDoc + '|' + k);
+      const c = cites[k];
+      return '<tr class="f ' + (k === selField ? 'sel' : '') + ' ' + (nul ? 'flag' : '') + '" data-k="' + esc(k) + '">' +
+        '<td>' + esc(k) + (hand ? ' <span class="chip ochre">handwritten</span>' : '') + '</td>' +
+        '<td class="v">' + (nul ? '<span class="chip terra">null</span>' : esc(v)) + '</td>' +
+        '<td>' + (c ? '<span class="chip teal">p' + c.page + (c.bbox ? '' : ' · no box') + '</span>' : '<span class="chip ochre">no citation</span>') + '</td></tr>';
+    }).join('');
+    const picker = '<div class="docpick">' + DOCIDS.map(x => '<button data-d="' + esc(x) + '" class="' + (x === selDoc ? 'on' : '') + '">' + esc(x) + '</button>').join('') + '</div>';
+    const c = selField ? cites[selField] : null;
+    return ['<h2>Extract, with a citation on every value</h2><p class="lede">Click a field. Its box lights on the page. Nothing without a box is trusted.</p>' + picker + pageView(pk, page, boxes) +
+      (c ? '<p class="small">Cited text: <span class="mono">' + esc(c.text) + '</span> · ref <span class="mono">' + esc(c.ref) + '</span></p>' : '<p class="small muted">No field selected.</p>'),
+      '<h2>' + esc(selDoc) + ' <span class="chip navy">' + esc(truthClass(selDoc)) + '</span></h2>' +
+      '<div class="tw"><table><tr><th>Field</th><th>Value</th><th>Cite</th></tr>' + rows + '</table></div>' +
+      '<p class="small muted" style="margin-top:10px">A null is flagged and queued as an extraction exception. The console never fills one in.</p>'];
+  },
+  5() {
+    const rows = RULES.map(([rid, name, test, role]) => {
+      const c = ruleCounts(rid);
+      return '<div class="exc"><div class="h"><span><b>' + esc(name) + '</b><div class="muted small">' + esc(test) + '</div></span>' +
+        '<span>' + (c.fired ? '<span class="chip terra">' + c.fired + ' fired</span> ' : '<span class="chip moss">0 fired</span> ') +
+        '<span class="chip teal">' + c.clean + ' clean</span></span></div>' +
+        '<div class="small muted">checked ' + c.checked + ' · routes to ' + esc(role) + '</div></div>';
+    }).join('');
+    const fired = EXCS.map(x => '<div class="exc ' + (selEx === x.id ? 'sel' : '') + '" data-x="' + esc(x.id) + '"><div class="h"><span><b>' + esc(x.id) + '</b> <span class="chip ' + (x.rule === 'extraction' ? 'ochre' : 'terra') + '">' + esc(x.rule) + '</span></span><span class="muted small">' + esc(x.doc_id) + ' · ' + esc(x.field_path) + '</span></div>' +
+      '<div class="small">' + esc(x.message) + '</div>' + (selEx === x.id ? evidenceKV(x) : '') + '</div>').join('');
+    const exSum = (EX && EX.summary) || {};
+    return ['<h2>Reconcile: three rules, your code</h2><p class="lede">These rules are customer code, not the document parser. The parser returned the values and the citations; the arithmetic against the division order, the rate sheet, and the AFE is ordinary software.</p>' +
+      rows + '<div class="warn">' + esc(HONEST[5]) + '</div>' +
+      '<div class="tiles"><div class="tile req"><div class="n">' + (exSum.clean != null ? exSum.clean : CLEAN.length) + '</div><div class="l">clean lines · the point of the run</div></div>' +
+      '<div class="tile"><div class="n">' + (exSum.fired != null ? exSum.fired : EXCS.length) + '</div><div class="l">exceptions raised</div></div>' +
+      '<div class="tile"><div class="n">' + money2(EXCS.reduce((a, x) => a + (Math.abs(x.delta_usd) || 0), 0)) + '</div><div class="l">dollars in dispute</div></div></div>',
+      '<h2>Exceptions</h2><p class="lede">Click one. The page and the box come with it.</p>' + fired +
+      (selEx ? pageView(M.documents[EXCS.find(x => x.id === selEx).doc_id].packet, EXCS.find(x => x.id === selEx).page, [{ key: selEx, page: EXCS.find(x => x.id === selEx).page, bbox: EXCS.find(x => x.id === selEx).bbox, sel: true }]) : '')];
+  },
+  6() {
+    const cols = ROLES.map(([rid, label]) => {
+      const mine = EXCS.filter(x => x.approver_role === rid);
+      return '<div class="col"><h4>' + esc(label) + ' <span class="chip navy">' + mine.length + '</span></h4>' +
+        (mine.length ? mine.map(x => {
+          const dec = localDec.find(d => d.exception_id === x.id);
+          return '<div class="exc"><div class="h"><span><b>' + esc(x.id) + '</b></span><span class="muted small">' + esc(x.doc_id) + '</span></div>' +
+            '<div class="small">' + esc(x.message) + '</div>' +
+            (x.delta_usd != null ? '<div class="small">delta <b>' + money2(x.delta_usd) + '</b></div>' : '') +
+            (dec ? '<div class="small"><span class="chip moss">' + esc(dec.disposition) + '</span> <span class="muted">' + esc(dec.approver) + ' · ' + esc(dec.ts) + '</span></div>'
+                 : '<div style="margin-top:5px;display:flex;gap:4px;flex-wrap:wrap"><button data-dec="disputed" data-x="' + esc(x.id) + '">Dispute</button><button data-dec="approved-as-is" data-x="' + esc(x.id) + '">Approve as is</button><button data-dec="routed" data-x="' + esc(x.id) + '">Route</button></div>') +
+            '</div>';
+        }).join('') : '<p class="small muted">No exceptions in this queue.</p>') + '</div>';
+    }).join('');
+    return ['<h2>Queue: three roles, one attestation each</h2><p class="lede">Each exception routes to the role that can settle it. Nothing is decided without a typed name.</p>' +
+      '<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px"><input id="approver" placeholder="type your name" size="20" autocomplete="off"><span id="astat" class="small muted">The approver field is an attestation. The console never fills it in and refuses a blank.</span></div>' +
+      '<div class="cols">' + cols + '</div>',
+      '<h2>Decisions on this page</h2><div class="warn">' + esc(HONEST[6]) + '</div>' +
+      (localDec.length ? '<div class="tw"><table><tr><th>Time</th><th>Approver</th><th>Exception</th><th>Disposition</th></tr>' +
+        localDec.map(d => '<tr><td class="mono">' + esc(d.ts) + '</td><td>' + esc(d.approver) + '</td><td>' + esc(d.exception_id) + '</td><td>' + esc(d.disposition) + '</td></tr>').join('') + '</table></div>'
+        : '<p class="small muted">No decisions yet.</p>') +
+      '<h3>Dispositions</h3><ul class="small"><li><b>approved-as-is</b> the line stands as billed.</li><li><b>approved-after-edit</b> the value is corrected, and both values are logged.</li><li><b>routed</b> sent to another role.</li><li><b>disputed</b> goes back to the operator inside the audit window.</li></ul>'];
+  },
+  7() {
+    const decided = localDec.length, open = EXCS.length - decided;
+    const pngs = (DATA.audit_pack && DATA.audit_pack.pages) || null;
+    const thumb = pngs && pngs.length ? '<div class="thumbs"><div class="thumb"><img src="' + esc(pngs[0]) + '" alt="audit pack first page"><div class="cap"><span>pack p1</span></div></div></div>'
+      : '<p class="small muted">audit-pack.json is absent from this run, so no pack page image is shown. The table below is rendered from exceptions.json.</p>';
+    return ['<h2>Audit pack</h2><p class="lede">What goes back to the operator inside the audit window: the exception, the page, the box, the cited text, and the person who decided.</p>' + thumb +
+      '<div class="tiles" style="margin-top:10px"><div class="tile"><div class="n">' + EXCS.length + '</div><div class="l">exceptions</div></div>' +
+      '<div class="tile"><div class="n">' + open + '</div><div class="l">open</div></div>' +
+      '<div class="tile"><div class="n">' + decided + '</div><div class="l">decided on this page</div></div>' +
+      '<div class="tile"><div class="n">' + money2(EXCS.reduce((a, x) => a + (Math.abs(x.delta_usd) || 0), 0)) + '</div><div class="l">dollars in dispute</div></div></div>' +
+      '<div class="warn">' + esc(HONEST[7]) + ' Print goes back to the operator inside the audit window.</div>',
+      '<h2>Exception table</h2><div class="tw"><table><tr><th>Id</th><th>Rule</th><th>Where</th><th>Cited</th><th>Delta</th><th>Status</th></tr>' +
+      EXCS.map(x => { const dec = localDec.find(d => d.exception_id === x.id);
+        return '<tr><td>' + esc(x.id) + '</td><td class="small">' + esc(x.rule) + '</td><td class="small">' + esc(x.doc_id) + ' p' + esc(x.page) + '<br><span class="muted">' + esc(x.field_path) + '</span></td><td class="mono">' + esc(x.cited_text) + '</td><td class="v">' + (x.delta_usd == null ? '—' : money2(x.delta_usd)) + '</td><td>' + (dec ? '<span class="chip moss">' + esc(dec.disposition) + '</span>' : '<span class="chip terra">open</span>') + '</td></tr>';
+      }).join('') + '</table></div>' +
+      '<p class="small muted" style="margin-top:10px">Synthetic demonstration document — not an actual record.</p>'];
+  },
+  8() {
+    const lines = (SC.go_no_go || (SC.summary && SC.summary.go_no_go) || []);
+    const s = SC.summary || {};
+    const chip = l => {
+      if (l.measured == null && l.target != null) return '<span class="chip ochre">not measurable</span>';
+      if (l.target == null) return '<span class="chip navy">report only</span>';
+      if (l.verdict) return l.verdict === 'pass' ? '<span class="chip moss">pass</span>' : '<span class="chip terra">' + esc(l.verdict) + '</span>';
+      return l.measured >= l.target ? '<span class="chip moss">pass</span>' : '<span class="chip terra">miss</span>';
+    };
+    return ['<h2>Scorecard ' + (M.synthetic_responses ? '<span class="chip ochre">synthetic responses</span>' : '<span class="chip moss">live responses</span>') + (M.synthetic_documents ? ' <span class="chip ochre">synthetic documents</span>' : '') + '</h2><p class="lede">Measured against the lines declared at step 2.</p>' +
+      '<div class="tw"><table><tr><th>Line</th><th>Measured</th><th>Target</th><th>Verdict</th></tr>' +
+      lines.map(l => '<tr><td>' + esc(l.line) + '</td><td class="v">' + (l.measured == null ? '—' : esc(l.measured)) + '</td><td class="v">' + (l.target == null ? '—' : esc(l.target)) + '</td><td>' + chip(l) + '</td></tr>').join('') +
+      '</table></div><div class="warn">' + esc(HONEST[8]) + '</div>' +
+      (s.scoring_skipped_reason ? '<p class="small muted">Scoring skipped: ' + esc(s.scoring_skipped_reason) + '. The accuracy lines have no measurement in this run.</p>' : '') +
+      (s.fixture_perturbations ? '<div class="warn">' + esc(s.fixture_note || 'Fixture responses.') + '<br>' + s.fixture_perturbations.map(esc).join('<br>') + '</div>' : ''),
+      '<h2>Run economics</h2><div class="tiles">' +
+      '<div class="tile"><div class="n">' + ((M.credits || {}).total != null ? M.credits.total : '—') + '</div><div class="l">credits</div></div>' +
+      '<div class="tile"><div class="n">' + (M.cost_usd_at_list != null ? '$' + M.cost_usd_at_list.toFixed(4) : '—') + '</div><div class="l">cost at list</div></div>' +
+      '<div class="tile"><div class="n">' + (s.cost_per_page_usd != null ? '$' + s.cost_per_page_usd.toFixed(4) : '—') + '</div><div class="l">cost per page</div></div>' +
+      '<div class="tile"><div class="n">' + (M.cycle_seconds != null ? M.cycle_seconds.toFixed(1) + 's' : '—') + '</div><div class="l">cycle, all calls</div></div>' +
+      '<div class="tile"><div class="n">' + (M.pages != null ? M.pages : '—') + '</div><div class="l">pages</div></div></div>' +
+      '<h3>By stage</h3><div class="tw"><table><tr><th>Stage</th><th>Seconds</th><th>Credits</th></tr>' +
+      ['classify', 'extract', 'split', 'schema'].map(k => '<tr><td>' + k + '</td><td class="v">' + ((M.timing || {})[k] != null ? M.timing[k] : '—') + '</td><td class="v">' + ((M.credits || {})[k] != null ? M.credits[k] : '—') + '</td></tr>').join('') +
+      '</table></div><p class="small muted" style="margin-top:10px">' + esc(M.cost_note || '') + '</p>'];
+  },
+  9() {
+    return ['<h2>Value, in the buyer’s unit</h2><p class="lede">Every default is illustrative. Replace each with the buyer’s number. Outputs are labelled ESTIMATED.</p>' +
+      '<div class="calc"><div>' +
+      '<label>Non-operated wells</label><input id="v_wells" type="number" value="120">' +
+      '<label>JIB statements per month</label><input id="v_stmts" type="number" value="45">' +
+      '</div><div>' +
+      '<label>Disputed dollars last quarter</label><input id="v_disp" type="number" value="180000">' +
+      '<label>Hours per statement today</label><input id="v_hrs" type="number" step="0.1" value="1.5">' +
+      '</div><div>' +
+      '<label>Loaded $/hour (assumption)</label><input id="v_rate" type="number" value="85">' +
+      '<label>Share of the check the pipeline does (assumption)</label><input id="v_share" type="number" step="0.05" value="0.6">' +
+      '</div></div><div class="out" id="v_out"></div>' +
+      '<p class="small muted">The pipeline does not recover money on its own. It finds the line and names the person who decides.</p>',
+      '<h2>Formulas</h2><ul class="small"><li>Statements per year = statements per month × 12</li><li>Hours today = statements per year × hours per statement</li><li>Hours returned = hours today × share of the check the pipeline does</li><li>Labour returned = hours returned × loaded rate</li><li>Disputed dollars per year = last quarter × 4, surfaced in the same month rather than at audit</li><li>Statements per well per month = statements per month ÷ non-operated wells</li></ul>' +
+      '<h3>Go/no-go sits above this</h3><p class="small">If the declared accuracy lines miss on the frozen set, the arithmetic here does not matter.</p>'];
+  }
+};
+
+function evidenceKV(x) {
+  const o = x.observed, e = x.expected;
+  const fmt = v => (v === null || v === undefined) ? '—' : (typeof v === 'object' ? Object.entries(v).map(([k, vv]) => k + ' ' + vv).join(' · ') : String(v));
+  return '<div class="kv"><div>observed</div><div>' + esc(fmt(o)) + '</div><div>expected</div><div>' + esc(fmt(e)) + '</div>' +
+    '<div>cited text</div><div class="mono">' + esc(x.cited_text) + '</div>' +
+    '<div>page</div><div>' + esc(x.page) + '</div>' +
+    '<div>delta</div><div>' + (x.delta_usd == null ? '—' : money2(x.delta_usd)) + '</div>' +
+    '<div>routes to</div><div>' + esc(x.approver_role) + '</div></div>';
+}
+
+/* ---------- shell ---------- */
+function stepsBar() {
+  $('#steps').innerHTML = STEPS.map((s, i) => '<div class="step ' + (i === cur ? 'on' : '') + ' ' + (i < cur ? 'done' : '') + '" data-i="' + i + '"><span class="n">' + (i < cur ? '✓' : i + 1) + '</span>' + s + '</div>').join('');
+  document.querySelectorAll('.step').forEach(el => el.onclick = () => go(+el.dataset.i));
+}
+function go(n) { cur = Math.max(0, Math.min(STEPS.length - 1, n)); render(); }
+function toggleNotes() { $('#notes').classList.toggle('show'); }
+function tick() {
+  const el = $('#timer');
+  const ms = tAcc + (tRun && t0 ? Date.now() - t0 : 0), s = Math.floor(ms / 1000);
+  el.textContent = String(Math.floor(s / 60)).padStart(2, '0') + ':' + String(s % 60).padStart(2, '0') + ' / 08:00';
+  el.classList.toggle('run', tRun); el.classList.toggle('over', s > 480);
+}
+function toggleTimer() { if (tRun) { tAcc += Date.now() - t0; tRun = false; t0 = null; } else { t0 = Date.now(); tRun = true; } tick(); }
+const HUD = (() => { try { return new BroadcastChannel('month-console'); } catch (e) { return null; } })();
+if (HUD) { HUD.onmessage = e => { const d = e.data || {}; if (d.ping) { try { HUD.postMessage({ step: cur, run: M.run_id, live: !FIXTURE }); } catch (x) {} } if (typeof d.goto === 'number') { go(d.goto); } }; }
+function render() {
+  if (HUD) { try { HUD.postMessage({ step: cur, run: M.run_id, live: !FIXTURE }); } catch (e) {} }
+  stepsBar();
+  const v = VIEWS[cur]();
+  $('#left').innerHTML = v[0]; $('#right').innerHTML = v[1];
+  $('#notes').innerHTML = '<b>Say:</b> ' + esc(NOTES[cur]);
+  $('#next').textContent = cur === STEPS.length - 1 ? 'Done' : 'Next ▶';
+  wire();
+}
+function wire() {
+  document.querySelectorAll('.docpick button').forEach(b => b.onclick = () => { selDoc = b.dataset.d; selField = null; render(); });
+  document.querySelectorAll('tr.f').forEach(tr => tr.onclick = () => { selField = tr.dataset.k; render(); });
+  document.querySelectorAll('.exc[data-x]').forEach(el => el.querySelector('.h').onclick = () => { selEx = (selEx === el.dataset.x ? null : el.dataset.x); render(); });
+  document.querySelectorAll('button[data-dec]').forEach(b => b.onclick = () => decide(b.dataset.x, b.dataset.dec));
+  const out = $('#v_out');
+  if (out) {
+    const f = id => parseFloat($('#' + id).value) || 0;
+    const calc = () => {
+      const wells = f('v_wells'), stmts = f('v_stmts'), disp = f('v_disp'), hrs = f('v_hrs'), rate = f('v_rate'), share = f('v_share');
+      const perYear = stmts * 12, hoursToday = perYear * hrs, hoursBack = hoursToday * share;
+      out.innerHTML = 'Statements per year <b>' + perYear.toLocaleString('en-US') + '</b> · hours today <b>' + Math.round(hoursToday).toLocaleString('en-US') + '</b> · hours returned <b>' + Math.round(hoursBack).toLocaleString('en-US') + '</b><br>' +
+        'Labour returned <b>' + money(hoursBack * rate) + '</b> · disputed dollars per year <b>' + money(disp * 4) + '</b>, surfaced in the month rather than at audit<br>' +
+        'Statements per non-operated well per month <b>' + (wells ? (stmts / wells).toFixed(2) : '—') + '</b> <span class="muted">(ESTIMATED from the inputs above)</span>';
+    };
+    document.querySelectorAll('.calc input').forEach(i => i.oninput = calc); calc();
+  }
+}
+function decide(exId, disposition) {
+  const el = $('#approver'), stat = $('#astat');
+  const name = el ? el.value.trim() : '';
+  if (!name) { if (stat) stat.textContent = 'Type your name first. The approval is yours, not the tool’s.'; if (el) el.focus(); return; }
+  const x = EXCS.find(e => e.id === exId);
+  localDec.unshift({ ts: new Date().toISOString().slice(0, 19) + 'Z', run_id: M.run_id, approver: name, approver_role: x.approver_role, exception_id: exId, disposition: disposition, value_shown: x.cited_text, value_entered: null, reason: '', synthetic: true, local_only: true });
+  render();
+  const n = $('#approver'); if (n) { n.value = name; }
+  const s = $('#astat'); if (s) s.textContent = 'Recorded locally on this page only.';
+}
+function init() {
+  const b = $('#banner');
+  if (FIXTURE) { b.textContent = 'SYNTHETIC — not an actual record · fixture responses'; }
+  else { b.textContent = 'LIVE RUN · ' + M.run_id + (M.synthetic_documents ? ' · synthetic documents' : ''); b.classList.add('live'); }
+  $('#prev').onclick = () => go(cur - 1); $('#next').onclick = () => go(cur + 1);
+  $('#notesBtn').onclick = toggleNotes; $('#timer').onclick = toggleTimer;
+  document.addEventListener('keydown', e => {
+    const t = e.target.tagName;
+    if (t === 'INPUT' || t === 'TEXTAREA' || t === 'SELECT') return;
+    if (e.key === 'ArrowRight') go(cur + 1);
+    if (e.key === 'ArrowLeft') go(cur - 1);
+    if (e.key.toLowerCase() === 'n') toggleNotes();
+    if (e.key.toLowerCase() === 't') toggleTimer();
+  });
+  setInterval(tick, 250); tick();
+  $('#foot').textContent = 'Run ' + M.run_id + ' · ' + M.mode + ' · set ' + M.set + ' · built ' + DATA.built + ' · rules version ' + ((EX && EX.rules_version) || '—') + ' · the three reconcile rules are customer code, not the document parser · synthetic demonstration document — not an actual record';
+  render();
+}
+init();
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "doc_id": "ticket_17",
+  "keyed_by": "codex blind layer-B key (extracted text)",
+  "keyed_from": "extracted text",
+  "values": {
+    "ticket_number": "BQ-9617",
+    "vendor_name": "Brelquor Field Services LLC",
+    "service_date": "2026-09-17",
+    "well_name": "Tressaline 9-VH",
+    "afe_number": "DB-26-901",
+    "total": "790.00",
+    "invoice_number": null,
+    "log_number": null
+  },
+  "page_of": {
+    "ticket_number": 1,
+    "vendor_name": 1,
+    "service_date": 1,
+    "well_name": 1,
+    "afe_number": 1,
+    "total": 1,
+    "invoice_number": null,
+    "log_number": null
+  },
+  "notes": []
+}

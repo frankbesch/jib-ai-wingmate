@@ -1,0 +1,20 @@
+OPERATIONS / OWNER RECORD
+
+
+# Field service ticket
+
+
+Ticket number: OV-8301
+Vendor: Orvessa Field Services LLC
+Service date: 2026-08-04
+Well: Nacrevale 7-QH
+AFE number: ZB-26-701
+
+
+<table><thead><tr><td>Description</td><td>Qty</td><td>Unit</td><td>Rate</td><td>Amount</td></tr></thead><tbody><tr><td>Pressure unit service</td><td>7</td><td>hour</td><td>175.00</td><td>1,225.00</td></tr><tr><td>Hose kit rental</td><td>1</td><td>day</td><td>90.00</td><td>90.00</td></tr><tr><td>Total:</td><td>1,315.00</td><td></td><td></td><td></td></tr></tbody></table>
+
+
+Customer signature: ____________________
+
+
+SYNTHETIC STUDY DOCUMENT - NOT VALID FOR PAYMENT

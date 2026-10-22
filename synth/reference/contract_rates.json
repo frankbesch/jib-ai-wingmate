@@ -1,0 +1,37 @@
+{
+ "vendor_name": "Pecos Ridge Well Services LLC",
+ "effective_date": "2026-01-01",
+ "rates": [
+  {
+   "description": "Workover rig operator, hourly",
+   "unit": "hour",
+   "contract_rate": 145.0
+  },
+  {
+   "description": "Rig fuel surcharge",
+   "unit": "each",
+   "contract_rate": 385.0
+  },
+  {
+   "description": "Tool rental, packer assembly",
+   "unit": "day",
+   "contract_rate": 425.0
+  },
+  {
+   "description": "Pump truck, hourly",
+   "unit": "hour",
+   "contract_rate": 285.0
+  },
+  {
+   "description": "Fluid pumped, treated water",
+   "unit": "bbl",
+   "contract_rate": 4.75
+  },
+  {
+   "description": "Standby time",
+   "unit": "hour",
+   "contract_rate": 190.0
+  }
+ ],
+ "synthetic": true
+}

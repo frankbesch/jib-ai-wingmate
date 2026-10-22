@@ -1,0 +1,477 @@
+{
+  "built": "2026-09-30",
+  "synthetic": true,
+  "story": "Zelvori Basin Operations LLC sends August records to Mavren Fold Interests LLC. Fictional wells Nacrevale 7-QH and Fennovar 2-RH sit in fictional Velquorin County. Three billing defects are planted.",
+  "documents": [
+    {
+      "doc_id": "ticket_01",
+      "file": "synth-pilot/clean/01_ticket_01.pdf",
+      "scan_file": "synth-pilot/scan/01_ticket_01.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_01",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "a956f8d98cc83d9c16ffe17ede25b8d471a2a07c6716a05adb0f992e8ae56601",
+      "scan_sha256": "5d8cab10c323a97fd29ce61d4b74915e0e24d4887fb720da8fe508771d711721"
+    },
+    {
+      "doc_id": "ticket_02",
+      "file": "synth-pilot/clean/02_ticket_02.pdf",
+      "scan_file": "synth-pilot/scan/02_ticket_02.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_01",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "75f8a1188175d0ae6d635293fdcc703aa82385b48c9838cfbf3ffd7b00ea2bf9",
+      "scan_sha256": "3f166160af8ab33f850f5ca5b644d7bb44fcc95aea30f9858d4e8b0720221f36"
+    },
+    {
+      "doc_id": "haul_01",
+      "file": "synth-pilot/clean/03_haul_01.pdf",
+      "scan_file": "synth-pilot/scan/03_haul_01.pdf",
+      "class": "hauling_log",
+      "packet": "ticket_01",
+      "pages": [
+        3
+      ],
+      "page_count": 1,
+      "sha256": "5a65dc7384989effe0fa883f4a2adbad844fb420104b32e474fe3bd6611e7d6c",
+      "scan_sha256": "4ba9becaca8126975af7a7a00280ac36c78c84fd937e81b3c81648e2bbbeec22"
+    },
+    {
+      "doc_id": "ticket_03",
+      "file": "synth-pilot/clean/04_ticket_03.pdf",
+      "scan_file": "synth-pilot/scan/04_ticket_03.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_02",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "46feddc835fd8348e64416bf6aefb0e5257dc403129af6b17d1e2c824b99b67a",
+      "scan_sha256": "a2a478bc894e270e184c9aaeda4637da75f96c19ccfea8141b4a197e78160ff5"
+    },
+    {
+      "doc_id": "ticket_04",
+      "file": "synth-pilot/clean/05_ticket_04.pdf",
+      "scan_file": "synth-pilot/scan/05_ticket_04.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_02",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "02916bed3ee8f38380d45936d96f4f945729b152ee9e8e79d81027ce58fbfea5",
+      "scan_sha256": "b2b132338893f85d8b6d9113c7f5937ccb1d49cbd8c42e1f043bbd405b1e2dbe"
+    },
+    {
+      "doc_id": "invoice_01",
+      "file": "synth-pilot/clean/06_invoice_01.pdf",
+      "scan_file": "synth-pilot/scan/06_invoice_01.pdf",
+      "class": "invoice",
+      "packet": "ticket_02",
+      "pages": [
+        3
+      ],
+      "page_count": 1,
+      "sha256": "fae006b7bb24cac2ceb529b8d257e19ff7ee79d5dd532edb04829abbbaa80d83",
+      "scan_sha256": "65f5accbfad6b0298708326829f411b572e9f93af3f40819115a66f58ffc201f"
+    },
+    {
+      "doc_id": "ticket_05",
+      "file": "synth-pilot/clean/07_ticket_05.pdf",
+      "scan_file": "synth-pilot/scan/07_ticket_05.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_03",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "189db81026c53040be6800ad903b22667fd724e4d8998db61116273c7122a753",
+      "scan_sha256": "848a4f1538047db327f5acfde0fac9833648567ec02700a6866da567d289bb0b"
+    },
+    {
+      "doc_id": "ticket_06",
+      "file": "synth-pilot/clean/08_ticket_06.pdf",
+      "scan_file": "synth-pilot/scan/08_ticket_06.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_03",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "e60f199ce4fbb0da6318a7f7ad510d76b9b9f1c9d086f452c6203c0670701cb4",
+      "scan_sha256": "647574994559730dd6fae98f17b0351c6601d916e2333f99a0aa49e9e164d0fa"
+    },
+    {
+      "doc_id": "ticket_07",
+      "file": "synth-pilot/clean/09_ticket_07.pdf",
+      "scan_file": "synth-pilot/scan/09_ticket_07.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_04",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "ef0882cd1380347f993a8ba08a49712523b681db57e260c04a46e36123332379",
+      "scan_sha256": "56e767c5dbc56e70fe470d11aef7a8f9a17f3933366d4b53f5f036b3701d92a2"
+    },
+    {
+      "doc_id": "ticket_08",
+      "file": "synth-pilot/clean/10_ticket_08.pdf",
+      "scan_file": "synth-pilot/scan/10_ticket_08.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_04",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "6b2281462ddb812d3f491c6d8596a0256fa39010782cc7658b485a88889a4234",
+      "scan_sha256": "435ddd6b88481a9a805e401b7c8c124ae278f28eefa9f530655f1c41e125fe04"
+    },
+    {
+      "doc_id": "ticket_09",
+      "file": "synth-pilot/clean/11_ticket_09.pdf",
+      "scan_file": "synth-pilot/scan/11_ticket_09.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_05",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "233a8b7c56cb4f8e199222ad85b5510a8f9be98d88d877c4ecf684b497039f3b",
+      "scan_sha256": "085e39c671cf544f2f8eec10d65939c4f240512a4d8b6dd60b405e8745f8153b"
+    },
+    {
+      "doc_id": "haul_02",
+      "file": "synth-pilot/clean/12_haul_02.pdf",
+      "scan_file": "synth-pilot/scan/12_haul_02.pdf",
+      "class": "hauling_log",
+      "packet": "ticket_05",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "9679ebc9aff961b8b9b6a3c2f33e5e66a0377bbbf2b086edd894a7f1b6c4a919",
+      "scan_sha256": "c48eaf28ece4bc856de4e331a9a1b03791dfe1db95888f3b2bc0bf3691244f12"
+    },
+    {
+      "doc_id": "ticket_10",
+      "file": "synth-pilot/clean/13_ticket_10.pdf",
+      "scan_file": "synth-pilot/scan/13_ticket_10.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_06",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "43ab415646b17fc2fb28ebc8e1ae757aa39edc6c068b47c6dda9ac5ab98aeb4f",
+      "scan_sha256": "a6cbf5b10af6dc1a2a874d4f4a7efc37963b290a128f09e216c9ab592bdf2806"
+    },
+    {
+      "doc_id": "ticket_11",
+      "file": "synth-pilot/clean/14_ticket_11.pdf",
+      "scan_file": "synth-pilot/scan/14_ticket_11.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_07",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "33f145b645bb852fa156e455cfc6d51d60a438d272ada4864a1a0ebf8a754e04",
+      "scan_sha256": "ba45f304247103e01a76952a4a4cde071c8956d1748e692b68d9b1684d16d79b"
+    },
+    {
+      "doc_id": "haul_03",
+      "file": "synth-pilot/clean/15_haul_03.pdf",
+      "scan_file": "synth-pilot/scan/15_haul_03.pdf",
+      "class": "hauling_log",
+      "packet": "ticket_07",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "405832cf1705884a59d2eb17ed46d94a0ae9c204b0f8e75f0cbab5b7fefc8cb1",
+      "scan_sha256": "b8b3c6b7ff26bfb006cf7ed061e7ef1ce098466f8199855695731650eeefd124"
+    },
+    {
+      "doc_id": "ticket_12",
+      "file": "synth-pilot/clean/16_ticket_12.pdf",
+      "scan_file": "synth-pilot/scan/16_ticket_12.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_08",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "c8171b6aa3def4b178c3f497e6eae79aca5f07240f57682c779d52110c0a3f13",
+      "scan_sha256": "4623b825715d54deab1aca7c3a71d4c00144bd05af5f4060fc451277b6c65340"
+    },
+    {
+      "doc_id": "invoice_02",
+      "file": "synth-pilot/clean/17_invoice_02.pdf",
+      "scan_file": "synth-pilot/scan/17_invoice_02.pdf",
+      "class": "invoice",
+      "packet": "ticket_08",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "4402168db2b78b2feb0b3d32ab790c47fdd34a02730fd37502cad8dc5428fda3",
+      "scan_sha256": "542ed2a60a5f152ef7af696401224910145e0b7ba0da83fa21763ab062e7541f"
+    },
+    {
+      "doc_id": "cover_01",
+      "file": "synth-pilot/clean/18_cover_01.pdf",
+      "scan_file": "synth-pilot/scan/18_cover_01.pdf",
+      "class": "afe_cover",
+      "packet": "afe_01",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "41152ec01c0d1c1afbe1a89d51fa76b38ea2e77799575b14d7b780c5feeb21f7",
+      "scan_sha256": "eae9416da17e4275c027e36061fe6718281787a396ac796c1f736be3ef2466ed"
+    },
+    {
+      "doc_id": "afe_01",
+      "file": "synth-pilot/clean/19_afe_01.pdf",
+      "scan_file": "synth-pilot/scan/19_afe_01.pdf",
+      "class": "afe",
+      "packet": "afe_01",
+      "pages": [
+        2,
+        3
+      ],
+      "page_count": 2,
+      "sha256": "753571203731f0243a44014dc62512460b7a6aa99c9b30d252e9dea9eddc8c8d",
+      "scan_sha256": "90c1206f43395daa9c8e5c7ca568fc7ea62cd6ac083e2da27e71947128ff13e6"
+    },
+    {
+      "doc_id": "cover_02",
+      "file": "synth-pilot/clean/20_cover_02.pdf",
+      "scan_file": "synth-pilot/scan/20_cover_02.pdf",
+      "class": "afe_cover",
+      "packet": "afe_02",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "91f8beedd37ae45629530465ed659fa5b47841244e1742088253be5dc828f448",
+      "scan_sha256": "90957f3da59fbb9d05f1e8681cdb342919a3b71734597cdad32385b600fcb3f2"
+    },
+    {
+      "doc_id": "afe_02",
+      "file": "synth-pilot/clean/21_afe_02.pdf",
+      "scan_file": "synth-pilot/scan/21_afe_02.pdf",
+      "class": "afe",
+      "packet": "afe_02",
+      "pages": [
+        2,
+        3
+      ],
+      "page_count": 2,
+      "sha256": "41eeb243a459fd934137c897a6018d25d2b3fcca20127f8221fbb4355090aca5",
+      "scan_sha256": "e62d640f02aae7388c1fc37b858e743f2bd16747691a715fe8af4df60f615215"
+    },
+    {
+      "doc_id": "jib_01",
+      "file": "synth-pilot/clean/22_jib_01.pdf",
+      "scan_file": "synth-pilot/scan/22_jib_01.pdf",
+      "class": "jib_statement",
+      "packet": "jib_01",
+      "pages": [
+        1,
+        2
+      ],
+      "page_count": 2,
+      "sha256": "8f509ab06dcf3b7d8662f91f40e6121215d08807c1c2e229494d3d0f33e7d1bd",
+      "scan_sha256": "bd328a956d1e5f0d5602764123eb55154e3b2d7e39f44c9e0593651cddb59ded"
+    }
+  ],
+  "packets": [
+    {
+      "packet_id": "ticket_01",
+      "file": "synth-pilot/clean/packets/ticket_01.pdf",
+      "scan_file": "synth-pilot/scan/packets/ticket_01.pdf",
+      "pages": 3,
+      "split_truth": {
+        "field_ticket": [
+          1,
+          2
+        ],
+        "hauling_log": [
+          3
+        ]
+      },
+      "sha256": "76b6f6767c85770355e21100da198304070f82b8f3c9e4aac72e3aa8cc932e10",
+      "scan_sha256": "c5969d5990ae6c76631b7eb0d9ddcece9cfa9267df902239b53f0a81fc14e7ed"
+    },
+    {
+      "packet_id": "ticket_02",
+      "file": "synth-pilot/clean/packets/ticket_02.pdf",
+      "scan_file": "synth-pilot/scan/packets/ticket_02.pdf",
+      "pages": 3,
+      "split_truth": {
+        "field_ticket": [
+          1,
+          2
+        ],
+        "invoice": [
+          3
+        ]
+      },
+      "sha256": "700e8b3a4425a571c7f36c186f27e79ac5a9d9da2d2f704956c3fe29dd635091",
+      "scan_sha256": "d4f1c2a8978161df8652b99129cd5532a24f25d596ffd76a6e2a3f88bb7099f8"
+    },
+    {
+      "packet_id": "ticket_03",
+      "file": "synth-pilot/clean/packets/ticket_03.pdf",
+      "scan_file": "synth-pilot/scan/packets/ticket_03.pdf",
+      "pages": 2,
+      "split_truth": {
+        "field_ticket": [
+          1,
+          2
+        ]
+      },
+      "sha256": "76b983e576940072170c4af7c34e4c51a97c4b0b954af932d121cbdfd81f0446",
+      "scan_sha256": "e3821a3e1a58ee49d20bf4cb1992c7de1950586086672e0f46f579c3454c82d4"
+    },
+    {
+      "packet_id": "ticket_04",
+      "file": "synth-pilot/clean/packets/ticket_04.pdf",
+      "scan_file": "synth-pilot/scan/packets/ticket_04.pdf",
+      "pages": 2,
+      "split_truth": {
+        "field_ticket": [
+          1,
+          2
+        ]
+      },
+      "sha256": "ee16dce7050a27d502a9d7c0ead00094289a4313eb4e77d0989e8f7f9492f1a3",
+      "scan_sha256": "86d6964f329821fab0e5b7dd8bf58bcfb3b332cdc7945e5c5e39826171a72816"
+    },
+    {
+      "packet_id": "ticket_05",
+      "file": "synth-pilot/clean/packets/ticket_05.pdf",
+      "scan_file": "synth-pilot/scan/packets/ticket_05.pdf",
+      "pages": 2,
+      "split_truth": {
+        "field_ticket": [
+          1
+        ],
+        "hauling_log": [
+          2
+        ]
+      },
+      "sha256": "6a307d7f620f0cfc7960d5292c21cbdcdc6225260fbe7fa4dbb5389d106183dc",
+      "scan_sha256": "ee0c5db4166cb27e54a97865eb838751d4d9112becefa364fac6d0e1fb3084f5"
+    },
+    {
+      "packet_id": "ticket_06",
+      "file": "synth-pilot/clean/packets/ticket_06.pdf",
+      "scan_file": "synth-pilot/scan/packets/ticket_06.pdf",
+      "pages": 1,
+      "split_truth": {
+        "field_ticket": [
+          1
+        ]
+      },
+      "sha256": "30123455526f1a70441739583eb74bc1e69ef45aab3ae42d1ad0dafd54ee3d22",
+      "scan_sha256": "664de24d50a91e622cc6fd3b1b896c0b195fa8d8165617501209b8dbf6afd70c"
+    },
+    {
+      "packet_id": "ticket_07",
+      "file": "synth-pilot/clean/packets/ticket_07.pdf",
+      "scan_file": "synth-pilot/scan/packets/ticket_07.pdf",
+      "pages": 2,
+      "split_truth": {
+        "field_ticket": [
+          1
+        ],
+        "hauling_log": [
+          2
+        ]
+      },
+      "sha256": "3ff68b1e4622e412ed0cdbf367077acdacb6ad2787de565c7582b7d1d4221083",
+      "scan_sha256": "c36cdd8cef25acc59d076127935fbc59caff2dd78d87f9314c9529e6499198cf"
+    },
+    {
+      "packet_id": "ticket_08",
+      "file": "synth-pilot/clean/packets/ticket_08.pdf",
+      "scan_file": "synth-pilot/scan/packets/ticket_08.pdf",
+      "pages": 2,
+      "split_truth": {
+        "field_ticket": [
+          1
+        ],
+        "invoice": [
+          2
+        ]
+      },
+      "sha256": "500431b3606a8cf97da5977ccb7128b32edb490301e935c48135d0e3d7df28a7",
+      "scan_sha256": "bb400510a093f5cd9cc315d0baa8943a6d028d4d6cb2750dd038473b0d590aa4"
+    },
+    {
+      "packet_id": "afe_01",
+      "file": "synth-pilot/clean/packets/afe_01.pdf",
+      "scan_file": "synth-pilot/scan/packets/afe_01.pdf",
+      "pages": 3,
+      "split_truth": {
+        "afe_cover": [
+          1
+        ],
+        "afe": [
+          2,
+          3
+        ]
+      },
+      "sha256": "a6bc79075998df135ff566dd2eb42b55a3753c3d0dc35d664a0386ef9d038706",
+      "scan_sha256": "5e11d3a95badf24387570338f54a732944eca9881957188f01fa41bb7451c7ed"
+    },
+    {
+      "packet_id": "afe_02",
+      "file": "synth-pilot/clean/packets/afe_02.pdf",
+      "scan_file": "synth-pilot/scan/packets/afe_02.pdf",
+      "pages": 3,
+      "split_truth": {
+        "afe_cover": [
+          1
+        ],
+        "afe": [
+          2,
+          3
+        ]
+      },
+      "sha256": "bd4f98369017af3f029b027e15e16f6eb0e80f999c246ec771bf7a7b9261acac",
+      "scan_sha256": "a3415135da0875f50f1279fbd5a0264d8aa9876c164c1fc0168c8df7dfb1d51f"
+    },
+    {
+      "packet_id": "jib_01",
+      "file": "synth-pilot/clean/packets/jib_01.pdf",
+      "scan_file": "synth-pilot/scan/packets/jib_01.pdf",
+      "pages": 2,
+      "split_truth": {
+        "jib_statement": [
+          1,
+          2
+        ]
+      },
+      "sha256": "d045cba42aad1808d7fb65df0d77f234d966e06356dafaeaf919590dc00005e2",
+      "scan_sha256": "4edee050ee4885eaf1669548ceb5d380fba463852e9b7fa16936879a75cb2b91"
+    }
+  ],
+  "references": {
+    "book": "synth-pilot/src/book.json",
+    "planted": "synth-pilot/planted.json",
+    "doi": "synth-pilot/reference/doi.json",
+    "contract_rates": "synth-pilot/reference/contract_rates.json",
+    "afe_election": "synth-pilot/reference/afe_election.json"
+  },
+  "planted_sha256": "c93084c5c6778aebaae468125d889835a9f873b630ba2a71b11c3494187f5d0b"
+}

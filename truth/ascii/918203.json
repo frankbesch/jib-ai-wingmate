@@ -1,0 +1,52 @@
+{
+ "permit_number": "918203",
+ "sequence": "99",
+ "county_code": "215",
+ "county": "HIDALGO",
+ "lease_name": "EDINBURG UNIT",
+ "district": "04",
+ "operator_number": "732075",
+ "application_received_date": "2026-08-26",
+ "operator_name": "ROYAL PRODUCTION COMPANY, INC.",
+ "application_status": "Approved",
+ "permit_issue_date": "2026-09-03",
+ "fields": [
+  {
+   "field_number": "97127840",
+   "application_well_code": "G",
+   "completion_well_code": " ",
+   "completion_depth": 9100,
+   "field_district": "04",
+   "acres": 3678.07
+  }
+ ],
+ "well_number": "10",
+ "total_depth": 10650,
+ "type_of_application_code": "14",
+ "type_of_application": "Recompletion",
+ "surface_section": "68",
+ "surface_block": "",
+ "surface_survey": "COMACHO, G",
+ "surface_abstract": "28",
+ "contiguous_acres": 3678.07,
+ "miles_from_town": 0.0,
+ "direction_from_town": "WITHIN",
+ "nearest_town": "EDINBURG",
+ "lease_perpendiculars": {
+  "feet_1": 5980.0,
+  "direction_1": "N",
+  "feet_2": 3410.0,
+  "direction_2": "E"
+ },
+ "survey_perpendiculars": {
+  "feet_1": 600.0,
+  "direction_1": "N",
+  "feet_2": 770.0,
+  "direction_2": "E"
+ },
+ "horizontal_well_flag": false,
+ "directional_well_flag": true,
+ "api_number": "42-215-31846",
+ "grade": "SYSTEM-EXTRACTED",
+ "basis": "RRC daf420.dat 2026-09-04, OGA049M positions"
+}

@@ -1,0 +1,35 @@
+{
+  "status": "SOURCE ONLY; not PDF gates",
+  "documents": 22,
+  "packets": 11,
+  "planned_pages": 25,
+  "classes": {
+    "field_ticket": 12,
+    "hauling_log": 3,
+    "invoice": 2,
+    "afe_cover": 2,
+    "afe": 2,
+    "jib_statement": 1
+  },
+  "source_nonnull_required_nonboolean": 140,
+  "source_null_required_nonboolean": 7,
+  "planned_units_all_required": 249,
+  "requested_printed_subtotal": 242,
+  "mapped_trap_units": {
+    "clean": {
+      "1": 3,
+      "4": 6,
+      "5": 5,
+      "8": 75,
+      "total_excluding_unmapped_decoy_traps": 89
+    },
+    "scan": {
+      "1": 7,
+      "4": 9,
+      "5": 5,
+      "8": 78,
+      "total_excluding_unmapped_decoy_traps": 99
+    }
+  },
+  "planted_sha256": "c93084c5c6778aebaae468125d889835a9f873b630ba2a71b11c3494187f5d0b"
+}

@@ -1,0 +1,76 @@
+{
+ "permit_number": "918133",
+ "sequence": "99",
+ "county_code": "207",
+ "county": "HASKELL",
+ "lease_name": "PACE",
+ "district": "7B",
+ "operator_number": "923283",
+ "application_received_date": "2026-08-24",
+ "operator_name": "WILCOX PETROLEUM OPERATING LLC.",
+ "application_status": "Approved",
+ "permit_issue_date": "2026-09-03",
+ "fields": [
+  {
+   "field_number": "00014001",
+   "application_well_code": "B",
+   "completion_well_code": " ",
+   "completion_depth": 5000,
+   "field_district": "7B",
+   "acres": 200.0
+  },
+  {
+   "field_number": "39583001",
+   "application_well_code": "B",
+   "completion_well_code": " ",
+   "completion_depth": 5000,
+   "field_district": "7B",
+   "acres": 200.0
+  },
+  {
+   "field_number": "39583005",
+   "application_well_code": "G",
+   "completion_well_code": " ",
+   "completion_depth": 5000,
+   "field_district": "7B",
+   "acres": 200.0
+  },
+  {
+   "field_number": "84498001",
+   "application_well_code": "O",
+   "completion_well_code": " ",
+   "completion_depth": 5300,
+   "field_district": "7B",
+   "acres": 200.0
+  }
+ ],
+ "well_number": "2",
+ "total_depth": 5600,
+ "type_of_application_code": "01",
+ "type_of_application": "New Drill",
+ "surface_section": "30",
+ "surface_block": "",
+ "surface_survey": "H&TC RR CO/ RANDOLPH, W H",
+ "surface_abstract": "557",
+ "contiguous_acres": 200.0,
+ "miles_from_town": 3.7,
+ "direction_from_town": "SW",
+ "nearest_town": "HASKELL",
+ "lease_perpendiculars": {
+  "feet_1": 330.0,
+  "direction_1": "WEST",
+  "feet_2": 604.0,
+  "direction_2": "SOUTH"
+ },
+ "survey_perpendiculars": {
+  "feet_1": 1876.0,
+  "direction_1": "SOUTH",
+  "feet_2": 330.0,
+  "direction_2": "WEST"
+ },
+ "horizontal_well_flag": false,
+ "directional_well_flag": false,
+ "api_number": "42-207-33074",
+ "grade": "SYSTEM-EXTRACTED",
+ "basis": "RRC daf420.dat 2026-09-04, OGA049M positions"
+}

@@ -1,0 +1,368 @@
+{
+ "permit": "918133",
+ "synthetic": true,
+ "perturbations": [
+  "fields[1].completion_depth: null"
+ ],
+ "classify": [
+  {
+   "file": "918133_W1_AsApprovedW1-9-3-2026_LTR.pdf",
+   "predicted": "w1_permit",
+   "seconds": 1.059
+  },
+  {
+   "file": "918133_Plat_pace.2.plat_LGL.pdf",
+   "predicted": "plat",
+   "seconds": 0.921
+  }
+ ],
+ "extract": {
+  "extraction_id": "fixture-918133",
+  "page_count": 2,
+  "credits_used": 2.0,
+  "failed_pages": [],
+  "seconds": 4.851,
+  "words": null,
+  "tables": null,
+  "selection_marks": null
+ },
+ "split": {
+  "split_id": "fixture-split-918133",
+  "splits": {
+   "w1_permit": [
+    1
+   ],
+   "plat": [
+    2
+   ]
+  },
+  "seconds": 2.3
+ },
+ "schema_w1": {
+  "schema_id": "fixture-schema-918133",
+  "values": {
+   "api_number": "42-207-33074",
+   "permit_number": "918133",
+   "permit_status": "Approved",
+   "operator_number": "923283",
+   "operator_name": "WILCOX PETROLEUM OPERATING LLC.",
+   "lease_name": "PACE",
+   "well_number": "2",
+   "total_depth": "5600",
+   "district": "7B",
+   "county": "HASKELL",
+   "miles_from_town": "3.7",
+   "direction_from_town": "SW",
+   "nearest_town": "HASKELL",
+   "lease_perpendiculars": {
+    "feet_1": "330",
+    "direction_1": "WEST",
+    "feet_2": "604",
+    "direction_2": "SOUTH"
+   },
+   "survey_perpendiculars": {
+    "feet_1": "1876",
+    "direction_1": "SOUTH",
+    "feet_2": "330",
+    "direction_2": "WEST"
+   },
+   "abstract_number": "A-557",
+   "contiguous_acres": "200",
+   "purpose_of_filing": [
+    "New Drill"
+   ],
+   "wellbore_profile": [
+    "Vertical"
+   ],
+   "rule_36_h2s": false,
+   "fields": [
+    {
+     "district": "7B",
+     "field_number": "84498001",
+     "field_name": "SOJOURNER",
+     "well_type": "Oil Well",
+     "completion_depth": "5300",
+     "distance_to_nearest_well": "933.00",
+     "wells_on_lease": "2"
+    },
+    {
+     "district": "7B",
+     "field_number": "39583005",
+     "field_name": "HASKELL COUNTY REGULAR (GAS)",
+     "well_type": "Gas Well",
+     "completion_depth": null,
+     "distance_to_nearest_well": "0.00",
+     "wells_on_lease": "1"
+    },
+    {
+     "district": "7B",
+     "field_number": "39583001",
+     "field_name": "HASKELL COUNTY REGULAR",
+     "well_type": "Oil or Gas Well",
+     "completion_depth": "5000",
+     "distance_to_nearest_well": "0.00",
+     "wells_on_lease": "1"
+    },
+    {
+     "district": "7B",
+     "field_number": "00014001",
+     "field_name": "WILDCAT",
+     "well_type": "Oil or Gas Well",
+     "completion_depth": "5000",
+     "distance_to_nearest_well": "0.00",
+     "wells_on_lease": "1"
+    }
+   ],
+   "filer_name": "Alan Burns, Agent",
+   "date_submitted": "Aug 24, 2026",
+   "data_validation_timestamp": "Sep 3, 2026 10:18 AM"
+  },
+  "citations": {
+   "api_number": {
+    "page": 1,
+    "bbox": [
+     0.1216,
+     0.0507,
+     0.1953,
+     0.0649
+    ]
+   },
+   "permit_number": {
+    "page": 1,
+    "bbox": [
+     0.1355,
+     0.088,
+     0.1776,
+     0.1031
+    ]
+   },
+   "permit_status": {
+    "page": 1,
+    "bbox": [
+     0.8751,
+     0.0822,
+     0.9292,
+     0.0974
+    ]
+   },
+   "operator_number": {
+    "page": 1,
+    "bbox": [
+     0.1109,
+     0.1754,
+     0.153,
+     0.1905
+    ]
+   },
+   "operator_name": {
+    "page": 1,
+    "bbox": [
+     0.3112,
+     0.1762,
+     0.5512,
+     0.1913
+    ]
+   },
+   "lease_name": {
+    "page": 1,
+    "bbox": [
+     0.2562,
+     0.2072,
+     0.2906,
+     0.2223
+    ]
+   },
+   "well_number": {
+    "page": 1,
+    "bbox": [
+     0.5769,
+     0.2089,
+     0.5839,
+     0.224
+    ]
+   },
+   "total_depth": {
+    "page": 1,
+    "bbox": [
+     0.0865,
+     0.3543,
+     0.1146,
+     0.3694
+    ]
+   },
+   "district": {
+    "page": 1,
+    "bbox": [
+     0.1361,
+     0.4098,
+     0.1515,
+     0.425
+    ]
+   },
+   "county": {
+    "page": 1,
+    "bbox": [
+     0.2702,
+     0.409,
+     0.327,
+     0.4242
+    ]
+   },
+   "miles_from_town": {
+    "page": 1,
+    "bbox": [
+     0.1948,
+     0.437,
+     0.2101,
+     0.4502
+    ]
+   },
+   "direction_from_town": {
+    "page": 1,
+    "bbox": [
+     0.3258,
+     0.437,
+     0.3436,
+     0.4502
+    ]
+   },
+   "nearest_town": {
+    "page": 1,
+    "bbox": [
+     0.5506,
+     0.437,
+     0.6003,
+     0.4502
+    ]
+   },
+   "lease_perpendiculars.feet_1": {
+    "page": 1,
+    "bbox": [
+     0.1953,
+     0.5152,
+     0.2163,
+     0.5304
+    ]
+   },
+   "lease_perpendiculars.direction_1": {
+    "page": 1,
+    "bbox": [
+     0.3714,
+     0.5152,
+     0.4079,
+     0.5304
+    ]
+   },
+   "lease_perpendiculars.feet_2": {
+    "page": 1,
+    "bbox": [
+     0.5401,
+     0.5152,
+     0.5612,
+     0.5304
+    ]
+   },
+   "lease_perpendiculars.direction_2": {
+    "page": 1,
+    "bbox": [
+     0.6995,
+     0.5152,
+     0.7437,
+     0.5304
+    ]
+   },
+   "survey_perpendiculars.feet_1": {
+    "page": 1,
+    "bbox": [
+     0.1905,
+     0.5381,
+     0.2186,
+     0.5532
+    ]
+   },
+   "survey_perpendiculars.direction_1": {
+    "page": 1,
+    "bbox": [
+     0.3663,
+     0.5381,
+     0.4105,
+     0.5532
+    ]
+   },
+   "survey_perpendiculars.feet_2": {
+    "page": 1,
+    "bbox": [
+     0.5389,
+     0.5381,
+     0.5599,
+     0.5532
+    ]
+   },
+   "survey_perpendiculars.direction_2": {
+    "page": 1,
+    "bbox": [
+     0.3714,
+     0.5152,
+     0.4079,
+     0.5304
+    ]
+   },
+   "abstract_number": {
+    "page": 1,
+    "bbox": [
+     0.5389,
+     0.4866,
+     0.5726,
+     0.5017
+    ]
+   },
+   "contiguous_acres": {
+    "page": 1,
+    "bbox": [
+     0.9163,
+     0.4874,
+     0.936,
+     0.5015
+    ]
+   },
+   "filer_name": {
+    "page": 1,
+    "bbox": [
+     0.669,
+     0.8883,
+     0.7708,
+     0.9034
+    ]
+   },
+   "date_submitted": {
+    "page": 1,
+    "bbox": [
+     0.8488,
+     0.8872,
+     0.924,
+     0.9024
+    ]
+   }
+  },
+  "seconds": 4.2
+ },
+ "schema_plat": {
+  "schema_id": "fixture-plat-918133",
+  "values": {},
+  "citations": {},
+  "seconds": 3.0,
+  "note": "plat truth is PLANNED (human keying); fixture returns nothing so no plat number can be quoted"
+ },
+ "timing": {
+  "extract": 4.851,
+  "split": 2.3,
+  "schema_w1": 4.2,
+  "schema_plat": 3.0
+ },
+ "credits": {
+  "extract": 2.0
+ },
+ "cycle_seconds": 16.331,
+ "cost_usd_at_list": 0.165,
+ "cost_note": "documented list rates: classify 0.5 + extract 1 + split 2 + schema 1 + schema 1 credits per page at $0.015"
+}

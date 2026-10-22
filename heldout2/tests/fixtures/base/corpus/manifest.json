@@ -1,0 +1,329 @@
+{
+ "packets": [
+  {
+   "packet_id": "afe_01",
+   "pages": 2,
+   "file": "corpus/clean/packet_afe_01.pdf",
+   "scan_file": "corpus/scan/packet_afe_01.pdf"
+  },
+  {
+   "packet_id": "afe_02",
+   "pages": 1,
+   "file": "corpus/clean/packet_afe_02.pdf",
+   "scan_file": "corpus/scan/packet_afe_02.pdf"
+  },
+  {
+   "packet_id": "tk_1",
+   "pages": 4,
+   "file": "corpus/clean/packet_tk_1.pdf",
+   "scan_file": "corpus/scan/packet_tk_1.pdf"
+  },
+  {
+   "packet_id": "tk_2",
+   "pages": 4,
+   "file": "corpus/clean/packet_tk_2.pdf",
+   "scan_file": "corpus/scan/packet_tk_2.pdf"
+  },
+  {
+   "packet_id": "tk_3",
+   "pages": 4,
+   "file": "corpus/clean/packet_tk_3.pdf",
+   "scan_file": "corpus/scan/packet_tk_3.pdf"
+  },
+  {
+   "packet_id": "tk_4",
+   "pages": 4,
+   "file": "corpus/clean/packet_tk_4.pdf",
+   "scan_file": "corpus/scan/packet_tk_4.pdf"
+  },
+  {
+   "packet_id": "tk_5",
+   "pages": 4,
+   "file": "corpus/clean/packet_tk_5.pdf",
+   "scan_file": "corpus/scan/packet_tk_5.pdf"
+  },
+  {
+   "packet_id": "tk_6",
+   "pages": 2,
+   "file": "corpus/clean/packet_tk_6.pdf",
+   "scan_file": "corpus/scan/packet_tk_6.pdf"
+  }
+ ],
+ "documents": [
+  {
+   "doc_id": "cover_01",
+   "packet": "afe_01",
+   "class": "afe_cover",
+   "pages": [
+    1
+   ],
+   "page_count": 1,
+   "file": "corpus/clean/cover_01.pdf",
+   "scan_file": "corpus/scan/cover_01.pdf"
+  },
+  {
+   "doc_id": "afe_01",
+   "packet": "afe_01",
+   "class": "afe",
+   "pages": [
+    2
+   ],
+   "page_count": 1,
+   "file": "corpus/clean/afe_01.pdf",
+   "scan_file": "corpus/scan/afe_01.pdf"
+  },
+  {
+   "doc_id": "afe_02",
+   "packet": "afe_02",
+   "class": "afe",
+   "pages": [
+    1
+   ],
+   "page_count": 1,
+   "file": "corpus/clean/afe_02.pdf",
+   "scan_file": "corpus/scan/afe_02.pdf"
+  },
+  {
+   "doc_id": "t10",
+   "packet": "tk_1",
+   "class": "field_ticket",
+   "pages": [
+    1
+   ],
+   "page_count": 1,
+   "file": "corpus/clean/t10.pdf",
+   "scan_file": "corpus/scan/t10.pdf"
+  },
+  {
+   "doc_id": "t11",
+   "packet": "tk_1",
+   "class": "field_ticket",
+   "pages": [
+    2
+   ],
+   "page_count": 1,
+   "file": "corpus/clean/t11.pdf",
+   "scan_file": "corpus/scan/t11.pdf"
+  },
+  {
+   "doc_id": "t12",
+   "packet": "tk_1",
+   "class": "field_ticket",
+   "pages": [
+    3
+   ],
+   "page_count": 1,
+   "file": "corpus/clean/t12.pdf",
+   "scan_file": "corpus/scan/t12.pdf"
+  },
+  {
+   "doc_id": "t13",
+   "packet": "tk_1",
+   "class": "field_ticket",
+   "pages": [
+    4
+   ],
+   "page_count": 1,
+   "file": "corpus/clean/t13.pdf",
+   "scan_file": "corpus/scan/t13.pdf"
+  },
+  {
+   "doc_id": "t20",
+   "packet": "tk_2",
+   "class": "field_ticket",
+   "pages": [
+    1
+   ],
+   "page_count": 1,
+   "file": "corpus/clean/t20.pdf",
+   "scan_file": "corpus/scan/t20.pdf"
+  },
+  {
+   "doc_id": "t21",
+   "packet": "tk_2",
+   "class": "field_ticket",
+   "pages": [
+    2
+   ],
+   "page_count": 1,
+   "file": "corpus/clean/t21.pdf",
+   "scan_file": "corpus/scan/t21.pdf"
+  },
+  {
+   "doc_id": "t22",
+   "packet": "tk_2",
+   "class": "field_ticket",
+   "pages": [
+    3
+   ],
+   "page_count": 1,
+   "file": "corpus/clean/t22.pdf",
+   "scan_file": "corpus/scan/t22.pdf"
+  },
+  {
+   "doc_id": "t23",
+   "packet": "tk_2",
+   "class": "field_ticket",
+   "pages": [
+    4
+   ],
+   "page_count": 1,
+   "file": "corpus/clean/t23.pdf",
+   "scan_file": "corpus/scan/t23.pdf"
+  },
+  {
+   "doc_id": "t30",
+   "packet": "tk_3",
+   "class": "field_ticket",
+   "pages": [
+    1
+   ],
+   "page_count": 1,
+   "file": "corpus/clean/t30.pdf",
+   "scan_file": "corpus/scan/t30.pdf"
+  },
+  {
+   "doc_id": "t31",
+   "packet": "tk_3",
+   "class": "field_ticket",
+   "pages": [
+    2
+   ],
+   "page_count": 1,
+   "file": "corpus/clean/t31.pdf",
+   "scan_file": "corpus/scan/t31.pdf"
+  },
+  {
+   "doc_id": "t32",
+   "packet": "tk_3",
+   "class": "field_ticket",
+   "pages": [
+    3
+   ],
+   "page_count": 1,
+   "file": "corpus/clean/t32.pdf",
+   "scan_file": "corpus/scan/t32.pdf"
+  },
+  {
+   "doc_id": "t33",
+   "packet": "tk_3",
+   "class": "field_ticket",
+   "pages": [
+    4
+   ],
+   "page_count": 1,
+   "file": "corpus/clean/t33.pdf",
+   "scan_file": "corpus/scan/t33.pdf"
+  },
+  {
+   "doc_id": "t40",
+   "packet": "tk_4",
+   "class": "field_ticket",
+   "pages": [
+    1
+   ],
+   "page_count": 1,
+   "file": "corpus/clean/t40.pdf",
+   "scan_file": "corpus/scan/t40.pdf"
+  },
+  {
+   "doc_id": "t41",
+   "packet": "tk_4",
+   "class": "field_ticket",
+   "pages": [
+    2
+   ],
+   "page_count": 1,
+   "file": "corpus/clean/t41.pdf",
+   "scan_file": "corpus/scan/t41.pdf"
+  },
+  {
+   "doc_id": "t42",
+   "packet": "tk_4",
+   "class": "field_ticket",
+   "pages": [
+    3
+   ],
+   "page_count": 1,
+   "file": "corpus/clean/t42.pdf",
+   "scan_file": "corpus/scan/t42.pdf"
+  },
+  {
+   "doc_id": "t43",
+   "packet": "tk_4",
+   "class": "field_ticket",
+   "pages": [
+    4
+   ],
+   "page_count": 1,
+   "file": "corpus/clean/t43.pdf",
+   "scan_file": "corpus/scan/t43.pdf"
+  },
+  {
+   "doc_id": "t50",
+   "packet": "tk_5",
+   "class": "field_ticket",
+   "pages": [
+    1
+   ],
+   "page_count": 1,
+   "file": "corpus/clean/t50.pdf",
+   "scan_file": "corpus/scan/t50.pdf"
+  },
+  {
+   "doc_id": "t51",
+   "packet": "tk_5",
+   "class": "field_ticket",
+   "pages": [
+    2
+   ],
+   "page_count": 1,
+   "file": "corpus/clean/t51.pdf",
+   "scan_file": "corpus/scan/t51.pdf"
+  },
+  {
+   "doc_id": "t52",
+   "packet": "tk_5",
+   "class": "field_ticket",
+   "pages": [
+    3
+   ],
+   "page_count": 1,
+   "file": "corpus/clean/t52.pdf",
+   "scan_file": "corpus/scan/t52.pdf"
+  },
+  {
+   "doc_id": "t53",
+   "packet": "tk_5",
+   "class": "field_ticket",
+   "pages": [
+    4
+   ],
+   "page_count": 1,
+   "file": "corpus/clean/t53.pdf",
+   "scan_file": "corpus/scan/t53.pdf"
+  },
+  {
+   "doc_id": "po_01",
+   "packet": "tk_6",
+   "class": "field_ticket",
+   "pages": [
+    1
+   ],
+   "page_count": 1,
+   "file": "corpus/clean/po_01.pdf",
+   "scan_file": "corpus/scan/po_01.pdf"
+  },
+  {
+   "doc_id": "near_01",
+   "packet": "tk_6",
+   "class": "field_ticket",
+   "pages": [
+    2
+   ],
+   "page_count": 1,
+   "file": "corpus/clean/near_01.pdf",
+   "scan_file": "corpus/scan/near_01.pdf"
+  }
+ ]
+}

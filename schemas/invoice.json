@@ -1,0 +1,23 @@
+{
+  "$comment": "Pulse /schema input_schema for a vendor invoice that carries field tickets behind it. JSON Schema, nested depth <= 3. SYNTHETIC demonstration corpus.",
+  "type": "object",
+  "properties": {
+    "invoice_number": {"type": "string", "description": "Invoice number printed in the header, exactly as printed."},
+    "vendor_name": {"type": "string", "description": "Vendor issuing the invoice, exactly as printed."},
+    "invoice_date": {"type": "string", "description": "Invoice date as printed."},
+    "afe_number": {"type": "string", "description": "AFE number printed on the invoice, exactly as printed. Null if absent."},
+    "well_name": {"type": "string", "description": "Well or property billed, exactly as printed."},
+    "line_items": {"type": "array", "description": "One item per printed invoice row, in printed order. Every row references the ticket it came from.", "items": {"type": "object", "properties": {
+      "ticket_ref": {"type": "string", "description": "Ticket number the row references, exactly as printed."},
+      "description": {"type": "string", "description": "Row description, exactly as printed."},
+      "quantity": {"type": "number", "description": "Quantity printed on the row. Digits only."},
+      "unit": {"type": "string", "description": "Unit of measure printed on the row, exactly as printed."},
+      "rate": {"type": "number", "description": "Unit rate printed on the row. Digits only. Copy the printed rate even when it differs from a rate you would expect."},
+      "amount": {"type": "number", "description": "Extended amount printed on the row. Digits only. Copy the printed amount; never recompute it."}
+    }}},
+    "subtotal": {"type": "number", "description": "Subtotal as printed. Digits only."},
+    "tax": {"type": "number", "description": "Tax as printed. Digits only."},
+    "total": {"type": "number", "description": "Invoice total as printed. Digits only. Copy the printed total; never sum the rows yourself."}
+  },
+  "required": ["invoice_number", "vendor_name", "invoice_date", "line_items", "subtotal", "total"]
+}

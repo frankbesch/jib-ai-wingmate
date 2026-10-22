@@ -1,0 +1,346 @@
+{
+ "permit": "918233",
+ "synthetic": true,
+ "perturbations": [],
+ "classify": [
+  {
+   "file": "918233_W1_AsApprovedW1-9-3-2026_LTR.pdf",
+   "predicted": "w1_permit",
+   "seconds": 1.098
+  },
+  {
+   "file": "918233_Plat_Mufasa State 2BU SWR40_Final_LGL.pdf",
+   "predicted": "plat",
+   "seconds": 1.238
+  },
+  {
+   "file": "918233_Plat_Mufasa State 2BU Wellbore_Final_LGL.pdf",
+   "predicted": "plat",
+   "seconds": 0.85
+  }
+ ],
+ "extract": {
+  "extraction_id": "fixture-918233",
+  "page_count": 4,
+  "credits_used": 4.0,
+  "failed_pages": [],
+  "seconds": 6.46,
+  "words": null,
+  "tables": null,
+  "selection_marks": null
+ },
+ "split": {
+  "split_id": "fixture-split-918233",
+  "splits": {
+   "w1_permit": [
+    1,
+    2
+   ],
+   "plat": [
+    3,
+    4
+   ]
+  },
+  "seconds": 3.1
+ },
+ "schema_w1": {
+  "schema_id": "fixture-schema-918233",
+  "values": {
+   "api_number": "42-389-42315",
+   "permit_number": "918233",
+   "permit_status": "Approved",
+   "operator_number": "875462",
+   "operator_name": "U.S. ENERGY DEVELOPMENT CORP",
+   "lease_name": "MUFASA STATE",
+   "well_number": "2BU",
+   "total_depth": "13000",
+   "district": "08",
+   "county": "REEVES",
+   "miles_from_town": "16",
+   "direction_from_town": "SE",
+   "nearest_town": "PECOS",
+   "lease_perpendiculars": {
+    "feet_1": "653",
+    "direction_1": "N",
+    "feet_2": "2636",
+    "direction_2": "W"
+   },
+   "survey_perpendiculars": {
+    "feet_1": "653",
+    "direction_1": "N",
+    "feet_2": "2636",
+    "direction_2": "W"
+   },
+   "abstract_number": "A-6058",
+   "contiguous_acres": "640",
+   "purpose_of_filing": [
+    "New Drill"
+   ],
+   "wellbore_profile": [
+    "Horizontal"
+   ],
+   "rule_36_h2s": false,
+   "fields": [
+    {
+     "district": "08",
+     "field_number": "71052900",
+     "field_name": "PHANTOM (WOLFCAMP)",
+     "well_type": "Oil or Gas Well",
+     "completion_depth": "13000",
+     "distance_to_nearest_well": "0.00",
+     "wells_on_lease": "1"
+    }
+   ],
+   "filer_name": "Bill Spencer, Consultant",
+   "date_submitted": "Aug 27, 2026",
+   "data_validation_timestamp": "Sep 3, 2026 10:06 AM"
+  },
+  "citations": {
+   "api_number": {
+    "page": 1,
+    "bbox": [
+     0.1216,
+     0.0507,
+     0.1953,
+     0.0649
+    ]
+   },
+   "permit_number": {
+    "page": 1,
+    "bbox": [
+     0.1355,
+     0.088,
+     0.1776,
+     0.1031
+    ]
+   },
+   "permit_status": {
+    "page": 1,
+    "bbox": [
+     0.8751,
+     0.0822,
+     0.9292,
+     0.0974
+    ]
+   },
+   "operator_number": {
+    "page": 1,
+    "bbox": [
+     0.1109,
+     0.1754,
+     0.153,
+     0.1905
+    ]
+   },
+   "operator_name": {
+    "page": 1,
+    "bbox": [
+     0.321,
+     0.1762,
+     0.5413,
+     0.1913
+    ]
+   },
+   "lease_name": {
+    "page": 1,
+    "bbox": [
+     0.547,
+     0.188,
+     0.6438,
+     0.2031
+    ]
+   },
+   "well_number": {
+    "page": 1,
+    "bbox": [
+     0.8719,
+     0.1861,
+     0.8964,
+     0.2012
+    ]
+   },
+   "total_depth": {
+    "page": 1,
+    "bbox": [
+     0.083,
+     0.3543,
+     0.1181,
+     0.3694
+    ]
+   },
+   "district": {
+    "page": 1,
+    "bbox": [
+     0.1375,
+     0.4098,
+     0.1515,
+     0.425
+    ]
+   },
+   "county": {
+    "page": 1,
+    "bbox": [
+     0.273,
+     0.409,
+     0.3242,
+     0.4242
+    ]
+   },
+   "miles_from_town": {
+    "page": 1,
+    "bbox": [
+     0.1963,
+     0.437,
+     0.2086,
+     0.4502
+    ]
+   },
+   "direction_from_town": {
+    "page": 1,
+    "bbox": [
+     0.3273,
+     0.437,
+     0.3421,
+     0.4502
+    ]
+   },
+   "nearest_town": {
+    "page": 1,
+    "bbox": [
+     0.5561,
+     0.437,
+     0.5948,
+     0.4502
+    ]
+   },
+   "lease_perpendiculars.feet_1": {
+    "page": 1,
+    "bbox": [
+     0.1953,
+     0.5152,
+     0.2163,
+     0.5304
+    ]
+   },
+   "lease_perpendiculars.direction_1": {
+    "page": 1,
+    "bbox": [
+     0.3851,
+     0.5152,
+     0.3942,
+     0.5304
+    ]
+   },
+   "lease_perpendiculars.feet_2": {
+    "page": 1,
+    "bbox": [
+     0.5366,
+     0.5152,
+     0.5647,
+     0.5304
+    ]
+   },
+   "lease_perpendiculars.direction_2": {
+    "page": 1,
+    "bbox": [
+     0.7156,
+     0.5152,
+     0.7276,
+     0.5304
+    ]
+   },
+   "survey_perpendiculars.feet_1": {
+    "page": 1,
+    "bbox": [
+     0.194,
+     0.5381,
+     0.2151,
+     0.5532
+    ]
+   },
+   "survey_perpendiculars.direction_1": {
+    "page": 1,
+    "bbox": [
+     0.3851,
+     0.5152,
+     0.3942,
+     0.5304
+    ]
+   },
+   "survey_perpendiculars.feet_2": {
+    "page": 1,
+    "bbox": [
+     0.5366,
+     0.5152,
+     0.5647,
+     0.5304
+    ]
+   },
+   "survey_perpendiculars.direction_2": {
+    "page": 1,
+    "bbox": [
+     0.7156,
+     0.5152,
+     0.7276,
+     0.5304
+    ]
+   },
+   "abstract_number": {
+    "page": 1,
+    "bbox": [
+     0.5354,
+     0.4866,
+     0.5761,
+     0.5017
+    ]
+   },
+   "contiguous_acres": {
+    "page": 1,
+    "bbox": [
+     0.9163,
+     0.4874,
+     0.936,
+     0.5015
+    ]
+   },
+   "filer_name": {
+    "page": 1,
+    "bbox": [
+     0.6525,
+     0.8883,
+     0.7873,
+     0.9034
+    ]
+   },
+   "date_submitted": {
+    "page": 1,
+    "bbox": [
+     0.8488,
+     0.8872,
+     0.924,
+     0.9024
+    ]
+   }
+  },
+  "seconds": 5.4
+ },
+ "schema_plat": {
+  "schema_id": "fixture-plat-918233",
+  "values": {},
+  "citations": {},
+  "seconds": 4.0,
+  "note": "plat truth is PLANNED (human keying); fixture returns nothing so no plat number can be quoted"
+ },
+ "timing": {
+  "extract": 6.46,
+  "split": 3.1,
+  "schema_w1": 5.4,
+  "schema_plat": 4.0
+ },
+ "credits": {
+  "extract": 4.0
+ },
+ "cycle_seconds": 22.146,
+ "cost_usd_at_list": 0.33,
+ "cost_note": "documented list rates: classify 0.5 + extract 1 + split 2 + schema 1 + schema 1 credits per page at $0.015"
+}

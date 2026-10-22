@@ -1,0 +1,26 @@
+{
+  "$comment": "Pulse /schema input_schema for an operator Joint Interest Billing (JIB) statement, owner copy. JSON Schema, nested depth <= 3. SYNTHETIC demonstration corpus.",
+  "type": "object",
+  "properties": {
+    "statement_period": {"type": "string", "description": "Billing period printed in the header, exactly as printed, e.g. June 2026."},
+    "operator_name": {"type": "string", "description": "Operator issuing the statement, exactly as printed."},
+    "property_number": {"type": "string", "description": "Operator property or lease number printed in the header, exactly as printed."},
+    "well_name": {"type": "string", "description": "Well name printed in the header, exactly as printed."},
+    "owner_name": {"type": "string", "description": "Billed owner name printed in the header, exactly as printed."},
+    "owner_number": {"type": "string", "description": "Owner or interest number printed in the header, exactly as printed."},
+    "wi_decimal": {"type": "number", "description": "The working-interest decimal printed in the statement HEADER, six decimal places. Copy the header value only; do not take it from a billing line."},
+    "lines": {"type": "array", "description": "One item per printed billing row, in printed order. Return every printed row, including rows that continue onto a second page.", "items": {"type": "object", "properties": {
+      "line_no": {"type": "integer", "description": "Line number printed on the row."},
+      "afe_ref": {"type": "string", "description": "AFE number referenced on the row, exactly as printed. Null if the row carries none."},
+      "account_code": {"type": "string", "description": "Account code printed on the row, exactly as printed."},
+      "description": {"type": "string", "description": "Row description, exactly as printed."},
+      "gross_amount": {"type": "number", "description": "Gross (100 percent) amount printed on the row. Digits only."},
+      "owner_decimal": {"type": "number", "description": "The decimal printed on this line, six places. Copy it exactly even if it differs from the header decimal or from other lines. Never substitute the header value."},
+      "net_amount": {"type": "number", "description": "Net amount billed to the owner as printed on the row. Digits only. Copy the printed figure; never multiply gross by a decimal yourself."}
+    }}},
+    "gross_total": {"type": "number", "description": "Gross total as printed on the total line. Digits only. Copy the printed total; never sum the rows yourself."},
+    "net_total": {"type": "number", "description": "Net total billed as printed on the total line. Digits only. Copy the printed total; never sum the rows yourself."},
+    "due_date": {"type": "string", "description": "Payment due date as printed."}
+  },
+  "required": ["statement_period", "operator_name", "property_number", "well_name", "owner_name", "wi_decimal", "lines", "gross_total", "net_total"]
+}

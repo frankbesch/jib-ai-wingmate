@@ -1,0 +1,49 @@
+{
+ "permit_number": "918233",
+ "sequence": "99",
+ "county_code": "389",
+ "county": "REEVES",
+ "lease_name": "MUFASA STATE",
+ "district": "08",
+ "operator_number": "875462",
+ "application_received_date": "2026-08-27",
+ "operator_name": "U.S. ENERGY DEVELOPMENT CORP",
+ "application_status": "Approved",
+ "permit_issue_date": "2026-09-03",
+ "fields": [
+  {
+   "field_number": "71052900",
+   "application_well_code": "B",
+   "completion_well_code": " "
+  }
+ ],
+ "well_number": "2BU",
+ "total_depth": 13000,
+ "type_of_application_code": "01",
+ "type_of_application": "New Drill",
+ "surface_section": "22",
+ "surface_block": "50 T7S",
+ "surface_survey": "T&P RR CO/TEXAS PACIFIC LAND TRUST",
+ "surface_abstract": "6058",
+ "contiguous_acres": 640.0,
+ "miles_from_town": 16.0,
+ "direction_from_town": "SE",
+ "nearest_town": "PECOS",
+ "lease_perpendiculars": {
+  "feet_1": 653.0,
+  "direction_1": "N",
+  "feet_2": 2636.0,
+  "direction_2": "W"
+ },
+ "survey_perpendiculars": {
+  "feet_1": 653.0,
+  "direction_1": "N",
+  "feet_2": 2636.0,
+  "direction_2": "W"
+ },
+ "horizontal_well_flag": true,
+ "directional_well_flag": false,
+ "api_number": "42-389-42315",
+ "grade": "SYSTEM-EXTRACTED",
+ "basis": "RRC daf420.dat 2026-09-04, OGA049M positions"
+}

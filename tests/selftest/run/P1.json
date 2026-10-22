@@ -1,0 +1,100 @@
+{
+ "permit": "P1",
+ "synthetic": true,
+ "classify": [
+  {
+   "file": "P1_W1.pdf",
+   "predicted": "w1_permit"
+  },
+  {
+   "file": "P1_Plat.pdf",
+   "predicted": "plat"
+  }
+ ],
+ "extract": {
+  "extraction_id": "x1",
+  "page_count": 3,
+  "credits_used": 3.0,
+  "failed_pages": []
+ },
+ "split": {
+  "splits": {
+   "w1_permit": [
+    1
+   ],
+   "plat": [
+    2
+   ],
+   "other": [
+    3
+   ]
+  }
+ },
+ "schema_w1": {
+  "values": {
+   "api_number": "42-001-00001",
+   "permit_number": "1",
+   "operator_name": "ACME OIL LLC",
+   "lease_name": "SMITH",
+   "well_number": "1",
+   "county": "ANDERSON",
+   "district": "06",
+   "total_depth": "5100",
+   "nearest_town": "PALESTINE",
+   "purpose_of_filing": [
+    "New Drill"
+   ],
+   "wellbore_profile": [
+    "Horizontal"
+   ],
+   "fields": [
+    {
+     "field_number": "11111111",
+     "field_name": "ALPHA",
+     "well_type": "Oil Well",
+     "completion_depth": "4950"
+    }
+   ]
+  },
+  "citations": {
+   "api_number": {
+    "page": 1,
+    "bbox": [
+     0.1,
+     0.1,
+     0.2,
+     0.12
+    ]
+   },
+   "lease_name": {
+    "page": 1,
+    "bbox": [
+     237.6,
+     183.6,
+     316.8,
+     195.84
+    ]
+   },
+   "county": {
+    "page": 1,
+    "bbox": [
+     0.55,
+     0.5,
+     0.65,
+     0.52
+    ]
+   },
+   "operator_name": {
+    "page": 1,
+    "bbox": [
+     0.0,
+     0.0,
+     0.1,
+     0.1
+    ]
+   }
+  }
+ },
+ "cycle_seconds": 10.0,
+ "cost_usd_at_list": 0.3
+}

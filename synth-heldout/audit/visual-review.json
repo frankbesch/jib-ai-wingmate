@@ -1,0 +1,488 @@
+{
+  "reviewer": "codex (author session)",
+  "method": "Visual inspection of all scan pages in two-page sheets, 850x1100 pixels per Letter page (100 pixels per inch). T1 corrections were re-inspected.",
+  "human_confirmation": "UNVERIFIED; separate blind re-key and Frank adjudication remain pending",
+  "ocr_legibility": "UNVERIFIED",
+  "pages": [
+    {
+      "doc_id": "ticket_01",
+      "page": 1,
+      "sha256": "530921cc9864756bbdbbf74eb262c55d209bc3aba2cb128506f0d9b3fabd1830",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_02",
+      "page": 1,
+      "sha256": "3e7982c3369621625f892ad8f14192db27bab50c60a5421e4f669d8ae7e52aa1",
+      "legible": true
+    },
+    {
+      "doc_id": "haul_01",
+      "page": 1,
+      "sha256": "c72a17d2219f53053311549942525acf84c40fbb58ab144418e9d6ccf873f725",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_03",
+      "page": 1,
+      "sha256": "c5e8517594cc1b0c8143ed4d1136e9232951ee8218a37164fb129153e94f6923",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_04",
+      "page": 1,
+      "sha256": "bedcdedbba3ae5f9b97c6dbaf6c61eca4fe41ac1f8e5f4737158c8f855d3fb06",
+      "legible": true
+    },
+    {
+      "doc_id": "haul_02",
+      "page": 1,
+      "sha256": "6543e399977a8824164f29959e72ce6ed2a743b1ff272e57fc49b666ff1b0f21",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_05",
+      "page": 1,
+      "sha256": "4ad33333ab48a183a677cb3c611150ef6146b8849871e3e7dfbd8c90fc617f9b",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_06",
+      "page": 1,
+      "sha256": "7033751e52617059d963a18f5a00134dc69a3c631d2cc2486b732a60608d8c4e",
+      "legible": true
+    },
+    {
+      "doc_id": "haul_03",
+      "page": 1,
+      "sha256": "faaafb1578868dbd6ff77f4da9c34ff1689683009bde0edc1f27a11f5f2c152e",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_07",
+      "page": 1,
+      "sha256": "f312611102385c5a688e9fee02b82b26013682c38910e44d04e06ff813d64211",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_08",
+      "page": 1,
+      "sha256": "d8e93fc1de03f25dd1c18533246f21c4bbe24c8a6d7c714770df73e46cbbe929",
+      "legible": true
+    },
+    {
+      "doc_id": "invoice_01",
+      "page": 1,
+      "sha256": "bf162a702dbfefdc978246217f2630e92576214d321bc623f7ff61cd7ce1bbc7",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_09",
+      "page": 1,
+      "sha256": "a60b4fd14c3503514969b665d6aef41711a9f879d20ba1a01b58c01b46dc11d3",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_10",
+      "page": 1,
+      "sha256": "7665122eea6a93c0ddf9ebbe7d1e9a114050233714d50e0c0eac5ca16de32040",
+      "legible": true
+    },
+    {
+      "doc_id": "invoice_03",
+      "page": 1,
+      "sha256": "6bf8300ed3eed64cf8b74724281684e805c0d31c2eea00e11bffa80ee0f83080",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_11",
+      "page": 1,
+      "sha256": "3378d8efeddfcf50d1363b4daca9f0232d264b869107d718c8498f405a210048",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_12",
+      "page": 1,
+      "sha256": "c22e45b2f2b401c2e6c421076d200e0724cab75b09c4c55d64f733d17d77f0b4",
+      "legible": true
+    },
+    {
+      "doc_id": "invoice_04",
+      "page": 1,
+      "sha256": "a2b696d3430608e9cca2aa9e8953f01595c930353bbfdf3fed17cb505299bb49",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_13",
+      "page": 1,
+      "sha256": "72e8c5aaea02fc57667aa0b0d396944ec169951280011c6bcb1f041cc07e6de5",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_14",
+      "page": 1,
+      "sha256": "382dfcddaa504bddc899b53d533d6d8e59297c7601be3e2011dc7687a25751dc",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_15",
+      "page": 1,
+      "sha256": "eae72f0fdf6932d712382b0fd4200c317494b38baabb936ef2e8da14e0534145",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_16",
+      "page": 1,
+      "sha256": "5c0d2bffd75dd6d262c44df5768d3a221ab3006708922e19741a989c156b460c",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_17",
+      "page": 1,
+      "sha256": "2d1c4f8314e634a8b19197fc3a1f8f4b7ae1d69e146e3e8a66e31a57097742b8",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_18",
+      "page": 1,
+      "sha256": "91b6dfbec8300c249a9cd2871408c6ac2072241ca17cd6b2ea79f7b33cc2983e",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_19",
+      "page": 1,
+      "sha256": "92a7f177ff3857d0b203e0a3bdd6b52086b89677607958d8f81d0a69499acb1f",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_20",
+      "page": 1,
+      "sha256": "6ab12f1d9ea91779f47ca89aaee64cc22f194cf15ed5419f221378a5cd52af7b",
+      "legible": true
+    },
+    {
+      "doc_id": "haul_04",
+      "page": 1,
+      "sha256": "9be0bcfafebf2ec2f48443513f9dc14d14f2b835d6548bdefa0938554a8a3d63",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_21",
+      "page": 1,
+      "sha256": "43665a0dc2e9078331b513908768f2dccf42d59d92eacb78b90d6f41c5956402",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_22",
+      "page": 1,
+      "sha256": "d0bb0888b449492b90ebd47744f8d38dcc4338dc40130ec13ff5b041c6929b64",
+      "legible": true
+    },
+    {
+      "doc_id": "haul_05",
+      "page": 1,
+      "sha256": "1598f19dbee68348764553d3739c137c39afceea70c18cc57ce07b472a92b848",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_23",
+      "page": 1,
+      "sha256": "5a7417943a2ce41bc544379307ad5534f3eeafacf25182336afaa6212c811d25",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_24",
+      "page": 1,
+      "sha256": "9ee70430b2f3603594c8c6a76669c45d392d1145d30984a06713d433965b6276",
+      "legible": true
+    },
+    {
+      "doc_id": "haul_06",
+      "page": 1,
+      "sha256": "d1fae7402e08f3cab25d521147208c99acbb921f3265265355f908e75a7af66c",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_25",
+      "page": 1,
+      "sha256": "b32b930375da50ec583b03affb6948919538232ae69c96b251f139e0b0d236ee",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_26",
+      "page": 1,
+      "sha256": "99d460d62fa47845726a4f4954d6825f38d30f23cab9e84773892f4b90046334",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_27",
+      "page": 1,
+      "sha256": "fbba614c95680e6c57d1a57c01fc3fb5e73e9427028f0ba692126510408c9d28",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_28",
+      "page": 1,
+      "sha256": "d132dfb9f9e8d8b8f1f0d732a06a54cb2c01967dc267181364dbdb47188d5fc7",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_29",
+      "page": 1,
+      "sha256": "94dc2fe89a4bd26d325d0c195547736c5af4f66f73313d730e22f05345d7c0dc",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_30",
+      "page": 1,
+      "sha256": "f4f417e6911b9a25b492ca1063f8892c95896b06113b5bedc6eb535670678249",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_31",
+      "page": 1,
+      "sha256": "0546c8b65310eb3f6d3e817534be06c9a8939dd8c02885f8f93987a3c8ff8661",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_32",
+      "page": 1,
+      "sha256": "d5f75de893db4d1fb7f4a22d95b17f782e570cecf2c98e2d785a294b3ac42a54",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_33",
+      "page": 1,
+      "sha256": "07b1786e307753192a887fe65cad2eca20c1d205421259ff5f4c50f160056888",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_34",
+      "page": 1,
+      "sha256": "421f1e03001ad8d4b152c39573adf9bad32f80c24d491769bc1660fae7f66f0e",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_35",
+      "page": 1,
+      "sha256": "67aab53817d8c7e864d744aed9a5108252f6b96515fba53718af857db3267b28",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_36",
+      "page": 1,
+      "sha256": "0986cb176249c2bcf4ee4bc1e4815061a5b0c925b196507dd4157cd8d93159dd",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_37",
+      "page": 1,
+      "sha256": "74277cfd0d30005311d839c88bc6db549a763e3e11f185a16f1edbb146b6b9ec",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_38",
+      "page": 1,
+      "sha256": "bddda973fcddda75c6d2b06663348d6765d8f10d3a8bfa39847b8f5bd359797e",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_39",
+      "page": 1,
+      "sha256": "145ff470cfdbbfe9bf2215015770f75ba5b11099df6e7b3f4b8cde6868023e2c",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_40",
+      "page": 1,
+      "sha256": "e84e842a131914f1335507ca70e4da466c5b6b2336ee8bc47aaabae586966b49",
+      "legible": true
+    },
+    {
+      "doc_id": "haul_07",
+      "page": 1,
+      "sha256": "a83908b3711917dad0f340382d6d22de9283927e8ed5b32e6a905258ec798226",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_41",
+      "page": 1,
+      "sha256": "c609a79638b1d1d048e77307525a24728a097e71ea818eb90015e069628d71d8",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_42",
+      "page": 1,
+      "sha256": "c53fd67fd818fd27bbb4fdaea0e7e91234c77bf8fa29f10c2693ead395350296",
+      "legible": true
+    },
+    {
+      "doc_id": "haul_08",
+      "page": 1,
+      "sha256": "896d47be42291dcff871313d851f32a9a25df9609a78708726a65cd45b5b1a7a",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_43",
+      "page": 1,
+      "sha256": "6bbbd2d3d2152bcc4b80009e11a18e5ebe5115f567514c6702025d2343b0d114",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_44",
+      "page": 1,
+      "sha256": "ff48f2513cfeedb55e6a233e26b7f6e9e7d70ff4419b0cefd9f75c66c343f309",
+      "legible": true
+    },
+    {
+      "doc_id": "haul_09",
+      "page": 1,
+      "sha256": "7d2a057b48ba2720b61f9c1197d9c50415cc1c457baf8fe9e4b9d043412660fb",
+      "legible": true
+    },
+    {
+      "doc_id": "ticket_45",
+      "page": 1,
+      "sha256": "85c2eb28e624e9a97e144fe13ea78a531c59b3e4ad4a27344ec9d540fff3b2c3",
+      "legible": true
+    },
+    {
+      "doc_id": "invoice_02",
+      "page": 1,
+      "sha256": "bcaa5820bd318cf9515ea063c1dbffe28ab7e1eb962dbbdb674eda15ed4d0273",
+      "legible": true
+    },
+    {
+      "doc_id": "cover_01",
+      "page": 1,
+      "sha256": "74ac44e84039fb2225d6928e3089f72d62451d83354cf318a1fea6a03f11c07f",
+      "legible": true
+    },
+    {
+      "doc_id": "afe_01",
+      "page": 1,
+      "sha256": "78ce211db13805d17bc0d97d5e519512f69a64767bdd3877092cf69fa9e4dcbf",
+      "legible": true
+    },
+    {
+      "doc_id": "afe_01",
+      "page": 2,
+      "sha256": "c5c17b8059f3abf703fe16e2b2ef054f090e1b3a750da33772c3815f478101fa",
+      "legible": true
+    },
+    {
+      "doc_id": "cover_02",
+      "page": 1,
+      "sha256": "2f4052b2ec3d5213ce218b6911b6735fc3962421242cb8461bba79c72659147a",
+      "legible": true
+    },
+    {
+      "doc_id": "afe_02",
+      "page": 1,
+      "sha256": "9def600c6c77b4b99d8826d0f896c73beb5bfeace458bccbc37be10da87c2c4d",
+      "legible": true
+    },
+    {
+      "doc_id": "afe_02",
+      "page": 2,
+      "sha256": "d44ba75e99b9e5280e46b719cbca7cfcd34a6d4c6bdb4ac4fe169a5a63eaeb29",
+      "legible": true
+    },
+    {
+      "doc_id": "cover_03",
+      "page": 1,
+      "sha256": "044d41b649d4fa32229e9151c31f5672e65227983c6fa160fa72926542e2f4c3",
+      "legible": true
+    },
+    {
+      "doc_id": "afe_03",
+      "page": 1,
+      "sha256": "302a659a4244c71c5cf7e42e675965709420b84cdb4654bad508092a0db33e53",
+      "legible": true
+    },
+    {
+      "doc_id": "afe_03",
+      "page": 2,
+      "sha256": "44b9de4296f0cf580d11959de4d00d5e7718ba5e4942a955c3c0fbd0b69cfac2",
+      "legible": true
+    },
+    {
+      "doc_id": "cover_04",
+      "page": 1,
+      "sha256": "d1f4924751d161b0fded108914835fa586a142eba876d9f4c72bb1bf1ddf73f0",
+      "legible": true
+    },
+    {
+      "doc_id": "afe_04",
+      "page": 1,
+      "sha256": "ddc770eebb3426c0430b7299bd3921d8f0b6743cf61b7f59e61c43be33769692",
+      "legible": true
+    },
+    {
+      "doc_id": "afe_04",
+      "page": 2,
+      "sha256": "3552b863c48b6d35cd94e04be681346861b60462331162f0603506c54d574956",
+      "legible": true
+    },
+    {
+      "doc_id": "jib_01",
+      "page": 1,
+      "sha256": "e9170ffa1b39c87d95d39fa565b77ec7176aac70cb4683b3471bca94bf1adc62",
+      "legible": true
+    },
+    {
+      "doc_id": "jib_01",
+      "page": 2,
+      "sha256": "0c191e41afd10f69cac1c084ce46f89bc009e1326f73bb3dad1e5677ead674d1",
+      "legible": true
+    },
+    {
+      "doc_id": "jib_02",
+      "page": 1,
+      "sha256": "f2f10c0c55b9c8a75b78d38d4c7572a95edd45f181e511f15515a82ca838b31e",
+      "legible": true
+    },
+    {
+      "doc_id": "jib_02",
+      "page": 2,
+      "sha256": "effb4eb3b8313ca48609f448a808d474aec18bdfba7964fde6f099004bc8d94c",
+      "legible": true
+    },
+    {
+      "doc_id": "jib_03",
+      "page": 1,
+      "sha256": "371781b4c95499afca4c33501bcebce04311cb945d6197fab5706d73fbc96f4e",
+      "legible": true
+    },
+    {
+      "doc_id": "jib_03",
+      "page": 2,
+      "sha256": "e5ab4ca76c8249360df7a1873b76e24d419739a95218b5c224f0a51e12705c22",
+      "legible": true
+    },
+    {
+      "doc_id": "jib_04",
+      "page": 1,
+      "sha256": "ff6173046453c2bf0af7422b60f436bee459000f03416fd0152ac0810fb3e55a",
+      "legible": true
+    },
+    {
+      "doc_id": "jib_04",
+      "page": 2,
+      "sha256": "d2bd70a3355cd3f282f418a43eb68cc248c4f981393cc89fecebc04f9a414a0b",
+      "legible": true
+    },
+    {
+      "doc_id": "jib_05",
+      "page": 1,
+      "sha256": "6f75bf08d5b7faa4e53b8536ca457c45f42ee55925ea9eeef038e4e9cb685479",
+      "legible": true
+    },
+    {
+      "doc_id": "jib_05",
+      "page": 2,
+      "sha256": "639f53d8b0402cad37bdf28bd5881e276f6165a05cc0453b043796be704df31a",
+      "legible": true
+    }
+  ]
+}

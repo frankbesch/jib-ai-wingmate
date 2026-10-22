@@ -1,0 +1,13 @@
+corpus/packets/
+runs/
+__pycache__/
+console/.pages/
+synth/caprock-scan/
+synth/src/_html/
+typed/.venv-claude-api/
+.DS_Store
+.env
+.venv*
+*.log
+scratch/
+corpus/raw/

@@ -1,0 +1,30 @@
+{
+ "permit": "918289",
+ "total_pages": 2,
+ "splits": {
+  "w1_permit": [
+   1
+  ],
+  "plat": [
+   2
+  ]
+ },
+ "documents": [
+  {
+   "class": "w1_permit",
+   "file": "918289_W1_AsApprovedW1-9-3-2026_LTR.pdf",
+   "pages": [
+    1
+   ]
+  },
+  {
+   "class": "plat",
+   "file": "918289_Plat_CARA 1 CERTIFIED PLAT_LGL.pdf",
+   "pages": [
+    2
+   ]
+  }
+ ],
+ "grade": "OBSERVED",
+ "basis": "packet assembled from separately published RRC files"
+}

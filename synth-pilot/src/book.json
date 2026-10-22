@@ -1,0 +1,821 @@
+{
+  "seed": 239021,
+  "synthetic": true,
+  "documents": [
+    {
+      "doc_id": "ticket_01",
+      "class": "field_ticket",
+      "packet": "ticket_01",
+      "values": {
+        "ticket_number": "OV-8301",
+        "vendor_name": "Orvessa Field Services LLC",
+        "service_date": "2026-08-04",
+        "well_name": "Nacrevale 7-QH",
+        "afe_number": "ZB-26-701",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 7,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1225
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1315,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_02",
+      "class": "field_ticket",
+      "packet": "ticket_01",
+      "values": {
+        "ticket_number": "OV-8302",
+        "vendor_name": "Orvessa Field Services LLC",
+        "service_date": "2026-08-04",
+        "well_name": "Nacrevale 7-QH",
+        "afe_number": "ZB-26-701",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 5,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 875
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 965,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "haul_01",
+      "class": "hauling_log",
+      "packet": "ticket_01",
+      "values": {
+        "log_number": "TF-911",
+        "hauler_name": "Telnori Fluid Transit LLC",
+        "log_date": "2026-08-04",
+        "well_name": "Nacrevale 7-QH",
+        "loads": [
+          {
+            "load_no": 1,
+            "time": "08:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Quenvori recovery bay"
+          },
+          {
+            "load_no": 2,
+            "time": "09:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Quenvori recovery bay"
+          },
+          {
+            "load_no": 3,
+            "time": "10:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Quenvori recovery bay"
+          },
+          {
+            "load_no": 4,
+            "time": "11:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Quenvori recovery bay"
+          }
+        ],
+        "total_barrels": 240
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_03",
+      "class": "field_ticket",
+      "packet": "ticket_02",
+      "values": {
+        "ticket_number": "OV-8303",
+        "vendor_name": "Orvessa Field Services LLC",
+        "service_date": "2026-08-05",
+        "well_name": "Nacrevale 7-QH",
+        "afe_number": "ZB-26-701",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 6,
+            "unit": "hour",
+            "rate": 205,
+            "amount": 1230
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1320,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_04",
+      "class": "field_ticket",
+      "packet": "ticket_02",
+      "values": {
+        "ticket_number": "OV-8304",
+        "vendor_name": "Orvessa Field Services LLC",
+        "service_date": "2026-08-05",
+        "well_name": "Nacrevale 7-QH",
+        "afe_number": "ZB-26-701",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 5,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 875
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 965,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "invoice_01",
+      "class": "invoice",
+      "packet": "ticket_02",
+      "values": {
+        "invoice_number": "OVI-641",
+        "vendor_name": "Orvessa Field Services LLC",
+        "invoice_date": "2026-08-15",
+        "afe_number": "ZB-26-701",
+        "well_name": "Nacrevale 7-QH",
+        "line_items": [
+          {
+            "ticket_ref": "OV-8303",
+            "description": "Field service bundle",
+            "quantity": 1,
+            "unit": "each",
+            "rate": 1320,
+            "amount": 1320
+          },
+          {
+            "ticket_ref": "OV-8304",
+            "description": "Field service bundle",
+            "quantity": 1,
+            "unit": "each",
+            "rate": 965,
+            "amount": 965
+          }
+        ],
+        "subtotal": 2285,
+        "tax": 0,
+        "total": 2285
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_05",
+      "class": "field_ticket",
+      "packet": "ticket_03",
+      "values": {
+        "ticket_number": "OV-8305",
+        "vendor_name": "Orvessa Field Services LLC",
+        "service_date": "2026-08-06",
+        "well_name": "Nacrevale 7-QH",
+        "afe_number": "ZB-26-701",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 5,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 875
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 965,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_06",
+      "class": "field_ticket",
+      "packet": "ticket_03",
+      "values": {
+        "ticket_number": "OV-8306",
+        "vendor_name": "Orvessa Field Services LLC",
+        "service_date": "2026-08-06",
+        "well_name": "Nacrevale 7-QH",
+        "afe_number": "ZB-26-701",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 4,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 700
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 790,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_07",
+      "class": "field_ticket",
+      "packet": "ticket_04",
+      "values": {
+        "ticket_number": "OV-8307",
+        "vendor_name": "Orvessa Field Services LLC",
+        "service_date": "2026-08-07",
+        "well_name": "Nacrevale 7-QH",
+        "afe_number": "ZB-26-701",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 6,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1050
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1140,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_08",
+      "class": "field_ticket",
+      "packet": "ticket_04",
+      "values": {
+        "ticket_number": "OV-8308",
+        "vendor_name": "Orvessa Field Services LLC",
+        "service_date": "2026-08-07",
+        "well_name": "Nacrevale 7-QH",
+        "afe_number": "ZB-26-701",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 6,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1050
+          },
+          {
+            "description": "Gauge kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1140,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_09",
+      "class": "field_ticket",
+      "packet": "ticket_05",
+      "values": {
+        "ticket_number": "OV-8309",
+        "vendor_name": "Orvessa Field Services LLC",
+        "service_date": "2026-08-08",
+        "well_name": "Nacrevale 7-QH",
+        "afe_number": null,
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 4,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 700
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 790,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "haul_02",
+      "class": "hauling_log",
+      "packet": "ticket_05",
+      "values": {
+        "log_number": "TF-912",
+        "hauler_name": "Telnori Fluid Transit LLC",
+        "log_date": "2026-08-08",
+        "well_name": null,
+        "loads": [
+          {
+            "load_no": 1,
+            "time": "08:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Quenvori recovery bay"
+          },
+          {
+            "load_no": 2,
+            "time": "09:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Quenvori recovery bay"
+          },
+          {
+            "load_no": 3,
+            "time": "10:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Quenvori recovery bay"
+          },
+          {
+            "load_no": 4,
+            "time": "11:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Quenvori recovery bay"
+          }
+        ],
+        "total_barrels": 240
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_10",
+      "class": "field_ticket",
+      "packet": "ticket_06",
+      "values": {
+        "ticket_number": "OV-8310",
+        "vendor_name": "Orvessa Field Services LLC",
+        "service_date": "2026-08-09",
+        "well_name": "Nacrevale 7-QH",
+        "afe_number": "ZB-26-701",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 6,
+            "unit": null,
+            "rate": 175,
+            "amount": 1050
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1140,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_11",
+      "class": "field_ticket",
+      "packet": "ticket_07",
+      "values": {
+        "ticket_number": "OV-8311",
+        "vendor_name": "Orvessa Field Services LLC",
+        "service_date": "2026-08-10",
+        "well_name": "N/A",
+        "afe_number": null,
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 4,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 700
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 790,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "haul_03",
+      "class": "hauling_log",
+      "packet": "ticket_07",
+      "values": {
+        "log_number": "TF-913",
+        "hauler_name": "Telnori Fluid Transit LLC",
+        "log_date": "2026-08-10",
+        "well_name": "Nacrevale 7-QH",
+        "loads": [
+          {
+            "load_no": 1,
+            "time": "08:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Quenvori recovery bay"
+          },
+          {
+            "load_no": 2,
+            "time": "09:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Quenvori recovery bay"
+          },
+          {
+            "load_no": 3,
+            "time": "10:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Quenvori recovery bay"
+          },
+          {
+            "load_no": 4,
+            "time": "11:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Quenvori recovery bay"
+          }
+        ],
+        "total_barrels": 240
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_12",
+      "class": "field_ticket",
+      "packet": "ticket_08",
+      "values": {
+        "ticket_number": "OV-8312",
+        "vendor_name": "Orvessa Field Services LLC",
+        "service_date": "2026-08-11",
+        "well_name": "Nacrevale 7-QH",
+        "afe_number": "ZB-26-701",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 6,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1050
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": null,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "invoice_02",
+      "class": "invoice",
+      "packet": "ticket_08",
+      "values": {
+        "invoice_number": "OVI-642",
+        "vendor_name": "Orvessa Field Services LLC",
+        "invoice_date": "2026-08-16",
+        "afe_number": null,
+        "well_name": "Nacrevale 7-QH",
+        "line_items": [
+          {
+            "ticket_ref": "OV-8311",
+            "description": "Field service bundle",
+            "quantity": 1,
+            "unit": "each",
+            "rate": 790,
+            "amount": 790
+          },
+          {
+            "ticket_ref": "OV-8312",
+            "description": "Field service bundle",
+            "quantity": 1,
+            "unit": "each",
+            "rate": 1140,
+            "amount": 1140
+          }
+        ],
+        "subtotal": 1930,
+        "tax": 0,
+        "total": null
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "cover_01",
+      "class": "afe_cover",
+      "packet": "afe_01",
+      "values": {
+        "letter_date": "2026-08-01",
+        "operator_name": "Zelvori Basin Operations LLC",
+        "addressee": "Mavren Fold Interests LLC",
+        "afe_number": "ZB-26-701",
+        "well_name": "Nacrevale 7-QH",
+        "response_due_date": "2026-08-12",
+        "wi_decimal_stated": 0.2,
+        "net_share_stated": 4000
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "afe_01",
+      "class": "afe",
+      "packet": "afe_01",
+      "values": {
+        "afe_number": "ZB-26-701",
+        "operator_name": "Zelvori Basin Operations LLC",
+        "well_name": "Nacrevale 7-QH",
+        "api_number": "00-000-00701",
+        "county": "Velquorin",
+        "state": "TX",
+        "afe_date": "2026-08-01",
+        "afe_type": "Workover",
+        "total_estimate": 20000,
+        "cost_lines": [
+          {
+            "line_no": 1,
+            "account_code": "710",
+            "description": "Site preparation",
+            "category": "intangible",
+            "amount": 4000
+          },
+          {
+            "line_no": 2,
+            "account_code": "720",
+            "description": "Pressure service",
+            "category": "intangible",
+            "amount": 6000
+          },
+          {
+            "line_no": 3,
+            "account_code": "730",
+            "description": "Fluid handling",
+            "category": "intangible",
+            "amount": 3000
+          },
+          {
+            "line_no": 4,
+            "account_code": "810",
+            "description": "Valve assembly",
+            "category": "tangible",
+            "amount": 5000
+          },
+          {
+            "line_no": 5,
+            "account_code": "820",
+            "description": "Gauge package",
+            "category": "tangible",
+            "amount": 2000
+          },
+          {
+            "line_no": 6,
+            "account_code": "830",
+            "description": "Spare seals",
+            "category": "tangible",
+            "amount": 0
+          }
+        ]
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "cover_02",
+      "class": "afe_cover",
+      "packet": "afe_02",
+      "values": {
+        "letter_date": "2026-08-02",
+        "operator_name": "Zelvori Basin Operations LLC",
+        "addressee": "Mavren Fold Interests LLC",
+        "afe_number": "ZB-26-702",
+        "well_name": "Fennovar 2-RH",
+        "response_due_date": "TBD",
+        "wi_decimal_stated": 0.2,
+        "net_share_stated": 4000
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "afe_02",
+      "class": "afe",
+      "packet": "afe_02",
+      "values": {
+        "afe_number": "ZB-26-702",
+        "operator_name": "Zelvori Basin Operations LLC",
+        "well_name": "Fennovar 2-RH",
+        "api_number": null,
+        "county": "Velquorin",
+        "state": "TX",
+        "afe_date": "2026-08-02",
+        "afe_type": "Workover",
+        "total_estimate": 20000,
+        "cost_lines": [
+          {
+            "line_no": 1,
+            "account_code": "710",
+            "description": "Site preparation",
+            "category": "intangible",
+            "amount": 4000
+          },
+          {
+            "line_no": 2,
+            "account_code": "720",
+            "description": "Pressure service",
+            "category": "intangible",
+            "amount": 6000
+          },
+          {
+            "line_no": 3,
+            "account_code": "730",
+            "description": "Fluid handling",
+            "category": "intangible",
+            "amount": 3000
+          },
+          {
+            "line_no": 4,
+            "account_code": "810",
+            "description": "Valve assembly",
+            "category": "tangible",
+            "amount": 5000
+          },
+          {
+            "line_no": 5,
+            "account_code": "820",
+            "description": "Gauge package",
+            "category": "tangible",
+            "amount": 2000
+          },
+          {
+            "line_no": 6,
+            "account_code": "830",
+            "description": "Spare seals",
+            "category": "tangible",
+            "amount": 0
+          }
+        ]
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "jib_01",
+      "class": "jib_statement",
+      "packet": "jib_01",
+      "values": {
+        "statement_period": "August 2026",
+        "operator_name": "Zelvori Basin Operations LLC",
+        "property_number": "ZV-6071",
+        "well_name": "Nacrevale 7-QH",
+        "owner_name": "Mavren Fold Interests LLC",
+        "owner_number": "MF-204",
+        "wi_decimal": 0.2,
+        "gross_total": 9000,
+        "net_total": 1872.0,
+        "due_date": "2026-09-25",
+        "lines": [
+          {
+            "line_no": 1,
+            "afe_ref": "ZB-26-701",
+            "account_code": "710",
+            "description": "Site preparation",
+            "gross_amount": 1200,
+            "owner_decimal": 0.2,
+            "net_amount": 240.0
+          },
+          {
+            "line_no": 2,
+            "afe_ref": "ZB-26-701",
+            "account_code": "720",
+            "description": "Pressure service",
+            "gross_amount": 1800,
+            "owner_decimal": 0.24,
+            "net_amount": 432.0
+          },
+          {
+            "line_no": 3,
+            "afe_ref": "ZB-26-701",
+            "account_code": "730",
+            "description": "Fluid handling",
+            "gross_amount": 2400,
+            "owner_decimal": 0.2,
+            "net_amount": 480.0
+          },
+          {
+            "line_no": 4,
+            "afe_ref": "ZB-26-701",
+            "account_code": "810",
+            "description": "Valve assembly",
+            "gross_amount": 900,
+            "owner_decimal": 0.2,
+            "net_amount": 180.0
+          },
+          {
+            "line_no": 5,
+            "afe_ref": "ZB-26-701",
+            "account_code": "820",
+            "description": "Gauge package",
+            "gross_amount": 700,
+            "owner_decimal": 0.2,
+            "net_amount": 140.0
+          },
+          {
+            "line_no": 6,
+            "afe_ref": "ZB-26-701",
+            "account_code": "720",
+            "description": "Pressure service",
+            "gross_amount": 500,
+            "owner_decimal": 0.2,
+            "net_amount": 100.0
+          },
+          {
+            "line_no": 7,
+            "afe_ref": "ZB-26-702",
+            "account_code": "810",
+            "description": "Valve assembly",
+            "gross_amount": 650,
+            "owner_decimal": 0.2,
+            "net_amount": 130.0
+          },
+          {
+            "line_no": 8,
+            "afe_ref": "ZB-26-701",
+            "account_code": "730",
+            "description": "Fluid handling",
+            "gross_amount": 850,
+            "owner_decimal": 0.2,
+            "net_amount": 170.0
+          }
+        ]
+      },
+      "notes": []
+    }
+  ]
+}

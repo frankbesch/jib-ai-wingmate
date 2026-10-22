@@ -1,0 +1,57 @@
+{
+  "doc_id": "invoice_02",
+  "source_file": "synth-pilot/clean/17_invoice_02.pdf",
+  "keyed_by": "codex (author key, layer A)",
+  "keyed_from": "rendered PDF",
+  "values": {
+    "invoice_number": "OVI-642",
+    "vendor_name": "Orvessa Field Services LLC",
+    "invoice_date": "2026-08-16",
+    "afe_number": null,
+    "well_name": "Nacrevale 7-QH",
+    "subtotal": 1930,
+    "tax": 0,
+    "total": null,
+    "line_items": [
+      {
+        "ticket_ref": "OV-8311",
+        "description": "Field service bundle",
+        "quantity": 1,
+        "unit": "each",
+        "rate": 790,
+        "amount": 790
+      },
+      {
+        "ticket_ref": "OV-8312",
+        "description": "Field service bundle",
+        "quantity": 1,
+        "unit": "each",
+        "rate": 1140,
+        "amount": 1140
+      }
+    ]
+  },
+  "page_of": {
+    "invoice_number": 1,
+    "vendor_name": 1,
+    "invoice_date": 1,
+    "afe_number": 1,
+    "well_name": 1,
+    "subtotal": 1,
+    "tax": 1,
+    "total": 1,
+    "line_items[0].ticket_ref": 1,
+    "line_items[0].description": 1,
+    "line_items[0].quantity": 1,
+    "line_items[0].unit": 1,
+    "line_items[0].rate": 1,
+    "line_items[0].amount": 1,
+    "line_items[1].ticket_ref": 1,
+    "line_items[1].description": 1,
+    "line_items[1].quantity": 1,
+    "line_items[1].unit": 1,
+    "line_items[1].rate": 1,
+    "line_items[1].amount": 1
+  },
+  "uncertain": []
+}

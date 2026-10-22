@@ -1,0 +1,52 @@
+{
+ "permit_number": "907829",
+ "sequence": "98",
+ "county_code": "003",
+ "county": "ANDREWS",
+ "lease_name": "FEE 'CG' SWD",
+ "district": "08",
+ "operator_number": "263696",
+ "application_received_date": "2026-08-31",
+ "operator_name": "FASKEN OIL AND RANCH, LTD.",
+ "application_status": "Approved",
+ "permit_issue_date": "2025-05-08",
+ "fields": [
+  {
+   "field_number": "82275500",
+   "application_well_code": "O",
+   "completion_well_code": " ",
+   "completion_depth": 8500,
+   "field_district": "08",
+   "acres": 3888.09
+  }
+ ],
+ "well_number": "1",
+ "total_depth": 8500,
+ "type_of_application_code": "01",
+ "type_of_application": "New Drill",
+ "surface_section": "7",
+ "surface_block": "41 T2N",
+ "surface_survey": "G&MMB&A",
+ "surface_abstract": "217",
+ "contiguous_acres": 3888.09,
+ "miles_from_town": 6.2,
+ "direction_from_town": "NE",
+ "nearest_town": "GARDENDALE,TX",
+ "lease_perpendiculars": {
+  "feet_1": 2640.0,
+  "direction_1": "NORTH",
+  "feet_2": 6554.0,
+  "direction_2": "EAST"
+ },
+ "survey_perpendiculars": {
+  "feet_1": 2640.0,
+  "direction_1": "NORTH",
+  "feet_2": 500.0,
+  "direction_2": "EAST"
+ },
+ "horizontal_well_flag": false,
+ "directional_well_flag": false,
+ "api_number": "42-003-49159",
+ "grade": "SYSTEM-EXTRACTED",
+ "basis": "RRC daf420.dat 2026-09-04, OGA049M positions"
+}

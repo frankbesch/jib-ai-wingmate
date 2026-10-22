@@ -1,0 +1,339 @@
+{
+ "built": "2026-09-04",
+ "sources": [
+  {
+   "name": "subscriptions_2026-09-03.zip",
+   "url": "https://mft.rrc.texas.gov/link/f11363bb-8120-4e8c-bbc0-a253ec0a85d4",
+   "licence": "Texas public record (Tex. Gov't Code ch. 552); RRC data sets published free of charge; site policy: copy for noncommercial use, unaltered",
+   "fetched": "2026-09-04"
+  },
+  {
+   "name": "daf420.dat (Drilling Permit Master and Trailer - Daily File)",
+   "url": "https://mft.rrc.texas.gov/link/5f07cc72-2e79-4df8-ade1-9aeb792e03fc",
+   "licence": "Texas public record (Tex. Gov't Code ch. 552); RRC data sets published free of charge; site policy: copy for noncommercial use, unaltered",
+   "fetched": "2026-09-04"
+  },
+  {
+   "name": "OGA049M record layout manual",
+   "url": "https://www.rrc.texas.gov/media/zgccdjpi/drillingpermitmasterpluslatitudeslongitudes_oga049m_july1.pdf",
+   "licence": "Texas public record (Tex. Gov't Code ch. 552); RRC data sets published free of charge; site policy: copy for noncommercial use, unaltered",
+   "fetched": "2026-09-04"
+  }
+ ],
+ "documents": [
+  {
+   "permit": "918133",
+   "file": "corpus/raw/918133/918133_W1_AsApprovedW1-9-3-2026_LTR.pdf",
+   "sha256": "0630120fe2fe1974280f58dc5ce5e5eb7eadfb0939db735c0ecb025fb0021ed0",
+   "pages": 1,
+   "class": "w1_permit",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  },
+  {
+   "permit": "918133",
+   "file": "corpus/raw/918133/918133_Plat_pace.2.plat_LGL.pdf",
+   "sha256": "648243d80d44ca06ade01baa4397ea8364d42e1775b0745a18fb8852f1a198f0",
+   "pages": 1,
+   "class": "plat",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  },
+  {
+   "permit": "917176",
+   "file": "corpus/raw/917176/917176_W1_AsApprovedW1-9-3-2026_LTR.pdf",
+   "sha256": "7d32bb134b6860b1bcd0ec737338ac99a03db8a7c2a21ee254d9b30acc42515d",
+   "pages": 3,
+   "class": "w1_permit",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  },
+  {
+   "permit": "917176",
+   "file": "corpus/raw/917176/917176_Plat_LO_GAC_AW_1H_REV6_S_LTR.pdf",
+   "sha256": "8a654171324a8ddd2927ca2aa7a2ed57fc1ac20e046f6941ce3b43ec23e1f6b1",
+   "pages": 1,
+   "class": "plat",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  },
+  {
+   "permit": "917176",
+   "file": "corpus/raw/917176/917176_Plat_rev917176plat_LTR.pdf",
+   "sha256": "ae3153656bd89d38db61c95215f276035d52ad169146c3ba02a377ecdd2f42a8",
+   "pages": 1,
+   "class": "plat",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  },
+  {
+   "permit": "918151",
+   "file": "corpus/raw/918151/918151_W1_AsApprovedW1-9-3-2026_LTR.pdf",
+   "sha256": "aea498f921bc553897279eb91e76b0494a206d913f9460ecda3f4da716c86c40",
+   "pages": 3,
+   "class": "w1_permit",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  },
+  {
+   "permit": "918151",
+   "file": "corpus/raw/918151/918151_Plat_BRUSHY CREEK 22 E-F-G-H UNIT PLAT_LGL.pdf",
+   "sha256": "52fb5cd9739e2a73212038a590ad467b224e34cd5781f61de97b10b6882433f8",
+   "pages": 1,
+   "class": "plat",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  },
+  {
+   "permit": "918151",
+   "file": "corpus/raw/918151/918151_Plat_BRUSHY CREEK 22 UNIT PLAT_LTR.pdf",
+   "sha256": "cbf8122fa61a6851cb165e1031b8752c865abccd3b1f264794cf58a36e82fe32",
+   "pages": 1,
+   "class": "plat",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  },
+  {
+   "permit": "918151",
+   "file": "corpus/raw/918151/918151_Plat_NORTH CREEK F 0402MB_PERMIT PLAT_8-31-2026R_LGL.pdf",
+   "sha256": "48fd691aa831575caf98bfcd7308e7e25798efb29e0c8ed3b85443b56838b84b",
+   "pages": 1,
+   "class": "plat",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  },
+  {
+   "permit": "918151",
+   "file": "corpus/raw/918151/918151_Plat_NORTH CREEK F 0402MB_PERMIT PLAT_LGL.pdf",
+   "sha256": "9ed80eaa64d9bd3e717cedaf857c481177ab6c1fb4414c44b3d1e43fbe45e277",
+   "pages": 1,
+   "class": "plat",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  },
+  {
+   "permit": "918203",
+   "file": "corpus/raw/918203/918203_W1_AsApprovedW1-9-3-2026_LTR.pdf",
+   "sha256": "37c7bfe9f2d13324e3ed285f864f80ceaa40b7f6b773fc72602ca443614e3725",
+   "pages": 3,
+   "class": "w1_permit",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  },
+  {
+   "permit": "918203",
+   "file": "corpus/raw/918203/918203_Plat_EDIN10 LSE PLAT_LGL.pdf",
+   "sha256": "e0fcfd66287f542b7debcbb0c7f63cdf6c34d627badc289bb517ca49e2efa98e",
+   "pages": 1,
+   "class": "plat",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  },
+  {
+   "permit": "918203",
+   "file": "corpus/raw/918203/918203_Plat_EDIN10 PLATW1_LGL.pdf",
+   "sha256": "7b432a12856abba3b8b5226079ea8c688a11128c28062a6992ed38630795f548",
+   "pages": 1,
+   "class": "plat",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  },
+  {
+   "permit": "918203",
+   "file": "corpus/raw/918203/918203_Plat_EDIN10 PLAT_LGL.pdf",
+   "sha256": "4a664a5fa9df855442b42cba099d7a44f6efd5bc5ec326516a0d8d0c22a008bb",
+   "pages": 1,
+   "class": "plat",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  },
+  {
+   "permit": "918203",
+   "file": "corpus/raw/918203/918203_Plat_EDIN10PLAT OVERALL_LTR.pdf",
+   "sha256": "75657136d78feb394c96849f6a8be8d9cc9d6e67720d83040e3d96a9090f2f8b",
+   "pages": 1,
+   "class": "plat",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  },
+  {
+   "permit": "918203",
+   "file": "corpus/raw/918203/918203_Plat_EGU 10 PLATCLOSER_LTR.pdf",
+   "sha256": "72f95335ea19bd7de1aed52910af8bc864fcd2361cff6ca6571268553ff556ae",
+   "pages": 1,
+   "class": "plat",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  },
+  {
+   "permit": "917669",
+   "file": "corpus/raw/917669/917669_W1_AsApprovedW1-9-3-2026_LTR.pdf",
+   "sha256": "908d02e97608baa3921970b1a664ee1f9db2f26a15d5e29990379afb821ed587",
+   "pages": 3,
+   "class": "w1_permit",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  },
+  {
+   "permit": "917669",
+   "file": "corpus/raw/917669/917669_Plat_RUTTER 1-12 C 1JM RRC_LGR.pdf",
+   "sha256": "132fb01614ea130a533d77f8d58284ab0e05d1ef07c50293f98d7326691169fe",
+   "pages": 1,
+   "class": "plat",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  },
+  {
+   "permit": "918289",
+   "file": "corpus/raw/918289/918289_W1_AsApprovedW1-9-3-2026_LTR.pdf",
+   "sha256": "b303bd1c55e330dabddc30e194cfeba11616574150f25549cddd54b6e7083a5d",
+   "pages": 1,
+   "class": "w1_permit",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  },
+  {
+   "permit": "918289",
+   "file": "corpus/raw/918289/918289_Plat_CARA 1 CERTIFIED PLAT_LGL.pdf",
+   "sha256": "73a78aa9499ebc147c3e41b87b742001cf80771ff24b8bed6f4519608f302f5c",
+   "pages": 1,
+   "class": "plat",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  },
+  {
+   "permit": "918387",
+   "file": "corpus/raw/918387/918387_W1_AsApprovedW1-9-3-2026_LTR.pdf",
+   "sha256": "a29bec105d3f7f043089768f291c3c5246075eb0fc79c0e4e1f17e2635e33177",
+   "pages": 1,
+   "class": "w1_permit",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  },
+  {
+   "permit": "918387",
+   "file": "corpus/raw/918387/918387_Plat_58933-0003_revision 9-2-2023_signed_LTR.pdf",
+   "sha256": "33bfd0fa05f59ceaebea653e9c472ffef949b9294ac06503842ef33aacdfcd7d",
+   "pages": 1,
+   "class": "plat",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  },
+  {
+   "permit": "907829",
+   "file": "corpus/raw/907829/907829_W1_AsApprovedW1-9-3-2026_LTR.pdf",
+   "sha256": "bd9ad4d22041a4a02821665ac73beab7b5dd80b5cf42211ce696bbc11b6dee11",
+   "pages": 1,
+   "class": "w1_permit",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  },
+  {
+   "permit": "918233",
+   "file": "corpus/raw/918233/918233_W1_AsApprovedW1-9-3-2026_LTR.pdf",
+   "sha256": "574aae2ab229df0c6761a498fbf432416f841b3c52022b4219e7b3b635e0384b",
+   "pages": 2,
+   "class": "w1_permit",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  },
+  {
+   "permit": "918233",
+   "file": "corpus/raw/918233/918233_Plat_Mufasa State 2BU SWR40_Final_LGL.pdf",
+   "sha256": "ebb4c4f01fd5d23a43b46ce15f457988b4d2a65b8e12fdf2c774ac6a9889201e",
+   "pages": 1,
+   "class": "plat",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  },
+  {
+   "permit": "918233",
+   "file": "corpus/raw/918233/918233_Plat_Mufasa State 2BU Wellbore_Final_LGL.pdf",
+   "sha256": "b45c219d6d1cc9dc92a86b6a4ca5c33a0285e033d8c338a2529de2a37911707c",
+   "pages": 1,
+   "class": "plat",
+   "source_zip": "subscriptions_2026-09-03.zip"
+  }
+ ],
+ "packets": [
+  {
+   "permit": "918133",
+   "clean": "corpus/packets/clean/918133.pdf",
+   "clean_sha256": "586d1aae6ce090bc06d77a5458933a5091016cf8d19e04bc688a1595790defba",
+   "scan": "corpus/packets/scan/918133.pdf",
+   "scan_sha256": "117947d8dbeb6848d12ff1ed35c9a8da3e21636f147d06989e7dc6364ce03f5d",
+   "pages": 2,
+   "ascii_truth": true,
+   "w1_truth": "truth/w1/918133.json",
+   "split_truth": "truth/split/918133.json"
+  },
+  {
+   "permit": "917176",
+   "clean": "corpus/packets/clean/917176.pdf",
+   "clean_sha256": "a874bc2052a8f0c7a9af676a8b2851d7afdab84c2bc3076d7d5779de90041c4d",
+   "scan": "corpus/packets/scan/917176.pdf",
+   "scan_sha256": "4d84298bffe418f2bbeff0e30ce8d01bf4bd78b5b0bba92fce190067c13f5ebe",
+   "pages": 5,
+   "ascii_truth": true,
+   "w1_truth": "truth/w1/917176.json",
+   "split_truth": "truth/split/917176.json"
+  },
+  {
+   "permit": "918151",
+   "clean": "corpus/packets/clean/918151.pdf",
+   "clean_sha256": "7609c1fe25aa58bdb1e2d99dadbe9dd82fa4548bf048bab4f5ae4c93a428ec5f",
+   "scan": "corpus/packets/scan/918151.pdf",
+   "scan_sha256": "5ad7838df4ca24f7b888df17fd4a0749a3896a9022570bde6e1583358c7b2a5f",
+   "pages": 7,
+   "ascii_truth": true,
+   "w1_truth": "truth/w1/918151.json",
+   "split_truth": "truth/split/918151.json"
+  },
+  {
+   "permit": "918203",
+   "clean": "corpus/packets/clean/918203.pdf",
+   "clean_sha256": "df8033441057ea955e75cd2a815aad8e8988554baba6cc90afbed0f457db6a79",
+   "scan": "corpus/packets/scan/918203.pdf",
+   "scan_sha256": "e7da3540ae2a0c12910dafa624b2b86e89cd069b655820fdc2aebb7cd4b7f311",
+   "pages": 8,
+   "ascii_truth": true,
+   "w1_truth": "truth/w1/918203.json",
+   "split_truth": "truth/split/918203.json"
+  },
+  {
+   "permit": "917669",
+   "clean": "corpus/packets/clean/917669.pdf",
+   "clean_sha256": "c881d5ff2a075f8b9490b60b6fd12d9c2c0eb615a5eacaa5763c8c08d77a02ee",
+   "scan": "corpus/packets/scan/917669.pdf",
+   "scan_sha256": "1acb8d51df57d0842a1ee5c485237c21c85771b849e7bba9ba46f6cfba6ffc76",
+   "pages": 4,
+   "ascii_truth": true,
+   "w1_truth": "truth/w1/917669.json",
+   "split_truth": "truth/split/917669.json"
+  },
+  {
+   "permit": "918289",
+   "clean": "corpus/packets/clean/918289.pdf",
+   "clean_sha256": "6227f8596269e329d1e4d958d129e89139f902ccd18e16a69535acd64e0391cd",
+   "scan": "corpus/packets/scan/918289.pdf",
+   "scan_sha256": "a3aaf2a65f3318ad134d23e7791396f4dd793050b47bffa5a92659a08daaea73",
+   "pages": 2,
+   "ascii_truth": true,
+   "w1_truth": "truth/w1/918289.json",
+   "split_truth": "truth/split/918289.json"
+  },
+  {
+   "permit": "918387",
+   "clean": "corpus/packets/clean/918387.pdf",
+   "clean_sha256": "ddd374fac98eec2bbdfaeb91bea4a2ce2b67bec1af18e30727dadca968423e2b",
+   "scan": "corpus/packets/scan/918387.pdf",
+   "scan_sha256": "54cfc33cc6c86b8e2d1dc1a25f29875f49dd58f02a3bcdaab7ccff5db82565b3",
+   "pages": 2,
+   "ascii_truth": true,
+   "w1_truth": "truth/w1/918387.json",
+   "split_truth": "truth/split/918387.json"
+  },
+  {
+   "permit": "907829",
+   "clean": "corpus/packets/clean/907829.pdf",
+   "clean_sha256": "7794111ae1b14205802456cc92846916a36b31dfde2f570c74282d9402cc4277",
+   "scan": "corpus/packets/scan/907829.pdf",
+   "scan_sha256": "67ae8d370d2723dba441e7f85707494a366db8357b6268acf375b06af429dd9c",
+   "pages": 1,
+   "ascii_truth": true,
+   "w1_truth": "truth/w1/907829.json",
+   "split_truth": "truth/split/907829.json"
+  },
+  {
+   "permit": "918233",
+   "clean": "corpus/packets/clean/918233.pdf",
+   "clean_sha256": "fc0994410c74649c926fc1038435612290c03cd69be96f011fd0c961609ba40b",
+   "scan": "corpus/packets/scan/918233.pdf",
+   "scan_sha256": "542244494b50e1462f04e9c41b36fe722f97925a8dd70c2a1ccbba20f02901a8",
+   "pages": 4,
+   "ascii_truth": true,
+   "w1_truth": "truth/w1/918233.json",
+   "split_truth": "truth/split/918233.json"
+  }
+ ],
+ "join": {
+  "permits_requested": 9,
+  "permits_with_ascii_truth": 9,
+  "note": "join key = permit (status) number; same-morning daily file"
+ }
+}

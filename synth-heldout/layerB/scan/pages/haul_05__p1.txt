@@ -1,0 +1,22 @@
+OPERATIONS / OWNER RECORD
+
+
+# Fluid movement log
+
+
+Log number: SF-915
+
+
+Hauler: Sovarek Fluid Transit LLC
+
+
+Log date: 2026-09-07
+
+
+Well: Tressaline 9-VH
+
+
+<table><thead><tr><td>Load</td><td>Time</td><td>Fluid</td><td>Barrels</td><td>Destination</td></tr></thead><tbody><tr><td>1</td><td>08:15</td><td>Produced water</td><td>60.00</td><td>Pelmora recovery bay</td></tr><tr><td>2</td><td>09:15</td><td>Produced water</td><td>60.00</td><td>Pelmora recovery bay</td></tr><tr><td>3</td><td>10:15</td><td>Produced water</td><td>60.00</td><td>Pelmora recovery bay</td></tr><tr><td>4</td><td>11:15</td><td>Produced water</td><td>60.00</td><td>Pelmora recovery bay</td></tr><tr><td colspan="3">Total barrels:</td><td>240.00</td><td></td></tr></tbody></table>
+
+
+SYNTHETIC STUDY DOCUMENT - NOT VALID FOR PAYMENT

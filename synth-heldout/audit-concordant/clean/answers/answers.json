@@ -1,0 +1,202 @@
+[
+  {
+    "id": "afe_02.operator_name",
+    "printed": true,
+    "value": "Darsenne Basin Operations LLC",
+    "page": 1,
+    "where": "Bill To",
+    "confidence": "high"
+  },
+  {
+    "id": "cover_02.response_due_date",
+    "printed": true,
+    "value": "TBD",
+    "page": 1,
+    "where": "Reply by",
+    "confidence": "high"
+  },
+  {
+    "id": "cover_04.response_due_date",
+    "printed": true,
+    "value": "TBD",
+    "page": 1,
+    "where": "Reply by",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_01.afe_number",
+    "printed": true,
+    "value": "DB-26-901",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_02.afe_number",
+    "printed": true,
+    "value": "DB-26-901",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_05.afe_number",
+    "printed": true,
+    "value": "DB-26-901",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_06.afe_number",
+    "printed": true,
+    "value": "DB-26-901",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_09.afe_number",
+    "printed": true,
+    "value": "DB-26-901",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_10.afe_number",
+    "printed": true,
+    "value": "DB-26-901",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_13.afe_number",
+    "printed": true,
+    "value": "DB-26-901",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_14.afe_number",
+    "printed": true,
+    "value": "DB-26-901",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_17.afe_number",
+    "printed": true,
+    "value": "DB-26-901",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_18.afe_number",
+    "printed": true,
+    "value": "DB-26-901",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_19.afe_number",
+    "printed": true,
+    "value": "DB-26-901",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_20.afe_number",
+    "printed": true,
+    "value": "DB-26-901",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_21.afe_number",
+    "printed": true,
+    "value": "DB-26-901",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_22.afe_number",
+    "printed": true,
+    "value": "DB-26-901",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_23.afe_number",
+    "printed": true,
+    "value": "DB-26-901",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_25.afe_number",
+    "printed": true,
+    "value": "DB-26-901",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_26.afe_number",
+    "printed": true,
+    "value": "DB-26-901",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_28.afe_number",
+    "printed": true,
+    "value": "DB-26-901",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_41.afe_number",
+    "printed": true,
+    "value": "DB-26-901",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_43.afe_number",
+    "printed": true,
+    "value": "DB-26-901",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_44.well_name",
+    "printed": true,
+    "value": "N/A",
+    "page": 1,
+    "where": "Asset",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_45.afe_number",
+    "printed": true,
+    "value": "DB-26-901",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  }
+]

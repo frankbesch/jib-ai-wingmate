@@ -1,0 +1,855 @@
+{
+  "ticket_01": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_02": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "haul_01": [
+    {
+      "log_number": true,
+      "hauler_name": true,
+      "log_date": true,
+      "well_name": true,
+      "total_barrels": true
+    }
+  ],
+  "ticket_03": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_04": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "haul_02": [
+    {
+      "log_number": true,
+      "hauler_name": true,
+      "log_date": true,
+      "well_name": true,
+      "total_barrels": true
+    }
+  ],
+  "ticket_05": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_06": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "haul_03": [
+    {
+      "log_number": true,
+      "hauler_name": true,
+      "log_date": true,
+      "well_name": true,
+      "total_barrels": true
+    }
+  ],
+  "ticket_07": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_08": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "invoice_01": [
+    {
+      "invoice_number": true,
+      "vendor_name": true,
+      "invoice_date": true,
+      "afe_number": true,
+      "well_name": true,
+      "subtotal": true,
+      "tax": true,
+      "total": true
+    }
+  ],
+  "ticket_09": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_10": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "invoice_03": [
+    {
+      "invoice_number": true,
+      "vendor_name": true,
+      "invoice_date": true,
+      "afe_number": true,
+      "well_name": true,
+      "subtotal": true,
+      "tax": true,
+      "total": true
+    }
+  ],
+  "ticket_11": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_12": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "invoice_04": [
+    {
+      "invoice_number": true,
+      "vendor_name": true,
+      "invoice_date": true,
+      "afe_number": true,
+      "well_name": true,
+      "subtotal": true,
+      "tax": true,
+      "total": true
+    }
+  ],
+  "ticket_13": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_14": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_15": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_16": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_17": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_18": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_19": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_20": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "haul_04": [
+    {
+      "log_number": true,
+      "hauler_name": true,
+      "log_date": true,
+      "well_name": false,
+      "total_barrels": true
+    }
+  ],
+  "ticket_21": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_22": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "haul_05": [
+    {
+      "log_number": true,
+      "hauler_name": true,
+      "log_date": true,
+      "well_name": true,
+      "total_barrels": true
+    }
+  ],
+  "ticket_23": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_24": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "haul_06": [
+    {
+      "log_number": true,
+      "hauler_name": true,
+      "log_date": true,
+      "well_name": true,
+      "total_barrels": true
+    }
+  ],
+  "ticket_25": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_26": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_27": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_28": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_29": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_30": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_31": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_32": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_33": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_34": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_35": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_36": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_37": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_38": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_39": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": true
+    }
+  ],
+  "ticket_40": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": false,
+      "total": true
+    }
+  ],
+  "haul_07": [
+    {
+      "log_number": true,
+      "hauler_name": true,
+      "log_date": true,
+      "well_name": false,
+      "total_barrels": true
+    }
+  ],
+  "ticket_41": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": false
+    }
+  ],
+  "ticket_42": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": false,
+      "total": true
+    }
+  ],
+  "haul_08": [
+    {
+      "log_number": true,
+      "hauler_name": true,
+      "log_date": true,
+      "well_name": true,
+      "total_barrels": true
+    }
+  ],
+  "ticket_43": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": false
+    }
+  ],
+  "ticket_44": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": false,
+      "total": true
+    }
+  ],
+  "haul_09": [
+    {
+      "log_number": true,
+      "hauler_name": true,
+      "log_date": true,
+      "well_name": false,
+      "total_barrels": true
+    }
+  ],
+  "ticket_45": [
+    {
+      "ticket_number": true,
+      "vendor_name": true,
+      "service_date": true,
+      "well_name": true,
+      "afe_number": true,
+      "total": false
+    }
+  ],
+  "invoice_02": [
+    {
+      "invoice_number": true,
+      "vendor_name": true,
+      "invoice_date": true,
+      "afe_number": false,
+      "well_name": true,
+      "subtotal": true,
+      "tax": true,
+      "total": false
+    }
+  ],
+  "cover_01": [
+    {
+      "letter_date": true,
+      "operator_name": true,
+      "addressee": true,
+      "afe_number": true,
+      "well_name": true,
+      "response_due_date": true,
+      "wi_decimal_stated": true,
+      "net_share_stated": true
+    }
+  ],
+  "afe_01": [
+    {
+      "afe_number": true,
+      "operator_name": true,
+      "well_name": true,
+      "api_number": true,
+      "county": true,
+      "state": true,
+      "afe_date": true,
+      "afe_type": true,
+      "total_estimate": false
+    },
+    {
+      "afe_number": false,
+      "operator_name": false,
+      "well_name": false,
+      "api_number": false,
+      "county": false,
+      "state": false,
+      "afe_date": false,
+      "afe_type": false,
+      "total_estimate": true
+    }
+  ],
+  "cover_02": [
+    {
+      "letter_date": true,
+      "operator_name": true,
+      "addressee": true,
+      "afe_number": true,
+      "well_name": true,
+      "response_due_date": true,
+      "wi_decimal_stated": true,
+      "net_share_stated": true
+    }
+  ],
+  "afe_02": [
+    {
+      "afe_number": true,
+      "operator_name": true,
+      "well_name": true,
+      "api_number": false,
+      "county": true,
+      "state": true,
+      "afe_date": true,
+      "afe_type": true,
+      "total_estimate": false
+    },
+    {
+      "afe_number": true,
+      "operator_name": false,
+      "well_name": false,
+      "api_number": false,
+      "county": false,
+      "state": false,
+      "afe_date": false,
+      "afe_type": false,
+      "total_estimate": true
+    }
+  ],
+  "cover_03": [
+    {
+      "letter_date": true,
+      "operator_name": true,
+      "addressee": true,
+      "afe_number": true,
+      "well_name": true,
+      "response_due_date": true,
+      "wi_decimal_stated": true,
+      "net_share_stated": true
+    }
+  ],
+  "afe_03": [
+    {
+      "afe_number": true,
+      "operator_name": true,
+      "well_name": true,
+      "api_number": true,
+      "county": true,
+      "state": true,
+      "afe_date": true,
+      "afe_type": true,
+      "total_estimate": false
+    },
+    {
+      "afe_number": false,
+      "operator_name": false,
+      "well_name": false,
+      "api_number": false,
+      "county": false,
+      "state": false,
+      "afe_date": false,
+      "afe_type": false,
+      "total_estimate": true
+    }
+  ],
+  "cover_04": [
+    {
+      "letter_date": true,
+      "operator_name": true,
+      "addressee": true,
+      "afe_number": true,
+      "well_name": true,
+      "response_due_date": true,
+      "wi_decimal_stated": true,
+      "net_share_stated": true
+    }
+  ],
+  "afe_04": [
+    {
+      "afe_number": true,
+      "operator_name": true,
+      "well_name": true,
+      "api_number": false,
+      "county": true,
+      "state": true,
+      "afe_date": true,
+      "afe_type": true,
+      "total_estimate": false
+    },
+    {
+      "afe_number": false,
+      "operator_name": false,
+      "well_name": false,
+      "api_number": false,
+      "county": false,
+      "state": false,
+      "afe_date": false,
+      "afe_type": false,
+      "total_estimate": true
+    }
+  ],
+  "jib_01": [
+    {
+      "statement_period": true,
+      "operator_name": true,
+      "property_number": true,
+      "well_name": true,
+      "owner_name": true,
+      "owner_number": true,
+      "wi_decimal": true,
+      "gross_total": false,
+      "net_total": false,
+      "due_date": false
+    },
+    {
+      "statement_period": false,
+      "operator_name": false,
+      "property_number": false,
+      "well_name": false,
+      "owner_name": false,
+      "owner_number": false,
+      "wi_decimal": false,
+      "gross_total": true,
+      "net_total": true,
+      "due_date": true
+    }
+  ],
+  "jib_02": [
+    {
+      "statement_period": true,
+      "operator_name": true,
+      "property_number": true,
+      "well_name": true,
+      "owner_name": true,
+      "owner_number": true,
+      "wi_decimal": true,
+      "gross_total": false,
+      "net_total": false,
+      "due_date": false
+    },
+    {
+      "statement_period": false,
+      "operator_name": false,
+      "property_number": false,
+      "well_name": false,
+      "owner_name": false,
+      "owner_number": false,
+      "wi_decimal": false,
+      "gross_total": true,
+      "net_total": true,
+      "due_date": true
+    }
+  ],
+  "jib_03": [
+    {
+      "statement_period": true,
+      "operator_name": true,
+      "property_number": true,
+      "well_name": true,
+      "owner_name": true,
+      "owner_number": true,
+      "wi_decimal": true,
+      "gross_total": false,
+      "net_total": false,
+      "due_date": false
+    },
+    {
+      "statement_period": false,
+      "operator_name": false,
+      "property_number": false,
+      "well_name": false,
+      "owner_name": false,
+      "owner_number": false,
+      "wi_decimal": false,
+      "gross_total": true,
+      "net_total": true,
+      "due_date": true
+    }
+  ],
+  "jib_04": [
+    {
+      "statement_period": true,
+      "operator_name": true,
+      "property_number": true,
+      "well_name": true,
+      "owner_name": true,
+      "owner_number": true,
+      "wi_decimal": true,
+      "gross_total": false,
+      "net_total": false,
+      "due_date": false
+    },
+    {
+      "statement_period": false,
+      "operator_name": false,
+      "property_number": false,
+      "well_name": false,
+      "owner_name": false,
+      "owner_number": false,
+      "wi_decimal": false,
+      "gross_total": true,
+      "net_total": true,
+      "due_date": true
+    }
+  ],
+  "jib_05": [
+    {
+      "statement_period": true,
+      "operator_name": true,
+      "property_number": true,
+      "well_name": true,
+      "owner_name": true,
+      "owner_number": true,
+      "wi_decimal": true,
+      "gross_total": false,
+      "net_total": false,
+      "due_date": false
+    },
+    {
+      "statement_period": false,
+      "operator_name": false,
+      "property_number": false,
+      "well_name": false,
+      "owner_name": false,
+      "owner_number": false,
+      "wi_decimal": false,
+      "gross_total": true,
+      "net_total": true,
+      "due_date": true
+    }
+  ]
+}

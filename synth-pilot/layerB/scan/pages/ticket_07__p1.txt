@@ -1,0 +1,16 @@
+OPERATIONS / OWNER RECORD
+
+
+# Field service ticket
+
+
+Worksite note: Nacrevale 7Q-H. Use the well identification in the header for this ticket.
+
+
+<table><tr><td>Dispatch docket:</td><td>OV-8307</td><td>RECEIVED</td></tr><tr><td>Service firm:</td><td colspan="2">Orvessa Field Services LLC</td></tr><tr><td>Serviced:</td><td colspan="2">2026-08-07</td></tr><tr><td>Asset:</td><td colspan="2">Nacrevale 7-QH</td></tr><tr><td>Ref:</td><td colspan="2">ZB-26-701</td></tr></table>
+
+
+<table><thead><tr><th>Description</th><th>Qty</th><th>Unit</th><th>Rate</th><th>Amount</th></tr></thead><tbody><tr><td>Pressure unit service</td><td>6</td><td>hour</td><td>175.00</td><td>1,050.00</td></tr><tr><td>Hose kit rental</td><td>1</td><td>day</td><td>90.00</td><td>90.00</td></tr><tr><td>Amount due:</td><td colspan="3">1,140.00</td><td></td></tr><tr><td>Customer signature:</td><td colspan="4"></td></tr></tbody></table>
+
+
+SYNTHETIC STUDY DOCUMENT - NOT VALID FOR PAYMENT

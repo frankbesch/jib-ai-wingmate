@@ -1,0 +1,37 @@
+{
+  "synthetic": true,
+  "defects": [
+    {
+      "plant_id": "P1",
+      "doc_id": "jib_01",
+      "field": "lines[1].owner_decimal",
+      "printed": 0.24,
+      "correct": 0.2,
+      "gross_amount": 1800,
+      "printed_net": 432,
+      "correct_net": 360,
+      "overcharge": 72,
+      "reference": "reference/doi.json"
+    },
+    {
+      "plant_id": "P2",
+      "doc_id": "ticket_03",
+      "field": "line_items[0].rate",
+      "printed": 205,
+      "correct": 175,
+      "quantity": 6,
+      "reference": "reference/contract_rates.json"
+    },
+    {
+      "plant_id": "P3",
+      "doc_id": "jib_01",
+      "field": "lines[6].afe_ref",
+      "printed": "DB-26-902",
+      "account_code": "810",
+      "correct": "Do not bill this owner; AFE 902 declined, including line 4/account 810.",
+      "printed_net": 130,
+      "correct_net": 0,
+      "reference": "reference/afe_election.json"
+    }
+  ]
+}

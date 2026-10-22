@@ -1,0 +1,26 @@
+{
+  "doc_id": "ticket_44",
+  "keyed_by": "codex blind layer-B key (extracted text)",
+  "keyed_from": "extracted text",
+  "values": {
+    "ticket_number": "BQ-9644",
+    "vendor_name": "Brelquor Field Services LLC",
+    "service_date": "2026-09-29",
+    "well_name": "N/A",
+    "afe_number": null,
+    "total": "965.00",
+    "invoice_number": null,
+    "log_number": null
+  },
+  "page_of": {
+    "ticket_number": 1,
+    "vendor_name": 1,
+    "service_date": 1,
+    "well_name": 1,
+    "afe_number": null,
+    "total": 1,
+    "invoice_number": null,
+    "log_number": null
+  },
+  "notes": []
+}

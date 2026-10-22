@@ -1,0 +1,21 @@
+{
+  "$comment": "Pulse /schema input_schema for a vendor field ticket (service ticket). JSON Schema, nested depth <= 3. One ticket per call. SYNTHETIC demonstration corpus.",
+  "type": "object",
+  "properties": {
+    "ticket_number": {"type": "string", "description": "Ticket number printed in the header, exactly as printed."},
+    "vendor_name": {"type": "string", "description": "Service company issuing the ticket, exactly as printed."},
+    "service_date": {"type": "string", "description": "Date of service as printed."},
+    "well_name": {"type": "string", "description": "Well or location the work was performed on, exactly as printed."},
+    "afe_number": {"type": "string", "description": "AFE number written on the ticket, exactly as printed. Null if the ticket carries none."},
+    "line_items": {"type": "array", "description": "One item per printed charge row of the ticket's table, in printed order. Do NOT include the Ticket total row or any subtotal row: a row whose description reads Ticket total, Total, or Subtotal is the total field, not a line item.", "items": {"type": "object", "properties": {
+      "description": {"type": "string", "description": "Charge description printed on the row, exactly as printed."},
+      "quantity": {"type": "number", "description": "Quantity printed on the row. Some quantities are entered by hand in pen; read the pen entry as written and do not round it."},
+      "unit": {"type": "string", "description": "Unit of measure printed on the row, exactly as printed, e.g. hour, day, bbl, each."},
+      "rate": {"type": "number", "description": "Unit rate printed on the row. Digits only. Copy the printed rate even when it looks wrong; never substitute a rate from another row or document."},
+      "amount": {"type": "number", "description": "Extended amount printed on the row. Digits only. Copy the printed amount; never multiply quantity by rate yourself."}
+    }}},
+    "total": {"type": "number", "description": "Ticket total as printed. Digits only. Copy the printed total; never sum the rows yourself."},
+    "customer_signature_present": {"type": "boolean", "description": "True only if a customer or company-representative signature is actually written in the signature block. False when the block is printed but empty."}
+  },
+  "required": ["ticket_number", "vendor_name", "service_date", "line_items", "total"]
+}

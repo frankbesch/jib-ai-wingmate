@@ -1,0 +1,13 @@
+OPERATIONS / OWNER RECORD
+
+
+# Billing detail
+
+
+<table><thead><tr><td>Line</td><td>AFE ref</td><td>Account</td><td>Description</td><td>Gross</td><td>Decimal</td><td>Net</td></tr></thead><tbody><tr><td>5</td><td>ZB-26-701</td><td>820</td><td>Gauge package</td><td>700.00</td><td>0.200000</td><td>140.00</td></tr><tr><td>6</td><td>ZB-26-701</td><td>720</td><td>Pressure service</td><td>500.00</td><td>0.200000</td><td>100.00</td></tr><tr><td>7</td><td>ZB-26-702</td><td>810</td><td>Valve assembly</td><td>650.00</td><td>0.200000</td><td>130.00</td></tr><tr><td>8</td><td>ZB-26-701</td><td>730</td><td>Fluid handling</td><td>850.00</td><td>0.200000</td><td>170.00</td></tr><tr><td colspan="3">Gross total:</td><td>9,000.00</td><td colspan="3"></td></tr><tr><td colspan="3">Net total:</td><td>1,872.00</td><td colspan="3"></td></tr><tr><td colspan="3">Due date:</td><td>2026-09-25</td><td colspan="3"></td></tr></tbody></table>
+
+
+Remit using the owner number on the statement face.
+
+
+SYNTHETIC STUDY DOCUMENT - NOT VALID FOR PAYMENT

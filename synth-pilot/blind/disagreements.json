@@ -1,0 +1,226 @@
+[
+ {
+  "doc": "jib_01",
+  "field": "lines[0].gross",
+  "author": null,
+  "blind": 1200,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[0].gross_amount",
+  "author": 1200,
+  "blind": null,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[0].net",
+  "author": null,
+  "blind": 240,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[0].net_amount",
+  "author": 240,
+  "blind": null,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[1].gross",
+  "author": null,
+  "blind": 1800,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[1].gross_amount",
+  "author": 1800,
+  "blind": null,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[1].net",
+  "author": null,
+  "blind": 432,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[1].net_amount",
+  "author": 432,
+  "blind": null,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[2].gross",
+  "author": null,
+  "blind": 2400,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[2].gross_amount",
+  "author": 2400,
+  "blind": null,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[2].net",
+  "author": null,
+  "blind": 480,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[2].net_amount",
+  "author": 480,
+  "blind": null,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[3].gross",
+  "author": null,
+  "blind": 900,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[3].gross_amount",
+  "author": 900,
+  "blind": null,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[3].net",
+  "author": null,
+  "blind": 180,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[3].net_amount",
+  "author": 180,
+  "blind": null,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[4].gross",
+  "author": null,
+  "blind": 700,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[4].gross_amount",
+  "author": 700,
+  "blind": null,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[4].net",
+  "author": null,
+  "blind": 140,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[4].net_amount",
+  "author": 140,
+  "blind": null,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[5].gross",
+  "author": null,
+  "blind": 500,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[5].gross_amount",
+  "author": 500,
+  "blind": null,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[5].net",
+  "author": null,
+  "blind": 100,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[5].net_amount",
+  "author": 100,
+  "blind": null,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[6].gross",
+  "author": null,
+  "blind": 650,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[6].gross_amount",
+  "author": 650,
+  "blind": null,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[6].net",
+  "author": null,
+  "blind": 130,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[6].net_amount",
+  "author": 130,
+  "blind": null,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[7].gross",
+  "author": null,
+  "blind": 850,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[7].gross_amount",
+  "author": 850,
+  "blind": null,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[7].net",
+  "author": null,
+  "blind": 170,
+  "ruling": null
+ },
+ {
+  "doc": "jib_01",
+  "field": "lines[7].net_amount",
+  "author": 170,
+  "blind": null,
+  "ruling": null
+ }
+]

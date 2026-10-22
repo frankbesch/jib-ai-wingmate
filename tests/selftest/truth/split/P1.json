@@ -1,0 +1,13 @@
+{
+ "permit": "P1",
+ "total_pages": 3,
+ "splits": {
+  "w1_permit": [
+   1
+  ],
+  "plat": [
+   2,
+   3
+  ]
+ }
+}

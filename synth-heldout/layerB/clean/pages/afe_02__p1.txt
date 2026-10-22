@@ -1,0 +1,26 @@
+OPERATIONS / OWNER RECORD
+
+
+# Authorization for Expenditure
+
+
+Dear interest owner, please review this authorization and return your election.
+
+
+Ref: **DB-26-902**
+Bill To: **Darsenne Basin Operations LLC**
+Asset: **Ostrand 4-KH**
+API reference:
+Parish / county: **Lumereth**
+Jurisdiction: **TX**
+Prepared: **2026-09-02**
+Scope: **Workover**
+
+
+<table><thead><tr><td>Line</td><td>Account</td><td>Description</td><td>Category</td><td>Amount</td></tr></thead><tbody><tr><td>1</td><td>710</td><td>Site preparation</td><td>intangible</td><td>4,000.00</td></tr><tr><td>2</td><td>720</td><td>Pressure service</td><td>intangible</td><td>6,000.00</td></tr><tr><td>3</td><td>730</td><td>Fluid handling</td><td>intangible</td><td>3,000.00</td></tr></tbody></table>
+
+
+Estimate continues on the attached cost schedule.
+
+
+SYNTHETIC STUDY DOCUMENT - NOT VALID FOR PAYMENT

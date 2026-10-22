@@ -1,0 +1,53 @@
+{
+  "doc_id": "ticket_22",
+  "source_file": "29_ticket_22.pdf",
+  "keyed_by": "codex blind re-key (layer A, second session)",
+  "keyed_from": "page images",
+  "values": {
+    "ticket_number": "BQ-9622",
+    "vendor_name": "Brelquor Field Services LLC",
+    "service_date": "2026-09-12",
+    "well_name": "Tressaline 9-VH",
+    "afe_number": "DB-26-901",
+    "line_items": [
+      {
+        "description": "Pressure unit service",
+        "quantity": 6,
+        "unit": "hour",
+        "rate": 175,
+        "amount": 1050
+      },
+      {
+        "description": "Gauge kit rental",
+        "quantity": 1,
+        "unit": "day",
+        "rate": 90,
+        "amount": 90
+      }
+    ],
+    "total": 1140,
+    "customer_signature_present": false
+  },
+  "page_of": {
+    "ticket_number": 1,
+    "vendor_name": 1,
+    "service_date": 1,
+    "well_name": 1,
+    "afe_number": 1,
+    "line_items[0].description": 1,
+    "line_items[0].quantity": 1,
+    "line_items[0].unit": 1,
+    "line_items[0].rate": 1,
+    "line_items[0].amount": 1,
+    "line_items[1].description": 1,
+    "line_items[1].quantity": 1,
+    "line_items[1].unit": 1,
+    "line_items[1].rate": 1,
+    "line_items[1].amount": 1,
+    "total": 1,
+    "customer_signature_present": 1
+  },
+  "uncertain": [
+    "well_name: Asset prints Tressaline 9-VH; worksite note prints Tressaline 9V-H."
+  ]
+}

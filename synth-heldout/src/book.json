@@ -1,0 +1,2692 @@
+{
+  "seed": 931047,
+  "synthetic": true,
+  "documents": [
+    {
+      "doc_id": "ticket_01",
+      "class": "field_ticket",
+      "packet": "ticket_01",
+      "values": {
+        "ticket_number": "BQ-9601",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-01",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 5,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 875
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 965,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_02",
+      "class": "field_ticket",
+      "packet": "ticket_01",
+      "values": {
+        "ticket_number": "BQ-9602",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-02",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 8,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1400
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1490,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "haul_01",
+      "class": "hauling_log",
+      "packet": "ticket_01",
+      "values": {
+        "log_number": "SF-911",
+        "hauler_name": "Sovarek Fluid Transit LLC",
+        "log_date": "2026-09-03",
+        "well_name": "Tressaline 9-VH",
+        "loads": [
+          {
+            "load_no": 1,
+            "time": "08:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 2,
+            "time": "09:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 3,
+            "time": "10:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 4,
+            "time": "11:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          }
+        ],
+        "total_barrels": 240
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_03",
+      "class": "field_ticket",
+      "packet": "ticket_02",
+      "values": {
+        "ticket_number": "BQ-9603",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-03",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 6,
+            "unit": "hour",
+            "rate": 205,
+            "amount": 1230
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1320,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_04",
+      "class": "field_ticket",
+      "packet": "ticket_02",
+      "values": {
+        "ticket_number": "BQ-9604",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-04",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 7,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1225
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1315,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "haul_02",
+      "class": "hauling_log",
+      "packet": "ticket_02",
+      "values": {
+        "log_number": "SF-912",
+        "hauler_name": "Sovarek Fluid Transit LLC",
+        "log_date": "2026-09-04",
+        "well_name": "Tressaline 9-VH",
+        "loads": [
+          {
+            "load_no": 1,
+            "time": "08:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 2,
+            "time": "09:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 3,
+            "time": "10:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 4,
+            "time": "11:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          }
+        ],
+        "total_barrels": 240
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_05",
+      "class": "field_ticket",
+      "packet": "ticket_03",
+      "values": {
+        "ticket_number": "BQ-9605",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-05",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 4,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 700
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 790,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_06",
+      "class": "field_ticket",
+      "packet": "ticket_03",
+      "values": {
+        "ticket_number": "BQ-9606",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-06",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 8,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1400
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1490,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "haul_03",
+      "class": "hauling_log",
+      "packet": "ticket_03",
+      "values": {
+        "log_number": "SF-913",
+        "hauler_name": "Sovarek Fluid Transit LLC",
+        "log_date": "2026-09-05",
+        "well_name": "Tressaline 9-VH",
+        "loads": [
+          {
+            "load_no": 1,
+            "time": "08:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 2,
+            "time": "09:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 3,
+            "time": "10:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 4,
+            "time": "11:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          }
+        ],
+        "total_barrels": 240
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_07",
+      "class": "field_ticket",
+      "packet": "ticket_04",
+      "values": {
+        "ticket_number": "BQ-9607",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-07",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 5,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 875
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 965,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_08",
+      "class": "field_ticket",
+      "packet": "ticket_04",
+      "values": {
+        "ticket_number": "BQ-9608",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-08",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 7,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1225
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1315,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "invoice_01",
+      "class": "invoice",
+      "packet": "ticket_04",
+      "values": {
+        "invoice_number": "BQI-641",
+        "vendor_name": "Brelquor Field Services LLC",
+        "invoice_date": "2026-09-15",
+        "afe_number": "DB-26-901",
+        "well_name": "Tressaline 9-VH",
+        "line_items": [
+          {
+            "ticket_ref": "BQ-9607",
+            "description": "Field service bundle",
+            "quantity": 1,
+            "unit": "each",
+            "rate": 965,
+            "amount": 965
+          },
+          {
+            "ticket_ref": "BQ-9608",
+            "description": "Field service bundle",
+            "quantity": 1,
+            "unit": "each",
+            "rate": 1315,
+            "amount": 1315
+          }
+        ],
+        "subtotal": 2280,
+        "tax": 0,
+        "total": 2280
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_09",
+      "class": "field_ticket",
+      "packet": "ticket_05",
+      "values": {
+        "ticket_number": "BQ-9609",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-09",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 6,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1050
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1140,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_10",
+      "class": "field_ticket",
+      "packet": "ticket_05",
+      "values": {
+        "ticket_number": "BQ-9610",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-10",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 8,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1400
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1490,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "invoice_03",
+      "class": "invoice",
+      "packet": "ticket_05",
+      "values": {
+        "invoice_number": "BQI-643",
+        "vendor_name": "Brelquor Field Services LLC",
+        "invoice_date": "2026-09-17",
+        "afe_number": "DB-26-901",
+        "well_name": "Tressaline 9-VH",
+        "line_items": [
+          {
+            "ticket_ref": "BQ-9609",
+            "description": "Field service bundle",
+            "quantity": 1,
+            "unit": "each",
+            "rate": 1140,
+            "amount": 1140
+          },
+          {
+            "ticket_ref": "BQ-9610",
+            "description": "Field service bundle",
+            "quantity": 1,
+            "unit": "each",
+            "rate": 1490,
+            "amount": 1490
+          }
+        ],
+        "subtotal": 2630,
+        "tax": 0,
+        "total": 2630
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_11",
+      "class": "field_ticket",
+      "packet": "ticket_06",
+      "values": {
+        "ticket_number": "BQ-9611",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-11",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 4,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 700
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 790,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_12",
+      "class": "field_ticket",
+      "packet": "ticket_06",
+      "values": {
+        "ticket_number": "BQ-9612",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-12",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 7,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1225
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1315,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "invoice_04",
+      "class": "invoice",
+      "packet": "ticket_06",
+      "values": {
+        "invoice_number": "BQI-644",
+        "vendor_name": "Brelquor Field Services LLC",
+        "invoice_date": "2026-09-18",
+        "afe_number": "DB-26-901",
+        "well_name": "Tressaline 9-VH",
+        "line_items": [
+          {
+            "ticket_ref": "BQ-9611",
+            "description": "Field service bundle",
+            "quantity": 1,
+            "unit": "each",
+            "rate": 790,
+            "amount": 790
+          },
+          {
+            "ticket_ref": "BQ-9612",
+            "description": "Field service bundle",
+            "quantity": 1,
+            "unit": "each",
+            "rate": 1315,
+            "amount": 1315
+          }
+        ],
+        "subtotal": 2105,
+        "tax": 0,
+        "total": 2105
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_13",
+      "class": "field_ticket",
+      "packet": "ticket_07",
+      "values": {
+        "ticket_number": "BQ-9613",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-13",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 5,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 875
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 965,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_14",
+      "class": "field_ticket",
+      "packet": "ticket_07",
+      "values": {
+        "ticket_number": "BQ-9614",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-14",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 8,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1400
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1490,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_15",
+      "class": "field_ticket",
+      "packet": "ticket_08",
+      "values": {
+        "ticket_number": "BQ-9615",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-15",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 6,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1050
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1140,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_16",
+      "class": "field_ticket",
+      "packet": "ticket_08",
+      "values": {
+        "ticket_number": "BQ-9616",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-16",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 7,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1225
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1315,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_17",
+      "class": "field_ticket",
+      "packet": "ticket_09",
+      "values": {
+        "ticket_number": "BQ-9617",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-17",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 4,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 700
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 790,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_18",
+      "class": "field_ticket",
+      "packet": "ticket_09",
+      "values": {
+        "ticket_number": "BQ-9618",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-18",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 8,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1400
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1490,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_19",
+      "class": "field_ticket",
+      "packet": "ticket_10",
+      "values": {
+        "ticket_number": "BQ-9619",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-11",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 6,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1050
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1140,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_20",
+      "class": "field_ticket",
+      "packet": "ticket_10",
+      "values": {
+        "ticket_number": "BQ-9620",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-11",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 6,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1050
+          },
+          {
+            "description": "Gauge kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1140,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "haul_04",
+      "class": "hauling_log",
+      "packet": "ticket_10",
+      "values": {
+        "log_number": "SF-914",
+        "hauler_name": "Sovarek Fluid Transit LLC",
+        "log_date": "2026-09-06",
+        "well_name": null,
+        "loads": [
+          {
+            "load_no": 1,
+            "time": "08:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 2,
+            "time": "09:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 3,
+            "time": "10:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 4,
+            "time": "11:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          }
+        ],
+        "total_barrels": 240
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_21",
+      "class": "field_ticket",
+      "packet": "ticket_11",
+      "values": {
+        "ticket_number": "BQ-9621",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-12",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 6,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1050
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1140,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_22",
+      "class": "field_ticket",
+      "packet": "ticket_11",
+      "values": {
+        "ticket_number": "BQ-9622",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-12",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 6,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1050
+          },
+          {
+            "description": "Gauge kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1140,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "haul_05",
+      "class": "hauling_log",
+      "packet": "ticket_11",
+      "values": {
+        "log_number": "SF-915",
+        "hauler_name": "Sovarek Fluid Transit LLC",
+        "log_date": "2026-09-07",
+        "well_name": "Tressaline 9-VH",
+        "loads": [
+          {
+            "load_no": 1,
+            "time": "08:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 2,
+            "time": "09:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 3,
+            "time": "10:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 4,
+            "time": "11:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          }
+        ],
+        "total_barrels": 240
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_23",
+      "class": "field_ticket",
+      "packet": "ticket_12",
+      "values": {
+        "ticket_number": "BQ-9623",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-13",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 6,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1050
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1140,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_24",
+      "class": "field_ticket",
+      "packet": "ticket_12",
+      "values": {
+        "ticket_number": "BQ-9624",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-13",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 6,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1050
+          },
+          {
+            "description": "Gauge kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1140,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "haul_06",
+      "class": "hauling_log",
+      "packet": "ticket_12",
+      "values": {
+        "log_number": "SF-916",
+        "hauler_name": "Sovarek Fluid Transit LLC",
+        "log_date": "2026-09-08",
+        "well_name": "Tressaline 9-VH",
+        "loads": [
+          {
+            "load_no": 1,
+            "time": "08:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 2,
+            "time": "09:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 3,
+            "time": "10:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 4,
+            "time": "11:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          }
+        ],
+        "total_barrels": 240
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_25",
+      "class": "field_ticket",
+      "packet": "ticket_13",
+      "values": {
+        "ticket_number": "BQ-9625",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-14",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 6,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1050
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1140,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_26",
+      "class": "field_ticket",
+      "packet": "ticket_13",
+      "values": {
+        "ticket_number": "BQ-9626",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-14",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 6,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1050
+          },
+          {
+            "description": "Gauge kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1140,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_27",
+      "class": "field_ticket",
+      "packet": "ticket_14",
+      "values": {
+        "ticket_number": "BQ-9627",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-15",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 6,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1050
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1140,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_28",
+      "class": "field_ticket",
+      "packet": "ticket_14",
+      "values": {
+        "ticket_number": "BQ-9628",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-15",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 6,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1050
+          },
+          {
+            "description": "Gauge kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1140,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_29",
+      "class": "field_ticket",
+      "packet": "ticket_15",
+      "values": {
+        "ticket_number": "BQ-9629",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-16",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 6,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1050
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1140,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_30",
+      "class": "field_ticket",
+      "packet": "ticket_15",
+      "values": {
+        "ticket_number": "BQ-9630",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-16",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 6,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1050
+          },
+          {
+            "description": "Gauge kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1140,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_31",
+      "class": "field_ticket",
+      "packet": "ticket_16",
+      "values": {
+        "ticket_number": "BQ-9631",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-16",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 7,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1225
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1315,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_32",
+      "class": "field_ticket",
+      "packet": "ticket_17",
+      "values": {
+        "ticket_number": "BQ-9632",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-17",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 6,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1050
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1140,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_33",
+      "class": "field_ticket",
+      "packet": "ticket_18",
+      "values": {
+        "ticket_number": "BQ-9633",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-18",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 5,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 875
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 965,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_34",
+      "class": "field_ticket",
+      "packet": "ticket_19",
+      "values": {
+        "ticket_number": "BQ-9634",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-19",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 5,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 875
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 965,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_35",
+      "class": "field_ticket",
+      "packet": "ticket_20",
+      "values": {
+        "ticket_number": "BQ-9635",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-20",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 4,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 700
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 790,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_36",
+      "class": "field_ticket",
+      "packet": "ticket_21",
+      "values": {
+        "ticket_number": "BQ-9636",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-21",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 5,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 875
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 965,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_37",
+      "class": "field_ticket",
+      "packet": "ticket_22",
+      "values": {
+        "ticket_number": "BQ-9637",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-22",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 4,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 700
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 790,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_38",
+      "class": "field_ticket",
+      "packet": "ticket_23",
+      "values": {
+        "ticket_number": "BQ-9638",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-23",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 5,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 875
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 965,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_39",
+      "class": "field_ticket",
+      "packet": "ticket_24",
+      "values": {
+        "ticket_number": "BQ-9639",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-24",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 5,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 875
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 965,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_40",
+      "class": "field_ticket",
+      "packet": "ticket_25",
+      "values": {
+        "ticket_number": "BQ-9640",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-25",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": null,
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 5,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 875
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 965,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "haul_07",
+      "class": "hauling_log",
+      "packet": "ticket_25",
+      "values": {
+        "log_number": "SF-917",
+        "hauler_name": "Sovarek Fluid Transit LLC",
+        "log_date": "2026-09-09",
+        "well_name": null,
+        "loads": [
+          {
+            "load_no": 1,
+            "time": "08:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 2,
+            "time": "09:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 3,
+            "time": "10:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 4,
+            "time": "11:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          }
+        ],
+        "total_barrels": 240
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_41",
+      "class": "field_ticket",
+      "packet": "ticket_26",
+      "values": {
+        "ticket_number": "BQ-9641",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-26",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 6,
+            "unit": null,
+            "rate": 175,
+            "amount": 1050
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": null,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_42",
+      "class": "field_ticket",
+      "packet": "ticket_27",
+      "values": {
+        "ticket_number": "BQ-9642",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-27",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": null,
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 7,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 1225
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 1315,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "haul_08",
+      "class": "hauling_log",
+      "packet": "ticket_27",
+      "values": {
+        "log_number": "SF-918",
+        "hauler_name": "Sovarek Fluid Transit LLC",
+        "log_date": "2026-09-10",
+        "well_name": "Tressaline 9-VH",
+        "loads": [
+          {
+            "load_no": 1,
+            "time": "08:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 2,
+            "time": "09:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 3,
+            "time": "10:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 4,
+            "time": "11:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          }
+        ],
+        "total_barrels": 240
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_43",
+      "class": "field_ticket",
+      "packet": "ticket_28",
+      "values": {
+        "ticket_number": "BQ-9643",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-28",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 6,
+            "unit": null,
+            "rate": 175,
+            "amount": 1050
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": null,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_44",
+      "class": "field_ticket",
+      "packet": "ticket_29",
+      "values": {
+        "ticket_number": "BQ-9644",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-29",
+        "well_name": "N/A",
+        "afe_number": null,
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 5,
+            "unit": "hour",
+            "rate": 175,
+            "amount": 875
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": 965,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "haul_09",
+      "class": "hauling_log",
+      "packet": "ticket_29",
+      "values": {
+        "log_number": "SF-919",
+        "hauler_name": "Sovarek Fluid Transit LLC",
+        "log_date": "2026-09-11",
+        "well_name": null,
+        "loads": [
+          {
+            "load_no": 1,
+            "time": "08:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 2,
+            "time": "09:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 3,
+            "time": "10:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          },
+          {
+            "load_no": 4,
+            "time": "11:15",
+            "fluid_type": "Produced water",
+            "barrels": 60,
+            "destination": "Pelmora recovery bay"
+          }
+        ],
+        "total_barrels": 240
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "ticket_45",
+      "class": "field_ticket",
+      "packet": "ticket_30",
+      "values": {
+        "ticket_number": "BQ-9645",
+        "vendor_name": "Brelquor Field Services LLC",
+        "service_date": "2026-09-30",
+        "well_name": "Tressaline 9-VH",
+        "afe_number": "DB-26-901",
+        "line_items": [
+          {
+            "description": "Pressure unit service",
+            "quantity": 6,
+            "unit": null,
+            "rate": 175,
+            "amount": 1050
+          },
+          {
+            "description": "Hose kit rental",
+            "quantity": 1,
+            "unit": "day",
+            "rate": 90,
+            "amount": 90
+          }
+        ],
+        "total": null,
+        "customer_signature_present": false
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "invoice_02",
+      "class": "invoice",
+      "packet": "ticket_30",
+      "values": {
+        "invoice_number": "BQI-642",
+        "vendor_name": "Brelquor Field Services LLC",
+        "invoice_date": "2026-09-16",
+        "afe_number": null,
+        "well_name": "Tressaline 9-VH",
+        "line_items": [
+          {
+            "ticket_ref": "BQ-9644",
+            "description": "Field service bundle",
+            "quantity": 1,
+            "unit": "each",
+            "rate": 965,
+            "amount": 965
+          },
+          {
+            "ticket_ref": "BQ-9645",
+            "description": "Field service bundle",
+            "quantity": 1,
+            "unit": "each",
+            "rate": 1140,
+            "amount": 1140
+          }
+        ],
+        "subtotal": 2105,
+        "tax": 0,
+        "total": null
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "cover_01",
+      "class": "afe_cover",
+      "packet": "afe_01",
+      "values": {
+        "letter_date": "2026-09-01",
+        "operator_name": "Darsenne Basin Operations LLC",
+        "addressee": "Ultraven Fold Interests LLC",
+        "afe_number": "DB-26-901",
+        "well_name": "Tressaline 9-VH",
+        "response_due_date": "2026-09-12",
+        "wi_decimal_stated": 0.2,
+        "net_share_stated": 4000
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "afe_01",
+      "class": "afe",
+      "packet": "afe_01",
+      "values": {
+        "afe_number": "DB-26-901",
+        "operator_name": "Darsenne Basin Operations LLC",
+        "well_name": "Tressaline 9-VH",
+        "api_number": "00-000-00701",
+        "county": "Lumereth",
+        "state": "TX",
+        "afe_date": "2026-09-01",
+        "afe_type": "Workover",
+        "total_estimate": 20000,
+        "cost_lines": [
+          {
+            "line_no": 1,
+            "account_code": "710",
+            "description": "Site preparation",
+            "category": "intangible",
+            "amount": 4000
+          },
+          {
+            "line_no": 2,
+            "account_code": "720",
+            "description": "Pressure service",
+            "category": "intangible",
+            "amount": 6000
+          },
+          {
+            "line_no": 3,
+            "account_code": "730",
+            "description": "Fluid handling",
+            "category": "intangible",
+            "amount": 3000
+          },
+          {
+            "line_no": 4,
+            "account_code": "810",
+            "description": "Valve assembly",
+            "category": "tangible",
+            "amount": 5000
+          },
+          {
+            "line_no": 5,
+            "account_code": "820",
+            "description": "Gauge package",
+            "category": "tangible",
+            "amount": 2000
+          },
+          {
+            "line_no": 6,
+            "account_code": "830",
+            "description": "Spare seals",
+            "category": "tangible",
+            "amount": 0
+          }
+        ]
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "cover_02",
+      "class": "afe_cover",
+      "packet": "afe_02",
+      "values": {
+        "letter_date": "2026-09-02",
+        "operator_name": "Darsenne Basin Operations LLC",
+        "addressee": "Ultraven Fold Interests LLC",
+        "afe_number": "DB-26-902",
+        "well_name": "Ostrand 4-KH",
+        "response_due_date": "TBD",
+        "wi_decimal_stated": 0.2,
+        "net_share_stated": 4000
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "afe_02",
+      "class": "afe",
+      "packet": "afe_02",
+      "values": {
+        "afe_number": "DB-26-902",
+        "operator_name": "Darsenne Basin Operations LLC",
+        "well_name": "Ostrand 4-KH",
+        "api_number": null,
+        "county": "Lumereth",
+        "state": "TX",
+        "afe_date": "2026-09-02",
+        "afe_type": "Workover",
+        "total_estimate": 20000,
+        "cost_lines": [
+          {
+            "line_no": 1,
+            "account_code": "710",
+            "description": "Site preparation",
+            "category": "intangible",
+            "amount": 4000
+          },
+          {
+            "line_no": 2,
+            "account_code": "720",
+            "description": "Pressure service",
+            "category": "intangible",
+            "amount": 6000
+          },
+          {
+            "line_no": 3,
+            "account_code": "730",
+            "description": "Fluid handling",
+            "category": "intangible",
+            "amount": 3000
+          },
+          {
+            "line_no": 4,
+            "account_code": "810",
+            "description": "Valve assembly",
+            "category": "tangible",
+            "amount": 5000
+          },
+          {
+            "line_no": 5,
+            "account_code": "820",
+            "description": "Gauge package",
+            "category": "tangible",
+            "amount": 2000
+          },
+          {
+            "line_no": 6,
+            "account_code": "830",
+            "description": "Spare seals",
+            "category": "tangible",
+            "amount": 0
+          }
+        ]
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "cover_03",
+      "class": "afe_cover",
+      "packet": "afe_03",
+      "values": {
+        "letter_date": "2026-09-03",
+        "operator_name": "Darsenne Basin Operations LLC",
+        "addressee": "Ultraven Fold Interests LLC",
+        "afe_number": "DB-26-903",
+        "well_name": "Ostrand 4-KH",
+        "response_due_date": "2026-09-12",
+        "wi_decimal_stated": 0.2,
+        "net_share_stated": 4000
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "afe_03",
+      "class": "afe",
+      "packet": "afe_03",
+      "values": {
+        "afe_number": "DB-26-903",
+        "operator_name": "Darsenne Basin Operations LLC",
+        "well_name": "Ostrand 4-KH",
+        "api_number": "00-000-00703",
+        "county": "Lumereth",
+        "state": "TX",
+        "afe_date": "2026-09-03",
+        "afe_type": "Workover",
+        "total_estimate": 20000,
+        "cost_lines": [
+          {
+            "line_no": 1,
+            "account_code": "710",
+            "description": "Site preparation",
+            "category": "intangible",
+            "amount": 4000
+          },
+          {
+            "line_no": 2,
+            "account_code": "720",
+            "description": "Pressure service",
+            "category": "intangible",
+            "amount": 6000
+          },
+          {
+            "line_no": 3,
+            "account_code": "730",
+            "description": "Fluid handling",
+            "category": "intangible",
+            "amount": 3000
+          },
+          {
+            "line_no": 4,
+            "account_code": "810",
+            "description": "Valve assembly",
+            "category": "tangible",
+            "amount": 5000
+          },
+          {
+            "line_no": 5,
+            "account_code": "820",
+            "description": "Gauge package",
+            "category": "tangible",
+            "amount": 2000
+          },
+          {
+            "line_no": 6,
+            "account_code": "830",
+            "description": "Spare seals",
+            "category": "tangible",
+            "amount": 0
+          }
+        ]
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "cover_04",
+      "class": "afe_cover",
+      "packet": "afe_04",
+      "values": {
+        "letter_date": "2026-09-04",
+        "operator_name": "Darsenne Basin Operations LLC",
+        "addressee": "Ultraven Fold Interests LLC",
+        "afe_number": "DB-26-904",
+        "well_name": "Ostrand 4-KH",
+        "response_due_date": "TBD",
+        "wi_decimal_stated": 0.2,
+        "net_share_stated": 4000
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "afe_04",
+      "class": "afe",
+      "packet": "afe_04",
+      "values": {
+        "afe_number": "DB-26-904",
+        "operator_name": "Darsenne Basin Operations LLC",
+        "well_name": "Ostrand 4-KH",
+        "api_number": null,
+        "county": "Lumereth",
+        "state": "TX",
+        "afe_date": "2026-09-04",
+        "afe_type": "Workover",
+        "total_estimate": 20000,
+        "cost_lines": [
+          {
+            "line_no": 1,
+            "account_code": "710",
+            "description": "Site preparation",
+            "category": "intangible",
+            "amount": 4000
+          },
+          {
+            "line_no": 2,
+            "account_code": "720",
+            "description": "Pressure service",
+            "category": "intangible",
+            "amount": 6000
+          },
+          {
+            "line_no": 3,
+            "account_code": "730",
+            "description": "Fluid handling",
+            "category": "intangible",
+            "amount": 3000
+          },
+          {
+            "line_no": 4,
+            "account_code": "810",
+            "description": "Valve assembly",
+            "category": "tangible",
+            "amount": 5000
+          },
+          {
+            "line_no": 5,
+            "account_code": "820",
+            "description": "Gauge package",
+            "category": "tangible",
+            "amount": 2000
+          },
+          {
+            "line_no": 6,
+            "account_code": "830",
+            "description": "Spare seals",
+            "category": "tangible",
+            "amount": 0
+          }
+        ]
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "jib_01",
+      "class": "jib_statement",
+      "packet": "jib_01",
+      "values": {
+        "statement_period": "September 2026",
+        "operator_name": "Darsenne Basin Operations LLC",
+        "property_number": "DS-8093",
+        "well_name": "Tressaline 9-VH",
+        "owner_name": "Ultraven Fold Interests LLC",
+        "owner_number": "UF-306",
+        "wi_decimal": 0.2,
+        "gross_total": 9000,
+        "net_total": 1872.0,
+        "due_date": "2026-10-25",
+        "lines": [
+          {
+            "line_no": 1,
+            "afe_ref": "DB-26-901",
+            "account_code": "710",
+            "description": "Site preparation",
+            "gross_amount": 1200,
+            "owner_decimal": 0.2,
+            "net_amount": 240.0
+          },
+          {
+            "line_no": 2,
+            "afe_ref": "DB-26-901",
+            "account_code": "720",
+            "description": "Pressure service",
+            "gross_amount": 1800,
+            "owner_decimal": 0.24,
+            "net_amount": 432.0
+          },
+          {
+            "line_no": 3,
+            "afe_ref": "DB-26-901",
+            "account_code": "730",
+            "description": "Fluid handling",
+            "gross_amount": 2400,
+            "owner_decimal": 0.2,
+            "net_amount": 480.0
+          },
+          {
+            "line_no": 4,
+            "afe_ref": "DB-26-901",
+            "account_code": "810",
+            "description": "Valve assembly",
+            "gross_amount": 900,
+            "owner_decimal": 0.2,
+            "net_amount": 180.0
+          },
+          {
+            "line_no": 5,
+            "afe_ref": "DB-26-901",
+            "account_code": "820",
+            "description": "Gauge package",
+            "gross_amount": 700,
+            "owner_decimal": 0.2,
+            "net_amount": 140.0
+          },
+          {
+            "line_no": 6,
+            "afe_ref": "DB-26-901",
+            "account_code": "720",
+            "description": "Pressure service",
+            "gross_amount": 500,
+            "owner_decimal": 0.2,
+            "net_amount": 100.0
+          },
+          {
+            "line_no": 7,
+            "afe_ref": "DB-26-902",
+            "account_code": "810",
+            "description": "Valve assembly",
+            "gross_amount": 650,
+            "owner_decimal": 0.2,
+            "net_amount": 130.0
+          },
+          {
+            "line_no": 8,
+            "afe_ref": "DB-26-901",
+            "account_code": "730",
+            "description": "Fluid handling",
+            "gross_amount": 850,
+            "owner_decimal": 0.2,
+            "net_amount": 170.0
+          }
+        ]
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "jib_02",
+      "class": "jib_statement",
+      "packet": "jib_02",
+      "values": {
+        "statement_period": "September 2026",
+        "operator_name": "Darsenne Basin Operations LLC",
+        "property_number": "DS-8094",
+        "well_name": "Tressaline 9-VH",
+        "owner_name": "Ultraven Fold Interests LLC",
+        "owner_number": "UF-306",
+        "wi_decimal": 0.2,
+        "gross_total": 9000,
+        "net_total": 1800.0,
+        "due_date": "2026-10-25",
+        "lines": [
+          {
+            "line_no": 1,
+            "afe_ref": "DB-26-901",
+            "account_code": "710",
+            "description": "Site preparation",
+            "gross_amount": 1200,
+            "owner_decimal": 0.2,
+            "net_amount": 240.0
+          },
+          {
+            "line_no": 2,
+            "afe_ref": "DB-26-901",
+            "account_code": "720",
+            "description": "Pressure service",
+            "gross_amount": 1800,
+            "owner_decimal": 0.2,
+            "net_amount": 360.0
+          },
+          {
+            "line_no": 3,
+            "afe_ref": "DB-26-901",
+            "account_code": "730",
+            "description": "Fluid handling",
+            "gross_amount": 2400,
+            "owner_decimal": 0.2,
+            "net_amount": 480.0
+          },
+          {
+            "line_no": 4,
+            "afe_ref": "DB-26-901",
+            "account_code": "810",
+            "description": "Valve assembly",
+            "gross_amount": 900,
+            "owner_decimal": 0.2,
+            "net_amount": 180.0
+          },
+          {
+            "line_no": 5,
+            "afe_ref": "DB-26-901",
+            "account_code": "820",
+            "description": "Gauge package",
+            "gross_amount": 700,
+            "owner_decimal": 0.2,
+            "net_amount": 140.0
+          },
+          {
+            "line_no": 6,
+            "afe_ref": "DB-26-901",
+            "account_code": "720",
+            "description": "Pressure service",
+            "gross_amount": 500,
+            "owner_decimal": 0.2,
+            "net_amount": 100.0
+          },
+          {
+            "line_no": 7,
+            "afe_ref": "DB-26-901",
+            "account_code": "810",
+            "description": "Valve assembly",
+            "gross_amount": 650,
+            "owner_decimal": 0.2,
+            "net_amount": 130.0
+          },
+          {
+            "line_no": 8,
+            "afe_ref": "DB-26-901",
+            "account_code": "730",
+            "description": "Fluid handling",
+            "gross_amount": 850,
+            "owner_decimal": 0.2,
+            "net_amount": 170.0
+          }
+        ]
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "jib_03",
+      "class": "jib_statement",
+      "packet": "jib_03",
+      "values": {
+        "statement_period": "September 2026",
+        "operator_name": "Darsenne Basin Operations LLC",
+        "property_number": "DS-8095",
+        "well_name": "Tressaline 9-VH",
+        "owner_name": "Ultraven Fold Interests LLC",
+        "owner_number": "UF-306",
+        "wi_decimal": 0.2,
+        "gross_total": 9000,
+        "net_total": 1800.0,
+        "due_date": "2026-10-25",
+        "lines": [
+          {
+            "line_no": 1,
+            "afe_ref": "DB-26-901",
+            "account_code": "710",
+            "description": "Site preparation",
+            "gross_amount": 1200,
+            "owner_decimal": 0.2,
+            "net_amount": 240.0
+          },
+          {
+            "line_no": 2,
+            "afe_ref": "DB-26-901",
+            "account_code": "720",
+            "description": "Pressure service",
+            "gross_amount": 1800,
+            "owner_decimal": 0.2,
+            "net_amount": 360.0
+          },
+          {
+            "line_no": 3,
+            "afe_ref": "DB-26-901",
+            "account_code": "730",
+            "description": "Fluid handling",
+            "gross_amount": 2400,
+            "owner_decimal": 0.2,
+            "net_amount": 480.0
+          },
+          {
+            "line_no": 4,
+            "afe_ref": "DB-26-901",
+            "account_code": "810",
+            "description": "Valve assembly",
+            "gross_amount": 900,
+            "owner_decimal": 0.2,
+            "net_amount": 180.0
+          },
+          {
+            "line_no": 5,
+            "afe_ref": "DB-26-901",
+            "account_code": "820",
+            "description": "Gauge package",
+            "gross_amount": 700,
+            "owner_decimal": 0.2,
+            "net_amount": 140.0
+          },
+          {
+            "line_no": 6,
+            "afe_ref": "DB-26-901",
+            "account_code": "720",
+            "description": "Pressure service",
+            "gross_amount": 500,
+            "owner_decimal": 0.2,
+            "net_amount": 100.0
+          },
+          {
+            "line_no": 7,
+            "afe_ref": "DB-26-901",
+            "account_code": "810",
+            "description": "Valve assembly",
+            "gross_amount": 650,
+            "owner_decimal": 0.2,
+            "net_amount": 130.0
+          },
+          {
+            "line_no": 8,
+            "afe_ref": "DB-26-901",
+            "account_code": "730",
+            "description": "Fluid handling",
+            "gross_amount": 850,
+            "owner_decimal": 0.2,
+            "net_amount": 170.0
+          }
+        ]
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "jib_04",
+      "class": "jib_statement",
+      "packet": "jib_04",
+      "values": {
+        "statement_period": "September 2026",
+        "operator_name": "Darsenne Basin Operations LLC",
+        "property_number": "DS-8096",
+        "well_name": "Tressaline 9-VH",
+        "owner_name": "Ultraven Fold Interests LLC",
+        "owner_number": "UF-306",
+        "wi_decimal": 0.2,
+        "gross_total": 9000,
+        "net_total": 1800.0,
+        "due_date": "2026-10-25",
+        "lines": [
+          {
+            "line_no": 1,
+            "afe_ref": "DB-26-901",
+            "account_code": "710",
+            "description": "Site preparation",
+            "gross_amount": 1200,
+            "owner_decimal": 0.2,
+            "net_amount": 240.0
+          },
+          {
+            "line_no": 2,
+            "afe_ref": "DB-26-901",
+            "account_code": "720",
+            "description": "Pressure service",
+            "gross_amount": 1800,
+            "owner_decimal": 0.2,
+            "net_amount": 360.0
+          },
+          {
+            "line_no": 3,
+            "afe_ref": "DB-26-901",
+            "account_code": "730",
+            "description": "Fluid handling",
+            "gross_amount": 2400,
+            "owner_decimal": 0.2,
+            "net_amount": 480.0
+          },
+          {
+            "line_no": 4,
+            "afe_ref": "DB-26-901",
+            "account_code": "810",
+            "description": "Valve assembly",
+            "gross_amount": 900,
+            "owner_decimal": 0.2,
+            "net_amount": 180.0
+          },
+          {
+            "line_no": 5,
+            "afe_ref": "DB-26-901",
+            "account_code": "820",
+            "description": "Gauge package",
+            "gross_amount": 700,
+            "owner_decimal": 0.2,
+            "net_amount": 140.0
+          },
+          {
+            "line_no": 6,
+            "afe_ref": "DB-26-901",
+            "account_code": "720",
+            "description": "Pressure service",
+            "gross_amount": 500,
+            "owner_decimal": 0.2,
+            "net_amount": 100.0
+          },
+          {
+            "line_no": 7,
+            "afe_ref": "DB-26-901",
+            "account_code": "810",
+            "description": "Valve assembly",
+            "gross_amount": 650,
+            "owner_decimal": 0.2,
+            "net_amount": 130.0
+          },
+          {
+            "line_no": 8,
+            "afe_ref": "DB-26-901",
+            "account_code": "730",
+            "description": "Fluid handling",
+            "gross_amount": 850,
+            "owner_decimal": 0.2,
+            "net_amount": 170.0
+          }
+        ]
+      },
+      "notes": []
+    },
+    {
+      "doc_id": "jib_05",
+      "class": "jib_statement",
+      "packet": "jib_05",
+      "values": {
+        "statement_period": "September 2026",
+        "operator_name": "Darsenne Basin Operations LLC",
+        "property_number": "DS-8097",
+        "well_name": "Tressaline 9-VH",
+        "owner_name": "Ultraven Fold Interests LLC",
+        "owner_number": "UF-306",
+        "wi_decimal": 0.2,
+        "gross_total": 9000,
+        "net_total": 1800.0,
+        "due_date": "2026-10-25",
+        "lines": [
+          {
+            "line_no": 1,
+            "afe_ref": "DB-26-901",
+            "account_code": "710",
+            "description": "Site preparation",
+            "gross_amount": 1200,
+            "owner_decimal": 0.2,
+            "net_amount": 240.0
+          },
+          {
+            "line_no": 2,
+            "afe_ref": "DB-26-901",
+            "account_code": "720",
+            "description": "Pressure service",
+            "gross_amount": 1800,
+            "owner_decimal": 0.2,
+            "net_amount": 360.0
+          },
+          {
+            "line_no": 3,
+            "afe_ref": "DB-26-901",
+            "account_code": "730",
+            "description": "Fluid handling",
+            "gross_amount": 2400,
+            "owner_decimal": 0.2,
+            "net_amount": 480.0
+          },
+          {
+            "line_no": 4,
+            "afe_ref": "DB-26-901",
+            "account_code": "810",
+            "description": "Valve assembly",
+            "gross_amount": 900,
+            "owner_decimal": 0.2,
+            "net_amount": 180.0
+          },
+          {
+            "line_no": 5,
+            "afe_ref": "DB-26-901",
+            "account_code": "820",
+            "description": "Gauge package",
+            "gross_amount": 700,
+            "owner_decimal": 0.2,
+            "net_amount": 140.0
+          },
+          {
+            "line_no": 6,
+            "afe_ref": "DB-26-901",
+            "account_code": "720",
+            "description": "Pressure service",
+            "gross_amount": 500,
+            "owner_decimal": 0.2,
+            "net_amount": 100.0
+          },
+          {
+            "line_no": 7,
+            "afe_ref": "DB-26-901",
+            "account_code": "810",
+            "description": "Valve assembly",
+            "gross_amount": 650,
+            "owner_decimal": 0.2,
+            "net_amount": 130.0
+          },
+          {
+            "line_no": 8,
+            "afe_ref": "DB-26-901",
+            "account_code": "730",
+            "description": "Fluid handling",
+            "gross_amount": 850,
+            "owner_decimal": 0.2,
+            "net_amount": 170.0
+          }
+        ]
+      },
+      "notes": []
+    }
+  ]
+}

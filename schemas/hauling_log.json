@@ -1,0 +1,19 @@
+{
+  "$comment": "Pulse /schema input_schema for a fluid hauling / vacuum truck log. JSON Schema, nested depth <= 3. SYNTHETIC demonstration corpus.",
+  "type": "object",
+  "properties": {
+    "log_number": {"type": "string", "description": "Log or manifest number printed in the header, exactly as printed."},
+    "hauler_name": {"type": "string", "description": "Hauling company named on the log, exactly as printed."},
+    "log_date": {"type": "string", "description": "Date of the log as printed."},
+    "well_name": {"type": "string", "description": "Well or location fluid was hauled from, exactly as printed."},
+    "loads": {"type": "array", "description": "One item per printed load row, in printed order. Return every printed row.", "items": {"type": "object", "properties": {
+      "load_no": {"type": "integer", "description": "Load number printed on the row."},
+      "time": {"type": "string", "description": "Time printed on the row, exactly as printed."},
+      "fluid_type": {"type": "string", "description": "Fluid type printed on the row, exactly as printed."},
+      "barrels": {"type": "number", "description": "Barrels printed on the row. Digits only, keeping any printed decimal."},
+      "destination": {"type": "string", "description": "Disposal or delivery destination printed on the row, exactly as printed."}
+    }}},
+    "total_barrels": {"type": "number", "description": "Total barrels as printed on the total line. Digits only. Copy the printed total; never sum the rows yourself."}
+  },
+  "required": ["log_number", "hauler_name", "log_date", "loads", "total_barrels"]
+}

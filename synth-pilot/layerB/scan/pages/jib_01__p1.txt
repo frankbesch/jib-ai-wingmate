@@ -1,0 +1,19 @@
+OPERATIONS / OWNER RECORD
+
+
+# Joint Interest Billing
+
+
+Accounting month: August 2026
+Operating company: Zelvori Basin Operations LLC
+Property number: ZV-6071
+Well: Nacrevale 7-QH
+Interest holder: Mavren Fold Interests LLC
+Owner number: MF-204
+WI decimal: 0.200000
+
+
+<table><thead><tr><td>Line</td><td>AFE ref</td><td>Account</td><td>Description</td><td>Gross</td><td>Decimal</td><td>Net</td></tr></thead><tbody><tr><td>1</td><td>ZB-26-701</td><td>710</td><td>Site preparation</td><td>1,200.00</td><td>0.200000</td><td>240.00</td></tr><tr><td>2</td><td>ZB-26-701</td><td>720</td><td>Pressure service</td><td>1,800.00</td><td>0.240000</td><td>432.00</td></tr><tr><td>3</td><td>ZB-26-701</td><td>730</td><td>Fluid handling</td><td>2,400.00</td><td>0.200000</td><td>480.00</td></tr><tr><td>4</td><td>ZB-26-701</td><td>810</td><td>Valve assembly</td><td>900.00</td><td>0.200000</td><td>180.00</td></tr></tbody></table>
+
+
+SYNTHETIC STUDY DOCUMENT - NOT VALID FOR PAYMENT

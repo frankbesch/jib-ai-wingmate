@@ -1,0 +1,52 @@
+{
+ "sealed": true,
+ "synthetic": true,
+ "generated_from": "synth/src/book.json",
+ "note": "Rule 3 (AFE reference / account code) has ZERO plants: all 8 JIB lines carry the approved AFE number and an account code that appears in the AFE cost lines. Rule 3 must fire on nothing.",
+ "P1": {
+  "rule": "rule_1_decimal",
+  "doc_id": "jib",
+  "line_index": 2,
+  "line_no": 3,
+  "field_path": "lines[2].owner_decimal",
+  "printed_owner_decimal": 0.26,
+  "correct_owner_decimal": 0.25,
+  "gross_amount": 96440.0,
+  "printed_net_amount": 25074.4,
+  "correct_net_amount": 24110.0,
+  "overbilling_usd": 964.4,
+  "approver_role": "jv_accountant"
+ },
+ "P2": {
+  "rule": "rule_2_rate",
+  "doc_id": "ticket_b",
+  "line_index": 0,
+  "field_path": "line_items[0].rate",
+  "description": "Pump truck, hourly",
+  "unit": "hour",
+  "quantity": 6,
+  "billed_rate": 310.0,
+  "contract_rate": 285.0,
+  "overbilling_usd": 150.0,
+  "also_appears_on": {
+   "doc_id": "invoice",
+   "line_index": 3
+  },
+  "approver_role": "supply_chain"
+ },
+ "H1": {
+  "kind": "handwriting",
+  "doc_id": "ticket_b",
+  "line_index": 1,
+  "field_path": "line_items[1].quantity",
+  "field": "quantity",
+  "true_value": 240,
+  "unit": "bbl",
+  "description": "Fluid pumped, treated water",
+  "note": "The quantity is a pen entry; the rate on the same line stays typed."
+ },
+ "totals": {
+  "overbilling_usd": 1114.4,
+  "rule_3_plants": 0
+ }
+}

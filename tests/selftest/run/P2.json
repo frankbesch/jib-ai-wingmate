@@ -1,0 +1,79 @@
+{
+ "permit": "P2",
+ "synthetic": true,
+ "classify": [
+  {
+   "file": "P2_W1.pdf",
+   "predicted": "w1_permit"
+  },
+  {
+   "file": "P2_Plat.pdf",
+   "predicted": "plat"
+  }
+ ],
+ "extract": {
+  "extraction_id": "x2",
+  "page_count": 2,
+  "credits_used": 2.0,
+  "failed_pages": []
+ },
+ "split": {
+  "splits": {
+   "w1_permit": [
+    1
+   ],
+   "plat": [
+    2
+   ]
+  }
+ },
+ "schema_w1": {
+  "values": {
+   "api_number": "42-003-00002",
+   "permit_number": "2",
+   "operator_name": "BETA GAS INC",
+   "lease_name": "JONES A",
+   "well_number": "2H",
+   "county": "ANDREWS",
+   "district": "08",
+   "total_depth": "9000",
+   "purpose_of_filing": [
+    "New Drill"
+   ],
+   "wellbore_profile": [
+    "Horizontal"
+   ],
+   "fields": [
+    {
+     "field_number": "22222222",
+     "field_name": "BRAVO",
+     "well_type": "Gas Well",
+     "completion_depth": "8800",
+     "wells_on_lease": "1"
+    }
+   ]
+  },
+  "citations": {
+   "api_number": {
+    "page": 1,
+    "bbox": [
+     0.1,
+     0.1,
+     0.2,
+     0.12
+    ]
+   },
+   "lease_name": {
+    "page": 1,
+    "bbox": [
+     0.3,
+     0.3,
+     0.4,
+     0.32
+    ]
+   }
+  }
+ },
+ "cycle_seconds": 6.0,
+ "cost_usd_at_list": 0.2
+}

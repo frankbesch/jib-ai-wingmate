@@ -1,0 +1,29 @@
+{
+  "doc_id": "hauling_log",
+  "source_file": "pdfs/clean/05_hauling_log.pdf",
+  "keyed_by": "sonnet-5 interim keyer (Claude family) — to be replaced by a Codex pass",
+  "keyed_from": "page images",
+  "values": {
+    "log_number": "SVT-4471",
+    "hauler_name": "Sandhill Vacuum Transport LLC",
+    "log_date": "2026-06-10",
+    "well_name": "Caprock 14-2H",
+    "loads": [
+      { "load_no": 1, "time": "06:40", "fluid_type": "Produced water", "barrels": 118, "destination": "Sandhill SWD No. 3" },
+      { "load_no": 2, "time": "09:15", "fluid_type": "Produced water", "barrels": 122.5, "destination": "Sandhill SWD No. 3" },
+      { "load_no": 3, "time": "11:50", "fluid_type": "Flowback water", "barrels": 115, "destination": "Sandhill SWD No. 3" },
+      { "load_no": 4, "time": "14:20", "fluid_type": "Flowback water", "barrels": 124.5, "destination": "Sandhill SWD No. 3" },
+      { "load_no": 5, "time": "16:35", "fluid_type": "Produced water", "barrels": 110, "destination": "Sandhill SWD No. 3" }
+    ],
+    "total_barrels": 590
+  },
+  "page_of": {
+    "log_number": 1,
+    "hauler_name": 1,
+    "log_date": 1,
+    "well_name": 1,
+    "loads": 1,
+    "total_barrels": 1
+  },
+  "uncertain": []
+}

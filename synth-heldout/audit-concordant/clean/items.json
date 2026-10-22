@@ -1,0 +1,203 @@
+[
+ {
+  "id": "afe_02.operator_name",
+  "document": "afe_02",
+  "field": "operator_name",
+  "pages": [
+   "pages/afe_02-p1.png",
+   "pages/afe_02-p2.png"
+  ]
+ },
+ {
+  "id": "cover_02.response_due_date",
+  "document": "cover_02",
+  "field": "response_due_date",
+  "pages": [
+   "pages/cover_02-p1.png"
+  ]
+ },
+ {
+  "id": "cover_04.response_due_date",
+  "document": "cover_04",
+  "field": "response_due_date",
+  "pages": [
+   "pages/cover_04-p1.png"
+  ]
+ },
+ {
+  "id": "ticket_01.afe_number",
+  "document": "ticket_01",
+  "field": "afe_number",
+  "pages": [
+   "pages/ticket_01-p1.png"
+  ]
+ },
+ {
+  "id": "ticket_02.afe_number",
+  "document": "ticket_02",
+  "field": "afe_number",
+  "pages": [
+   "pages/ticket_02-p1.png"
+  ]
+ },
+ {
+  "id": "ticket_05.afe_number",
+  "document": "ticket_05",
+  "field": "afe_number",
+  "pages": [
+   "pages/ticket_05-p1.png"
+  ]
+ },
+ {
+  "id": "ticket_06.afe_number",
+  "document": "ticket_06",
+  "field": "afe_number",
+  "pages": [
+   "pages/ticket_06-p1.png"
+  ]
+ },
+ {
+  "id": "ticket_09.afe_number",
+  "document": "ticket_09",
+  "field": "afe_number",
+  "pages": [
+   "pages/ticket_09-p1.png"
+  ]
+ },
+ {
+  "id": "ticket_10.afe_number",
+  "document": "ticket_10",
+  "field": "afe_number",
+  "pages": [
+   "pages/ticket_10-p1.png"
+  ]
+ },
+ {
+  "id": "ticket_13.afe_number",
+  "document": "ticket_13",
+  "field": "afe_number",
+  "pages": [
+   "pages/ticket_13-p1.png"
+  ]
+ },
+ {
+  "id": "ticket_14.afe_number",
+  "document": "ticket_14",
+  "field": "afe_number",
+  "pages": [
+   "pages/ticket_14-p1.png"
+  ]
+ },
+ {
+  "id": "ticket_17.afe_number",
+  "document": "ticket_17",
+  "field": "afe_number",
+  "pages": [
+   "pages/ticket_17-p1.png"
+  ]
+ },
+ {
+  "id": "ticket_18.afe_number",
+  "document": "ticket_18",
+  "field": "afe_number",
+  "pages": [
+   "pages/ticket_18-p1.png"
+  ]
+ },
+ {
+  "id": "ticket_19.afe_number",
+  "document": "ticket_19",
+  "field": "afe_number",
+  "pages": [
+   "pages/ticket_19-p1.png"
+  ]
+ },
+ {
+  "id": "ticket_20.afe_number",
+  "document": "ticket_20",
+  "field": "afe_number",
+  "pages": [
+   "pages/ticket_20-p1.png"
+  ]
+ },
+ {
+  "id": "ticket_21.afe_number",
+  "document": "ticket_21",
+  "field": "afe_number",
+  "pages": [
+   "pages/ticket_21-p1.png"
+  ]
+ },
+ {
+  "id": "ticket_22.afe_number",
+  "document": "ticket_22",
+  "field": "afe_number",
+  "pages": [
+   "pages/ticket_22-p1.png"
+  ]
+ },
+ {
+  "id": "ticket_23.afe_number",
+  "document": "ticket_23",
+  "field": "afe_number",
+  "pages": [
+   "pages/ticket_23-p1.png"
+  ]
+ },
+ {
+  "id": "ticket_25.afe_number",
+  "document": "ticket_25",
+  "field": "afe_number",
+  "pages": [
+   "pages/ticket_25-p1.png"
+  ]
+ },
+ {
+  "id": "ticket_26.afe_number",
+  "document": "ticket_26",
+  "field": "afe_number",
+  "pages": [
+   "pages/ticket_26-p1.png"
+  ]
+ },
+ {
+  "id": "ticket_28.afe_number",
+  "document": "ticket_28",
+  "field": "afe_number",
+  "pages": [
+   "pages/ticket_28-p1.png"
+  ]
+ },
+ {
+  "id": "ticket_41.afe_number",
+  "document": "ticket_41",
+  "field": "afe_number",
+  "pages": [
+   "pages/ticket_41-p1.png"
+  ]
+ },
+ {
+  "id": "ticket_43.afe_number",
+  "document": "ticket_43",
+  "field": "afe_number",
+  "pages": [
+   "pages/ticket_43-p1.png"
+  ]
+ },
+ {
+  "id": "ticket_44.well_name",
+  "document": "ticket_44",
+  "field": "well_name",
+  "pages": [
+   "pages/ticket_44-p1.png"
+  ]
+ },
+ {
+  "id": "ticket_45.afe_number",
+  "document": "ticket_45",
+  "field": "afe_number",
+  "pages": [
+   "pages/ticket_45-p1.png"
+  ]
+ }
+]

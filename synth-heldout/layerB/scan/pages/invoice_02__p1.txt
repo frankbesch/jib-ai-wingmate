@@ -1,0 +1,46 @@
+OPERATIONS / OWNER RECORD
+
+
+# Vendor invoice
+
+
+Bill To: Darsenne Basin Operations LLC
+
+
+See ticket BQ-9644 in the prior packet. Ticket BQ-9645 is enclosed.
+
+
+Account request:
+
+
+BQI-642
+
+
+RECEIVED
+
+
+Remit to:
+
+
+Brelquor Field Services LLC
+
+
+Issued:
+
+
+2026-09-16
+
+
+Ref:
+
+
+Service location:
+
+
+Tressaline 9-VH
+
+
+<table><thead><tr><td>Ticket ref</td><td>Description</td><td>Qty</td><td>Unit</td><td>Rate</td><td>Amount</td></tr></thead><tbody><tr><td>BQ-9644</td><td>Field service bundle</td><td>1</td><td>each</td><td>965.00</td><td>965.00</td></tr><tr><td>BQ-9645</td><td>Field service bundle</td><td>1</td><td>each</td><td>1,140.00</td><td>1,140.00</td></tr><tr><td colspan="3">Pre-tax amount:</td><td>2,105.00</td><td></td><td></td></tr><tr><td colspan="3">Sales levy:</td><td>0.00</td><td></td><td></td></tr><tr><td colspan="3">Remittance due:</td><td></td><td></td><td></td></tr></tbody></table>
+
+
+SYNTHETIC STUDY DOCUMENT - NOT VALID FOR PAYMENT

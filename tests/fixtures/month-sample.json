@@ -1,0 +1,1731 @@
+{
+ "run_id": "month-sample",
+ "mode": "fixture",
+ "set": "synth",
+ "synthetic_documents": true,
+ "synthetic_responses": true,
+ "started": "2026-09-05T00:00:00+00:00",
+ "finished": "2026-09-05T00:00:20+00:00",
+ "packets": {
+  "day01": {
+   "file": "synth/caprock/packets/day01.pdf",
+   "pages": 3,
+   "extract": {
+    "extraction_id": "fixture-extract-day01",
+    "page_count": 3,
+    "credits_used": 3,
+    "failed_pages": [],
+    "seconds": 2.0
+   },
+   "split": {
+    "split_id": "fixture-split-day01",
+    "splits": {
+     "afe_cover": [
+      1
+     ],
+     "afe": [
+      2,
+      3
+     ]
+    },
+    "credits_used": 1,
+    "seconds": 1.5
+   },
+   "schema": {
+    "credits_used": 2,
+    "seconds": 2.0
+   }
+  },
+  "day12": {
+   "file": "synth/caprock/packets/day12.pdf",
+   "pages": 4,
+   "extract": {
+    "extraction_id": "fixture-extract-day12",
+    "page_count": 4,
+    "credits_used": 4,
+    "failed_pages": [],
+    "seconds": 2.0
+   },
+   "split": {
+    "split_id": "fixture-split-day12",
+    "splits": {
+     "field_ticket": [
+      1,
+      2
+     ],
+     "hauling_log": [
+      3
+     ],
+     "invoice": [
+      4
+     ]
+    },
+    "credits_used": 1,
+    "seconds": 1.5
+   },
+   "schema": {
+    "credits_used": 3,
+    "seconds": 2.0
+   }
+  },
+  "day30": {
+   "file": "synth/caprock/packets/day30.pdf",
+   "pages": 2,
+   "extract": {
+    "extraction_id": "fixture-extract-day30",
+    "page_count": 2,
+    "credits_used": 2,
+    "failed_pages": [],
+    "seconds": 2.0
+   },
+   "split": {
+    "split_id": "fixture-split-day30",
+    "splits": {
+     "jib_statement": [
+      1,
+      2
+     ]
+    },
+    "credits_used": 1,
+    "seconds": 1.5
+   },
+   "schema": {
+    "credits_used": 1,
+    "seconds": 2.0
+   }
+  }
+ },
+ "classify": [
+  {
+   "doc_id": "afe_cover",
+   "file": "synth/caprock/01_afe_cover.pdf",
+   "predicted": "afe_cover",
+   "credits_used": 1,
+   "seconds": 0.5
+  },
+  {
+   "doc_id": "afe",
+   "file": "synth/caprock/02_afe.pdf",
+   "predicted": "afe",
+   "credits_used": 1,
+   "seconds": 0.5
+  },
+  {
+   "doc_id": "ticket_a",
+   "file": "synth/caprock/03_ticket_a.pdf",
+   "predicted": "field_ticket",
+   "credits_used": 1,
+   "seconds": 0.5
+  },
+  {
+   "doc_id": "ticket_b",
+   "file": "synth/caprock/04_ticket_b.pdf",
+   "predicted": "field_ticket",
+   "credits_used": 1,
+   "seconds": 0.5
+  },
+  {
+   "doc_id": "hauling_log",
+   "file": "synth/caprock/05_hauling_log.pdf",
+   "predicted": "hauling_log",
+   "credits_used": 1,
+   "seconds": 0.5
+  },
+  {
+   "doc_id": "invoice",
+   "file": "synth/caprock/06_invoice.pdf",
+   "predicted": "invoice",
+   "credits_used": 1,
+   "seconds": 0.5
+  },
+  {
+   "doc_id": "jib",
+   "file": "synth/caprock/07_jib.pdf",
+   "predicted": "jib_statement",
+   "credits_used": 1,
+   "seconds": 0.5
+  }
+ ],
+ "documents": {
+  "afe_cover": {
+   "class": "afe_cover",
+   "packet": "day01",
+   "pages": [
+    1
+   ],
+   "values": {
+    "letter_date": "June 1, 2026",
+    "operator_name": "Sablewind Operating LLC",
+    "addressee": "Caprock Resources LLC",
+    "afe_number": "AFE-2026-0417",
+    "well_name": "Caprock 14-2H",
+    "response_due_date": "June 16, 2026",
+    "wi_decimal_stated": 0.25,
+    "net_share_stated": 121700.0
+   },
+   "citations": {
+    "letter_date": {
+     "page": 1,
+     "bbox": [
+      0.86026,
+      0.1057,
+      0.93012,
+      0.11656
+     ],
+     "text": "June 1, 2026",
+     "ref": null
+    },
+    "afe_number": {
+     "page": 1,
+     "bbox": [
+      0.3134,
+      0.17618,
+      0.4214,
+      0.19
+     ],
+     "text": "AFE-2026-0417",
+     "ref": null
+    },
+    "well_name": {
+     "page": 1,
+     "bbox": [
+      0.44477,
+      0.17618,
+      0.5522,
+      0.19
+     ],
+     "text": "Caprock 14-2H",
+     "ref": null
+    },
+    "response_due_date": {
+     "page": 1,
+     "bbox": [
+      0.2921,
+      0.36727,
+      0.38321,
+      0.38019
+     ],
+     "text": "June 16, 2026",
+     "ref": null
+    },
+    "wi_decimal_stated": {
+     "page": 1,
+     "bbox": [
+      0.2921,
+      0.33034,
+      0.35204,
+      0.34326
+     ],
+     "text": "0.250000",
+     "ref": null
+    },
+    "net_share_stated": {
+     "page": 1,
+     "bbox": [
+      0.2921,
+      0.34928,
+      0.37203,
+      0.3622
+     ],
+     "text": "$121,700.00",
+     "ref": null
+    }
+   },
+   "credits_used": 1,
+   "seconds": 1.0,
+   "note": null
+  },
+  "afe": {
+   "class": "afe",
+   "packet": "day01",
+   "pages": [
+    2,
+    3
+   ],
+   "values": {
+    "afe_number": "AFE-2026-0417",
+    "operator_name": "Sablewind Operating LLC",
+    "well_name": "Caprock 14-2H",
+    "api_number": "42-389-41207",
+    "county": "Reeves",
+    "state": "TX",
+    "afe_date": "June 1, 2026",
+    "afe_type": "Recompletion",
+    "total_estimate": 486800.0,
+    "cost_lines": [
+     {
+      "line_no": 1,
+      "account_code": "4310",
+      "description": "Recompletion rig and daily rate",
+      "category": "intangible",
+      "amount": 128400.0
+     },
+     {
+      "line_no": 2,
+      "account_code": "4315",
+      "description": "Wireline and perforating",
+      "category": "intangible",
+      "amount": 96750.0
+     },
+     {
+      "line_no": 3,
+      "account_code": "4320",
+      "description": "Stimulation and treating services",
+      "category": "intangible",
+      "amount": 142500.0
+     },
+     {
+      "line_no": 4,
+      "account_code": "4325",
+      "description": "Fluid hauling and disposal",
+      "category": "intangible",
+      "amount": 38200.0
+     },
+     {
+      "line_no": 5,
+      "account_code": "4410",
+      "description": "Tubing and downhole equipment",
+      "category": "tangible",
+      "amount": 52300.0
+     },
+     {
+      "line_no": 6,
+      "account_code": "4420",
+      "description": "Wellhead and surface equipment",
+      "category": "tangible",
+      "amount": 28650.0
+     }
+    ]
+   },
+   "citations": {
+    "afe_number": {
+     "page": 2,
+     "bbox": [
+      0.21785,
+      0.13053,
+      0.31932,
+      0.14345
+     ],
+     "text": "AFE-2026-0417",
+     "ref": null
+    },
+    "total_estimate": {
+     "page": 2,
+     "bbox": [
+      0.85085,
+      0.47875,
+      0.92279,
+      0.49198
+     ],
+     "text": "486,800.00",
+     "ref": null
+    },
+    "api_number": {
+     "page": 2,
+     "bbox": [
+      0.65964,
+      0.14947,
+      0.75075,
+      0.16239
+     ],
+     "text": "42-389-41207",
+     "ref": null
+    },
+    "cost_lines[0].amount": {
+     "page": 2,
+     "bbox": [
+      0.85085,
+      0.28489,
+      0.92279,
+      0.29781
+     ],
+     "text": "128,400.00",
+     "ref": null
+    },
+    "cost_lines[1].amount": {
+     "page": 2,
+     "bbox": [
+      0.85884,
+      0.30667,
+      0.92278,
+      0.31959
+     ],
+     "text": "96,750.00",
+     "ref": null
+    },
+    "cost_lines[2].amount": {
+     "page": 2,
+     "bbox": [
+      0.85085,
+      0.32845,
+      0.92279,
+      0.34137
+     ],
+     "text": "142,500.00",
+     "ref": null
+    },
+    "cost_lines[3].amount": {
+     "page": 2,
+     "bbox": [
+      0.85884,
+      0.35023,
+      0.92278,
+      0.36315
+     ],
+     "text": "38,200.00",
+     "ref": null
+    },
+    "cost_lines[4].amount": {
+     "page": 2,
+     "bbox": [
+      0.85884,
+      0.41463,
+      0.92278,
+      0.42754
+     ],
+     "text": "52,300.00",
+     "ref": null
+    },
+    "cost_lines[5].amount": {
+     "page": 2,
+     "bbox": [
+      0.85884,
+      0.43641,
+      0.92278,
+      0.44932
+     ],
+     "text": "28,650.00",
+     "ref": null
+    }
+   },
+   "credits_used": 2,
+   "seconds": 2.0,
+   "note": null
+  },
+  "ticket_a": {
+   "class": "field_ticket",
+   "packet": "day12",
+   "pages": [
+    1
+   ],
+   "values": {
+    "ticket_number": "PRW-88421",
+    "vendor_name": "Pecos Ridge Well Services LLC",
+    "service_date": "2026-06-09",
+    "well_name": "Caprock 14-2H",
+    "afe_number": "AFE-2026-0417",
+    "line_items": [
+     {
+      "description": "Workover rig operator, hourly",
+      "quantity": 11,
+      "unit": "hour",
+      "rate": 145.0,
+      "amount": 1595.0
+     },
+     {
+      "description": "Rig fuel surcharge",
+      "quantity": 1,
+      "unit": "each",
+      "rate": 385.0,
+      "amount": 385.0
+     },
+     {
+      "description": "Tool rental, packer assembly",
+      "quantity": 2,
+      "unit": "day",
+      "rate": 425.0,
+      "amount": 850.0
+     }
+    ],
+    "total": 2830.0,
+    "customer_signature_present": true
+   },
+   "citations": {
+    "ticket_number": {
+     "page": 1,
+     "bbox": [
+      0.21785,
+      0.13053,
+      0.29562,
+      0.14345
+     ],
+     "text": "PRW-88421",
+     "ref": null
+    },
+    "service_date": {
+     "page": 1,
+     "bbox": [
+      0.21785,
+      0.14947,
+      0.29297,
+      0.16239
+     ],
+     "text": "2026-06-09",
+     "ref": null
+    },
+    "total": {
+     "page": 1,
+     "bbox": [
+      0.86684,
+      0.30925,
+      0.92279,
+      0.32248
+     ],
+     "text": "2,830.00",
+     "ref": null
+    },
+    "line_items[0].rate": {
+     "page": 1,
+     "bbox": [
+      0.733,
+      0.24512,
+      0.77695,
+      0.25804
+     ],
+     "text": "145.00",
+     "ref": null
+    },
+    "line_items[0].quantity": {
+     "page": 1,
+     "bbox": [
+      0.4969,
+      0.24512,
+      0.51288,
+      0.25804
+     ],
+     "text": "11",
+     "ref": null
+    },
+    "line_items[0].amount": {
+     "page": 1,
+     "bbox": [
+      0.86684,
+      0.24512,
+      0.92279,
+      0.25804
+     ],
+     "text": "1,595.00",
+     "ref": null
+    },
+    "line_items[1].rate": {
+     "page": 1,
+     "bbox": [
+      0.733,
+      0.2669,
+      0.77695,
+      0.27982
+     ],
+     "text": "385.00",
+     "ref": null
+    },
+    "line_items[1].quantity": {
+     "page": 1,
+     "bbox": [
+      0.5009,
+      0.2669,
+      0.50889,
+      0.27982
+     ],
+     "text": "1",
+     "ref": null
+    },
+    "line_items[1].amount": {
+     "page": 1,
+     "bbox": [
+      0.733,
+      0.2669,
+      0.77695,
+      0.27982
+     ],
+     "text": "385.00",
+     "ref": null
+    },
+    "line_items[2].rate": {
+     "page": 1,
+     "bbox": [
+      0.733,
+      0.28868,
+      0.77695,
+      0.3016
+     ],
+     "text": "425.00",
+     "ref": null
+    },
+    "line_items[2].quantity": {
+     "page": 1,
+     "bbox": [
+      0.5009,
+      0.28868,
+      0.50889,
+      0.3016
+     ],
+     "text": "2",
+     "ref": null
+    },
+    "line_items[2].amount": {
+     "page": 1,
+     "bbox": [
+      0.87883,
+      0.28868,
+      0.92279,
+      0.3016
+     ],
+     "text": "850.00",
+     "ref": null
+    }
+   },
+   "credits_used": 1,
+   "seconds": 1.0,
+   "note": null
+  },
+  "ticket_b": {
+   "class": "field_ticket",
+   "packet": "day12",
+   "pages": [
+    2
+   ],
+   "values": {
+    "ticket_number": "PRW-88437",
+    "vendor_name": "Pecos Ridge Well Services LLC",
+    "service_date": "2026-06-10",
+    "well_name": "Caprock 14-2H",
+    "afe_number": "AFE-2026-0417",
+    "line_items": [
+     {
+      "description": "Pump truck, hourly",
+      "quantity": 6,
+      "unit": "hour",
+      "rate": 310.0,
+      "amount": 1860.0
+     },
+     {
+      "description": "Fluid pumped, treated water",
+      "quantity": 240,
+      "unit": "bbl",
+      "rate": 4.75,
+      "amount": 1140.0
+     },
+     {
+      "description": "Standby time",
+      "quantity": 1.5,
+      "unit": "hour",
+      "rate": 190.0,
+      "amount": 285.0
+     }
+    ],
+    "total": 3285.0,
+    "customer_signature_present": true
+   },
+   "citations": {
+    "ticket_number": {
+     "page": 2,
+     "bbox": [
+      0.21785,
+      0.13053,
+      0.29562,
+      0.14345
+     ],
+     "text": "PRW-88437",
+     "ref": null
+    },
+    "service_date": {
+     "page": 2,
+     "bbox": [
+      0.21785,
+      0.14947,
+      0.29297,
+      0.16239
+     ],
+     "text": "2026-06-10",
+     "ref": null
+    },
+    "total": {
+     "page": 2,
+     "bbox": [
+      0.86684,
+      0.31682,
+      0.92279,
+      0.33005
+     ],
+     "text": "3,285.00",
+     "ref": null
+    },
+    "line_items[0].rate": {
+     "page": 2,
+     "bbox": [
+      0.733,
+      0.24512,
+      0.77695,
+      0.25804
+     ],
+     "text": "310.00",
+     "ref": null
+    },
+    "line_items[0].quantity": {
+     "page": 2,
+     "bbox": [
+      0.5009,
+      0.24512,
+      0.50889,
+      0.25804
+     ],
+     "text": "6",
+     "ref": null
+    },
+    "line_items[0].amount": {
+     "page": 2,
+     "bbox": [
+      0.86684,
+      0.24512,
+      0.92279,
+      0.25804
+     ],
+     "text": "1,860.00",
+     "ref": null
+    },
+    "line_items[1].rate": {
+     "page": 2,
+     "bbox": [
+      0.74899,
+      0.2669,
+      0.77696,
+      0.27982
+     ],
+     "text": "4.75",
+     "ref": null
+    },
+    "line_items[1].quantity": {
+     "page": 2,
+     "bbox": [
+      0.48563,
+      0.26725,
+      0.525,
+      0.28737
+     ],
+     "text": "240",
+     "ref": null
+    },
+    "line_items[1].amount": {
+     "page": 2,
+     "bbox": [
+      0.86684,
+      0.2669,
+      0.92279,
+      0.27982
+     ],
+     "text": "1,140.00",
+     "ref": null
+    },
+    "line_items[2].rate": {
+     "page": 2,
+     "bbox": [
+      0.733,
+      0.29625,
+      0.77695,
+      0.30917
+     ],
+     "text": "190.00",
+     "ref": null
+    },
+    "line_items[2].quantity": {
+     "page": 2,
+     "bbox": [
+      0.49491,
+      0.29625,
+      0.51489,
+      0.30917
+     ],
+     "text": "1.5",
+     "ref": null
+    },
+    "line_items[2].amount": {
+     "page": 2,
+     "bbox": [
+      0.87883,
+      0.29625,
+      0.92279,
+      0.30917
+     ],
+     "text": "285.00",
+     "ref": null
+    }
+   },
+   "credits_used": 1,
+   "seconds": 1.0,
+   "note": "one quantity on this ticket is handwritten"
+  },
+  "hauling_log": {
+   "class": "hauling_log",
+   "packet": "day12",
+   "pages": [
+    3
+   ],
+   "values": {
+    "log_number": "SVT-4471",
+    "hauler_name": "Sandhill Vacuum Transport LLC",
+    "log_date": "2026-06-10",
+    "well_name": "Caprock 14-2H",
+    "loads": [
+     {
+      "load_no": 1,
+      "time": "06:40",
+      "fluid_type": "Produced water",
+      "barrels": 118.0,
+      "destination": "Sandhill SWD No. 3"
+     },
+     {
+      "load_no": 2,
+      "time": "09:15",
+      "fluid_type": "Produced water",
+      "barrels": 122.5,
+      "destination": "Sandhill SWD No. 3"
+     },
+     {
+      "load_no": 3,
+      "time": "11:50",
+      "fluid_type": "Flowback water",
+      "barrels": 115.0,
+      "destination": "Sandhill SWD No. 3"
+     },
+     {
+      "load_no": 4,
+      "time": "14:20",
+      "fluid_type": "Flowback water",
+      "barrels": 124.5,
+      "destination": "Sandhill SWD No. 3"
+     },
+     {
+      "load_no": 5,
+      "time": "16:35",
+      "fluid_type": "Produced water",
+      "barrels": 110.0,
+      "destination": "Sandhill SWD No. 3"
+     }
+    ],
+    "total_barrels": 590.0
+   },
+   "citations": {
+    "log_number": {
+     "page": 3,
+     "bbox": [
+      0.21785,
+      0.11822,
+      0.27991,
+      0.13114
+     ],
+     "text": "SVT-4471",
+     "ref": null
+    },
+    "total_barrels": {
+     "page": 3,
+     "bbox": [
+      0.55566,
+      0.32061,
+      0.57964,
+      0.33384
+     ],
+     "text": "590",
+     "ref": null
+    },
+    "loads[0].barrels": {
+     "page": 3,
+     "bbox": [
+      0.55566,
+      0.21387,
+      0.57964,
+      0.22679
+     ],
+     "text": "118",
+     "ref": null
+    },
+    "loads[1].barrels": {
+     "page": 3,
+     "bbox": [
+      0.54368,
+      0.23565,
+      0.57964,
+      0.24857
+     ],
+     "text": "122.5",
+     "ref": null
+    },
+    "loads[2].barrels": {
+     "page": 3,
+     "bbox": [
+      0.55566,
+      0.25648,
+      0.57964,
+      0.2694
+     ],
+     "text": "115",
+     "ref": null
+    },
+    "loads[3].barrels": {
+     "page": 3,
+     "bbox": [
+      0.54368,
+      0.27826,
+      0.57964,
+      0.29118
+     ],
+     "text": "124.5",
+     "ref": null
+    },
+    "loads[4].barrels": {
+     "page": 3,
+     "bbox": [
+      0.55566,
+      0.30004,
+      0.57964,
+      0.31296
+     ],
+     "text": "110",
+     "ref": null
+    }
+   },
+   "credits_used": 1,
+   "seconds": 1.0,
+   "note": null
+  },
+  "invoice": {
+   "class": "invoice",
+   "packet": "day12",
+   "pages": [
+    4
+   ],
+   "values": {
+    "invoice_number": "INV-20260612-PRW",
+    "vendor_name": "Pecos Ridge Well Services LLC",
+    "invoice_date": "2026-06-12",
+    "afe_number": "AFE-2026-0417",
+    "well_name": "Caprock 14-2H",
+    "line_items": [
+     {
+      "ticket_ref": "PRW-88421",
+      "description": "Workover rig operator, hourly",
+      "quantity": 11,
+      "unit": "hour",
+      "rate": 145.0,
+      "amount": 1595.0
+     },
+     {
+      "ticket_ref": "PRW-88421",
+      "description": "Rig fuel surcharge",
+      "quantity": 1,
+      "unit": "each",
+      "rate": 385.0,
+      "amount": 385.0
+     },
+     {
+      "ticket_ref": "PRW-88421",
+      "description": "Tool rental, packer assembly",
+      "quantity": 2,
+      "unit": "day",
+      "rate": 425.0,
+      "amount": 850.0
+     },
+     {
+      "ticket_ref": "PRW-88437",
+      "description": "Pump truck, hourly",
+      "quantity": 6,
+      "unit": "hour",
+      "rate": 310.0,
+      "amount": 1860.0
+     },
+     {
+      "ticket_ref": "PRW-88437",
+      "description": "Fluid pumped, treated water",
+      "quantity": 240,
+      "unit": "bbl",
+      "rate": 4.75,
+      "amount": 1140.0
+     },
+     {
+      "ticket_ref": "PRW-88437",
+      "description": "Standby time",
+      "quantity": 1.5,
+      "unit": "hour",
+      "rate": 190.0,
+      "amount": 285.0
+     }
+    ],
+    "subtotal": 6115.0,
+    "tax": 504.49,
+    "total": 6619.49
+   },
+   "citations": {
+    "invoice_number": {
+     "page": 4,
+     "bbox": [
+      0.21785,
+      0.13053,
+      0.34728,
+      0.14345
+     ],
+     "text": "INV-20260612-PRW",
+     "ref": null
+    },
+    "total": {
+     "page": 4,
+     "bbox": [
+      0.86684,
+      0.41625,
+      0.92279,
+      0.42948
+     ],
+     "text": "6,619.49",
+     "ref": null
+    },
+    "subtotal": {
+     "page": 4,
+     "bbox": [
+      0.86684,
+      0.37364,
+      0.92279,
+      0.38687
+     ],
+     "text": "6,115.00",
+     "ref": null
+    },
+    "line_items[0].rate": {
+     "page": 4,
+     "bbox": [
+      0.74157,
+      0.24512,
+      0.78553,
+      0.25804
+     ],
+     "text": "145.00",
+     "ref": null
+    },
+    "line_items[0].amount": {
+     "page": 4,
+     "bbox": [
+      0.86684,
+      0.24512,
+      0.92279,
+      0.25804
+     ],
+     "text": "1,595.00",
+     "ref": null
+    },
+    "line_items[1].rate": {
+     "page": 4,
+     "bbox": [
+      0.74157,
+      0.26595,
+      0.78553,
+      0.27887
+     ],
+     "text": "385.00",
+     "ref": null
+    },
+    "line_items[1].amount": {
+     "page": 4,
+     "bbox": [
+      0.74157,
+      0.26595,
+      0.78553,
+      0.27887
+     ],
+     "text": "385.00",
+     "ref": null
+    },
+    "line_items[2].rate": {
+     "page": 4,
+     "bbox": [
+      0.74157,
+      0.28773,
+      0.78553,
+      0.30065
+     ],
+     "text": "425.00",
+     "ref": null
+    },
+    "line_items[2].amount": {
+     "page": 4,
+     "bbox": [
+      0.87883,
+      0.28773,
+      0.92279,
+      0.30065
+     ],
+     "text": "850.00",
+     "ref": null
+    },
+    "line_items[3].rate": {
+     "page": 4,
+     "bbox": [
+      0.74157,
+      0.30951,
+      0.78553,
+      0.32243
+     ],
+     "text": "310.00",
+     "ref": null
+    },
+    "line_items[3].amount": {
+     "page": 4,
+     "bbox": [
+      0.86684,
+      0.30951,
+      0.92279,
+      0.32243
+     ],
+     "text": "1,860.00",
+     "ref": null
+    },
+    "line_items[4].rate": {
+     "page": 4,
+     "bbox": [
+      0.75756,
+      0.33129,
+      0.78554,
+      0.34421
+     ],
+     "text": "4.75",
+     "ref": null
+    },
+    "line_items[4].amount": {
+     "page": 4,
+     "bbox": [
+      0.86684,
+      0.33129,
+      0.92279,
+      0.34421
+     ],
+     "text": "1,140.00",
+     "ref": null
+    },
+    "line_items[5].rate": {
+     "page": 4,
+     "bbox": [
+      0.74157,
+      0.35307,
+      0.78553,
+      0.36599
+     ],
+     "text": "190.00",
+     "ref": null
+    },
+    "line_items[5].amount": {
+     "page": 4,
+     "bbox": [
+      0.87883,
+      0.35307,
+      0.92279,
+      0.36599
+     ],
+     "text": "285.00",
+     "ref": null
+    }
+   },
+   "credits_used": 1,
+   "seconds": 1.0,
+   "note": null
+  },
+  "jib": {
+   "class": "jib_statement",
+   "packet": "day30",
+   "pages": [
+    1,
+    2
+   ],
+   "values": {
+    "statement_period": "June 2026",
+    "operator_name": "Sablewind Operating LLC",
+    "property_number": "TX-04412",
+    "well_name": "Caprock 14-2H",
+    "owner_name": "Caprock Resources LLC",
+    "owner_number": "OW-10287",
+    "wi_decimal": 0.25,
+    "lines": [
+     {
+      "line_no": 1,
+      "afe_ref": "AFE-2026-0417",
+      "account_code": "4310",
+      "description": "Recompletion rig and daily rate",
+      "gross_amount": 74320.0,
+      "owner_decimal": 0.25,
+      "net_amount": 18580.0
+     },
+     {
+      "line_no": 2,
+      "afe_ref": "AFE-2026-0417",
+      "account_code": "4315",
+      "description": "Wireline and perforating",
+      "gross_amount": 51880.0,
+      "owner_decimal": 0.25,
+      "net_amount": 12970.0
+     },
+     {
+      "line_no": 3,
+      "afe_ref": "AFE-2026-0417",
+      "account_code": "4320",
+      "description": "Stimulation and treating services",
+      "gross_amount": 96440.0,
+      "owner_decimal": 0.26,
+      "net_amount": 25074.4
+     },
+     {
+      "line_no": 4,
+      "afe_ref": "AFE-2026-0417",
+      "account_code": "4325",
+      "description": "Fluid hauling and disposal",
+      "gross_amount": 22150.0,
+      "owner_decimal": 0.25,
+      "net_amount": 5537.5
+     },
+     {
+      "line_no": 5,
+      "afe_ref": "AFE-2026-0417",
+      "account_code": "4410",
+      "description": "Tubing and downhole equipment",
+      "gross_amount": 43760.0,
+      "owner_decimal": 0.25,
+      "net_amount": 10940.0
+     },
+     {
+      "line_no": 6,
+      "afe_ref": "AFE-2026-0417",
+      "account_code": "4420",
+      "description": "Wellhead and surface equipment",
+      "gross_amount": 18900.0,
+      "owner_decimal": 0.25,
+      "net_amount": 4725.0
+     },
+     {
+      "line_no": 7,
+      "afe_ref": "AFE-2026-0417",
+      "account_code": "4310",
+      "description": "Rig supervision and site services",
+      "gross_amount": 12480.0,
+      "owner_decimal": 0.25,
+      "net_amount": 3120.0
+     },
+     {
+      "line_no": 8,
+      "afe_ref": "AFE-2026-0417",
+      "account_code": "4320",
+      "description": "Chemicals and treating fluids",
+      "gross_amount": 9640.0,
+      "owner_decimal": 0.25,
+      "net_amount": 2410.0
+     }
+    ],
+    "gross_total": 329570.0,
+    "net_total": 83356.9,
+    "due_date": "2026-07-30"
+   },
+   "citations": {
+    "wi_decimal": {
+     "page": 1,
+     "bbox": [
+      0.65964,
+      0.16747,
+      0.71958,
+      0.18039
+     ],
+     "text": "0.250000",
+     "ref": null
+    },
+    "owner_number": {
+     "page": 1,
+     "bbox": [
+      0.65964,
+      0.14947,
+      0.72943,
+      0.16239
+     ],
+     "text": "OW-10287",
+     "ref": null
+    },
+    "gross_total": {
+     "page": 1,
+     "bbox": [
+      0.62781,
+      0.44845,
+      0.69975,
+      0.46168
+     ],
+     "text": "329,570.00",
+     "ref": null
+    },
+    "net_total": {
+     "page": 1,
+     "bbox": [
+      0.85884,
+      0.44845,
+      0.92278,
+      0.46168
+     ],
+     "text": "83,356.90",
+     "ref": null
+    },
+    "due_date": {
+     "page": 1,
+     "bbox": [
+      0.65964,
+      0.18641,
+      0.73476,
+      0.19932
+     ],
+     "text": "2026-07-30",
+     "ref": null
+    },
+    "lines[0].net_amount": {
+     "page": 1,
+     "bbox": [
+      0.85884,
+      0.27637,
+      0.92278,
+      0.28929
+     ],
+     "text": "18,580.00",
+     "ref": null
+    },
+    "lines[0].owner_decimal": {
+     "page": 1,
+     "bbox": [
+      0.72798,
+      0.27637,
+      0.78792,
+      0.28929
+     ],
+     "text": "0.250000",
+     "ref": null
+    },
+    "lines[0].gross_amount": {
+     "page": 1,
+     "bbox": [
+      0.6358,
+      0.27637,
+      0.69974,
+      0.28929
+     ],
+     "text": "74,320.00",
+     "ref": null
+    },
+    "lines[0].afe_ref": {
+     "page": 1,
+     "bbox": [
+      0.13676,
+      0.27637,
+      0.23823,
+      0.28929
+     ],
+     "text": "AFE-2026-0417",
+     "ref": null
+    },
+    "lines[0].account_code": {
+     "page": 1,
+     "bbox": [
+      0.27648,
+      0.27637,
+      0.30845,
+      0.28929
+     ],
+     "text": "4310",
+     "ref": null
+    },
+    "lines[1].net_amount": {
+     "page": 1,
+     "bbox": [
+      0.85884,
+      0.29815,
+      0.92278,
+      0.31107
+     ],
+     "text": "12,970.00",
+     "ref": null
+    },
+    "lines[1].owner_decimal": {
+     "page": 1,
+     "bbox": [
+      0.72798,
+      0.29815,
+      0.78792,
+      0.31107
+     ],
+     "text": "0.250000",
+     "ref": null
+    },
+    "lines[1].gross_amount": {
+     "page": 1,
+     "bbox": [
+      0.6358,
+      0.29815,
+      0.69974,
+      0.31107
+     ],
+     "text": "51,880.00",
+     "ref": null
+    },
+    "lines[1].afe_ref": {
+     "page": 1,
+     "bbox": [
+      0.13676,
+      0.29815,
+      0.23823,
+      0.31107
+     ],
+     "text": "AFE-2026-0417",
+     "ref": null
+    },
+    "lines[1].account_code": {
+     "page": 1,
+     "bbox": [
+      0.27648,
+      0.29815,
+      0.30845,
+      0.31107
+     ],
+     "text": "4315",
+     "ref": null
+    },
+    "lines[2].net_amount": {
+     "page": 1,
+     "bbox": [
+      0.85884,
+      0.31993,
+      0.92278,
+      0.33285
+     ],
+     "text": "25,074.40",
+     "ref": null
+    },
+    "lines[2].owner_decimal": {
+     "page": 1,
+     "bbox": [
+      0.72798,
+      0.31993,
+      0.78792,
+      0.33285
+     ],
+     "text": "0.260000",
+     "ref": null
+    },
+    "lines[2].gross_amount": {
+     "page": 1,
+     "bbox": [
+      0.6358,
+      0.31993,
+      0.69974,
+      0.33285
+     ],
+     "text": "96,440.00",
+     "ref": null
+    },
+    "lines[2].afe_ref": {
+     "page": 1,
+     "bbox": [
+      0.13676,
+      0.31993,
+      0.23823,
+      0.33285
+     ],
+     "text": "AFE-2026-0417",
+     "ref": null
+    },
+    "lines[2].account_code": {
+     "page": 1,
+     "bbox": [
+      0.27648,
+      0.31993,
+      0.30845,
+      0.33285
+     ],
+     "text": "4320",
+     "ref": null
+    },
+    "lines[3].net_amount": {
+     "page": 1,
+     "bbox": [
+      0.86684,
+      0.34171,
+      0.92279,
+      0.35463
+     ],
+     "text": "5,537.50",
+     "ref": null
+    },
+    "lines[3].owner_decimal": {
+     "page": 1,
+     "bbox": [
+      0.72798,
+      0.34171,
+      0.78792,
+      0.35463
+     ],
+     "text": "0.250000",
+     "ref": null
+    },
+    "lines[3].gross_amount": {
+     "page": 1,
+     "bbox": [
+      0.6358,
+      0.34171,
+      0.69974,
+      0.35463
+     ],
+     "text": "22,150.00",
+     "ref": null
+    },
+    "lines[3].afe_ref": {
+     "page": 1,
+     "bbox": [
+      0.13676,
+      0.34171,
+      0.23823,
+      0.35463
+     ],
+     "text": "AFE-2026-0417",
+     "ref": null
+    },
+    "lines[3].account_code": {
+     "page": 1,
+     "bbox": [
+      0.27648,
+      0.34171,
+      0.30845,
+      0.35463
+     ],
+     "text": "4325",
+     "ref": null
+    },
+    "lines[4].net_amount": {
+     "page": 1,
+     "bbox": [
+      0.85884,
+      0.36254,
+      0.92278,
+      0.37546
+     ],
+     "text": "10,940.00",
+     "ref": null
+    },
+    "lines[4].owner_decimal": {
+     "page": 1,
+     "bbox": [
+      0.72798,
+      0.36254,
+      0.78792,
+      0.37546
+     ],
+     "text": "0.250000",
+     "ref": null
+    },
+    "lines[4].gross_amount": {
+     "page": 1,
+     "bbox": [
+      0.6358,
+      0.36254,
+      0.69974,
+      0.37546
+     ],
+     "text": "43,760.00",
+     "ref": null
+    },
+    "lines[4].afe_ref": {
+     "page": 1,
+     "bbox": [
+      0.13676,
+      0.36254,
+      0.23823,
+      0.37546
+     ],
+     "text": "AFE-2026-0417",
+     "ref": null
+    },
+    "lines[4].account_code": {
+     "page": 1,
+     "bbox": [
+      0.27648,
+      0.36254,
+      0.30845,
+      0.37546
+     ],
+     "text": "4410",
+     "ref": null
+    },
+    "lines[5].net_amount": {
+     "page": 1,
+     "bbox": [
+      0.86684,
+      0.38432,
+      0.92279,
+      0.39724
+     ],
+     "text": "4,725.00",
+     "ref": null
+    },
+    "lines[5].owner_decimal": {
+     "page": 1,
+     "bbox": [
+      0.72798,
+      0.38432,
+      0.78792,
+      0.39724
+     ],
+     "text": "0.250000",
+     "ref": null
+    },
+    "lines[5].gross_amount": {
+     "page": 1,
+     "bbox": [
+      0.6358,
+      0.38432,
+      0.69974,
+      0.39724
+     ],
+     "text": "18,900.00",
+     "ref": null
+    },
+    "lines[5].afe_ref": {
+     "page": 1,
+     "bbox": [
+      0.13676,
+      0.38432,
+      0.23823,
+      0.39724
+     ],
+     "text": "AFE-2026-0417",
+     "ref": null
+    },
+    "lines[5].account_code": {
+     "page": 1,
+     "bbox": [
+      0.27648,
+      0.38432,
+      0.30845,
+      0.39724
+     ],
+     "text": "4420",
+     "ref": null
+    },
+    "lines[6].net_amount": {
+     "page": 1,
+     "bbox": [
+      0.86684,
+      0.4061,
+      0.92279,
+      0.41902
+     ],
+     "text": "3,120.00",
+     "ref": null
+    },
+    "lines[6].owner_decimal": {
+     "page": 1,
+     "bbox": [
+      0.72798,
+      0.4061,
+      0.78792,
+      0.41902
+     ],
+     "text": "0.250000",
+     "ref": null
+    },
+    "lines[6].gross_amount": {
+     "page": 1,
+     "bbox": [
+      0.6358,
+      0.4061,
+      0.69974,
+      0.41902
+     ],
+     "text": "12,480.00",
+     "ref": null
+    },
+    "lines[6].afe_ref": {
+     "page": 1,
+     "bbox": [
+      0.13676,
+      0.4061,
+      0.23823,
+      0.41902
+     ],
+     "text": "AFE-2026-0417",
+     "ref": null
+    },
+    "lines[6].account_code": {
+     "page": 1,
+     "bbox": [
+      0.27648,
+      0.4061,
+      0.30845,
+      0.41902
+     ],
+     "text": "4310",
+     "ref": null
+    },
+    "lines[7].net_amount": {
+     "page": 1,
+     "bbox": [
+      0.86684,
+      0.42788,
+      0.92279,
+      0.4408
+     ],
+     "text": "2,410.00",
+     "ref": null
+    },
+    "lines[7].owner_decimal": {
+     "page": 1,
+     "bbox": [
+      0.72798,
+      0.42788,
+      0.78792,
+      0.4408
+     ],
+     "text": "0.250000",
+     "ref": null
+    },
+    "lines[7].gross_amount": {
+     "page": 1,
+     "bbox": [
+      0.6438,
+      0.42788,
+      0.69975,
+      0.4408
+     ],
+     "text": "9,640.00",
+     "ref": null
+    },
+    "lines[7].afe_ref": {
+     "page": 1,
+     "bbox": [
+      0.13676,
+      0.42788,
+      0.23823,
+      0.4408
+     ],
+     "text": "AFE-2026-0417",
+     "ref": null
+    },
+    "lines[7].account_code": {
+     "page": 1,
+     "bbox": [
+      0.27648,
+      0.42788,
+      0.30845,
+      0.4408
+     ],
+     "text": "4320",
+     "ref": null
+    }
+   },
+   "credits_used": 2,
+   "seconds": 2.0,
+   "note": null
+  }
+ },
+ "timing": {
+  "total_seconds": 20.0
+ },
+ "credits": {
+  "total": 33
+ },
+ "cycle_seconds": 20.0,
+ "cost_usd_at_list": 0.0,
+ "note": "Hand-built month record for tests. Values are what the synthetic paper prints; citation boxes come from the packet text layer. Synthetic demonstration document \u2014 not an actual record."
+}

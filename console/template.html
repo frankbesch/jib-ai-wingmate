@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Well-file demo console — document parser × Houston O&amp;G</title>
+<style>
+:root{--paper:#F7F5F2;--card:#FFFFFF;--ink:#2F3437;--slate:#67727A;--rule:#D7D2CB;--rule2:#E9E5DF;--moss:#5F7A61;--teal:#5B7F87;--ochre:#C8923B;--terra:#B55D43;--navy:#50687A;--moss-bg:#EEF2EC;--teal-bg:#EAF0F1;--ochre-bg:#F7EEDD;--terra-bg:#F5E6E1;--navy-bg:#E9EDF0;--mute-bg:#EFEDE9;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#1E2022;--card:#26292C;--ink:#E7E3DD;--slate:#A9AFB4;--rule:#3B4044;--rule2:#33383C;--moss:#8FB08F;--teal:#86AEB6;--ochre:#D9AB5E;--terra:#D08468;--navy:#8FA6B8;--moss-bg:#26312A;--teal-bg:#24333A;--ochre-bg:#3B3223;--terra-bg:#3C2A24;--navy-bg:#283139;--mute-bg:#2E3235;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#1E2022;--card:#26292C;--ink:#E7E3DD;--slate:#A9AFB4;--rule:#3B4044;--rule2:#33383C;--moss:#8FB08F;--teal:#86AEB6;--ochre:#D9AB5E;--terra:#D08468;--navy:#8FA6B8;--moss-bg:#26312A;--teal-bg:#24333A;--ochre-bg:#3B3223;--terra-bg:#3C2A24;--navy-bg:#283139;--mute-bg:#2E3235;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,"Avenir Next","IBM Plex Sans","Helvetica Neue",Arial,sans-serif;font-size:14.5px;line-height:1.45;display:flex;flex-direction:column;min-height:100vh}
+header{display:flex;align-items:center;gap:14px;padding:10px 18px;border-bottom:1px solid var(--rule);flex-wrap:wrap}
+.kicker{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--ochre);font-weight:600}
+header h1{font-size:16px;margin:0;font-weight:600}
+.banner{background:var(--ochre);color:#2F3437;padding:3px 10px;border-radius:4px;font-weight:600;font-size:12.5px}
+.banner.live{background:var(--moss);color:#fff}
+select,input,button{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--rule);border-radius:5px;padding:5px 9px}
+button{cursor:pointer} button:hover{border-color:var(--navy)} button.primary{background:var(--navy);color:#fff;border-color:var(--navy)}
+button.ghost{background:transparent}
+.spacer{flex:1}
+.steps{display:flex;gap:4px;padding:8px 18px;border-bottom:1px solid var(--rule);overflow-x:auto}
+.step{flex:0 0 auto;padding:6px 11px;border-radius:20px;border:1px solid var(--rule);font-size:12.5px;color:var(--slate);cursor:pointer;white-space:nowrap;background:var(--card)}
+.step .n{display:inline-block;width:18px;height:18px;border-radius:50%;background:var(--mute-bg);text-align:center;line-height:18px;font-size:11px;margin-right:6px;color:var(--ink)}
+.step.on{border-color:var(--ochre);color:var(--ink);box-shadow:0 0 0 2px var(--ochre-bg)} .step.on .n{background:var(--ochre);color:#2F3437}
+.step.done .n{background:var(--moss);color:#fff}
+main{flex:1;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(320px,0.9fr);gap:14px;padding:14px 18px;min-height:0}
+.panel{background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:14px 16px;min-width:0;overflow:auto;animation:rise .35s ease}
+@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+h2{font-size:18px;margin:0 0 4px} h3{font-size:13px;color:var(--navy);margin:14px 0 6px;text-transform:uppercase;letter-spacing:.05em}
+.lede{color:var(--slate);margin:0 0 10px;max-width:70ch}
+.stage{position:relative;display:inline-block;max-width:100%}
+.stage img{display:block;max-width:100%;border:1px solid var(--rule);border-radius:4px}
+.box{position:absolute;border:2px solid var(--teal);background:rgba(91,127,135,.10);border-radius:2px;transition:all .25s;pointer-events:none}
+.box.sel{border-color:var(--terra);background:rgba(181,93,67,.20);box-shadow:0 0 0 4px rgba(181,93,67,.18);animation:pulse 1.2s ease-in-out 2}
+.box.null{border-style:dashed;border-color:var(--terra)}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 4px rgba(181,93,67,.18)}50%{box-shadow:0 0 0 10px rgba(181,93,67,.05)}}
+.thumbs{display:flex;gap:10px;flex-wrap:wrap}
+.thumb{width:150px;border:1px solid var(--rule);border-radius:6px;overflow:hidden;background:var(--card);font-size:12px;transition:transform .2s}
+.thumb img{display:block;width:100%} .thumb .cap{padding:5px 8px;border-top:1px solid var(--rule2);display:flex;justify-content:space-between;gap:6px}
+.thumb.other{outline:2px solid var(--terra)}
+.chip{display:inline-block;padding:1px 8px;border-radius:10px;font-size:11.5px;font-weight:600;white-space:nowrap}
+.chip.moss{background:var(--moss-bg);color:var(--moss)} .chip.teal{background:var(--teal-bg);color:var(--teal)} .chip.terra{background:var(--terra-bg);color:var(--terra)} .chip.ochre{background:var(--ochre-bg);color:var(--ochre)} .chip.navy{background:var(--navy-bg);color:var(--navy)}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{text-align:left;vertical-align:top;padding:6px 8px;border-bottom:1px solid var(--rule2)}
+th{color:var(--slate);font-weight:600;font-size:12px}
+tr.f{cursor:pointer} tr.f:hover td{background:var(--mute-bg)} tr.f.sel td{background:var(--terra-bg)} tr.flag td.v{color:var(--terra);font-weight:600}
+td.v{font-variant-numeric:tabular-nums}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.tile{background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:10px 12px}
+.tile .n{font-size:26px;font-weight:600;color:var(--navy);font-variant-numeric:tabular-nums;line-height:1.1} .tile .l{font-size:12px;color:var(--slate);margin-top:3px}
+.tile.req{border-left:3px solid var(--moss)}
+.bar{height:6px;background:var(--mute-bg);border-radius:3px;overflow:hidden;margin-top:6px} .bar i{display:block;height:100%;background:var(--teal);width:0;transition:width .9s ease}
+.flow{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.flow .b{flex:1 1 120px;border:1px solid var(--rule);border-radius:6px;padding:7px 9px;font-size:12.5px;background:var(--paper)} .flow .b b{display:block;color:var(--navy)} .flow .b.pulse{border-color:var(--teal);background:var(--teal-bg)} .flow .b.on{outline:2px solid var(--ochre)}
+.rule{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--rule2);font-size:13px}
+.chat{display:flex;flex-direction:column;gap:8px}
+.msg{padding:9px 12px;border-radius:10px;max-width:92%;font-size:13.5px;animation:rise .3s ease} .msg.q{align-self:flex-end;background:var(--navy-bg)} .msg.a{align-self:flex-start;background:var(--mute-bg)} .msg.a.refuse{background:var(--terra-bg)}
+.cite{display:inline-block;margin-left:6px;padding:0 6px;border-radius:8px;background:var(--teal-bg);color:var(--teal);font-size:11px;cursor:pointer}
+.qs{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px} .qs button{font-size:12.5px}
+.calc{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px} .calc label{display:block;font-size:12px;color:var(--slate);margin:6px 0 2px} .calc input{width:100%}
+.out{background:var(--navy-bg);border-radius:8px;padding:10px 12px;margin-top:10px;font-size:13.5px} .out b{font-variant-numeric:tabular-nums}
+.audit{font-size:12px;color:var(--slate);max-height:120px;overflow:auto;border-top:1px solid var(--rule2);margin-top:8px;padding-top:6px}
+.notes{position:fixed;left:18px;right:18px;bottom:14px;background:var(--ink);color:var(--paper);border-radius:8px;padding:10px 14px;font-size:13.5px;box-shadow:0 8px 24px rgba(0,0,0,.25);display:none;z-index:9} .notes.show{display:block} .notes b{color:var(--ochre)}
+footer{padding:6px 18px;border-top:1px solid var(--rule);font-size:11.5px;color:var(--slate);display:flex;gap:14px;flex-wrap:wrap}
+.muted{color:var(--slate)} .small{font-size:12.5px}
+kbd{font-family:inherit;border:1px solid var(--rule);border-radius:4px;padding:0 5px;font-size:11px}
+@media (max-width:860px){main{grid-template-columns:minmax(0,1fr)} .panel{max-height:none}}
+</style>
+</head>
+<body>
+<header>
+  <div><div class="kicker">Document parser × Houston oil and gas · Well files to well master</div><h1>Demo console</h1></div>
+  <span id="banner" class="banner">SYNTHETIC FIXTURE — not document parser output</span>
+  <span class="spacer"></span>
+  <label class="small">Packet <select id="permit"></select></label>
+  <button id="prev" class="ghost">◀</button><button id="next" class="primary">Next ▶</button>
+  <button id="notesBtn" class="ghost" title="presenter notes (N)">Notes</button>
+</header>
+<div class="steps" id="steps"></div>
+<main><section class="panel" id="left"></section><section class="panel" id="right"></section></main>
+<div class="notes" id="notes"></div>
+<footer><span id="foot"></span><span class="spacer"></span><span><kbd>→</kbd> next · <kbd>←</kbd> back · <kbd>N</kbd> notes</span></footer>
+<script>
+const DATA = /*__DATA__*/null;
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const SYN = !!DATA.run.synthetic;
+const STEPS = ['Intake','Classify','Extract','Split','Schema','Route','Scorecard','Analyst','Value'];
+const NOTES = ['', '', '', '', '', '', '', '', ''];   // presenter notes removed
+let cur = 0, pi = 0, selField = null, selPage = 1, audit = [];
+const P = () => DATA.packets[pi];
+const rec = () => P().record;
+
+function init(){
+  $('#banner').textContent = SYN ? 'SYNTHETIC FIXTURE — not document parser output' : `LIVE RUN · ${DATA.run.run_id}`; if(!SYN) $('#banner').classList.add('live');
+  const sel = $('#permit'); DATA.packets.forEach((p,i)=>{const o=document.createElement('option');o.value=i;o.textContent=`${p.permit} · ${p.manifest.pages} pp`;sel.appendChild(o)});
+  sel.onchange = ()=>{pi=+sel.value; selField=null; selPage=1; render()};
+  $('#prev').onclick=()=>go(cur-1); $('#next').onclick=()=>go(cur+1); $('#notesBtn').onclick=toggleNotes;
+  document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')go(cur+1);if(e.key==='ArrowLeft')go(cur-1);if(e.key.toLowerCase()==='n')toggleNotes()});
+  $('#foot').textContent = `Run ${DATA.run.run_id} · built ${DATA.built} · corpus: ${DATA.sources[0].name} · ASCII join ${DATA.join.permits_with_ascii_truth}/${DATA.join.permits_requested} · every product claim per the parser's documentation`;
+  render();
+}
+function go(n){ cur=Math.max(0,Math.min(STEPS.length-1,n)); selField=null; render(); }
+function toggleNotes(){ $('#notes').classList.toggle('show'); }
+function stepsBar(){ $('#steps').innerHTML = STEPS.map((s,i)=>`<div class="step ${i===cur?'on':''} ${i<cur?'done':''}" data-i="${i}"><span class="n">${i<cur?'✓':i+1}</span>${s}</div>`).join(''); document.querySelectorAll('.step').forEach(el=>el.onclick=()=>go(+el.dataset.i)); }
+function normBox(b){ if(!b)return null; if(b.length===8){const xs=[b[0],b[2],b[4],b[6]],ys=[b[1],b[3],b[5],b[7]];b=[Math.min(...xs),Math.min(...ys),Math.max(...xs),Math.max(...ys)]} if(b.length!==4)return null; if(Math.max(...b)>1)b=[b[0]/792,b[1]/612,b[2]/792,b[3]/612]; return b; }
+function pageView(pageNo, boxes){ const pg=P().pages[pageNo-1]; if(!pg)return '<p class="muted">no page</p>';
+  const bx=(boxes||[]).map(c=>{const b=normBox(c.bbox); if(!b||c.page!==pageNo)return ''; return `<div class="box ${c.key===selField?'sel':''} ${c.isnull?'null':''}" title="${esc(c.key)}" style="left:${b[0]*100}%;top:${b[1]*100}%;width:${(b[2]-b[0])*100}%;height:${(b[3]-b[1])*100}%"></div>`}).join('');
+  return `<div class="stage"><img src="${pg.src}" alt="packet page ${pageNo}">${bx}</div>`; }
+function flat(o,pre=''){const out={};for(const [k,v] of Object.entries(o||{})){if(k==='fields')continue;if(v&&typeof v==='object'&&!Array.isArray(v))Object.assign(out,flat(v,pre+k+'.'));else out[pre+k]=v}return out}
+function cites(){ return Object.entries(rec().schema_w1?.citations||{}).map(([k,c])=>({key:k,page:c.page,bbox:c.bbox})); }
+function sc(){ return DATA.scorecard.packets.find(x=>x.permit===P().permit); }
+function money(n){ return '$'+Math.round(n).toLocaleString('en-US'); }
+
+const VIEWS = {
+ 0(){ const m=P().manifest, r=rec();
+  return [`<h2>Packet ${P().permit} arrives</h2><p class="lede">${P().documents.length} documents published by the Texas Railroad Commission on 2026-09-03, merged into one ${m.pages}-page packet. Hash recorded before any run.</p>
+   <div class="thumbs">${P().pages.map((pg,i)=>`<div class="thumb"><img src="${pg.src}" alt="page ${i+1}"><div class="cap"><span>p${i+1}</span><span class="muted">${P().documents.find(d=>{let c=0;return false})?'':''}</span></div></div>`).join('')}</div>`,
+   `<h2>What we know before the document parser sees it</h2><table><tr><th>Item</th><th>Value</th></tr>
+   <tr><td>Documents</td><td>${P().documents.map(d=>`<div>${esc(d.file.split('/').pop())} <span class="chip navy">${d.pages} pp</span></div>`).join('')}</td></tr>
+   <tr><td>Packet sha256</td><td class="v small">${m.clean_sha256.slice(0,24)}…</td></tr>
+   <tr><td>Ground truth</td><td>RRC permit master ASCII (same morning) + the facsimile text layer. Different hand than the vendor.</td></tr>
+   <tr><td>Licence</td><td class="small">${esc(DATA.sources[0].licence)}</td></tr>
+   <tr><td>Boundary</td><td>Header capture and indexing. No raster-log curve digitization. No P&amp;ID connectivity.</td></tr></table>
+   <h3>Pipeline</h3><div class="flow">${['Landing','/classify','/extract','/split','/schema','Validate','Review','Land'].map((b,i)=>`<div class="b ${i>0&&i<5?'pulse':''}"><b>${b}</b></div>`).join('')}</div>`]; },
+ 1(){ const cl=rec().classify||[];
+  return [`<h2>Classify: route each document</h2><p class="lede">Forced choice, no confidence score. The catch-all class carries no pipeline id, so an <i>unrecognized</i> result is the refusal path.</p>
+   <div class="thumbs">${P().documents.map((d,i)=>{const c=cl.find(x=>x.file===d.file.split('/').pop())||{};const bad=c.predicted==='unrecognized';const pg=P().pages[P().documents.slice(0,i).reduce((a,x)=>a+x.pages,0)];return `<div class="thumb ${bad?'other':''}"><img src="${pg?pg.src:''}" alt=""><div class="cap"><span class="chip ${bad?'terra':d.class===c.predicted?'moss':'ochre'}">${esc(c.predicted||'?')}</span><span class="muted">${c.seconds?c.seconds.toFixed(1)+'s':''}</span></div></div>`}).join('')}</div>`,
+   `<h2>Classes offered</h2><table><tr><th>Class</th><th>Routes to</th></tr><tr><td>w1_permit</td><td>W-1 schema</td></tr><tr><td>plat</td><td>plat schema (truth PLANNED)</td></tr><tr><td>completion_report</td><td>W-2/G-1 schema (not in this set)</td></tr><tr><td>well_log</td><td>index only; no curves</td></tr><tr><td>correspondence</td><td>index only</td></tr><tr><td>unrecognized</td><td><span class="chip terra">no pipeline id → review</span></td></tr></table>
+   <p class="small muted" style="margin-top:10px">Documented: classify bills the first five pages by default and returns exactly one of the names supplied.</p>`]; },
+ 2(){ const e=rec().extract||{};
+  return [`<h2>Extract: one call, every layer</h2><p class="lede">Markdown, word boxes, tables, selection marks, and failed pages come back together. Only extracted pages bill.</p>${pageView(1,[])}`,
+   `<h2>Response</h2><div class="tiles"><div class="tile"><div class="n">${e.page_count??'—'}</div><div class="l">pages</div></div><div class="tile"><div class="n">${e.credits_used??'—'}</div><div class="l">credits used (1 per page)</div></div><div class="tile"><div class="n">${(e.failed_pages||[]).length}</div><div class="l">failed pages</div></div><div class="tile"><div class="n">${e.seconds?e.seconds.toFixed(1)+'s':'—'}</div><div class="l">wall clock</div></div></div>
+   <table style="margin-top:12px"><tr><th>Layer</th><th>Count</th><th>Used for</th></tr><tr><td>Words</td><td class="v">${e.words??'<span class="muted">n/a in fixture</span>'}</td><td>reviewer overlays, confidence proxies</td></tr><tr><td>Tables</td><td class="v">${e.tables??'<span class="muted">n/a in fixture</span>'}</td><td>field-information rows</td></tr><tr><td>Selection marks</td><td class="v">${e.selection_marks??'<span class="muted">n/a in fixture</span>'}</td><td>purpose, profile, H2S boxes</td></tr></table>
+   <p class="small muted" style="margin-top:10px">extraction_id <code>${esc(e.extraction_id)}</code> is the key every later step consumes.</p>`]; },
+ 3(){ const s=rec().split?.splits||{}; const cls=Object.keys(s);
+  return [`<h2>Split: the packet becomes documents again</h2><p class="lede">Topics map to 1-indexed page lists. A page routed to <i>other</i> is a routing signal.</p>
+   ${cls.map(c=>`<h3>${esc(c)} <span class="chip ${c==='other'?'terra':'teal'}">${s[c].length} page${s[c].length===1?'':'s'}</span></h3><div class="thumbs">${s[c].map(n=>`<div class="thumb ${c==='other'?'other':''}"><img src="${P().pages[n-1]?.src||''}" alt=""><div class="cap"><span>p${n}</span></div></div>`).join('')}</div>`).join('')}`,
+   `<h2>Against the truth</h2><table><tr><th>Class</th><th>Predicted pages</th><th>True pages</th></tr>${[...new Set([...cls,...Object.keys(P().split_truth)])].map(c=>{const p=(s[c]||[]).join(', ')||'—',t=(P().split_truth[c]||[]).join(', ')||'—';return `<tr class="${p===t?'':'flag'}"><td>${esc(c)}</td><td class="v">${p}</td><td class="v">${t}</td></tr>`}).join('')}</table><p class="small muted" style="margin-top:10px">Truth here is page ranges recorded when the packet was assembled from separately published files.</p>`]; },
+ 4(){ const vals=flat(rec().schema_w1?.values), cs=cites(), csMap=Object.fromEntries(cs.map(c=>[c.key,c])); const e=sc(); const errs=new Set((e?.field_errors||[]).map(x=>x.field));
+  const c=selField?csMap[selField]:null; if(c&&c.page)selPage=c.page;
+  const rows=Object.entries(vals).map(([k,v])=>{const nul=v===null||v===undefined||v===''||(Array.isArray(v)&&!v.length);return `<tr class="f ${k===selField?'sel':''} ${errs.has(k)||nul?'flag':''}" data-k="${esc(k)}"><td>${esc(k)}</td><td class="v">${nul?'<span class="chip terra">null</span>':esc(Array.isArray(v)?v.join(', '):v)}</td><td>${csMap[k]?`<span class="chip teal">p${csMap[k].page}</span>`:'<span class="chip ochre">none</span>'}</td></tr>`}).join('');
+  const fields=rec().schema_w1?.values?.fields||[];
+  return [`<h2>Schema: values with a citation</h2><p class="lede">Click a field. Its box lights up on the page. Nothing without a box is trusted.</p>${pageView(selPage,cs.map(x=>({...x,isnull:false})))}`,
+   `<h2>${P().permit} · W-1 header</h2><table><tr><th>Field</th><th>Value</th><th>Cite</th></tr>${rows}</table>${fields.length?`<h3>Field information table</h3><table><tr><th>Field</th><th>Type</th><th>Depth</th></tr>${fields.map(f=>`<tr><td>${esc(f.field_name)} <span class="muted small">${esc(f.field_number)}</span></td><td>${esc(f.well_type)}</td><td class="v">${f.completion_depth??'<span class="chip terra">null</span>'}</td></tr>`).join('')}</table>`:''}`]; },
+ 5(){ const e=sc()||{}; const req=['api_number','permit_number','operator_name','lease_name','well_number','county','district','total_depth']; const v=rec().schema_w1?.values||{};
+  const rules=[['Required field null',req.filter(k=>v[k]==null||v[k]==='').join(', ')||null],['Failed pages',(rec().extract?.failed_pages||[]).length||null],['Pages split to other',(rec().split?.splits?.other||[]).join(', ')||null],['Document classified unrecognized',(rec().classify||[]).filter(c=>c.predicted==='unrecognized').map(c=>c.file).join(', ')||null]];
+  const routed=rules.some(r=>r[1]);
+  return [`<h2>Validate and route</h2><p class="lede">No field confidence exists in the schema response, so routing is rules you own. Each rule names its evidence.</p>
+   ${rules.map(([n,hit])=>`<div class="rule"><span>${n}</span><span>${hit?`<span class="chip terra">fires · ${esc(hit)}</span>`:'<span class="chip moss">clear</span>'}</span></div>`).join('')}
+   <h3>Decision</h3><p>${routed?'<span class="chip terra">ROUTE TO REVIEW</span> a named person decides; nothing lands until they do.':'<span class="chip moss">STRAIGHT THROUGH</span> values land in the well master keyed by job id and permit.'}</p>
+   <h3>Approval (local, this session)</h3><div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><input id="approver" placeholder="type your name" size="18"><button id="acc">Accept packet</button><button id="rt">Route packet</button><span id="astat" class="small muted"></span></div>
+   <div class="audit" id="auditlist">${audit.length?audit.map(a=>`<div>${a.ts} · ${esc(a.approver)} · ${a.permit} · ${a.disposition}</div>`).join(''):'<span class="muted">No decisions yet. The approver field is an attestation; the console never fills it in.</span>'}</div>`,
+   `<h2>Where it lands</h2><div class="flow">${['Validated JSON','Well master [placeholder]','EDMS index','GIS layer','Audit trail'].map((b,i)=>`<div class="b ${i===0?'pulse':''}"><b>${b}</b>${i===1?'OSDU / Enverus / PPDM, decided in discovery':i===4?'job id, extraction id, schema id, approver, time':''}</div>`).join('')}</div>
+   <p class="small muted">Write-back is a proposed pattern, not a verified connector. Idempotency key: job id + permit number.</p>`]; },
+ 6(){ const s=DATA.scorecard.summary; const pct=x=>x==null?'—':(x*100).toFixed(1)+'%';
+  const tiles=[['Critical-field accuracy',pct(s.critical_field_accuracy),s.critical_field_accuracy,1],['Citation coverage',pct(s.citation_coverage),s.citation_coverage,1],['Citation precision @IoU 0.5',pct(s.citation_precision_iou50),s.citation_precision_iou50,1],['Review rate',pct(s.review_rate),s.review_rate,1],['Table cell F1',pct(s.table_cell_f1),s.table_cell_f1,0],['Split page F1',pct(s.split_page_f1),s.split_page_f1,0],['Classify accuracy',pct(s.classify_accuracy),s.classify_accuracy,0],['Cycle p50 / p95',`${s.cycle_time_p50_s}s / ${s.cycle_time_p95_s}s`,null,0],['Cost per page at list',s.cost_per_page_usd!=null?'$'+s.cost_per_page_usd.toFixed(3):'—',null,0]];
+  setTimeout(()=>document.querySelectorAll('.bar i').forEach(b=>b.style.width=b.dataset.w+'%'),50);
+  return [`<h2>Scorecard ${SYN?'<span class="chip ochre">synthetic</span>':'<span class="chip moss">live</span>'}</h2><p class="lede">${s.packets_scored} packets · ${s.pages} pages · one scorer, one normalization, the same code for every engine in a bake-off.</p>
+   <div class="tiles">${tiles.map(([l,n,f,r])=>`<div class="tile ${r?'req':''}"><div class="n">${n}</div><div class="l">${l}${r?' · required':' · diagnostic'}</div>${f!=null?`<div class="bar"><i data-w="${Math.round(f*100)}"></i></div>`:''}</div>`).join('')}</div>
+   ${SYN?'<p class="small" style="margin-top:12px"><b>Planted faults:</b> a typo, a wrong depth, a null county, a plat to the catch-all, a page split to other. They exist so the scorecard has a shape. Never quote these numbers.</p>':''}`,
+   `<h2>Failure review</h2><table><tr><th>Packet</th><th>Field errors</th><th>Routing</th></tr>${DATA.scorecard.packets.map(p=>`<tr><td>${p.permit}</td><td>${(p.field_errors||[]).map(e=>`<div><b>${esc(e.field)}</b>: ${esc(e.predicted)} <span class="muted">vs ${esc(e.truth)}</span></div>`).join('')||'<span class="muted">none</span>'}</td><td>${p.routed_to_review?'<span class="chip terra">review</span>':'<span class="chip moss">through</span>'}</td></tr>`).join('')}</table>
+   <p class="small muted" style="margin-top:10px">Go/no-go values are the buyer's, written into the charter before work. The readout opens with the buyer's number, not with F1.</p>`]; },
+ 7(){ return [`<h2>Analyst over the indexed packet</h2><p class="lede">Answers come only from cited fields. Absent fields get a refusal and a route to a person.</p><div class="chat" id="chat"></div>
+   <div class="qs">${['What is the API number and county? Cite it.','How far is the surface location from the lease lines?','List the fields of anticipated completion with depth.','What is the mud weight on the last run?','Digitize the log curves.','Who filed it and when?'].map(q=>`<button data-q="${esc(q)}">${esc(q)}</button>`).join('')}</div>`,
+   `<h2>Wiring</h2><p class="small">The document parser ships a nine-tool MCP server (extract, apply_schema, generate_schema, split_document, extract_tables, extract_charts, batch_extract, run_pipeline, get_job). The assistant calls <code>run_pipeline</code> then <code>apply_schema</code> with the W-1 schema, and answers from the stored JSON.</p>
+   <h3>Guardrails</h3><ul class="small"><li>Quote page and box for every value.</li><li>Absent or null → "not in this document" and offer the reviewer queue.</li><li>Never infer across documents without citations.</li><li>Results over ~350 KB arrive as a link the agent cannot fetch; a fetch step outside the agent handles it.</li><li><code>unrecognized</code> from classify is a refusal; route it.</li></ul>
+   <p class="small muted">${SYN?'In this console the answers are a deterministic lookup over the fixture, not a model.':'Answers are a deterministic lookup over the live schema output; wire the MCP server for the model-driven version.'}</p>`]; },
+ 8(){ return [`<h2>Value, in the buyer's unit</h2><p class="lede">Every default is illustrative. Replace each with the buyer's number. The go/no-go line sits above the arithmetic.</p>
+   <div class="calc"><div><label>Well files in backlog</label><input id="v_files" type="number" value="2500"><label>Pages per file</label><input id="v_pages" type="number" value="120"><label>Hours per file today</label><input id="v_hours" type="number" step="0.1" value="2.5"><label>Loaded $/hour</label><input id="v_rate" type="number" value="85"></div>
+   <div><label>Parser $/page at list (documented)</label><input id="v_ppage" type="number" step="0.001" value="0.06"><label>Review rate</label><input id="v_review" type="number" step="0.01" value="0.30"><label>Review minutes per file</label><input id="v_revmin" type="number" value="15"><label>Header fields per file</label><input id="v_fields" type="number" value="20"></div>
+   <div><label>Error rate today</label><input id="v_err0" type="number" step="0.001" value="0.05"><label>Error rate after review</label><input id="v_err1" type="number" step="0.001" value="0.01"><label>Rework $ per wrong field</label><input id="v_rework" type="number" value="150"><label>Days today / with the parser</label><div style="display:flex;gap:6px"><input id="v_days0" type="number" value="120"><input id="v_days1" type="number" value="15"></div></div></div>
+   <div class="out" id="v_out"></div>`,
+   `<h2>Go/no-go line</h2><p>Critical-field accuracy ≥ <b>[buyer sets]</b> on the frozen set, or the case does not proceed.</p><h3>Formulas</h3><ul class="small"><li>Labor today = files × hours × rate</li><li>Labor with the parser = files × pages × $/page + files × review rate × review hours × rate</li><li>Error reduction = files × fields × (error today − error after) × rework</li><li>Cycle time = days today − days with the parser</li></ul><h3>Next step</h3><p class="small">Worst twenty pages by Friday. Charter Monday with the buyer's line. Readout in two weeks.</p>`]; }
+};
+
+function render(){ stepsBar(); const [l,r]=VIEWS[cur](); $('#left').innerHTML=l; $('#right').innerHTML=r; $('#notes').innerHTML=`<b>Say:</b> ${NOTES[cur]}`; $('#next').textContent=cur===STEPS.length-1?'Done':'Next ▶'; wire(); }
+function wire(){
+  document.querySelectorAll('tr.f').forEach(tr=>tr.onclick=()=>{selField=tr.dataset.k;render()});
+  const acc=$('#acc'); if(acc){const dec=d=>{const n=$('#approver').value.trim();if(!n){$('#astat').textContent='Type your name first — the approval is yours, not the tool\'s.';return}audit.unshift({ts:new Date().toISOString().slice(0,19)+'Z',approver:n,permit:P().permit,disposition:d,synthetic:SYN});render();$('#approver').value=n;$('#astat').textContent=`recorded: ${d}`};acc.onclick=()=>dec('approved-as-is');$('#rt').onclick=()=>dec('routed')}
+  document.querySelectorAll('.qs button').forEach(b=>b.onclick=()=>ask(b.dataset.q));
+  if($('#v_files')){const f=id=>parseFloat($('#'+id).value)||0;const calc=()=>{const files=f('v_files'),pages=f('v_pages'),hours=f('v_hours'),rate=f('v_rate'),pp=f('v_ppage'),rev=f('v_review'),rm=f('v_revmin'),fl=f('v_fields'),e0=f('v_err0'),e1=f('v_err1'),rw=f('v_rework'),d0=f('v_days0'),d1=f('v_days1');const today=files*hours*rate,pulse=files*pages*pp+files*rev*(rm/60)*rate,err=files*fl*(e0-e1)*rw;$('#v_out').innerHTML=`Labor today <b>${money(today)}</b> · with the parser plus review <b>${money(pulse)}</b> · <b>savings ${money(today-pulse)}</b><br>Error reduction <b>${money(err)}</b> · cycle time recovered <b>${d0-d1} business days</b> · first-pass value <b>${money(today-pulse+err)}</b> <span class="muted">(ESTIMATED from illustrative inputs)</span>`};document.querySelectorAll('.calc input').forEach(i=>i.oninput=calc);calc()}
+}
+function ask(q){ const chat=$('#chat'); chat.insertAdjacentHTML('beforeend',`<div class="msg q">${esc(q)}</div>`); const v=rec().schema_w1?.values||{}, c=rec().schema_w1?.citations||{}; const ql=q.toLowerCase(); let a='', refuse=false;
+  const cite=k=>c[k]?`<span class="cite" data-k="${esc(k)}">p${c[k].page} ▸</span>`:'<span class="cite">no citation → review</span>';
+  const val=(k,label)=>v[k]==null?`${label}: not in this document (null) → reviewer queue`:`${label}: <b>${esc(v[k])}</b>${cite(k)}`;
+  if(ql.includes('mud')){a='Not in this document. Mud weight is a drilling-report field; a W-1 permit does not carry it. I can route this to the reviewer queue.';refuse=true}
+  else if(ql.includes('curve')){a='Out of scope. This pipeline indexes and captures headers; raster-log curve digitization stays with the log vendor.';refuse=true}
+  else if(ql.includes('api')){a=`${val('api_number','API number')}<br>${val('county','County')}`}
+  else if(ql.includes('lease line')){const lp=v.lease_perpendiculars||{};a=lp.feet_1?`<b>${esc(lp.feet_1)} ft</b> from the ${esc(lp.direction_1)} line${cite('lease_perpendiculars.feet_1')} and <b>${esc(lp.feet_2)} ft</b> from the ${esc(lp.direction_2)} line${cite('lease_perpendiculars.feet_2')}`:'Lease perpendiculars not in this document → reviewer queue'}
+  else if(ql.includes('fields')){a=(v.fields||[]).map(f=>`${esc(f.field_name)} (${esc(f.well_type)}) · completion depth ${f.completion_depth??'<b>null → review</b>'} ft`).join('<br>')||'No field rows returned → reviewer queue'}
+  else if(ql.includes('filed')){a=`${val('filer_name','Filed by')}<br>${val('date_submitted','Date submitted')}`}
+  else a='I answer only from extracted, cited fields.';
+  chat.insertAdjacentHTML('beforeend',`<div class="msg a ${refuse?'refuse':''}">${a}</div>`); chat.scrollTop=chat.scrollHeight;
+  chat.querySelectorAll('.cite[data-k]').forEach(el=>el.onclick=()=>{selField=el.dataset.k;go(4)}); }
+init();
+</script>
+</body>
+</html>

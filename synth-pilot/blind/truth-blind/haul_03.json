@@ -1,0 +1,76 @@
+{
+  "doc_id": "haul_03",
+  "source_file": "15_haul_03.pdf",
+  "keyed_by": "codex blind re-key (layer A, second session)",
+  "keyed_from": "page images",
+  "values": {
+    "log_number": "TF-913",
+    "hauler_name": "Telnori Fluid Transit LLC",
+    "log_date": "2026-08-10",
+    "well_name": "Nacrevale 7-QH",
+    "loads": [
+      {
+        "load_no": 1,
+        "time": "08:15",
+        "fluid_type": "Produced water",
+        "barrels": 60,
+        "destination": "Quenvori recovery bay"
+      },
+      {
+        "load_no": 2,
+        "time": "09:15",
+        "fluid_type": "Produced water",
+        "barrels": 60,
+        "destination": "Quenvori recovery bay"
+      },
+      {
+        "load_no": 3,
+        "time": "10:15",
+        "fluid_type": "Produced water",
+        "barrels": 60,
+        "destination": "Quenvori recovery bay"
+      },
+      {
+        "load_no": 4,
+        "time": "11:15",
+        "fluid_type": "Produced water",
+        "barrels": 60,
+        "destination": "Quenvori recovery bay"
+      }
+    ],
+    "total_barrels": 240
+  },
+  "page_of": {
+    "log_number": 1,
+    "hauler_name": 1,
+    "log_date": 1,
+    "well_name": 1,
+    "loads[0]": 1,
+    "loads[0].load_no": 1,
+    "loads[0].time": 1,
+    "loads[0].fluid_type": 1,
+    "loads[0].barrels": 1,
+    "loads[0].destination": 1,
+    "loads[1]": 1,
+    "loads[1].load_no": 1,
+    "loads[1].time": 1,
+    "loads[1].fluid_type": 1,
+    "loads[1].barrels": 1,
+    "loads[1].destination": 1,
+    "loads[2]": 1,
+    "loads[2].load_no": 1,
+    "loads[2].time": 1,
+    "loads[2].fluid_type": 1,
+    "loads[2].barrels": 1,
+    "loads[2].destination": 1,
+    "loads[3]": 1,
+    "loads[3].load_no": 1,
+    "loads[3].time": 1,
+    "loads[3].fluid_type": 1,
+    "loads[3].barrels": 1,
+    "loads[3].destination": 1,
+    "loads": 1,
+    "total_barrels": 1
+  },
+  "uncertain": []
+}

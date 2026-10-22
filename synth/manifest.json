@@ -1,0 +1,162 @@
+{
+ "built": "2026-09-05",
+ "synthetic": true,
+ "story": "Caprock Resources LLC, a non-operator, holds a 25.000000% working interest in one horizontal well. Over one month it receives an AFE, the field paper behind a vendor invoice, and a JIB statement that is overbilled twice.",
+ "documents": [
+  {
+   "doc_id": "afe_cover",
+   "file": "synth/caprock/01_afe_cover.pdf",
+   "scan_file": "synth/caprock-scan/01_afe_cover.pdf",
+   "class": "afe_cover",
+   "packet": "day01",
+   "pages": [
+    1
+   ],
+   "page_count": 1,
+   "sha256": "f3890659bdd522bf8b55afb345a11ea705c448dbe44713cdec41f5402113b5e4",
+   "scan_sha256": "1004699b1e11331cfc2dbbc194c182fdc1756cb6bbde0f0ba59e1bc7d83d11fe"
+  },
+  {
+   "doc_id": "afe",
+   "file": "synth/caprock/02_afe.pdf",
+   "scan_file": "synth/caprock-scan/02_afe.pdf",
+   "class": "afe",
+   "packet": "day01",
+   "pages": [
+    2,
+    3
+   ],
+   "page_count": 2,
+   "sha256": "91fdf1a9b19ba54aea0149288fc39aed7dd503f2ef2e670cf72f928d048c411a",
+   "scan_sha256": "4852bea4284c1da20d06e5989762a7389008be322cef9f81b302d75d10f261c1"
+  },
+  {
+   "doc_id": "ticket_a",
+   "file": "synth/caprock/03_ticket_a.pdf",
+   "scan_file": "synth/caprock-scan/03_ticket_a.pdf",
+   "class": "field_ticket",
+   "packet": "day12",
+   "pages": [
+    1
+   ],
+   "page_count": 1,
+   "sha256": "da2a1c33918bce035dc1ef20e36651e2f0227b62901e58fbc6d8bd8e7cd2ea81",
+   "scan_sha256": "862ea9d071ab79dc0037506d62476aef610a2604650897cd556c6cfe5b950cd2"
+  },
+  {
+   "doc_id": "ticket_b",
+   "file": "synth/caprock/04_ticket_b.pdf",
+   "scan_file": "synth/caprock-scan/04_ticket_b.pdf",
+   "class": "field_ticket",
+   "packet": "day12",
+   "pages": [
+    2
+   ],
+   "page_count": 1,
+   "sha256": "7e6eb5e3616ae415a12213615224b5ff1703de2bf828e3a8a9be3c2e654f9758",
+   "scan_sha256": "2ec3fe8e8b7e79def0d49bc4d90bd03859cbee2d9ed0779cd3547b55f58607f1"
+  },
+  {
+   "doc_id": "hauling_log",
+   "file": "synth/caprock/05_hauling_log.pdf",
+   "scan_file": "synth/caprock-scan/05_hauling_log.pdf",
+   "class": "hauling_log",
+   "packet": "day12",
+   "pages": [
+    3
+   ],
+   "page_count": 1,
+   "sha256": "baa6d89022d0a24b4d361a8dad42e0aa4f903a5473249d32961a0a2a6653c708",
+   "scan_sha256": "dc410f134f6e2eb62e1f8372ea749da555f49a623ee36ff335d4533dc19f9c31"
+  },
+  {
+   "doc_id": "invoice",
+   "file": "synth/caprock/06_invoice.pdf",
+   "scan_file": "synth/caprock-scan/06_invoice.pdf",
+   "class": "invoice",
+   "packet": "day12",
+   "pages": [
+    4
+   ],
+   "page_count": 1,
+   "sha256": "618aa74844a8f5c67542ac2d1521956f481ec8f362b4f7023759df836cc9273c",
+   "scan_sha256": "ef2bb993db76b1178a8a3a6d74a066200757c5cb09c4e208d6affac581ffd6d3"
+  },
+  {
+   "doc_id": "jib",
+   "file": "synth/caprock/07_jib.pdf",
+   "scan_file": "synth/caprock-scan/07_jib.pdf",
+   "class": "jib_statement",
+   "packet": "day30",
+   "pages": [
+    1,
+    2
+   ],
+   "page_count": 2,
+   "sha256": "3d48ff48cbf7ea07363a056d8845c70282cadb76552d2174b23a6e22dffb75ae",
+   "scan_sha256": "3db86105909230fbed2f85febc72c7e1e88f7c7bf9730784df198e9c3555ca96"
+  }
+ ],
+ "packets": [
+  {
+   "packet_id": "day01",
+   "file": "synth/caprock/packets/day01.pdf",
+   "scan_file": "synth/caprock-scan/packets/day01.pdf",
+   "pages": 3,
+   "split_truth": {
+    "afe_cover": [
+     1
+    ],
+    "afe": [
+     2,
+     3
+    ]
+   },
+   "sha256": "6e131ad70a00944b7e264f2f9dfedf64697ae52a1d13cf7348f8c98e668706f4",
+   "scan_sha256": "31db053875c81258e1a3c366ddb2e512c9cc49f1c82705d21fe35372d2572bb8"
+  },
+  {
+   "packet_id": "day12",
+   "file": "synth/caprock/packets/day12.pdf",
+   "scan_file": "synth/caprock-scan/packets/day12.pdf",
+   "pages": 4,
+   "split_truth": {
+    "field_ticket": [
+     1,
+     2
+    ],
+    "hauling_log": [
+     3
+    ],
+    "invoice": [
+     4
+    ]
+   },
+   "sha256": "9750d739ed802ec08e15112927d8d02be2aae43e568031002dab2c943565ea99",
+   "scan_sha256": "d0aead7eaf168e87b821dd0cd1ad02abc846edf3ef926dfc3211a0d2b76a6c8f"
+  },
+  {
+   "packet_id": "day30",
+   "file": "synth/caprock/packets/day30.pdf",
+   "scan_file": "synth/caprock-scan/packets/day30.pdf",
+   "pages": 2,
+   "split_truth": {
+    "jib_statement": [
+     1,
+     2
+    ]
+   },
+   "sha256": "087d40a3e034c0dc2bf97e6c9bfab8d7609d91f0451498823ccc413792307e05",
+   "scan_sha256": "8becccf06def570005dd5b2d578fd6c96a1c5d2e46eade61f3a5e342250a0167"
+  }
+ ],
+ "references": {
+  "book": "synth/src/book.json",
+  "planted": "synth/planted.json",
+  "doi": "synth/reference/doi.json",
+  "contract_rates": "synth/reference/contract_rates.json",
+  "afe_election": "synth/reference/afe_election.json"
+ },
+ "planted_sha256": "b20f6a0f86dbd62fef0dd3ccfa2aa2cae46430d12bf8ec58cc1750b4e41a6cb2",
+ "licence": "synthetic, no licence needed"
+}

@@ -1,0 +1,37 @@
+{
+  "$comment": "Pulse /schema input_schema for a Texas RRC Form W-1 (Application for Permit to Drill, Recomplete, or Re-Enter). JSON Schema, depth <= 5 (SCHEMA_003). Field names match truth/w1/*.json so the scorer needs no mapping.",
+  "type": "object",
+  "properties": {
+    "api_number": {"type": "string", "description": "API well number printed top-left as NN-NNN-NNNNN"},
+    "permit_number": {"type": "string", "description": "Drilling Permit # (seven digits)"},
+    "permit_status": {"type": "string", "description": "Permit Status value, e.g. Approved"},
+    "operator_number": {"type": "string", "description": "Item 1, RRC Operator No. (six digits)"},
+    "operator_name": {"type": "string", "description": "Item 2, Operator's Name exactly as printed"},
+    "lease_name": {"type": "string", "description": "Item 4, Lease Name exactly as printed"},
+    "well_number": {"type": "string", "description": "Item 5, Well No."},
+    "purpose_of_filing": {"type": "array", "items": {"type": "string", "enum": ["New Drill", "Recompletion", "Reclass", "Field Transfer", "Re-Enter", "Amended", "Amended as Drilled (BHL)"]}, "description": "Item 6, every checked box"},
+    "wellbore_profile": {"type": "array", "items": {"type": "string", "enum": ["Vertical", "Horizontal", "Directional", "Sidetrack"]}, "description": "Item 7, every checked box"},
+    "total_depth": {"type": "string", "description": "Item 8, Total Depth in feet as printed"},
+    "rule_36_h2s": {"type": "boolean", "description": "Item 10, true only if the Yes box is checked"},
+    "district": {"type": "string", "description": "Item 11, RRC District No. as printed (e.g. 7B, 08)"},
+    "county": {"type": "string", "description": "Item 12, County name"},
+    "miles_from_town": {"type": "string", "description": "Item 14, distance in miles as printed"},
+    "direction_from_town": {"type": "string", "description": "Item 14, compass direction as printed"},
+    "nearest_town": {"type": "string", "description": "Item 14, nearest town name"},
+    "abstract_number": {"type": "string", "description": "Item 18, Abstract No. as printed (e.g. A-557)"},
+    "contiguous_acres": {"type": "string", "description": "Item 20, number of contiguous acres as printed"},
+    "lease_perpendiculars": {"type": "object", "properties": {
+      "feet_1": {"type": "string"}, "direction_1": {"type": "string"}, "feet_2": {"type": "string"}, "direction_2": {"type": "string"}},
+      "description": "Item 21, SURFACE LOCATION lease line perpendiculars on the W-1 header page, in reading order: feet, line, feet, line. Not the penetration point or terminus lease line perpendiculars on the Directional/Horizontal supplement page."},
+    "survey_perpendiculars": {"type": "object", "properties": {
+      "feet_1": {"type": "string"}, "direction_1": {"type": "string"}, "feet_2": {"type": "string"}, "direction_2": {"type": "string"}},
+      "description": "Item 22, SURFACE LOCATION survey line perpendiculars on the W-1 header page, in reading order: feet, line, feet, line. Not the penetration point or terminus survey line perpendiculars on the Directional/Horizontal supplement page."},
+    "fields": {"type": "array", "description": "Field Information table, one item per row", "items": {"type": "object", "properties": {
+      "district": {"type": "string"}, "field_number": {"type": "string"}, "field_name": {"type": "string"}, "well_type": {"type": "string"},
+      "completion_depth": {"type": "string"}, "distance_to_nearest_well": {"type": "string"}, "wells_on_lease": {"type": "string"}}}},
+    "filer_name": {"type": "string", "description": "Certificate block, Name of filer"},
+    "date_submitted": {"type": "string", "description": "Certificate block, Date submitted as printed"},
+    "data_validation_timestamp": {"type": "string", "description": "RRC Use Only, Data Validation Time Stamp text before the parenthesis"}
+  },
+  "required": ["api_number", "permit_number", "operator_name", "lease_name", "well_number", "county", "district", "total_depth", "fields"]
+}

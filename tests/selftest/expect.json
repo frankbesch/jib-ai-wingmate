@@ -1,0 +1,15 @@
+{
+ "all_field_accuracy": 0.9412,
+ "critical_field_accuracy": 0.9375,
+ "list_field_accuracy": 0.75,
+ "table_cell_f1": 0.8571,
+ "split_page_f1": 0.8,
+ "split_exact_rate": 0.5,
+ "classify_accuracy": 1.0,
+ "citation_coverage": 0.3529,
+ "citation_precision_iou50": 0.8,
+ "cycle_time_p50_s": 8.0,
+ "cycle_time_p95_s": 10.0,
+ "cost_per_page_usd": 0.1,
+ "review_rate": 0.5
+}

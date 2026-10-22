@@ -1,0 +1,138 @@
+[
+  {
+    "id": "afe_02.operator_name",
+    "printed": true,
+    "value": "Zelvori Basin Operations LLC",
+    "page": 1,
+    "where": "Bill To",
+    "confidence": "high"
+  },
+  {
+    "id": "cover_02.afe_number",
+    "printed": true,
+    "value": "ZB-26-702",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "cover_02.response_due_date",
+    "printed": true,
+    "value": "TBD",
+    "page": 1,
+    "where": "Reply by",
+    "confidence": "high"
+  },
+  {
+    "id": "invoice_02.invoice_number",
+    "printed": true,
+    "value": "OVI-642",
+    "page": 1,
+    "where": "Account request",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_07.afe_number",
+    "printed": true,
+    "value": "ZB-26-701",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_07.log_number",
+    "printed": false,
+    "value": null,
+    "page": null,
+    "where": "No hauling log number appears anywhere on the page.",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_08.afe_number",
+    "printed": true,
+    "value": "ZB-26-701",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_08.log_number",
+    "printed": false,
+    "value": null,
+    "page": null,
+    "where": "No hauling log number appears anywhere on the page.",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_09.ticket_number",
+    "printed": true,
+    "value": "OV-8309",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_10.afe_number",
+    "printed": true,
+    "value": "ZB-26-701",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_10.ticket_number",
+    "printed": true,
+    "value": "OV-8310",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_11.log_number",
+    "printed": false,
+    "value": null,
+    "page": null,
+    "where": "No hauling log number appears anywhere on the page.",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_11.ticket_number",
+    "printed": true,
+    "value": "OV-8311",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_11.well_name",
+    "printed": true,
+    "value": "N/A",
+    "page": 1,
+    "where": "Asset",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_12.afe_number",
+    "printed": true,
+    "value": "ZB-26-701",
+    "page": 1,
+    "where": "Ref",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_12.log_number",
+    "printed": false,
+    "value": null,
+    "page": null,
+    "where": "No hauling log number appears anywhere on the page.",
+    "confidence": "high"
+  },
+  {
+    "id": "ticket_12.ticket_number",
+    "printed": true,
+    "value": "OV-8312",
+    "page": 1,
+    "where": "Dispatch docket",
+    "confidence": "high"
+  }
+]

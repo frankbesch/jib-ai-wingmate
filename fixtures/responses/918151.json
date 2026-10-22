@@ -1,0 +1,361 @@
+{
+ "permit": "918151",
+ "synthetic": true,
+ "perturbations": [
+  "classify: 918151_Plat_BRUSHY CREEK 22 E-F-G-H UNIT PLAT_LGL.pdf \u2192 unrecognized (catch-all)"
+ ],
+ "classify": [
+  {
+   "file": "918151_W1_AsApprovedW1-9-3-2026_LTR.pdf",
+   "predicted": "w1_permit",
+   "seconds": 1.206
+  },
+  {
+   "file": "918151_Plat_BRUSHY CREEK 22 E-F-G-H UNIT PLAT_LGL.pdf",
+   "predicted": "unrecognized",
+   "seconds": 0.83
+  },
+  {
+   "file": "918151_Plat_BRUSHY CREEK 22 UNIT PLAT_LTR.pdf",
+   "predicted": "plat",
+   "seconds": 1.147
+  },
+  {
+   "file": "918151_Plat_NORTH CREEK F 0402MB_PERMIT PLAT_8-31-2026R_LGL.pdf",
+   "predicted": "plat",
+   "seconds": 0.856
+  },
+  {
+   "file": "918151_Plat_NORTH CREEK F 0402MB_PERMIT PLAT_LGL.pdf",
+   "predicted": "plat",
+   "seconds": 0.873
+  }
+ ],
+ "extract": {
+  "extraction_id": "fixture-918151",
+  "page_count": 7,
+  "credits_used": 7.0,
+  "failed_pages": [],
+  "seconds": 10.125,
+  "words": null,
+  "tables": null,
+  "selection_marks": null
+ },
+ "split": {
+  "split_id": "fixture-split-918151",
+  "splits": {
+   "w1_permit": [
+    1,
+    2,
+    3
+   ],
+   "plat": [
+    4,
+    5,
+    6,
+    7
+   ]
+  },
+  "seconds": 4.3
+ },
+ "schema_w1": {
+  "schema_id": "fixture-schema-918151",
+  "values": {
+   "api_number": "42-383-42459",
+   "permit_number": "918151",
+   "permit_status": "Approved",
+   "operator_number": "220855",
+   "operator_name": "DISCOVERY NATURAL RESOURCES LLC",
+   "lease_name": "NORTH CREEK F",
+   "well_number": "0402MB",
+   "total_depth": "8500",
+   "district": "7C",
+   "county": "REAGAN",
+   "miles_from_town": "16.7",
+   "direction_from_town": "NE",
+   "nearest_town": "Big Lake",
+   "lease_perpendiculars": {
+    "feet_1": "927",
+    "direction_1": "NORTH",
+    "feet_2": "146",
+    "direction_2": "EAST"
+   },
+   "survey_perpendiculars": {
+    "feet_1": "927",
+    "direction_1": "NORTH",
+    "feet_2": "146",
+    "direction_2": "WEST"
+   },
+   "abstract_number": "A-227",
+   "contiguous_acres": "2863.36",
+   "purpose_of_filing": [
+    "New Drill"
+   ],
+   "wellbore_profile": [
+    "Horizontal"
+   ],
+   "rule_36_h2s": false,
+   "fields": [
+    {
+     "district": "7C",
+     "field_number": "85279200",
+     "field_name": "SPRABERRY (TREND AREA)",
+     "well_type": "Oil Well",
+     "completion_depth": "8500",
+     "distance_to_nearest_well": "545.00",
+     "wells_on_lease": "11"
+    }
+   ],
+   "filer_name": "Bonnie Scofield, Regulatory Supervisor",
+   "date_submitted": "Aug 24, 2026",
+   "data_validation_timestamp": "Sep 3, 2026 5:32 PM"
+  },
+  "citations": {
+   "api_number": {
+    "page": 1,
+    "bbox": [
+     0.1216,
+     0.0507,
+     0.1953,
+     0.0649
+    ]
+   },
+   "permit_number": {
+    "page": 1,
+    "bbox": [
+     0.1355,
+     0.088,
+     0.1776,
+     0.1031
+    ]
+   },
+   "permit_status": {
+    "page": 1,
+    "bbox": [
+     0.8751,
+     0.0822,
+     0.9292,
+     0.0974
+    ]
+   },
+   "operator_number": {
+    "page": 1,
+    "bbox": [
+     0.1109,
+     0.1754,
+     0.153,
+     0.1905
+    ]
+   },
+   "operator_name": {
+    "page": 1,
+    "bbox": [
+     0.3077,
+     0.1762,
+     0.5547,
+     0.1913
+    ]
+   },
+   "lease_name": {
+    "page": 1,
+    "bbox": [
+     0.5439,
+     0.188,
+     0.647,
+     0.2031
+    ]
+   },
+   "well_number": {
+    "page": 1,
+    "bbox": [
+     0.8613,
+     0.1861,
+     0.9084,
+     0.2012
+    ]
+   },
+   "total_depth": {
+    "page": 1,
+    "bbox": [
+     0.0865,
+     0.3543,
+     0.1146,
+     0.3694
+    ]
+   },
+   "district": {
+    "page": 1,
+    "bbox": [
+     0.1354,
+     0.4098,
+     0.1515,
+     0.425
+    ]
+   },
+   "county": {
+    "page": 1,
+    "bbox": [
+     0.272,
+     0.409,
+     0.3253,
+     0.4242
+    ]
+   },
+   "miles_from_town": {
+    "page": 1,
+    "bbox": [
+     0.1917,
+     0.437,
+     0.2132,
+     0.4502
+    ]
+   },
+   "direction_from_town": {
+    "page": 1,
+    "bbox": [
+     0.327,
+     0.437,
+     0.3424,
+     0.4502
+    ]
+   },
+   "nearest_town": {
+    "page": 1,
+    "bbox": [
+     0.554,
+     0.437,
+     0.5969,
+     0.4502
+    ]
+   },
+   "lease_perpendiculars.feet_1": {
+    "page": 1,
+    "bbox": [
+     0.1953,
+     0.5152,
+     0.2163,
+     0.5304
+    ]
+   },
+   "lease_perpendiculars.direction_1": {
+    "page": 1,
+    "bbox": [
+     0.3672,
+     0.5152,
+     0.4121,
+     0.5304
+    ]
+   },
+   "lease_perpendiculars.feet_2": {
+    "page": 1,
+    "bbox": [
+     0.5401,
+     0.5152,
+     0.5612,
+     0.5304
+    ]
+   },
+   "lease_perpendiculars.direction_2": {
+    "page": 1,
+    "bbox": [
+     0.7051,
+     0.5152,
+     0.7381,
+     0.5304
+    ]
+   },
+   "survey_perpendiculars.feet_1": {
+    "page": 1,
+    "bbox": [
+     0.194,
+     0.5381,
+     0.2151,
+     0.5532
+    ]
+   },
+   "survey_perpendiculars.direction_1": {
+    "page": 1,
+    "bbox": [
+     0.3672,
+     0.5152,
+     0.4121,
+     0.5304
+    ]
+   },
+   "survey_perpendiculars.feet_2": {
+    "page": 1,
+    "bbox": [
+     0.5401,
+     0.5152,
+     0.5612,
+     0.5304
+    ]
+   },
+   "survey_perpendiculars.direction_2": {
+    "page": 1,
+    "bbox": [
+     0.7021,
+     0.5381,
+     0.7386,
+     0.5532
+    ]
+   },
+   "abstract_number": {
+    "page": 1,
+    "bbox": [
+     0.5389,
+     0.4866,
+     0.5726,
+     0.5017
+    ]
+   },
+   "contiguous_acres": {
+    "page": 1,
+    "bbox": [
+     0.9047,
+     0.4874,
+     0.9475,
+     0.5015
+    ]
+   },
+   "filer_name": {
+    "page": 1,
+    "bbox": [
+     0.612,
+     0.8885,
+     0.8279,
+     0.9034
+    ]
+   },
+   "date_submitted": {
+    "page": 1,
+    "bbox": [
+     0.8488,
+     0.8872,
+     0.924,
+     0.9024
+    ]
+   }
+  },
+  "seconds": 7.2
+ },
+ "schema_plat": {
+  "schema_id": "fixture-plat-918151",
+  "values": {},
+  "citations": {},
+  "seconds": 5.5,
+  "note": "plat truth is PLANNED (human keying); fixture returns nothing so no plat number can be quoted"
+ },
+ "timing": {
+  "extract": 10.125,
+  "split": 4.3,
+  "schema_w1": 7.2,
+  "schema_plat": 5.5
+ },
+ "credits": {
+  "extract": 7.0
+ },
+ "cycle_seconds": 32.037,
+ "cost_usd_at_list": 0.5775,
+ "cost_note": "documented list rates: classify 0.5 + extract 1 + split 2 + schema 1 + schema 1 credits per page at $0.015"
+}

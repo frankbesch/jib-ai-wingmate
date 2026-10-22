@@ -1,0 +1,1939 @@
+{
+ "packet_id": "day12",
+ "synthetic": true,
+ "synthetic_responses": true,
+ "perturbations": [
+  "F2 hauling_log.loads[4].barrels: null (extraction exception)",
+  "F3 invoice.total: citation dropped (citation coverage < 1.0)"
+ ],
+ "source": "synth/src/book.json (author source, not truth)",
+ "classify": {
+  "03_ticket_a.pdf": {
+   "classify_output": {
+    "classification": "field_ticket"
+   },
+   "credits_used": 0.5,
+   "synthetic": true,
+   "_fixture_seconds": 1.321
+  },
+  "04_ticket_b.pdf": {
+   "classify_output": {
+    "classification": "field_ticket"
+   },
+   "credits_used": 0.5,
+   "synthetic": true,
+   "_fixture_seconds": 0.858
+  },
+  "05_hauling_log.pdf": {
+   "classify_output": {
+    "classification": "hauling_log"
+   },
+   "credits_used": 0.5,
+   "synthetic": true,
+   "_fixture_seconds": 1.229
+  },
+  "06_invoice.pdf": {
+   "classify_output": {
+    "classification": "invoice"
+   },
+   "credits_used": 0.5,
+   "synthetic": true,
+   "_fixture_seconds": 1.093
+  }
+ },
+ "extract": {
+  "extraction_id": "fixture-synth-day12",
+  "page_count": 4,
+  "credits_used": 4.0,
+  "failed_pages": [],
+  "bounding_boxes": {
+   "Text": [
+    {
+     "id": "txt-day12-1",
+     "page_number": 1,
+     "bounding_box": [
+      0.2179,
+      0.1305,
+      0.2956,
+      0.1435
+     ],
+     "original_content": "PRW-88421",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-2",
+     "page_number": 1,
+     "bounding_box": [
+      0.0711,
+      0.068,
+      0.3967,
+      0.0867
+     ],
+     "original_content": "Pecos Ridge Well Services LLC",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-3",
+     "page_number": 1,
+     "bounding_box": [
+      0.2179,
+      0.1495,
+      0.293,
+      0.1624
+     ],
+     "original_content": "2026-06-09",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-4",
+     "page_number": 1,
+     "bounding_box": [
+      0.6596,
+      0.1305,
+      0.7582,
+      0.1435
+     ],
+     "original_content": "Caprock 14-2H",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-5",
+     "page_number": 1,
+     "bounding_box": [
+      0.6596,
+      0.1495,
+      0.7611,
+      0.1624
+     ],
+     "original_content": "AFE-2026-0417",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-6",
+     "page_number": 1,
+     "bounding_box": [
+      0.0784,
+      0.2451,
+      0.2642,
+      0.258
+     ],
+     "original_content": "Workover rig operator, hourly",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-7",
+     "page_number": 1,
+     "bounding_box": [
+      0.4969,
+      0.2451,
+      0.5129,
+      0.258
+     ],
+     "original_content": "11",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-8",
+     "page_number": 1,
+     "bounding_box": [
+      0.5933,
+      0.2451,
+      0.6224,
+      0.258
+     ],
+     "original_content": "hour",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-9",
+     "page_number": 1,
+     "bounding_box": [
+      0.733,
+      0.2451,
+      0.777,
+      0.258
+     ],
+     "original_content": "145.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-10",
+     "page_number": 1,
+     "bounding_box": [
+      0.8668,
+      0.2451,
+      0.9228,
+      0.258
+     ],
+     "original_content": "1,595.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-11",
+     "page_number": 1,
+     "bounding_box": [
+      0.0784,
+      0.2669,
+      0.1944,
+      0.2798
+     ],
+     "original_content": "Rig fuel surcharge",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-12",
+     "page_number": 1,
+     "bounding_box": [
+      0.5009,
+      0.2669,
+      0.5089,
+      0.2798
+     ],
+     "original_content": "1",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-13",
+     "page_number": 1,
+     "bounding_box": [
+      0.5923,
+      0.2669,
+      0.6234,
+      0.2798
+     ],
+     "original_content": "each",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-14",
+     "page_number": 1,
+     "bounding_box": [
+      0.733,
+      0.2669,
+      0.777,
+      0.2798
+     ],
+     "original_content": "385.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-15",
+     "page_number": 1,
+     "bounding_box": [
+      0.8788,
+      0.2669,
+      0.9228,
+      0.2798
+     ],
+     "original_content": "385.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-16",
+     "page_number": 1,
+     "bounding_box": [
+      0.0784,
+      0.2887,
+      0.2614,
+      0.3016
+     ],
+     "original_content": "Tool rental, packer assembly",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-17",
+     "page_number": 1,
+     "bounding_box": [
+      0.5009,
+      0.2887,
+      0.5089,
+      0.3016
+     ],
+     "original_content": "2",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-18",
+     "page_number": 1,
+     "bounding_box": [
+      0.5961,
+      0.2887,
+      0.6196,
+      0.3016
+     ],
+     "original_content": "day",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-19",
+     "page_number": 1,
+     "bounding_box": [
+      0.733,
+      0.2887,
+      0.777,
+      0.3016
+     ],
+     "original_content": "425.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-20",
+     "page_number": 1,
+     "bounding_box": [
+      0.8788,
+      0.2887,
+      0.9228,
+      0.3016
+     ],
+     "original_content": "850.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-21",
+     "page_number": 1,
+     "bounding_box": [
+      0.8668,
+      0.3092,
+      0.9228,
+      0.3225
+     ],
+     "original_content": "2,830.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-22",
+     "page_number": 1,
+     "bounding_box": [
+      0.12,
+      0.8627,
+      0.88,
+      0.8827
+     ],
+     "original_content": "No",
+     "synthetic": true,
+     "geometry": "fallback-strip"
+    },
+    {
+     "id": "txt-day12-23",
+     "page_number": 2,
+     "bounding_box": [
+      0.2179,
+      0.1305,
+      0.2956,
+      0.1435
+     ],
+     "original_content": "PRW-88437",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-24",
+     "page_number": 2,
+     "bounding_box": [
+      0.0711,
+      0.068,
+      0.3967,
+      0.0867
+     ],
+     "original_content": "Pecos Ridge Well Services LLC",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-25",
+     "page_number": 2,
+     "bounding_box": [
+      0.2179,
+      0.1495,
+      0.293,
+      0.1624
+     ],
+     "original_content": "2026-06-10",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-26",
+     "page_number": 2,
+     "bounding_box": [
+      0.6596,
+      0.1305,
+      0.7582,
+      0.1435
+     ],
+     "original_content": "Caprock 14-2H",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-27",
+     "page_number": 2,
+     "bounding_box": [
+      0.6596,
+      0.1495,
+      0.7611,
+      0.1624
+     ],
+     "original_content": "AFE-2026-0417",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-28",
+     "page_number": 2,
+     "bounding_box": [
+      0.0784,
+      0.2451,
+      0.2004,
+      0.258
+     ],
+     "original_content": "Pump truck, hourly",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-29",
+     "page_number": 2,
+     "bounding_box": [
+      0.5009,
+      0.2451,
+      0.5089,
+      0.258
+     ],
+     "original_content": "6",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-30",
+     "page_number": 2,
+     "bounding_box": [
+      0.5933,
+      0.2451,
+      0.6224,
+      0.258
+     ],
+     "original_content": "hour",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-31",
+     "page_number": 2,
+     "bounding_box": [
+      0.733,
+      0.2451,
+      0.777,
+      0.258
+     ],
+     "original_content": "310.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-32",
+     "page_number": 2,
+     "bounding_box": [
+      0.8668,
+      0.2451,
+      0.9228,
+      0.258
+     ],
+     "original_content": "1,860.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-33",
+     "page_number": 2,
+     "bounding_box": [
+      0.0784,
+      0.2669,
+      0.26,
+      0.2798
+     ],
+     "original_content": "Fluid pumped, treated water",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-34",
+     "page_number": 2,
+     "bounding_box": [
+      0.4856,
+      0.2672,
+      0.525,
+      0.2874
+     ],
+     "original_content": "240",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-35",
+     "page_number": 2,
+     "bounding_box": [
+      0.5977,
+      0.2669,
+      0.618,
+      0.2798
+     ],
+     "original_content": "bbl",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-36",
+     "page_number": 2,
+     "bounding_box": [
+      0.749,
+      0.2669,
+      0.777,
+      0.2798
+     ],
+     "original_content": "4.75",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-37",
+     "page_number": 2,
+     "bounding_box": [
+      0.8668,
+      0.2669,
+      0.9228,
+      0.2798
+     ],
+     "original_content": "1,140.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-38",
+     "page_number": 2,
+     "bounding_box": [
+      0.0784,
+      0.2963,
+      0.1639,
+      0.3092
+     ],
+     "original_content": "Standby time",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-39",
+     "page_number": 2,
+     "bounding_box": [
+      0.4949,
+      0.2963,
+      0.5149,
+      0.3092
+     ],
+     "original_content": "1.50",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-40",
+     "page_number": 2,
+     "bounding_box": [
+      0.5933,
+      0.2963,
+      0.6224,
+      0.3092
+     ],
+     "original_content": "hour",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-41",
+     "page_number": 2,
+     "bounding_box": [
+      0.733,
+      0.2963,
+      0.777,
+      0.3092
+     ],
+     "original_content": "190.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-42",
+     "page_number": 2,
+     "bounding_box": [
+      0.8788,
+      0.2963,
+      0.9228,
+      0.3092
+     ],
+     "original_content": "285.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-43",
+     "page_number": 2,
+     "bounding_box": [
+      0.8668,
+      0.3168,
+      0.9228,
+      0.3301
+     ],
+     "original_content": "3,285.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-44",
+     "page_number": 2,
+     "bounding_box": [
+      0.12,
+      0.8627,
+      0.88,
+      0.8827
+     ],
+     "original_content": "No",
+     "synthetic": true,
+     "geometry": "fallback-strip"
+    },
+    {
+     "id": "txt-day12-45",
+     "page_number": 3,
+     "bounding_box": [
+      0.2179,
+      0.1182,
+      0.2799,
+      0.1311
+     ],
+     "original_content": "SVT-4471",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-46",
+     "page_number": 3,
+     "bounding_box": [
+      0.0711,
+      0.0547,
+      0.3991,
+      0.0735
+     ],
+     "original_content": "Sandhill Vacuum Transport LLC",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-47",
+     "page_number": 3,
+     "bounding_box": [
+      0.2179,
+      0.1362,
+      0.293,
+      0.1491
+     ],
+     "original_content": "2026-06-10",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-48",
+     "page_number": 3,
+     "bounding_box": [
+      0.6596,
+      0.1182,
+      0.7582,
+      0.1311
+     ],
+     "original_content": "Caprock 14-2H",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-49",
+     "page_number": 3,
+     "bounding_box": [
+      0.102,
+      0.2139,
+      0.11,
+      0.2268
+     ],
+     "original_content": "1",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-50",
+     "page_number": 3,
+     "bounding_box": [
+      0.1695,
+      0.2139,
+      0.2055,
+      0.2268
+     ],
+     "original_content": "06:40",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-51",
+     "page_number": 3,
+     "bounding_box": [
+      0.2414,
+      0.2139,
+      0.3436,
+      0.2268
+     ],
+     "original_content": "Produced water",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-52",
+     "page_number": 3,
+     "bounding_box": [
+      0.9094,
+      0.0505,
+      0.9301,
+      0.0617
+     ],
+     "original_content": "118.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-53",
+     "page_number": 3,
+     "bounding_box": [
+      0.5931,
+      0.2139,
+      0.7196,
+      0.2268
+     ],
+     "original_content": "Sandhill SWD No. 3",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-54",
+     "page_number": 3,
+     "bounding_box": [
+      0.102,
+      0.2356,
+      0.11,
+      0.2486
+     ],
+     "original_content": "2",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-55",
+     "page_number": 3,
+     "bounding_box": [
+      0.1695,
+      0.2356,
+      0.2055,
+      0.2486
+     ],
+     "original_content": "09:15",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-56",
+     "page_number": 3,
+     "bounding_box": [
+      0.2414,
+      0.2356,
+      0.3436,
+      0.2486
+     ],
+     "original_content": "Produced water",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-57",
+     "page_number": 3,
+     "bounding_box": [
+      0.5437,
+      0.2356,
+      0.5796,
+      0.2486
+     ],
+     "original_content": "122.50",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-58",
+     "page_number": 3,
+     "bounding_box": [
+      0.5931,
+      0.2356,
+      0.7196,
+      0.2486
+     ],
+     "original_content": "Sandhill SWD No. 3",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-59",
+     "page_number": 3,
+     "bounding_box": [
+      0.7116,
+      0.2139,
+      0.7196,
+      0.2268
+     ],
+     "original_content": "3",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-60",
+     "page_number": 3,
+     "bounding_box": [
+      0.1695,
+      0.2565,
+      0.2055,
+      0.2694
+     ],
+     "original_content": "11:50",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-61",
+     "page_number": 3,
+     "bounding_box": [
+      0.2414,
+      0.2565,
+      0.3431,
+      0.2694
+     ],
+     "original_content": "Flowback water",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-62",
+     "page_number": 3,
+     "bounding_box": [
+      0.5557,
+      0.2565,
+      0.5796,
+      0.2694
+     ],
+     "original_content": "115.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-63",
+     "page_number": 3,
+     "bounding_box": [
+      0.5931,
+      0.2565,
+      0.7196,
+      0.2694
+     ],
+     "original_content": "Sandhill SWD No. 3",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-64",
+     "page_number": 3,
+     "bounding_box": [
+      0.102,
+      0.2783,
+      0.11,
+      0.2912
+     ],
+     "original_content": "4",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-65",
+     "page_number": 3,
+     "bounding_box": [
+      0.1695,
+      0.2783,
+      0.2055,
+      0.2912
+     ],
+     "original_content": "14:20",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-66",
+     "page_number": 3,
+     "bounding_box": [
+      0.2414,
+      0.2783,
+      0.3431,
+      0.2912
+     ],
+     "original_content": "Flowback water",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-67",
+     "page_number": 3,
+     "bounding_box": [
+      0.5437,
+      0.2783,
+      0.5796,
+      0.2912
+     ],
+     "original_content": "124.50",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-68",
+     "page_number": 3,
+     "bounding_box": [
+      0.5931,
+      0.2783,
+      0.7196,
+      0.2912
+     ],
+     "original_content": "Sandhill SWD No. 3",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-69",
+     "page_number": 3,
+     "bounding_box": [
+      0.102,
+      0.3,
+      0.11,
+      0.313
+     ],
+     "original_content": "5",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-70",
+     "page_number": 3,
+     "bounding_box": [
+      0.1695,
+      0.3,
+      0.2055,
+      0.313
+     ],
+     "original_content": "16:35",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-71",
+     "page_number": 3,
+     "bounding_box": [
+      0.2414,
+      0.3,
+      0.3436,
+      0.313
+     ],
+     "original_content": "Produced water",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-72",
+     "page_number": 3,
+     "bounding_box": [
+      0.5931,
+      0.3,
+      0.7196,
+      0.313
+     ],
+     "original_content": "Sandhill SWD No. 3",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-73",
+     "page_number": 3,
+     "bounding_box": [
+      0.5557,
+      0.3206,
+      0.5796,
+      0.3338
+     ],
+     "original_content": "590.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-74",
+     "page_number": 4,
+     "bounding_box": [
+      0.2179,
+      0.1305,
+      0.3473,
+      0.1435
+     ],
+     "original_content": "INV-20260612-PRW",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-75",
+     "page_number": 4,
+     "bounding_box": [
+      0.0711,
+      0.068,
+      0.3967,
+      0.0867
+     ],
+     "original_content": "Pecos Ridge Well Services LLC",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-76",
+     "page_number": 4,
+     "bounding_box": [
+      0.2179,
+      0.1495,
+      0.293,
+      0.1624
+     ],
+     "original_content": "2026-06-12",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-77",
+     "page_number": 4,
+     "bounding_box": [
+      0.6596,
+      0.1675,
+      0.7611,
+      0.1804
+     ],
+     "original_content": "AFE-2026-0417",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-78",
+     "page_number": 4,
+     "bounding_box": [
+      0.6596,
+      0.1495,
+      0.7582,
+      0.1624
+     ],
+     "original_content": "Caprock 14-2H",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-79",
+     "page_number": 4,
+     "bounding_box": [
+      0.0929,
+      0.2451,
+      0.1706,
+      0.258
+     ],
+     "original_content": "PRW-88421",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-80",
+     "page_number": 4,
+     "bounding_box": [
+      0.1985,
+      0.2451,
+      0.3843,
+      0.258
+     ],
+     "original_content": "Workover rig operator, hourly",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-81",
+     "page_number": 4,
+     "bounding_box": [
+      0.5441,
+      0.2451,
+      0.5601,
+      0.258
+     ],
+     "original_content": "11",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-82",
+     "page_number": 4,
+     "bounding_box": [
+      0.6191,
+      0.2451,
+      0.6481,
+      0.258
+     ],
+     "original_content": "hour",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-83",
+     "page_number": 4,
+     "bounding_box": [
+      0.7416,
+      0.2451,
+      0.7855,
+      0.258
+     ],
+     "original_content": "145.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-84",
+     "page_number": 4,
+     "bounding_box": [
+      0.8668,
+      0.2451,
+      0.9228,
+      0.258
+     ],
+     "original_content": "1,595.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-85",
+     "page_number": 4,
+     "bounding_box": [
+      0.0929,
+      0.266,
+      0.1706,
+      0.2789
+     ],
+     "original_content": "PRW-88421",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-86",
+     "page_number": 4,
+     "bounding_box": [
+      0.1985,
+      0.266,
+      0.3145,
+      0.2789
+     ],
+     "original_content": "Rig fuel surcharge",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-87",
+     "page_number": 4,
+     "bounding_box": [
+      0.5481,
+      0.266,
+      0.5561,
+      0.2789
+     ],
+     "original_content": "1",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-88",
+     "page_number": 4,
+     "bounding_box": [
+      0.618,
+      0.266,
+      0.6491,
+      0.2789
+     ],
+     "original_content": "each",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-89",
+     "page_number": 4,
+     "bounding_box": [
+      0.7416,
+      0.266,
+      0.7855,
+      0.2789
+     ],
+     "original_content": "385.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-90",
+     "page_number": 4,
+     "bounding_box": [
+      0.8788,
+      0.266,
+      0.9228,
+      0.2789
+     ],
+     "original_content": "385.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-91",
+     "page_number": 4,
+     "bounding_box": [
+      0.0929,
+      0.2877,
+      0.1706,
+      0.3007
+     ],
+     "original_content": "PRW-88421",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-92",
+     "page_number": 4,
+     "bounding_box": [
+      0.1985,
+      0.2877,
+      0.3815,
+      0.3007
+     ],
+     "original_content": "Tool rental, packer assembly",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-93",
+     "page_number": 4,
+     "bounding_box": [
+      0.5481,
+      0.2877,
+      0.5561,
+      0.3007
+     ],
+     "original_content": "2",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-94",
+     "page_number": 4,
+     "bounding_box": [
+      0.6219,
+      0.2877,
+      0.6453,
+      0.3007
+     ],
+     "original_content": "day",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-95",
+     "page_number": 4,
+     "bounding_box": [
+      0.7416,
+      0.2877,
+      0.7855,
+      0.3007
+     ],
+     "original_content": "425.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-96",
+     "page_number": 4,
+     "bounding_box": [
+      0.8788,
+      0.2877,
+      0.9228,
+      0.3007
+     ],
+     "original_content": "850.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-97",
+     "page_number": 4,
+     "bounding_box": [
+      0.0929,
+      0.3095,
+      0.1706,
+      0.3224
+     ],
+     "original_content": "PRW-88437",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-98",
+     "page_number": 4,
+     "bounding_box": [
+      0.1985,
+      0.3095,
+      0.3205,
+      0.3224
+     ],
+     "original_content": "Pump truck, hourly",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-99",
+     "page_number": 4,
+     "bounding_box": [
+      0.5481,
+      0.3095,
+      0.5561,
+      0.3224
+     ],
+     "original_content": "6",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-100",
+     "page_number": 4,
+     "bounding_box": [
+      0.6191,
+      0.3095,
+      0.6481,
+      0.3224
+     ],
+     "original_content": "hour",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-101",
+     "page_number": 4,
+     "bounding_box": [
+      0.7416,
+      0.3095,
+      0.7855,
+      0.3224
+     ],
+     "original_content": "310.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-102",
+     "page_number": 4,
+     "bounding_box": [
+      0.8668,
+      0.3095,
+      0.9228,
+      0.3224
+     ],
+     "original_content": "1,860.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-103",
+     "page_number": 4,
+     "bounding_box": [
+      0.0929,
+      0.3313,
+      0.1706,
+      0.3442
+     ],
+     "original_content": "PRW-88437",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-104",
+     "page_number": 4,
+     "bounding_box": [
+      0.1985,
+      0.3313,
+      0.3801,
+      0.3442
+     ],
+     "original_content": "Fluid pumped, treated water",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-105",
+     "page_number": 4,
+     "bounding_box": [
+      0.5401,
+      0.3313,
+      0.5641,
+      0.3442
+     ],
+     "original_content": "240",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-106",
+     "page_number": 4,
+     "bounding_box": [
+      0.6234,
+      0.3313,
+      0.6437,
+      0.3442
+     ],
+     "original_content": "bbl",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-107",
+     "page_number": 4,
+     "bounding_box": [
+      0.7576,
+      0.3313,
+      0.7855,
+      0.3442
+     ],
+     "original_content": "4.75",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-108",
+     "page_number": 4,
+     "bounding_box": [
+      0.8668,
+      0.3313,
+      0.9228,
+      0.3442
+     ],
+     "original_content": "1,140.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-109",
+     "page_number": 4,
+     "bounding_box": [
+      0.0929,
+      0.3531,
+      0.1706,
+      0.366
+     ],
+     "original_content": "PRW-88437",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-110",
+     "page_number": 4,
+     "bounding_box": [
+      0.1985,
+      0.3531,
+      0.284,
+      0.366
+     ],
+     "original_content": "Standby time",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-111",
+     "page_number": 4,
+     "bounding_box": [
+      0.5421,
+      0.3531,
+      0.5621,
+      0.366
+     ],
+     "original_content": "1.50",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-112",
+     "page_number": 4,
+     "bounding_box": [
+      0.6191,
+      0.3531,
+      0.6481,
+      0.366
+     ],
+     "original_content": "hour",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-113",
+     "page_number": 4,
+     "bounding_box": [
+      0.7416,
+      0.3531,
+      0.7855,
+      0.366
+     ],
+     "original_content": "190.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-114",
+     "page_number": 4,
+     "bounding_box": [
+      0.8788,
+      0.3531,
+      0.9228,
+      0.366
+     ],
+     "original_content": "285.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-115",
+     "page_number": 4,
+     "bounding_box": [
+      0.8668,
+      0.3736,
+      0.9228,
+      0.3869
+     ],
+     "original_content": "6,115.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day12-116",
+     "page_number": 4,
+     "bounding_box": [
+      0.8788,
+      0.3954,
+      0.9228,
+      0.4086
+     ],
+     "original_content": "504.49",
+     "synthetic": true,
+     "geometry": "text-layer"
+    }
+   ],
+   "Tables": [],
+   "Words": []
+  },
+  "synthetic": true,
+  "_fixture_seconds": 6.9
+ },
+ "split": {
+  "split_id": "fixture-synth-split-day12",
+  "split_output": {
+   "splits": {
+    "field_ticket_1": [
+     1
+    ],
+    "field_ticket_2": [
+     2
+    ],
+    "hauling_log": [
+     3
+    ],
+    "invoice": [
+     4
+    ]
+   }
+  },
+  "credits_used": 8.0,
+  "synthetic": true,
+  "_fixture_seconds": 3.1
+ },
+ "schema": {
+  "schema_id": "fixture-synth-schema-day12",
+  "split_id": "fixture-synth-split-day12",
+  "results": {
+   "field_ticket_1": {
+    "values": {
+     "ticket_number": "PRW-88421",
+     "vendor_name": "Pecos Ridge Well Services LLC",
+     "service_date": "2026-06-09",
+     "well_name": "Caprock 14-2H",
+     "afe_number": "AFE-2026-0417",
+     "line_items": [
+      {
+       "description": "Workover rig operator, hourly",
+       "quantity": 11,
+       "unit": "hour",
+       "rate": 145.0,
+       "amount": 1595.0
+      },
+      {
+       "description": "Rig fuel surcharge",
+       "quantity": 1,
+       "unit": "each",
+       "rate": 385.0,
+       "amount": 385.0
+      },
+      {
+       "description": "Tool rental, packer assembly",
+       "quantity": 2,
+       "unit": "day",
+       "rate": 425.0,
+       "amount": 850.0
+      }
+     ],
+     "total": 2830.0,
+     "customer_signature_present": false
+    },
+    "citations": {
+     "ticket_number": "txt-day12-1",
+     "vendor_name": "txt-day12-2",
+     "service_date": "txt-day12-3",
+     "well_name": "txt-day12-4",
+     "afe_number": "txt-day12-5",
+     "line_items": [
+      {
+       "description": "txt-day12-6",
+       "quantity": "txt-day12-7",
+       "unit": "txt-day12-8",
+       "rate": "txt-day12-9",
+       "amount": "txt-day12-10"
+      },
+      {
+       "description": "txt-day12-11",
+       "quantity": "txt-day12-12",
+       "unit": "txt-day12-13",
+       "rate": "txt-day12-14",
+       "amount": "txt-day12-15"
+      },
+      {
+       "description": "txt-day12-16",
+       "quantity": "txt-day12-17",
+       "unit": "txt-day12-18",
+       "rate": "txt-day12-19",
+       "amount": "txt-day12-20"
+      }
+     ],
+     "total": "txt-day12-21",
+     "customer_signature_present": "txt-day12-22"
+    }
+   },
+   "field_ticket_2": {
+    "values": {
+     "ticket_number": "PRW-88437",
+     "vendor_name": "Pecos Ridge Well Services LLC",
+     "service_date": "2026-06-10",
+     "well_name": "Caprock 14-2H",
+     "afe_number": "AFE-2026-0417",
+     "line_items": [
+      {
+       "description": "Pump truck, hourly",
+       "quantity": 6,
+       "unit": "hour",
+       "rate": 310.0,
+       "amount": 1860.0
+      },
+      {
+       "description": "Fluid pumped, treated water",
+       "quantity": 240,
+       "unit": "bbl",
+       "rate": 4.75,
+       "amount": 1140.0
+      },
+      {
+       "description": "Standby time",
+       "quantity": 1.5,
+       "unit": "hour",
+       "rate": 190.0,
+       "amount": 285.0
+      }
+     ],
+     "total": 3285.0,
+     "customer_signature_present": false
+    },
+    "citations": {
+     "ticket_number": "txt-day12-23",
+     "vendor_name": "txt-day12-24",
+     "service_date": "txt-day12-25",
+     "well_name": "txt-day12-26",
+     "afe_number": "txt-day12-27",
+     "line_items": [
+      {
+       "description": "txt-day12-28",
+       "quantity": "txt-day12-29",
+       "unit": "txt-day12-30",
+       "rate": "txt-day12-31",
+       "amount": "txt-day12-32"
+      },
+      {
+       "description": "txt-day12-33",
+       "quantity": "txt-day12-34",
+       "unit": "txt-day12-35",
+       "rate": "txt-day12-36",
+       "amount": "txt-day12-37"
+      },
+      {
+       "description": "txt-day12-38",
+       "quantity": "txt-day12-39",
+       "unit": "txt-day12-40",
+       "rate": "txt-day12-41",
+       "amount": "txt-day12-42"
+      }
+     ],
+     "total": "txt-day12-43",
+     "customer_signature_present": "txt-day12-44"
+    }
+   },
+   "hauling_log": {
+    "values": {
+     "log_number": "SVT-4471",
+     "hauler_name": "Sandhill Vacuum Transport LLC",
+     "log_date": "2026-06-10",
+     "well_name": "Caprock 14-2H",
+     "loads": [
+      {
+       "load_no": 1,
+       "time": "06:40",
+       "fluid_type": "Produced water",
+       "barrels": 118.0,
+       "destination": "Sandhill SWD No. 3"
+      },
+      {
+       "load_no": 2,
+       "time": "09:15",
+       "fluid_type": "Produced water",
+       "barrels": 122.5,
+       "destination": "Sandhill SWD No. 3"
+      },
+      {
+       "load_no": 3,
+       "time": "11:50",
+       "fluid_type": "Flowback water",
+       "barrels": 115.0,
+       "destination": "Sandhill SWD No. 3"
+      },
+      {
+       "load_no": 4,
+       "time": "14:20",
+       "fluid_type": "Flowback water",
+       "barrels": 124.5,
+       "destination": "Sandhill SWD No. 3"
+      },
+      {
+       "load_no": 5,
+       "time": "16:35",
+       "fluid_type": "Produced water",
+       "barrels": null,
+       "destination": "Sandhill SWD No. 3"
+      }
+     ],
+     "total_barrels": 590.0
+    },
+    "citations": {
+     "log_number": "txt-day12-45",
+     "hauler_name": "txt-day12-46",
+     "log_date": "txt-day12-47",
+     "well_name": "txt-day12-48",
+     "loads": [
+      {
+       "load_no": "txt-day12-49",
+       "time": "txt-day12-50",
+       "fluid_type": "txt-day12-51",
+       "barrels": "txt-day12-52",
+       "destination": "txt-day12-53"
+      },
+      {
+       "load_no": "txt-day12-54",
+       "time": "txt-day12-55",
+       "fluid_type": "txt-day12-56",
+       "barrels": "txt-day12-57",
+       "destination": "txt-day12-58"
+      },
+      {
+       "load_no": "txt-day12-59",
+       "time": "txt-day12-60",
+       "fluid_type": "txt-day12-61",
+       "barrels": "txt-day12-62",
+       "destination": "txt-day12-63"
+      },
+      {
+       "load_no": "txt-day12-64",
+       "time": "txt-day12-65",
+       "fluid_type": "txt-day12-66",
+       "barrels": "txt-day12-67",
+       "destination": "txt-day12-68"
+      },
+      {
+       "load_no": "txt-day12-69",
+       "time": "txt-day12-70",
+       "fluid_type": "txt-day12-71",
+       "destination": "txt-day12-72"
+      }
+     ],
+     "total_barrels": "txt-day12-73"
+    }
+   },
+   "invoice": {
+    "values": {
+     "invoice_number": "INV-20260612-PRW",
+     "vendor_name": "Pecos Ridge Well Services LLC",
+     "invoice_date": "2026-06-12",
+     "afe_number": "AFE-2026-0417",
+     "well_name": "Caprock 14-2H",
+     "line_items": [
+      {
+       "ticket_ref": "PRW-88421",
+       "description": "Workover rig operator, hourly",
+       "quantity": 11,
+       "unit": "hour",
+       "rate": 145.0,
+       "amount": 1595.0
+      },
+      {
+       "ticket_ref": "PRW-88421",
+       "description": "Rig fuel surcharge",
+       "quantity": 1,
+       "unit": "each",
+       "rate": 385.0,
+       "amount": 385.0
+      },
+      {
+       "ticket_ref": "PRW-88421",
+       "description": "Tool rental, packer assembly",
+       "quantity": 2,
+       "unit": "day",
+       "rate": 425.0,
+       "amount": 850.0
+      },
+      {
+       "ticket_ref": "PRW-88437",
+       "description": "Pump truck, hourly",
+       "quantity": 6,
+       "unit": "hour",
+       "rate": 310.0,
+       "amount": 1860.0
+      },
+      {
+       "ticket_ref": "PRW-88437",
+       "description": "Fluid pumped, treated water",
+       "quantity": 240,
+       "unit": "bbl",
+       "rate": 4.75,
+       "amount": 1140.0
+      },
+      {
+       "ticket_ref": "PRW-88437",
+       "description": "Standby time",
+       "quantity": 1.5,
+       "unit": "hour",
+       "rate": 190.0,
+       "amount": 285.0
+      }
+     ],
+     "subtotal": 6115.0,
+     "tax": 504.49,
+     "total": 6619.49
+    },
+    "citations": {
+     "invoice_number": "txt-day12-74",
+     "vendor_name": "txt-day12-75",
+     "invoice_date": "txt-day12-76",
+     "afe_number": "txt-day12-77",
+     "well_name": "txt-day12-78",
+     "line_items": [
+      {
+       "ticket_ref": "txt-day12-79",
+       "description": "txt-day12-80",
+       "quantity": "txt-day12-81",
+       "unit": "txt-day12-82",
+       "rate": "txt-day12-83",
+       "amount": "txt-day12-84"
+      },
+      {
+       "ticket_ref": "txt-day12-85",
+       "description": "txt-day12-86",
+       "quantity": "txt-day12-87",
+       "unit": "txt-day12-88",
+       "rate": "txt-day12-89",
+       "amount": "txt-day12-90"
+      },
+      {
+       "ticket_ref": "txt-day12-91",
+       "description": "txt-day12-92",
+       "quantity": "txt-day12-93",
+       "unit": "txt-day12-94",
+       "rate": "txt-day12-95",
+       "amount": "txt-day12-96"
+      },
+      {
+       "ticket_ref": "txt-day12-97",
+       "description": "txt-day12-98",
+       "quantity": "txt-day12-99",
+       "unit": "txt-day12-100",
+       "rate": "txt-day12-101",
+       "amount": "txt-day12-102"
+      },
+      {
+       "ticket_ref": "txt-day12-103",
+       "description": "txt-day12-104",
+       "quantity": "txt-day12-105",
+       "unit": "txt-day12-106",
+       "rate": "txt-day12-107",
+       "amount": "txt-day12-108"
+      },
+      {
+       "ticket_ref": "txt-day12-109",
+       "description": "txt-day12-110",
+       "quantity": "txt-day12-111",
+       "unit": "txt-day12-112",
+       "rate": "txt-day12-113",
+       "amount": "txt-day12-114"
+      }
+     ],
+     "subtotal": "txt-day12-115",
+     "tax": "txt-day12-116"
+    }
+   }
+  },
+  "credits_used": 4.0,
+  "synthetic": true,
+  "_fixture_seconds": 5.4
+ }
+}

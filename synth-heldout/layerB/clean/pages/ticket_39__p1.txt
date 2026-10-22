@@ -1,0 +1,20 @@
+OPERATIONS / OWNER RECORD
+
+
+# Field service ticket
+
+
+Ticket number: **BQ-9639**
+Vendor: **Brelquor Field Services LLC**
+Service date: **2026-09-24**
+Well: **Tressaline 9-VH**
+AFE number: **DB-26-901**
+
+
+<table><thead><tr><td>Description</td><td>Qty</td><td>Unit</td><td>Rate</td><td>Amount</td></tr></thead><tbody><tr><td>Pressure unit service</td><td>5</td><td>hour</td><td>175.00</td><td>875.00</td></tr><tr><td>Hose kit rental</td><td>1</td><td>day</td><td>90.00</td><td>90.00</td></tr><tr><td>Total:</td><td></td><td></td><td></td><td>965.00</td></tr></tbody></table>
+
+
+Customer signature: ____________________
+
+
+SYNTHETIC STUDY DOCUMENT - NOT VALID FOR PAYMENT

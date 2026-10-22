@@ -1,0 +1,32 @@
+{
+  "doc_id": "afe_04",
+  "keyed_by": "codex blind layer-B key (extracted text)",
+  "keyed_from": "extracted text",
+  "values": {
+    "afe_number": "DB-26-904",
+    "operator_name": "Darsenne Basin Operations LLC",
+    "well_name": "Ostrand 4-KH",
+    "api_number": null,
+    "county": "Lumereth",
+    "state": "TX",
+    "afe_date": "2026-09-04",
+    "afe_type": "Workover",
+    "total_estimate": "20,000.00",
+    "ticket_number": null,
+    "statement_period": null
+  },
+  "page_of": {
+    "afe_number": 1,
+    "operator_name": 1,
+    "well_name": 1,
+    "api_number": null,
+    "county": 1,
+    "state": 1,
+    "afe_date": 1,
+    "afe_type": 1,
+    "total_estimate": 2,
+    "ticket_number": null,
+    "statement_period": null
+  },
+  "notes": []
+}

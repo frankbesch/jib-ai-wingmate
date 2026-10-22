@@ -1,0 +1,49 @@
+{
+ "permit_number": "918387",
+ "sequence": "99",
+ "county_code": "055",
+ "county": "CALDWELL",
+ "lease_name": "JOHNSON",
+ "district": "01",
+ "operator_number": "104643",
+ "application_received_date": "2026-09-02",
+ "operator_name": "EXCEL OPERATING, LLC",
+ "application_status": "Approved",
+ "permit_issue_date": "2026-09-03",
+ "fields": [
+  {
+   "field_number": "26620001",
+   "application_well_code": "O",
+   "completion_well_code": " "
+  }
+ ],
+ "well_number": "1A",
+ "total_depth": 2600,
+ "type_of_application_code": "01",
+ "type_of_application": "New Drill",
+ "surface_section": "8",
+ "surface_block": "",
+ "surface_survey": "SEAL, S",
+ "surface_abstract": "24",
+ "contiguous_acres": 2.07,
+ "miles_from_town": 3.0,
+ "direction_from_town": "NW",
+ "nearest_town": "LULING",
+ "lease_perpendiculars": {
+  "feet_1": 150.0,
+  "direction_1": "NE",
+  "feet_2": 150.0,
+  "direction_2": "NW"
+ },
+ "survey_perpendiculars": {
+  "feet_1": 1420.0,
+  "direction_1": "NE",
+  "feet_2": 1750.0,
+  "direction_2": "NW"
+ },
+ "horizontal_well_flag": false,
+ "directional_well_flag": false,
+ "api_number": "42-055-35201",
+ "grade": "SYSTEM-EXTRACTED",
+ "basis": "RRC daf420.dat 2026-09-04, OGA049M positions"
+}

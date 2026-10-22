@@ -1,0 +1,30 @@
+{
+  "doc_id": "invoice_02",
+  "keyed_by": "codex blind layer-B key (extracted text)",
+  "keyed_from": "extracted text",
+  "values": {
+    "invoice_number": "OVI-642",
+    "vendor_name": "Orvessa Field Services LLC",
+    "invoice_date": "2026-08-16",
+    "afe_number": null,
+    "well_name": "Nacrevale 7-QH",
+    "subtotal": "1,930.00",
+    "tax": "0.00",
+    "total": null,
+    "log_number": null,
+    "statement_period": null
+  },
+  "page_of": {
+    "invoice_number": 1,
+    "vendor_name": 1,
+    "invoice_date": 1,
+    "afe_number": null,
+    "well_name": 1,
+    "subtotal": 1,
+    "tax": 1,
+    "total": null,
+    "log_number": null,
+    "statement_period": null
+  },
+  "notes": []
+}

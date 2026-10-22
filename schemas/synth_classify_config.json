@@ -1,0 +1,26 @@
+{
+  "$comment": "Pulse /classify classify_config for the joint-interest month (SYNTHETIC corpus). Forced choice with no confidence, so the catch-all class carries no pipeline_id and is the refusal path.",
+  "classifications": {
+    "afe_cover": {
+      "description": "A one-page LETTER on operator letterhead addressed to a working-interest owner, transmitting an AFE for election: salutation or addressee block, paragraphs of prose, an AFE number and well name mentioned in the text, a response due date, the owner's interest decimal and net dollar share, and a signature line. It has NO table of account-coded cost lines. If the page is a letter that refers to an AFE, it is afe_cover, not afe."
+    },
+    "afe": {
+      "description": "The Authorization for Expenditure FORM itself: headed AFE or Authorization for Expenditure, with an AFE number, well and API identification, an operation type such as Recompletion, and a TABLE of account-coded intangible and tangible cost lines with subtotals and a total estimate. A cover letter that merely mentions an AFE is afe_cover, not afe."
+    },
+    "field_ticket": {
+      "description": "A vendor field or service ticket signed at the wellsite: ticket number, service company, service date, well, and a short table of charge rows with quantity, unit, rate, and amount. Quantities are sometimes hand written."
+    },
+    "hauling_log": {
+      "description": "A fluid hauling or vacuum truck log: a numbered list of loads with time, fluid type, barrels, and disposal destination, and a total barrels line."
+    },
+    "invoice": {
+      "description": "A vendor invoice: invoice number, invoice date, bill-to block, rows that reference field ticket numbers, and a subtotal, tax, and total."
+    },
+    "jib_statement": {
+      "description": "An operator Joint Interest Billing statement to an owner: statement period, property and owner numbers, a working-interest decimal, and billing lines with gross amount, owner decimal, and net amount, plus gross and net totals."
+    },
+    "unrecognized": {
+      "description": "Any page or document that does not clearly match the classes above, including blank pages, illegible scans, transmittal sheets, and envelopes."
+    }
+  }
+}

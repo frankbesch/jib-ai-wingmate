@@ -1,0 +1,58 @@
+{
+ "permit": "918151",
+ "total_pages": 7,
+ "splits": {
+  "w1_permit": [
+   1,
+   2,
+   3
+  ],
+  "plat": [
+   4,
+   5,
+   6,
+   7
+  ]
+ },
+ "documents": [
+  {
+   "class": "w1_permit",
+   "file": "918151_W1_AsApprovedW1-9-3-2026_LTR.pdf",
+   "pages": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "class": "plat",
+   "file": "918151_Plat_BRUSHY CREEK 22 E-F-G-H UNIT PLAT_LGL.pdf",
+   "pages": [
+    4
+   ]
+  },
+  {
+   "class": "plat",
+   "file": "918151_Plat_BRUSHY CREEK 22 UNIT PLAT_LTR.pdf",
+   "pages": [
+    5
+   ]
+  },
+  {
+   "class": "plat",
+   "file": "918151_Plat_NORTH CREEK F 0402MB_PERMIT PLAT_8-31-2026R_LGL.pdf",
+   "pages": [
+    6
+   ]
+  },
+  {
+   "class": "plat",
+   "file": "918151_Plat_NORTH CREEK F 0402MB_PERMIT PLAT_LGL.pdf",
+   "pages": [
+    7
+   ]
+  }
+ ],
+ "grade": "OBSERVED",
+ "basis": "packet assembled from separately published RRC files"
+}

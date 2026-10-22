@@ -1,0 +1,20 @@
+OPERATIONS / OWNER RECORD
+
+
+# Field service ticket
+
+
+Dispatch docket: **BQ-9610**
+Service firm: **Brelquor Field Services LLC**
+Serviced: **2026-09-10**
+Asset: **Tressaline 9-VH**
+Ref: **DB-26-901**
+
+
+<table><thead><tr><td>Description</td><td>Qty</td><td>Unit</td><td>Rate</td><td>Amount</td></tr></thead><tbody><tr><td>Pressure unit service</td><td>8</td><td>hour</td><td>175.00</td><td>1,400.00</td></tr><tr><td>Hose kit rental</td><td>1</td><td>day</td><td>90.00</td><td>90.00</td></tr><tr><td>Amount due:</td><td colspan="4">1,490.00</td></tr></tbody></table>
+
+
+Customer signature: ____________________
+
+
+SYNTHETIC STUDY DOCUMENT - NOT VALID FOR PAYMENT

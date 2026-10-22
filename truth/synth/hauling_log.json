@@ -1,0 +1,83 @@
+{
+ "doc_id": "hauling_log",
+ "source_file": "05_hauling_log.pdf",
+ "keyed_by": "codex via ChatGPT (non-Claude hand)",
+ "keyed_from": "page images",
+ "values": {
+  "log_number": "SVT-4471",
+  "hauler_name": "Sandhill Vacuum Transport LLC",
+  "log_date": "2026-06-10",
+  "well_name": "Caprock 14-2H",
+  "loads": [
+   {
+    "load_no": 1,
+    "time": "06:40",
+    "fluid_type": "Produced water",
+    "barrels": 118,
+    "destination": "Sandhill SWD No. 3"
+   },
+   {
+    "load_no": 2,
+    "time": "09:15",
+    "fluid_type": "Produced water",
+    "barrels": 122.5,
+    "destination": "Sandhill SWD No. 3"
+   },
+   {
+    "load_no": 3,
+    "time": "11:50",
+    "fluid_type": "Flowback water",
+    "barrels": 115,
+    "destination": "Sandhill SWD No. 3"
+   },
+   {
+    "load_no": 4,
+    "time": "14:20",
+    "fluid_type": "Flowback water",
+    "barrels": 124.5,
+    "destination": "Sandhill SWD No. 3"
+   },
+   {
+    "load_no": 5,
+    "time": "16:35",
+    "fluid_type": "Produced water",
+    "barrels": 110,
+    "destination": "Sandhill SWD No. 3"
+   }
+  ],
+  "total_barrels": 590
+ },
+ "page_of": {
+  "log_number": 1,
+  "hauler_name": 1,
+  "log_date": 1,
+  "well_name": 1,
+  "loads[0].load_no": 1,
+  "loads[0].time": 1,
+  "loads[0].fluid_type": 1,
+  "loads[0].barrels": 1,
+  "loads[0].destination": 1,
+  "loads[1].load_no": 1,
+  "loads[1].time": 1,
+  "loads[1].fluid_type": 1,
+  "loads[1].barrels": 1,
+  "loads[1].destination": 1,
+  "loads[2].load_no": 1,
+  "loads[2].time": 1,
+  "loads[2].fluid_type": 1,
+  "loads[2].barrels": 1,
+  "loads[2].destination": 1,
+  "loads[3].load_no": 1,
+  "loads[3].time": 1,
+  "loads[3].fluid_type": 1,
+  "loads[3].barrels": 1,
+  "loads[3].destination": 1,
+  "loads[4].load_no": 1,
+  "loads[4].time": 1,
+  "loads[4].fluid_type": 1,
+  "loads[4].barrels": 1,
+  "loads[4].destination": 1,
+  "total_barrels": 1
+ },
+ "uncertain": []
+}

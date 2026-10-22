@@ -1,0 +1,11 @@
+{
+  "$comment": "Pulse /classify classify_config. Forced-choice with no confidence, so the catch-all class carries no pipeline_id and is the refusal path.",
+  "classifications": {
+    "w1_permit": {"description": "Texas Railroad Commission Form W-1, Application for Permit to Drill, Recomplete, or Re-Enter: a numbered-item form with operator, lease, well number, purpose-of-filing checkboxes, surface location items 11-25, and a field information table."},
+    "plat": {"description": "A surveyor's plat or map drawing showing a well location within a survey or section: scale bar, north arrow, distance calls to lease and survey lines, surveyor seal or certification."},
+    "completion_report": {"description": "RRC Form W-2 or G-1 completion report: casing, cementing, perforation, and test data for a completed well."},
+    "well_log": {"description": "A wireline log image: depth track with curves such as gamma ray, resistivity, or density, with a header block."},
+    "correspondence": {"description": "Letters, problem letters, notices, or emails about a permit or well."},
+    "unrecognized": {"description": "Any page or document that does not clearly match the classes above, including blank pages, illegible scans, and cover sheets."}
+  }
+}

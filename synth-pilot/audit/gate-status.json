@@ -1,0 +1,22 @@
+{
+  "build": {
+    "command": "python3 src/build.py",
+    "exit_code": 1,
+    "sha256_lines": 0
+  },
+  "check": {
+    "command": "python3 src/check.py",
+    "exit_code": 1,
+    "sha256_lines": 0
+  },
+  "key": {
+    "command": "python3 src/key.py",
+    "exit_code": 1,
+    "sha256_lines": 0
+  },
+  "fixture": {
+    "command": "python3 ../typed/typed_questions.py --set synth-pilot --mode fixture",
+    "exit_code": 1,
+    "sha256_lines": 0
+  }
+}

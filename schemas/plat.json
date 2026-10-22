@@ -1,0 +1,23 @@
+{
+  "$comment": "Pulse /schema input_schema for a drilling-permit plat (surveyor drawing, usually scanned). Truth is human-keyed (two keyers + adjudicator) and stays PLANNED until signed. Plats are the hard pages: rotated text, stamps, CAD linework.",
+  "type": "object",
+  "properties": {
+    "operator_name": {"type": "string"},
+    "lease_name": {"type": "string"},
+    "well_number": {"type": "string"},
+    "county": {"type": "string"},
+    "survey_name": {"type": "string", "description": "Original land survey name, e.g. H&TC RR Co"},
+    "abstract_number": {"type": "string", "description": "e.g. A-557"},
+    "section": {"type": "string"},
+    "block": {"type": "string"},
+    "scale": {"type": "string", "description": "As printed, e.g. 1\" = 1000'"},
+    "surveyor_name": {"type": "string"},
+    "rpls_number": {"type": "string", "description": "Registered Professional Land Surveyor number"},
+    "survey_date": {"type": "string"},
+    "location_calls": {"type": "array", "items": {"type": "object", "properties": {
+      "feet": {"type": "string"}, "direction": {"type": "string"}, "reference_line": {"type": "string", "description": "lease line or survey line, with its name"}}}},
+    "north_arrow_present": {"type": "boolean"},
+    "surveyor_seal_present": {"type": "boolean"}
+  },
+  "required": ["survey_name", "abstract_number", "location_calls"]
+}

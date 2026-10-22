@@ -1,0 +1,813 @@
+{
+ "packet_id": "day01",
+ "synthetic": true,
+ "synthetic_responses": true,
+ "perturbations": [
+  "F2 hauling_log.loads[4].barrels: null (extraction exception)",
+  "F3 invoice.total: citation dropped (citation coverage < 1.0)"
+ ],
+ "source": "synth/src/book.json (author source, not truth)",
+ "classify": {
+  "01_afe_cover.pdf": {
+   "classify_output": {
+    "classification": "afe_cover"
+   },
+   "credits_used": 0.5,
+   "synthetic": true,
+   "_fixture_seconds": 1.059
+  },
+  "02_afe.pdf": {
+   "classify_output": {
+    "classification": "afe"
+   },
+   "credits_used": 1.0,
+   "synthetic": true,
+   "_fixture_seconds": 0.921
+  }
+ },
+ "extract": {
+  "extraction_id": "fixture-synth-day01",
+  "page_count": 3,
+  "credits_used": 3.0,
+  "failed_pages": [],
+  "bounding_boxes": {
+   "Text": [
+    {
+     "id": "txt-day01-1",
+     "page_number": 1,
+     "bounding_box": [
+      0.8603,
+      0.1057,
+      0.9301,
+      0.1166
+     ],
+     "original_content": "June 1, 2026",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-2",
+     "page_number": 1,
+     "bounding_box": [
+      0.0711,
+      0.068,
+      0.3374,
+      0.0867
+     ],
+     "original_content": "Sablewind Operating LLC",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-3",
+     "page_number": 1,
+     "bounding_box": [
+      0.0711,
+      0.1244,
+      0.2353,
+      0.1379
+     ],
+     "original_content": "Caprock Resources LLC",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-4",
+     "page_number": 1,
+     "bounding_box": [
+      0.3134,
+      0.1762,
+      0.4214,
+      0.19
+     ],
+     "original_content": "AFE-2026-0417",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-5",
+     "page_number": 1,
+     "bounding_box": [
+      0.4448,
+      0.1762,
+      0.5522,
+      0.19
+     ],
+     "original_content": "Caprock 14-2H",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-6",
+     "page_number": 1,
+     "bounding_box": [
+      0.2921,
+      0.3673,
+      0.3832,
+      0.3802
+     ],
+     "original_content": "June 16, 2026",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-7",
+     "page_number": 1,
+     "bounding_box": [
+      0.2921,
+      0.3303,
+      0.352,
+      0.3433
+     ],
+     "original_content": "0.25",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-8",
+     "page_number": 1,
+     "bounding_box": [
+      0.12,
+      0.7975,
+      0.88,
+      0.8175
+     ],
+     "original_content": "121,700.00",
+     "synthetic": true,
+     "geometry": "fallback-strip"
+    },
+    {
+     "id": "txt-day01-9",
+     "page_number": 2,
+     "bounding_box": [
+      0.2179,
+      0.1305,
+      0.3193,
+      0.1435
+     ],
+     "original_content": "AFE-2026-0417",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-10",
+     "page_number": 2,
+     "bounding_box": [
+      0.0711,
+      0.068,
+      0.3374,
+      0.0867
+     ],
+     "original_content": "Sablewind Operating LLC",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-11",
+     "page_number": 2,
+     "bounding_box": [
+      0.6596,
+      0.1305,
+      0.7582,
+      0.1435
+     ],
+     "original_content": "Caprock 14-2H",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-12",
+     "page_number": 2,
+     "bounding_box": [
+      0.6596,
+      0.1495,
+      0.7507,
+      0.1624
+     ],
+     "original_content": "42-389-41207",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-13",
+     "page_number": 2,
+     "bounding_box": [
+      0.6596,
+      0.1675,
+      0.707,
+      0.1804
+     ],
+     "original_content": "Reeves",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-14",
+     "page_number": 2,
+     "bounding_box": [
+      0.6596,
+      0.1864,
+      0.6767,
+      0.1993
+     ],
+     "original_content": "TX",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-15",
+     "page_number": 2,
+     "bounding_box": [
+      0.2179,
+      0.1495,
+      0.301,
+      0.1624
+     ],
+     "original_content": "June 1, 2026",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-16",
+     "page_number": 2,
+     "bounding_box": [
+      0.2179,
+      0.1675,
+      0.307,
+      0.1804
+     ],
+     "original_content": "Recompletion",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-17",
+     "page_number": 2,
+     "bounding_box": [
+      0.8509,
+      0.4788,
+      0.9228,
+      0.492
+     ],
+     "original_content": "486,800.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-18",
+     "page_number": 2,
+     "bounding_box": [
+      0.0977,
+      0.2849,
+      0.1057,
+      0.2978
+     ],
+     "original_content": "1",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-19",
+     "page_number": 2,
+     "bounding_box": [
+      0.1672,
+      0.2849,
+      0.1992,
+      0.2978
+     ],
+     "original_content": "4310",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-20",
+     "page_number": 2,
+     "bounding_box": [
+      0.2414,
+      0.2849,
+      0.4416,
+      0.2978
+     ],
+     "original_content": "Recompletion rig and daily rate",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-21",
+     "page_number": 2,
+     "bounding_box": [
+      0.6839,
+      0.2849,
+      0.7462,
+      0.2978
+     ],
+     "original_content": "intangible",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-22",
+     "page_number": 2,
+     "bounding_box": [
+      0.8509,
+      0.2849,
+      0.9228,
+      0.2978
+     ],
+     "original_content": "128,400.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-23",
+     "page_number": 2,
+     "bounding_box": [
+      0.0977,
+      0.3067,
+      0.1057,
+      0.3196
+     ],
+     "original_content": "2",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-24",
+     "page_number": 2,
+     "bounding_box": [
+      0.1672,
+      0.3067,
+      0.1992,
+      0.3196
+     ],
+     "original_content": "4315",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-25",
+     "page_number": 2,
+     "bounding_box": [
+      0.2414,
+      0.3067,
+      0.3945,
+      0.3196
+     ],
+     "original_content": "Wireline and perforating",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-26",
+     "page_number": 2,
+     "bounding_box": [
+      0.6839,
+      0.3067,
+      0.7462,
+      0.3196
+     ],
+     "original_content": "intangible",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-27",
+     "page_number": 2,
+     "bounding_box": [
+      0.8588,
+      0.3067,
+      0.9228,
+      0.3196
+     ],
+     "original_content": "96,750.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-28",
+     "page_number": 2,
+     "bounding_box": [
+      0.0977,
+      0.3285,
+      0.1057,
+      0.3414
+     ],
+     "original_content": "3",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-29",
+     "page_number": 2,
+     "bounding_box": [
+      0.1672,
+      0.3285,
+      0.1992,
+      0.3414
+     ],
+     "original_content": "4320",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-30",
+     "page_number": 2,
+     "bounding_box": [
+      0.2414,
+      0.3285,
+      0.451,
+      0.3414
+     ],
+     "original_content": "Stimulation and treating services",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-31",
+     "page_number": 2,
+     "bounding_box": [
+      0.6839,
+      0.3285,
+      0.7462,
+      0.3414
+     ],
+     "original_content": "intangible",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-32",
+     "page_number": 2,
+     "bounding_box": [
+      0.8509,
+      0.3285,
+      0.9228,
+      0.3414
+     ],
+     "original_content": "142,500.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-33",
+     "page_number": 2,
+     "bounding_box": [
+      0.0977,
+      0.3502,
+      0.1057,
+      0.3632
+     ],
+     "original_content": "4",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-34",
+     "page_number": 2,
+     "bounding_box": [
+      0.1672,
+      0.3502,
+      0.1992,
+      0.3632
+     ],
+     "original_content": "4325",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-35",
+     "page_number": 2,
+     "bounding_box": [
+      0.2414,
+      0.3502,
+      0.4089,
+      0.3632
+     ],
+     "original_content": "Fluid hauling and disposal",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-36",
+     "page_number": 2,
+     "bounding_box": [
+      0.6839,
+      0.3502,
+      0.7462,
+      0.3632
+     ],
+     "original_content": "intangible",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-37",
+     "page_number": 2,
+     "bounding_box": [
+      0.8588,
+      0.3502,
+      0.9228,
+      0.3632
+     ],
+     "original_content": "38,200.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-38",
+     "page_number": 2,
+     "bounding_box": [
+      0.0977,
+      0.4146,
+      0.1057,
+      0.4275
+     ],
+     "original_content": "5",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-39",
+     "page_number": 2,
+     "bounding_box": [
+      0.1672,
+      0.4146,
+      0.1992,
+      0.4275
+     ],
+     "original_content": "4410",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-40",
+     "page_number": 2,
+     "bounding_box": [
+      0.2414,
+      0.4146,
+      0.4518,
+      0.4275
+     ],
+     "original_content": "Tubing and downhole equipment",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-41",
+     "page_number": 2,
+     "bounding_box": [
+      0.6895,
+      0.4146,
+      0.7406,
+      0.4275
+     ],
+     "original_content": "tangible",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-42",
+     "page_number": 2,
+     "bounding_box": [
+      0.8588,
+      0.4146,
+      0.9228,
+      0.4275
+     ],
+     "original_content": "52,300.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-43",
+     "page_number": 2,
+     "bounding_box": [
+      0.0977,
+      0.4364,
+      0.1057,
+      0.4493
+     ],
+     "original_content": "6",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-44",
+     "page_number": 2,
+     "bounding_box": [
+      0.1672,
+      0.4364,
+      0.1992,
+      0.4493
+     ],
+     "original_content": "4420",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-45",
+     "page_number": 2,
+     "bounding_box": [
+      0.2414,
+      0.4364,
+      0.452,
+      0.4493
+     ],
+     "original_content": "Wellhead and surface equipment",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-46",
+     "page_number": 2,
+     "bounding_box": [
+      0.6895,
+      0.4364,
+      0.7406,
+      0.4493
+     ],
+     "original_content": "tangible",
+     "synthetic": true,
+     "geometry": "text-layer"
+    },
+    {
+     "id": "txt-day01-47",
+     "page_number": 2,
+     "bounding_box": [
+      0.8588,
+      0.4364,
+      0.9228,
+      0.4493
+     ],
+     "original_content": "28,650.00",
+     "synthetic": true,
+     "geometry": "text-layer"
+    }
+   ],
+   "Tables": [],
+   "Words": []
+  },
+  "synthetic": true,
+  "_fixture_seconds": 5.8
+ },
+ "split": {
+  "split_id": "fixture-synth-split-day01",
+  "split_output": {
+   "splits": {
+    "afe_cover": [
+     1
+    ],
+    "afe": [
+     2,
+     3
+    ]
+   }
+  },
+  "credits_used": 6.0,
+  "synthetic": true,
+  "_fixture_seconds": 2.7
+ },
+ "schema": {
+  "schema_id": "fixture-synth-schema-day01",
+  "split_id": "fixture-synth-split-day01",
+  "results": {
+   "afe_cover": {
+    "values": {
+     "letter_date": "June 1, 2026",
+     "operator_name": "Sablewind Operating LLC",
+     "addressee": "Caprock Resources LLC",
+     "afe_number": "AFE-2026-0417",
+     "well_name": "Caprock 14-2H",
+     "response_due_date": "June 16, 2026",
+     "wi_decimal_stated": 0.25,
+     "net_share_stated": 121700.0
+    },
+    "citations": {
+     "letter_date": "txt-day01-1",
+     "operator_name": "txt-day01-2",
+     "addressee": "txt-day01-3",
+     "afe_number": "txt-day01-4",
+     "well_name": "txt-day01-5",
+     "response_due_date": "txt-day01-6",
+     "wi_decimal_stated": "txt-day01-7",
+     "net_share_stated": "txt-day01-8"
+    }
+   },
+   "afe": {
+    "values": {
+     "afe_number": "AFE-2026-0417",
+     "operator_name": "Sablewind Operating LLC",
+     "well_name": "Caprock 14-2H",
+     "api_number": "42-389-41207",
+     "county": "Reeves",
+     "state": "TX",
+     "afe_date": "June 1, 2026",
+     "afe_type": "Recompletion",
+     "total_estimate": 486800.0,
+     "cost_lines": [
+      {
+       "line_no": 1,
+       "account_code": "4310",
+       "description": "Recompletion rig and daily rate",
+       "category": "intangible",
+       "amount": 128400.0
+      },
+      {
+       "line_no": 2,
+       "account_code": "4315",
+       "description": "Wireline and perforating",
+       "category": "intangible",
+       "amount": 96750.0
+      },
+      {
+       "line_no": 3,
+       "account_code": "4320",
+       "description": "Stimulation and treating services",
+       "category": "intangible",
+       "amount": 142500.0
+      },
+      {
+       "line_no": 4,
+       "account_code": "4325",
+       "description": "Fluid hauling and disposal",
+       "category": "intangible",
+       "amount": 38200.0
+      },
+      {
+       "line_no": 5,
+       "account_code": "4410",
+       "description": "Tubing and downhole equipment",
+       "category": "tangible",
+       "amount": 52300.0
+      },
+      {
+       "line_no": 6,
+       "account_code": "4420",
+       "description": "Wellhead and surface equipment",
+       "category": "tangible",
+       "amount": 28650.0
+      }
+     ]
+    },
+    "citations": {
+     "afe_number": "txt-day01-9",
+     "operator_name": "txt-day01-10",
+     "well_name": "txt-day01-11",
+     "api_number": "txt-day01-12",
+     "county": "txt-day01-13",
+     "state": "txt-day01-14",
+     "afe_date": "txt-day01-15",
+     "afe_type": "txt-day01-16",
+     "total_estimate": "txt-day01-17",
+     "cost_lines": [
+      {
+       "line_no": "txt-day01-18",
+       "account_code": "txt-day01-19",
+       "description": "txt-day01-20",
+       "category": "txt-day01-21",
+       "amount": "txt-day01-22"
+      },
+      {
+       "line_no": "txt-day01-23",
+       "account_code": "txt-day01-24",
+       "description": "txt-day01-25",
+       "category": "txt-day01-26",
+       "amount": "txt-day01-27"
+      },
+      {
+       "line_no": "txt-day01-28",
+       "account_code": "txt-day01-29",
+       "description": "txt-day01-30",
+       "category": "txt-day01-31",
+       "amount": "txt-day01-32"
+      },
+      {
+       "line_no": "txt-day01-33",
+       "account_code": "txt-day01-34",
+       "description": "txt-day01-35",
+       "category": "txt-day01-36",
+       "amount": "txt-day01-37"
+      },
+      {
+       "line_no": "txt-day01-38",
+       "account_code": "txt-day01-39",
+       "description": "txt-day01-40",
+       "category": "txt-day01-41",
+       "amount": "txt-day01-42"
+      },
+      {
+       "line_no": "txt-day01-43",
+       "account_code": "txt-day01-44",
+       "description": "txt-day01-45",
+       "category": "txt-day01-46",
+       "amount": "txt-day01-47"
+      }
+     ]
+    }
+   }
+  },
+  "credits_used": 3.0,
+  "synthetic": true,
+  "_fixture_seconds": 4.8
+ }
+}

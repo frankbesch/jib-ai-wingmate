@@ -1,0 +1,25 @@
+OPERATIONS / OWNER RECORD
+
+
+# Field service ticket
+
+
+REPRINT
+
+
+Replacement office copy. No additional service authorized.
+
+
+<table><tr><td>Subtotal:</td><td>1,140.00</td></tr><tr><td>Dispatch docket:</td><td>BQ-9645</td></tr><tr><td>Service firm:</td><td>Brelquor Field Services LLC</td></tr><tr><td>Serviced:</td><td>2026-09-30</td></tr><tr><td>Asset:</td><td>Tressaline 9-VH</td></tr><tr><td>Ref:</td><td>DB-26-901</td></tr></table>
+
+
+<table><thead><tr><td>Description</td><td>Qty</td><td>Unit</td><td>Rate</td><td>Amount</td></tr></thead><tbody><tr><td>Pressure unit service</td><td>6</td><td></td><td>175.00</td><td>1,050.00</td></tr><tr><td>Hose kit rental</td><td>1</td><td>day</td><td>90.00</td><td>90.00</td></tr></tbody></table>
+
+
+Amount due:
+
+
+Customer signature: ____________________
+
+
+SYNTHETIC STUDY DOCUMENT - NOT VALID FOR PAYMENT

@@ -1,0 +1,15 @@
+{
+  "$comment": "Pulse /schema input_schema for an operator AFE cover letter (joint-interest owner copy). JSON Schema, nested depth <= 3. Field names match truth/synth/afe_cover.json so the scorer needs no mapping. SYNTHETIC demonstration corpus.",
+  "type": "object",
+  "properties": {
+    "letter_date": {"type": "string", "description": "Date printed at the top of the letter, exactly as printed (do not reformat)."},
+    "operator_name": {"type": "string", "description": "Name of the operator sending the letter, from the letterhead or signature block, exactly as printed."},
+    "addressee": {"type": "string", "description": "Name of the working-interest owner the letter is addressed to, exactly as printed."},
+    "afe_number": {"type": "string", "description": "AFE number referenced in the letter, exactly as printed including any prefix and hyphens."},
+    "well_name": {"type": "string", "description": "Well name referenced in the letter, exactly as printed."},
+    "response_due_date": {"type": "string", "description": "Date by which the owner must return the election, exactly as printed. Null if the letter states no due date."},
+    "wi_decimal_stated": {"type": "number", "description": "The owner's working-interest decimal as printed in this letter, six decimal places. Copy the printed decimal; never convert from a percentage and never recompute."},
+    "net_share_stated": {"type": "number", "description": "The owner's net dollar share of the AFE estimate as printed in this letter. Digits only, no currency symbol or thousands separators."}
+  },
+  "required": ["letter_date", "operator_name", "addressee", "afe_number", "well_name", "wi_decimal_stated", "net_share_stated"]
+}

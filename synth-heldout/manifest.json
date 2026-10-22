@@ -1,0 +1,1531 @@
+{
+  "built": "2026-09-30",
+  "synthetic": true,
+  "story": "Darsenne Basin Operations LLC sends September records to Ultraven Fold Interests LLC. Vendors are Brelquor Field Services LLC and Sovarek Fluid Transit LLC. Fictional wells Tressaline 9-VH and Ostrand 4-KH sit in fictional Lumereth County. Three billing defects are planted.",
+  "documents": [
+    {
+      "doc_id": "ticket_01",
+      "file": "synth-heldout/clean/01_ticket_01.pdf",
+      "scan_file": "synth-heldout/scan/01_ticket_01.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_01",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "8a7725680a4537922d6aecbb708c5c95b2efa03541ea869fc5f80d02b1616970",
+      "scan_sha256": "ae00b7f3a5fbd0e7cadff828a1fac0aff7875c490763a07bba25512dca44f604"
+    },
+    {
+      "doc_id": "ticket_02",
+      "file": "synth-heldout/clean/02_ticket_02.pdf",
+      "scan_file": "synth-heldout/scan/02_ticket_02.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_01",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "adcff84a312aaa7e6cf919644bdb2f85beb4d229bd9a9a2381466c1a26cf25c0",
+      "scan_sha256": "a8ff6f72015b9d0b71c58561c22fed3834f793df7ae3873a88b74973bd071fdb"
+    },
+    {
+      "doc_id": "haul_01",
+      "file": "synth-heldout/clean/03_haul_01.pdf",
+      "scan_file": "synth-heldout/scan/03_haul_01.pdf",
+      "class": "hauling_log",
+      "packet": "ticket_01",
+      "pages": [
+        3
+      ],
+      "page_count": 1,
+      "sha256": "7954a3f9d0401e17efb8cea432460c273b0cf653735d625594e2d9474963afb0",
+      "scan_sha256": "b06bd97c5c8338285c2a1d7d8f704383cdac13e236754b89f461c007cbe2cbea"
+    },
+    {
+      "doc_id": "ticket_03",
+      "file": "synth-heldout/clean/04_ticket_03.pdf",
+      "scan_file": "synth-heldout/scan/04_ticket_03.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_02",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "bfdf7816077c042721ff1252f80146986bd449289a4e5a44ebf941455e443c06",
+      "scan_sha256": "30a912db2da79ab7467aad41e2b74b988f19ff3eb7dfc7be9890c3a0ed4a8253"
+    },
+    {
+      "doc_id": "ticket_04",
+      "file": "synth-heldout/clean/05_ticket_04.pdf",
+      "scan_file": "synth-heldout/scan/05_ticket_04.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_02",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "b0ce3c276cb63d73ab2012b06767bc98f5ee33b718d85eb9a73e2ca9eb6c6e3d",
+      "scan_sha256": "e6d6e29d60b05311a75bc8a62eb3bbf821929fde0b11bcbe4ec7d439b790b951"
+    },
+    {
+      "doc_id": "haul_02",
+      "file": "synth-heldout/clean/06_haul_02.pdf",
+      "scan_file": "synth-heldout/scan/06_haul_02.pdf",
+      "class": "hauling_log",
+      "packet": "ticket_02",
+      "pages": [
+        3
+      ],
+      "page_count": 1,
+      "sha256": "56382bd4600e563c4d89698e2a7df7171152c36ffcf2f7d7bfb5c90ff881b829",
+      "scan_sha256": "c00fc6d207d52ad7789c183137e4c4550ddd13ae50f4cb8f581afeb514d7bc1f"
+    },
+    {
+      "doc_id": "ticket_05",
+      "file": "synth-heldout/clean/07_ticket_05.pdf",
+      "scan_file": "synth-heldout/scan/07_ticket_05.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_03",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "2eb3429878f7e79c16489fe5ef093619d36ac36c0bf49139c9c09c655023b67c",
+      "scan_sha256": "ba8d2724bbe5d2c514e7bde3ac85d40117d3e52f96b484e7ea7f289133cafe15"
+    },
+    {
+      "doc_id": "ticket_06",
+      "file": "synth-heldout/clean/08_ticket_06.pdf",
+      "scan_file": "synth-heldout/scan/08_ticket_06.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_03",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "c289d1b60f378ff7ddf46830c8136ab77328b6bb7a122b4b61321cfdff852b7b",
+      "scan_sha256": "6119ef016cba0e51d03d7cb9aa9740bfe83ee34375257d522375d9ec35dbff6e"
+    },
+    {
+      "doc_id": "haul_03",
+      "file": "synth-heldout/clean/09_haul_03.pdf",
+      "scan_file": "synth-heldout/scan/09_haul_03.pdf",
+      "class": "hauling_log",
+      "packet": "ticket_03",
+      "pages": [
+        3
+      ],
+      "page_count": 1,
+      "sha256": "72311f76d59cc3d84b2c1c791f0f9ef34784d977e3382834f6d2272c32cfadaa",
+      "scan_sha256": "35b0600270bbf7e9d06f3f269f5dc8d9c7e5a1ec7633282ab997665764cfb8ac"
+    },
+    {
+      "doc_id": "ticket_07",
+      "file": "synth-heldout/clean/10_ticket_07.pdf",
+      "scan_file": "synth-heldout/scan/10_ticket_07.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_04",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "e31da47b089879cb2ea58def4c91f2b53b1edb83c4341c0fd85cb189bc273b4e",
+      "scan_sha256": "4c21c73a5d13fdd21d7b25e3e0d74164b5fb68026506153feb711fbaa7d4a18f"
+    },
+    {
+      "doc_id": "ticket_08",
+      "file": "synth-heldout/clean/11_ticket_08.pdf",
+      "scan_file": "synth-heldout/scan/11_ticket_08.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_04",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "90d83f92d02b6f91746262c0df36d39ce22e8f48b12b687f2ff4ab7428f27fa4",
+      "scan_sha256": "0d4a0d2032d2a5ffaf1cf3b4af7e9bbd29d19c2e7f49f63b1f93de229f6fce73"
+    },
+    {
+      "doc_id": "invoice_01",
+      "file": "synth-heldout/clean/12_invoice_01.pdf",
+      "scan_file": "synth-heldout/scan/12_invoice_01.pdf",
+      "class": "invoice",
+      "packet": "ticket_04",
+      "pages": [
+        3
+      ],
+      "page_count": 1,
+      "sha256": "162fbb6325c445d42b96e2f0ca36f0448157d0c39e343550f5c169b7174325e6",
+      "scan_sha256": "a2b89e8408095e2d8a19299c467ab60241da9a68e1b79e07114a3f0b7b984395"
+    },
+    {
+      "doc_id": "ticket_09",
+      "file": "synth-heldout/clean/13_ticket_09.pdf",
+      "scan_file": "synth-heldout/scan/13_ticket_09.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_05",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "91e27fac70322e9b55d3097fca3e349c6d542b6bd85554b41253d27e61721813",
+      "scan_sha256": "a7d334300a130fd3d19fa94382778d13e62febd7163f9dd0f4b56b2753cb9801"
+    },
+    {
+      "doc_id": "ticket_10",
+      "file": "synth-heldout/clean/14_ticket_10.pdf",
+      "scan_file": "synth-heldout/scan/14_ticket_10.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_05",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "4267af25eb59d1e3a46529231d14ef0030e355b4a5f18dc48ca00441a5716e9b",
+      "scan_sha256": "e0bef3ce1f83d72c3f1314059562cd0f0a692665792e996a381c442bd0c61bd2"
+    },
+    {
+      "doc_id": "invoice_03",
+      "file": "synth-heldout/clean/15_invoice_03.pdf",
+      "scan_file": "synth-heldout/scan/15_invoice_03.pdf",
+      "class": "invoice",
+      "packet": "ticket_05",
+      "pages": [
+        3
+      ],
+      "page_count": 1,
+      "sha256": "88e332b61065e26ae9b5cd5667bca75b9b6ace2e864b6641267b8a64b4f9ea10",
+      "scan_sha256": "fbefcdaed43d493f38405b3d92715ef8f00b2dea81beb536bc823ea4d3006a3b"
+    },
+    {
+      "doc_id": "ticket_11",
+      "file": "synth-heldout/clean/16_ticket_11.pdf",
+      "scan_file": "synth-heldout/scan/16_ticket_11.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_06",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "6592b18553180a3fa381969712f23df9f1d991206818101f4ed14d5f3e84ea5e",
+      "scan_sha256": "aa8f417b69eb979887f78bc5aea33b29333df8ce2d2a272d8685aba983db6e6c"
+    },
+    {
+      "doc_id": "ticket_12",
+      "file": "synth-heldout/clean/17_ticket_12.pdf",
+      "scan_file": "synth-heldout/scan/17_ticket_12.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_06",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "9e622fbdf0f3d27042e161dc1378aa512d23bd37643a823334aa587ef15a0e9e",
+      "scan_sha256": "7b620b81886f9263b1bd1f99d0eccd8ea119cf873f9c0e672ad40c4f732e9dd4"
+    },
+    {
+      "doc_id": "invoice_04",
+      "file": "synth-heldout/clean/18_invoice_04.pdf",
+      "scan_file": "synth-heldout/scan/18_invoice_04.pdf",
+      "class": "invoice",
+      "packet": "ticket_06",
+      "pages": [
+        3
+      ],
+      "page_count": 1,
+      "sha256": "1b3c39c265598e45f6bc6a1c7b9d2c038fe335fa0256dfb237ff61499c2ec4fb",
+      "scan_sha256": "2157971c0e9e2735b160f03abad6656fe79269b0748f35d60c5e0aecf3f5e6e3"
+    },
+    {
+      "doc_id": "ticket_13",
+      "file": "synth-heldout/clean/19_ticket_13.pdf",
+      "scan_file": "synth-heldout/scan/19_ticket_13.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_07",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "0177dab59c0e7924019c5af590e03c50d8756e3b21429d5243e2efeff82b536f",
+      "scan_sha256": "5c1f1d72decd1da889fe61f58b6c9f8d8f73dfa82056111167b64070ee8aeea9"
+    },
+    {
+      "doc_id": "ticket_14",
+      "file": "synth-heldout/clean/20_ticket_14.pdf",
+      "scan_file": "synth-heldout/scan/20_ticket_14.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_07",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "f0d5205b6938fbd59b87cc9fc6e6f8a9d60e9dde0ff428feef2f3116d8a86354",
+      "scan_sha256": "9029e715834c1771d0bc22cd817d3fe703175111ba8d9936fb7ee86fa39ca528"
+    },
+    {
+      "doc_id": "ticket_15",
+      "file": "synth-heldout/clean/21_ticket_15.pdf",
+      "scan_file": "synth-heldout/scan/21_ticket_15.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_08",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "d69127774e22798f42c595a93f6e9fc21b23d96c0d4515e441fa76ad5feb0db7",
+      "scan_sha256": "1e8f31f1d17804474612d27a1ccbe098bab907da97355422bc134da67b2e4d75"
+    },
+    {
+      "doc_id": "ticket_16",
+      "file": "synth-heldout/clean/22_ticket_16.pdf",
+      "scan_file": "synth-heldout/scan/22_ticket_16.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_08",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "8ce73a3f4fd0c2b9c1f2d473b3da88a42ed19aa406faaa4bc177715cc339a3a7",
+      "scan_sha256": "d33222b94391158c202598d3d38f4cf6d04f777b0aad9eaf12749a3f689e5c77"
+    },
+    {
+      "doc_id": "ticket_17",
+      "file": "synth-heldout/clean/23_ticket_17.pdf",
+      "scan_file": "synth-heldout/scan/23_ticket_17.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_09",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "e889cca3b723deb2967bb93a86c213d59528cba3107aecd8e661b998d1eec22f",
+      "scan_sha256": "8fc5e8d67c244b041fb2b9b75730384546b20a1038f477bac71c244cdf81e783"
+    },
+    {
+      "doc_id": "ticket_18",
+      "file": "synth-heldout/clean/24_ticket_18.pdf",
+      "scan_file": "synth-heldout/scan/24_ticket_18.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_09",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "9e953af03ce516bbd373c2a357143496480f4d169ab1956d855511e84305f3bb",
+      "scan_sha256": "e5527cc6bd0df254f02ce2e825acabc8eb190e0ba4c495735500011958bb1a92"
+    },
+    {
+      "doc_id": "ticket_19",
+      "file": "synth-heldout/clean/25_ticket_19.pdf",
+      "scan_file": "synth-heldout/scan/25_ticket_19.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_10",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "6f122e1ffe02bac4b74cdf92d030515549b76b6cd757a05a35c1c111ce71e812",
+      "scan_sha256": "f1da365509e4d03fd5117d0a66a33688b80c34838f715e9b4803125fc57c6870"
+    },
+    {
+      "doc_id": "ticket_20",
+      "file": "synth-heldout/clean/26_ticket_20.pdf",
+      "scan_file": "synth-heldout/scan/26_ticket_20.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_10",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "61dc3d6869b0c5badd343e068ce81f3d658a4bc70f7a51bb66904fc0d5184573",
+      "scan_sha256": "c1251cf996ba0f0a43adb1b0c841ea50b69cb502c67478975b02bb2667b3531e"
+    },
+    {
+      "doc_id": "haul_04",
+      "file": "synth-heldout/clean/27_haul_04.pdf",
+      "scan_file": "synth-heldout/scan/27_haul_04.pdf",
+      "class": "hauling_log",
+      "packet": "ticket_10",
+      "pages": [
+        3
+      ],
+      "page_count": 1,
+      "sha256": "6849aec677203e34d35ecff6502ad85689d408054ce86d9247b4acc59fa40661",
+      "scan_sha256": "9ff18d07cc641e322bae779f96ccac4088ea085cda4fbaa67f6b78114c9574be"
+    },
+    {
+      "doc_id": "ticket_21",
+      "file": "synth-heldout/clean/28_ticket_21.pdf",
+      "scan_file": "synth-heldout/scan/28_ticket_21.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_11",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "a709185f37b607f3817a5cad791988ba38903d65455cac5f981341bffef2fd92",
+      "scan_sha256": "831e45b430c26a5208b4b69427b02ec2f24cb4e05c263e5a70cabd5a42e2f72d"
+    },
+    {
+      "doc_id": "ticket_22",
+      "file": "synth-heldout/clean/29_ticket_22.pdf",
+      "scan_file": "synth-heldout/scan/29_ticket_22.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_11",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "ac3bd1770457607e91aaa7ff0e3e9df4ca3dfffa3a3ac35207c98e4067e5a925",
+      "scan_sha256": "f5c8b5a223341ab0c43ed7777abe86797375792d0a81f55655bb649f099e72ea"
+    },
+    {
+      "doc_id": "haul_05",
+      "file": "synth-heldout/clean/30_haul_05.pdf",
+      "scan_file": "synth-heldout/scan/30_haul_05.pdf",
+      "class": "hauling_log",
+      "packet": "ticket_11",
+      "pages": [
+        3
+      ],
+      "page_count": 1,
+      "sha256": "33b12155f038052666a0cddd2ee44837860d29938581d03df6c9a8217925c402",
+      "scan_sha256": "7e95768cc488231f78158897a287d9a18f70260e687998cb2a63e1e6c7b22d76"
+    },
+    {
+      "doc_id": "ticket_23",
+      "file": "synth-heldout/clean/31_ticket_23.pdf",
+      "scan_file": "synth-heldout/scan/31_ticket_23.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_12",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "ce9d0db659e854aaf65c939fe1de84588e08e4b493b0658b63c0b10d787bf7f7",
+      "scan_sha256": "cc3b2bd63033377d78a9bb1d1f9877284b60feb4548d0c5c87c380f38b1c63af"
+    },
+    {
+      "doc_id": "ticket_24",
+      "file": "synth-heldout/clean/32_ticket_24.pdf",
+      "scan_file": "synth-heldout/scan/32_ticket_24.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_12",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "44acd60465807150ee7a477b85425c807788dde0f0690a2b96955c2f4cc251e9",
+      "scan_sha256": "cd513e1d5d1c41a90621b622b504bcdf46ae84ed8a9ec51384c762eed17b2326"
+    },
+    {
+      "doc_id": "haul_06",
+      "file": "synth-heldout/clean/33_haul_06.pdf",
+      "scan_file": "synth-heldout/scan/33_haul_06.pdf",
+      "class": "hauling_log",
+      "packet": "ticket_12",
+      "pages": [
+        3
+      ],
+      "page_count": 1,
+      "sha256": "4a68311700b44699ab79fa2e5b5bdbdcd548dd930953b35d0e28d06fa7c89c30",
+      "scan_sha256": "f1cf883d8c1bf37b76dde3ffc7ecfce7c148b841d29f1ae14ec33d0087b14852"
+    },
+    {
+      "doc_id": "ticket_25",
+      "file": "synth-heldout/clean/34_ticket_25.pdf",
+      "scan_file": "synth-heldout/scan/34_ticket_25.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_13",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "2ee95739f650ee7c1035bcc34c1563e1df55e5f1d6a1aba8fe599069ab770250",
+      "scan_sha256": "3c766cbb7ec102b4c14ca6eedccdb78380399cd5b1012b01b5851d96d732d4d8"
+    },
+    {
+      "doc_id": "ticket_26",
+      "file": "synth-heldout/clean/35_ticket_26.pdf",
+      "scan_file": "synth-heldout/scan/35_ticket_26.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_13",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "629e598e6da7fe387a217c71182198e7411f7eae5beacb7ecc6fc8b96b4bfa6c",
+      "scan_sha256": "a3d8b6f1bd89493ac04507d41ec34081d0db2dfac29f07562f29415314bc44c2"
+    },
+    {
+      "doc_id": "ticket_27",
+      "file": "synth-heldout/clean/36_ticket_27.pdf",
+      "scan_file": "synth-heldout/scan/36_ticket_27.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_14",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "6cdce1d9db26c954fe820d7da180b8bf60b2c76a6ea99caa5e61fcf420004a1b",
+      "scan_sha256": "82b2c994b7375215f0e12fd7b69a983aef6f9f6363e9bc784582f6c595bce8a6"
+    },
+    {
+      "doc_id": "ticket_28",
+      "file": "synth-heldout/clean/37_ticket_28.pdf",
+      "scan_file": "synth-heldout/scan/37_ticket_28.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_14",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "352ccd024ec00134b22cfc34a1c96afc83ef361b1deb936d8d59690f05871014",
+      "scan_sha256": "8083029e66fcbb444608cb628d0b4cc4d677574065b3904ae9dc776ce6da01b3"
+    },
+    {
+      "doc_id": "ticket_29",
+      "file": "synth-heldout/clean/38_ticket_29.pdf",
+      "scan_file": "synth-heldout/scan/38_ticket_29.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_15",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "08836011b9854c0ac2482de730d2d33a13c6473952cb7f72388588682d251a17",
+      "scan_sha256": "9891293db7cb134d6f9524187f3c5c354d3d6d649a2c71f8c3d956234da0ebd2"
+    },
+    {
+      "doc_id": "ticket_30",
+      "file": "synth-heldout/clean/39_ticket_30.pdf",
+      "scan_file": "synth-heldout/scan/39_ticket_30.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_15",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "f45ce63e094321ceb6840632135775d61e2139fe7c984bf53c671b8ec225eef9",
+      "scan_sha256": "999aaa28e29a8f77048f7a4b17e285b3fb4c3d83f26c14c95ef1cdfaff84c4fd"
+    },
+    {
+      "doc_id": "ticket_31",
+      "file": "synth-heldout/clean/40_ticket_31.pdf",
+      "scan_file": "synth-heldout/scan/40_ticket_31.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_16",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "60f044c355f881059ca455caac40e877faeac8cf9c2ec0311f8b2140f42720bf",
+      "scan_sha256": "ca6d0db67968cd2638221a02b61f3e2b8fb3f72002c529a223619488f4161fe7"
+    },
+    {
+      "doc_id": "ticket_32",
+      "file": "synth-heldout/clean/41_ticket_32.pdf",
+      "scan_file": "synth-heldout/scan/41_ticket_32.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_17",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "af1e6f8ecb40b0df562d5f32eb971b780daa1cec7350d85450c98c78bcc32f59",
+      "scan_sha256": "c0631dae5020a37c3d305b2633dd150c642924d973fe5e8a7c6b59c579d61953"
+    },
+    {
+      "doc_id": "ticket_33",
+      "file": "synth-heldout/clean/42_ticket_33.pdf",
+      "scan_file": "synth-heldout/scan/42_ticket_33.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_18",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "b2b4770562fb8e41f6cdd1604b7b468ba4bb00263a235cdebb039fd8157a1687",
+      "scan_sha256": "6209d051b75291e4d68bea2d9295565c32762d7d30f970ea6d3f8bbf9f10658e"
+    },
+    {
+      "doc_id": "ticket_34",
+      "file": "synth-heldout/clean/43_ticket_34.pdf",
+      "scan_file": "synth-heldout/scan/43_ticket_34.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_19",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "04de9518579bcd5d3d9832fa5eac152754b0988b69424a55b994d0198b201dc5",
+      "scan_sha256": "3e1a621800b56f167e7ce5f42136ce5780d18f8b0fc84f6cfd3ce754b4b6f318"
+    },
+    {
+      "doc_id": "ticket_35",
+      "file": "synth-heldout/clean/44_ticket_35.pdf",
+      "scan_file": "synth-heldout/scan/44_ticket_35.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_20",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "3fa754ed185e3e7d418a54c32d1fd3203807bce66fe71c96c44a3c5cf803b14f",
+      "scan_sha256": "00f01d276c0f853d06203333b3930242935128c5624a24c7c5497e6c706e9281"
+    },
+    {
+      "doc_id": "ticket_36",
+      "file": "synth-heldout/clean/45_ticket_36.pdf",
+      "scan_file": "synth-heldout/scan/45_ticket_36.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_21",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "6fed8a5aad58160b342d81c49bab9b9452414d60c73fb5c5ab852e6a50c46867",
+      "scan_sha256": "3cefa78b4f794f436f7800ff27898063009657efed83a66b58143ab6f459da28"
+    },
+    {
+      "doc_id": "ticket_37",
+      "file": "synth-heldout/clean/46_ticket_37.pdf",
+      "scan_file": "synth-heldout/scan/46_ticket_37.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_22",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "7e766ab0c0b024686891c181e9de0f8064a259e0bb6c827ed294c4cef3b6f04d",
+      "scan_sha256": "49015f1b9eb772ac19061f47c226a7f1d2523dc6dbd5a99b4c1ae7035543d1c0"
+    },
+    {
+      "doc_id": "ticket_38",
+      "file": "synth-heldout/clean/47_ticket_38.pdf",
+      "scan_file": "synth-heldout/scan/47_ticket_38.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_23",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "4ead73ddae3756cbff3671aa5151c910a1916d45f7a5ae0a6094e642e5056c4a",
+      "scan_sha256": "5667ea9ba389953b6e0d212c7e462a3e8017ee77c2ac0a4a0de0e06061f43037"
+    },
+    {
+      "doc_id": "ticket_39",
+      "file": "synth-heldout/clean/48_ticket_39.pdf",
+      "scan_file": "synth-heldout/scan/48_ticket_39.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_24",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "23243bd0a4224c52d8f4f0a7b8082227d530ceff5ed431c596333cbb165240eb",
+      "scan_sha256": "04a67b0f1926163662cf37a0f74109c8573196227adb5e5e12d67892155ec6c1"
+    },
+    {
+      "doc_id": "ticket_40",
+      "file": "synth-heldout/clean/49_ticket_40.pdf",
+      "scan_file": "synth-heldout/scan/49_ticket_40.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_25",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "8f8f114ac29570648a0935d71484f52f6587bf8770ec46f58dc7ae4f76b96cc5",
+      "scan_sha256": "c16b2ede43761df3c59c2e1db28ab69c08aa161426d14e6051647ab437802c84"
+    },
+    {
+      "doc_id": "haul_07",
+      "file": "synth-heldout/clean/50_haul_07.pdf",
+      "scan_file": "synth-heldout/scan/50_haul_07.pdf",
+      "class": "hauling_log",
+      "packet": "ticket_25",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "fb1a031e1df727df878621f65ad5289463a1f67e45ba8f0884a76d7a671ec290",
+      "scan_sha256": "46c50cc139f268286c2e51c18646a36d360b983b1564a226ac54a7a3a5302b5e"
+    },
+    {
+      "doc_id": "ticket_41",
+      "file": "synth-heldout/clean/51_ticket_41.pdf",
+      "scan_file": "synth-heldout/scan/51_ticket_41.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_26",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "e902e1140f4476c8d2184051ea2a17b9ec5825e074ab7ca189d346d19e670661",
+      "scan_sha256": "21b910d804e13cadd4fc69f9f1ab35dca82758d91d6fff6ed6bc285d461eb235"
+    },
+    {
+      "doc_id": "ticket_42",
+      "file": "synth-heldout/clean/52_ticket_42.pdf",
+      "scan_file": "synth-heldout/scan/52_ticket_42.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_27",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "2a11c7651b327295db9afa31fd49c911db8b48100141417cc8a46b7a0c55e2f2",
+      "scan_sha256": "715558bb9c50bd09c17a5a642151d6ded22178442297d03ecc3a35a1663fa8ae"
+    },
+    {
+      "doc_id": "haul_08",
+      "file": "synth-heldout/clean/53_haul_08.pdf",
+      "scan_file": "synth-heldout/scan/53_haul_08.pdf",
+      "class": "hauling_log",
+      "packet": "ticket_27",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "46c7da6e9abe328001153a115b4394acbda8e41275706635ce826bac20ebc7f3",
+      "scan_sha256": "6c10b0a4fdd42e7c2e259193abcac70358ff8aee87f17272c4538da912a554ea"
+    },
+    {
+      "doc_id": "ticket_43",
+      "file": "synth-heldout/clean/54_ticket_43.pdf",
+      "scan_file": "synth-heldout/scan/54_ticket_43.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_28",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "e8b462c4f1f1d550562983a0d4b0843121c1666229225eb4c205042ef51b74aa",
+      "scan_sha256": "0f549068799a534335c610c53a490cfd6a46d4cbe02f19a932997c09b6a9d498"
+    },
+    {
+      "doc_id": "ticket_44",
+      "file": "synth-heldout/clean/55_ticket_44.pdf",
+      "scan_file": "synth-heldout/scan/55_ticket_44.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_29",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "9f0284228edcf65be380af1276e1395b52cf349030a34566061490e96671119f",
+      "scan_sha256": "62dceca7a98dd3eb8eb9865a6c3fcf5f1076fcb1c67eb28141cb1386faa53bee"
+    },
+    {
+      "doc_id": "haul_09",
+      "file": "synth-heldout/clean/56_haul_09.pdf",
+      "scan_file": "synth-heldout/scan/56_haul_09.pdf",
+      "class": "hauling_log",
+      "packet": "ticket_29",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "6b6aca8620bb9a7d761fc9f7a3b09394b85c55bea7753ef70ac4da39f4b7e4df",
+      "scan_sha256": "f654d672087b94660fc01a85efbd3ed61374ec2d5665266a16d8408ae6a7d651"
+    },
+    {
+      "doc_id": "ticket_45",
+      "file": "synth-heldout/clean/57_ticket_45.pdf",
+      "scan_file": "synth-heldout/scan/57_ticket_45.pdf",
+      "class": "field_ticket",
+      "packet": "ticket_30",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "59caac1f5dd71233d26742ec20b00db8c13683b7d5e3516342f58d5eb4f67440",
+      "scan_sha256": "d76ad7c164ab99613daf39cb1309140ac91247c156f130e95486eb59333a3bac"
+    },
+    {
+      "doc_id": "invoice_02",
+      "file": "synth-heldout/clean/58_invoice_02.pdf",
+      "scan_file": "synth-heldout/scan/58_invoice_02.pdf",
+      "class": "invoice",
+      "packet": "ticket_30",
+      "pages": [
+        2
+      ],
+      "page_count": 1,
+      "sha256": "63b501113a785ef1925297c5ca7784f0479013242b9d8ebd2b3dbf919d3f9f23",
+      "scan_sha256": "46e7995e603c6e25928e5ea6f839abd2e53452a8d5351788b66b624f7b002413"
+    },
+    {
+      "doc_id": "cover_01",
+      "file": "synth-heldout/clean/59_cover_01.pdf",
+      "scan_file": "synth-heldout/scan/59_cover_01.pdf",
+      "class": "afe_cover",
+      "packet": "afe_01",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "e6e02ab48828d87381acd7c6cb9a5f6eda02a215e338985b646998b1b5306ecf",
+      "scan_sha256": "c23282431871e33327a813952faa2373767d37db21b42e6c9dd38ec11268e108"
+    },
+    {
+      "doc_id": "afe_01",
+      "file": "synth-heldout/clean/60_afe_01.pdf",
+      "scan_file": "synth-heldout/scan/60_afe_01.pdf",
+      "class": "afe",
+      "packet": "afe_01",
+      "pages": [
+        2,
+        3
+      ],
+      "page_count": 2,
+      "sha256": "b37722e5ac5e9312eb43a47b8459b0ccd8b8303dc4ce3b3c59c9b7c331327f44",
+      "scan_sha256": "ef0708253027b25d8a66b1b8861f70e9cb068dfa58d142f5d059bd23defc6877"
+    },
+    {
+      "doc_id": "cover_02",
+      "file": "synth-heldout/clean/61_cover_02.pdf",
+      "scan_file": "synth-heldout/scan/61_cover_02.pdf",
+      "class": "afe_cover",
+      "packet": "afe_02",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "4c9a563ed5682b029f8e84ee4671c34a6a330806f982ec31a691749049644fd7",
+      "scan_sha256": "3bf5c40015e964a5c3ec1bd01274c08c010433aa297cb10b29853c82bee7144b"
+    },
+    {
+      "doc_id": "afe_02",
+      "file": "synth-heldout/clean/62_afe_02.pdf",
+      "scan_file": "synth-heldout/scan/62_afe_02.pdf",
+      "class": "afe",
+      "packet": "afe_02",
+      "pages": [
+        2,
+        3
+      ],
+      "page_count": 2,
+      "sha256": "b54960282eeae1d68259888955a739d7da86b29addf1cef0b4143838441043c6",
+      "scan_sha256": "c9902ae2731d79e3ee40fae8bca66d955543a044467c9cecb78fa74a9125328b"
+    },
+    {
+      "doc_id": "cover_03",
+      "file": "synth-heldout/clean/63_cover_03.pdf",
+      "scan_file": "synth-heldout/scan/63_cover_03.pdf",
+      "class": "afe_cover",
+      "packet": "afe_03",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "57078c148e2b675a1b5a551d9287d2e237fa6d8afd7af1c5cb9ab59e5a64f639",
+      "scan_sha256": "05976ca6e9d3c9ee8833f82505a87337eaeb660bb6444c93036b930dbd09fc20"
+    },
+    {
+      "doc_id": "afe_03",
+      "file": "synth-heldout/clean/64_afe_03.pdf",
+      "scan_file": "synth-heldout/scan/64_afe_03.pdf",
+      "class": "afe",
+      "packet": "afe_03",
+      "pages": [
+        2,
+        3
+      ],
+      "page_count": 2,
+      "sha256": "9561aa6b1e144328a3e04060bc87a2ba53775540012185c30091a15b7354f791",
+      "scan_sha256": "a2b9ff33b770097b416cd21eab0082d3f3bb6025847abc519499459435f3f53d"
+    },
+    {
+      "doc_id": "cover_04",
+      "file": "synth-heldout/clean/65_cover_04.pdf",
+      "scan_file": "synth-heldout/scan/65_cover_04.pdf",
+      "class": "afe_cover",
+      "packet": "afe_04",
+      "pages": [
+        1
+      ],
+      "page_count": 1,
+      "sha256": "eaea16f6ece95ed7d628c648f5827a9bcabd2892d245a5ff10ed03ee6f487cac",
+      "scan_sha256": "084f0b9cebb0964ca8fd73db15ba0127073e7392e874686372caa8bf8a7a36b8"
+    },
+    {
+      "doc_id": "afe_04",
+      "file": "synth-heldout/clean/66_afe_04.pdf",
+      "scan_file": "synth-heldout/scan/66_afe_04.pdf",
+      "class": "afe",
+      "packet": "afe_04",
+      "pages": [
+        2,
+        3
+      ],
+      "page_count": 2,
+      "sha256": "70ef4553dd6736c6a2478690a86033b07b216eabb377c7ea5cd65c4655c90795",
+      "scan_sha256": "9bf5bea97a5b60e90e4691f33b1b9ba406c705fd64edf83316ac261fe3c8b59e"
+    },
+    {
+      "doc_id": "jib_01",
+      "file": "synth-heldout/clean/67_jib_01.pdf",
+      "scan_file": "synth-heldout/scan/67_jib_01.pdf",
+      "class": "jib_statement",
+      "packet": "jib_01",
+      "pages": [
+        1,
+        2
+      ],
+      "page_count": 2,
+      "sha256": "78b7bc54803ac441d087f9ea16259066a9a9fc678ad4ee78d6273ac5bc2369fc",
+      "scan_sha256": "03f2eb5bb6544bbe86c225d0b5e611bd6b5c3421980c76b7720cd65da2e2aee3"
+    },
+    {
+      "doc_id": "jib_02",
+      "file": "synth-heldout/clean/68_jib_02.pdf",
+      "scan_file": "synth-heldout/scan/68_jib_02.pdf",
+      "class": "jib_statement",
+      "packet": "jib_02",
+      "pages": [
+        1,
+        2
+      ],
+      "page_count": 2,
+      "sha256": "3ab3795f4d2098b18631461f302467ecaa3a4b6f360bf9b6f58b55da51408e0d",
+      "scan_sha256": "73cc5c8c6bfc598f8205d8714615019e5526ca14483798543336eda6d13de115"
+    },
+    {
+      "doc_id": "jib_03",
+      "file": "synth-heldout/clean/69_jib_03.pdf",
+      "scan_file": "synth-heldout/scan/69_jib_03.pdf",
+      "class": "jib_statement",
+      "packet": "jib_03",
+      "pages": [
+        1,
+        2
+      ],
+      "page_count": 2,
+      "sha256": "170d9647acb3ac23176e4369b6f260fd1dd4852bfb9f770206206eb3abf85a2e",
+      "scan_sha256": "8a73864844af3dec22c5840e1b40bc6c7a4c4145a17cd619b7869bf99cae46a1"
+    },
+    {
+      "doc_id": "jib_04",
+      "file": "synth-heldout/clean/70_jib_04.pdf",
+      "scan_file": "synth-heldout/scan/70_jib_04.pdf",
+      "class": "jib_statement",
+      "packet": "jib_04",
+      "pages": [
+        1,
+        2
+      ],
+      "page_count": 2,
+      "sha256": "8cb08a1d5785689d2f15ae2c96ee3e39f1682c8b02909d92b01d57bafaf91fff",
+      "scan_sha256": "b27370d207db052a5e9c21a1a6a77739b0b1e14e7384c3462d69d02410a7792e"
+    },
+    {
+      "doc_id": "jib_05",
+      "file": "synth-heldout/clean/71_jib_05.pdf",
+      "scan_file": "synth-heldout/scan/71_jib_05.pdf",
+      "class": "jib_statement",
+      "packet": "jib_05",
+      "pages": [
+        1,
+        2
+      ],
+      "page_count": 2,
+      "sha256": "8d6e25766fbecf13a8489ef0b36dbd54ad5abbb1e97d8a6a7fcc76dce6e85973",
+      "scan_sha256": "30744ddd05199c6bbe3f386ce3e918248ffeffe6b81f319e38162e9b99aa0187"
+    }
+  ],
+  "packets": [
+    {
+      "packet_id": "ticket_01",
+      "file": "synth-heldout/clean/packets/ticket_01.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_01.pdf",
+      "pages": 3,
+      "split_truth": {
+        "field_ticket": [
+          1,
+          2
+        ],
+        "hauling_log": [
+          3
+        ]
+      },
+      "sha256": "a8866008fac432b9f19a6874c0268dfb540b93279c86f98528413e5bfe370313",
+      "scan_sha256": "f0e7052d2a8bbb9907b9c4d10ee0b31db2de7129909f9c8b7dd1019ae76d1189"
+    },
+    {
+      "packet_id": "ticket_02",
+      "file": "synth-heldout/clean/packets/ticket_02.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_02.pdf",
+      "pages": 3,
+      "split_truth": {
+        "field_ticket": [
+          1,
+          2
+        ],
+        "hauling_log": [
+          3
+        ]
+      },
+      "sha256": "ccd4112d2f9860e953111c5d482120ca1d93d8c5afa893e1aa539c029551ea85",
+      "scan_sha256": "14797935c845a7ee553d84cc5da838eada3ac8e1e9f76e8338741c506393ec4c"
+    },
+    {
+      "packet_id": "ticket_03",
+      "file": "synth-heldout/clean/packets/ticket_03.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_03.pdf",
+      "pages": 3,
+      "split_truth": {
+        "field_ticket": [
+          1,
+          2
+        ],
+        "hauling_log": [
+          3
+        ]
+      },
+      "sha256": "a81a85eb0055d53381cf2d2add080632d8b06a04e247675bcd63a8950a53927c",
+      "scan_sha256": "fe59f7cf559ea82c7dc59b44df319faf5123067970227b7119149f014cb89496"
+    },
+    {
+      "packet_id": "ticket_04",
+      "file": "synth-heldout/clean/packets/ticket_04.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_04.pdf",
+      "pages": 3,
+      "split_truth": {
+        "field_ticket": [
+          1,
+          2
+        ],
+        "invoice": [
+          3
+        ]
+      },
+      "sha256": "50ba0558123d772888fc6361c1db67bf2d0f7c434b7f8123f219230762577497",
+      "scan_sha256": "b53d5bc12abfb2bd0ddb0c5299a798b0440c67d28bc7247f2aae2aefab67c018"
+    },
+    {
+      "packet_id": "ticket_05",
+      "file": "synth-heldout/clean/packets/ticket_05.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_05.pdf",
+      "pages": 3,
+      "split_truth": {
+        "field_ticket": [
+          1,
+          2
+        ],
+        "invoice": [
+          3
+        ]
+      },
+      "sha256": "9f77020fa2356ffec73cc2077ff10110119be0d8fba48f7c5db15cc130474424",
+      "scan_sha256": "b5e92835f829c910715df45b502b05e3c6b1fd2f85cc50b136f514c2088652da"
+    },
+    {
+      "packet_id": "ticket_06",
+      "file": "synth-heldout/clean/packets/ticket_06.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_06.pdf",
+      "pages": 3,
+      "split_truth": {
+        "field_ticket": [
+          1,
+          2
+        ],
+        "invoice": [
+          3
+        ]
+      },
+      "sha256": "65875f67d0e92cd3c6d90d2c3654e27ccca21a69f619dfc7f287c5a6dd1cb350",
+      "scan_sha256": "f417f65fb56b6ab2a1da93511f6629a09063e41079b8bd0466c93bcee0c70413"
+    },
+    {
+      "packet_id": "ticket_07",
+      "file": "synth-heldout/clean/packets/ticket_07.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_07.pdf",
+      "pages": 2,
+      "split_truth": {
+        "field_ticket": [
+          1,
+          2
+        ]
+      },
+      "sha256": "61dd2ae2c1c81b1d085b625dedb4fd02a7bcc30c1b09ecc32a7297f1ce9145e4",
+      "scan_sha256": "50e40631eb0cf486c01ca618a8ea2085907d6b0059c7389b52f0d101c7c5c198"
+    },
+    {
+      "packet_id": "ticket_08",
+      "file": "synth-heldout/clean/packets/ticket_08.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_08.pdf",
+      "pages": 2,
+      "split_truth": {
+        "field_ticket": [
+          1,
+          2
+        ]
+      },
+      "sha256": "271861fffc9276f6492b223828976d5f2097a893e58d25acaa7478f4662b0a1f",
+      "scan_sha256": "4a28a75239c71788e3045431b422d61f96681ef1c0217da2f44ab88a93351729"
+    },
+    {
+      "packet_id": "ticket_09",
+      "file": "synth-heldout/clean/packets/ticket_09.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_09.pdf",
+      "pages": 2,
+      "split_truth": {
+        "field_ticket": [
+          1,
+          2
+        ]
+      },
+      "sha256": "8d5653533eea5d5d32d2da568168a991a85feba3cb582937aee7ee13cd2a2701",
+      "scan_sha256": "baa2cf8fc05a95a0f5588a6852275a4539fa5de7b0f9343d1b90f5ab7edc2baf"
+    },
+    {
+      "packet_id": "ticket_10",
+      "file": "synth-heldout/clean/packets/ticket_10.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_10.pdf",
+      "pages": 3,
+      "split_truth": {
+        "field_ticket": [
+          1,
+          2
+        ],
+        "hauling_log": [
+          3
+        ]
+      },
+      "sha256": "f69f4c4f0909a9b5ce9ec46aa7f4dc3abc68f42758e99de8fd69d2c3ef932edf",
+      "scan_sha256": "f970fdeb06d139f73bba7a76e7112bdab649c295925db501e9e7cab0a59c7ff6"
+    },
+    {
+      "packet_id": "ticket_11",
+      "file": "synth-heldout/clean/packets/ticket_11.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_11.pdf",
+      "pages": 3,
+      "split_truth": {
+        "field_ticket": [
+          1,
+          2
+        ],
+        "hauling_log": [
+          3
+        ]
+      },
+      "sha256": "4bdd2d830684ef9992709935cffc44fa9e9323d1a74d85434e0625bd2fa65a71",
+      "scan_sha256": "334e631b44524777bc98afa2d94b4c40ca4a6b08916eec02412c233361a4d38f"
+    },
+    {
+      "packet_id": "ticket_12",
+      "file": "synth-heldout/clean/packets/ticket_12.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_12.pdf",
+      "pages": 3,
+      "split_truth": {
+        "field_ticket": [
+          1,
+          2
+        ],
+        "hauling_log": [
+          3
+        ]
+      },
+      "sha256": "30f5f5cdc5dba360098b00cd7221351949078d873a9ed029feefa12e0aac333a",
+      "scan_sha256": "789489d065cb7a1089bfc29351e47c451e4aee21a5b289f9f4d8ddfd61765fb5"
+    },
+    {
+      "packet_id": "ticket_13",
+      "file": "synth-heldout/clean/packets/ticket_13.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_13.pdf",
+      "pages": 2,
+      "split_truth": {
+        "field_ticket": [
+          1,
+          2
+        ]
+      },
+      "sha256": "aad645a0816304a338decf13738c7bb09b930362f118500dfaae9185a5b7d96e",
+      "scan_sha256": "0f04e02f2e800035077144feeafb3a95400d6e35a3c8f944244bb92ba264cf2f"
+    },
+    {
+      "packet_id": "ticket_14",
+      "file": "synth-heldout/clean/packets/ticket_14.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_14.pdf",
+      "pages": 2,
+      "split_truth": {
+        "field_ticket": [
+          1,
+          2
+        ]
+      },
+      "sha256": "8b309e542c02860796973be8040fd4e78177011ef3e8268c06401dd2a542b061",
+      "scan_sha256": "daa7fcabb28481a5192f266056e79cc690988e0c876fef8c61bd431b529ad5f7"
+    },
+    {
+      "packet_id": "ticket_15",
+      "file": "synth-heldout/clean/packets/ticket_15.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_15.pdf",
+      "pages": 2,
+      "split_truth": {
+        "field_ticket": [
+          1,
+          2
+        ]
+      },
+      "sha256": "c9a70779bbe4e688924be8c7a68e4b4dc41d51b234ac0c4915527e44adaac609",
+      "scan_sha256": "3792e3d3cdd416483213ebda551306c414e82a783ac1c9179115d9f132c3caea"
+    },
+    {
+      "packet_id": "ticket_16",
+      "file": "synth-heldout/clean/packets/ticket_16.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_16.pdf",
+      "pages": 1,
+      "split_truth": {
+        "field_ticket": [
+          1
+        ]
+      },
+      "sha256": "416e06c5c7d598f70d066a80c1798e6cd98ba22b0dca019f25b10b6bd80e85f6",
+      "scan_sha256": "863084c1c5413f322bea53ca95f5c2a10100bf0e4133f712cdc1f24fd8ffa7be"
+    },
+    {
+      "packet_id": "ticket_17",
+      "file": "synth-heldout/clean/packets/ticket_17.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_17.pdf",
+      "pages": 1,
+      "split_truth": {
+        "field_ticket": [
+          1
+        ]
+      },
+      "sha256": "7f2ce897003e4dbff4b70979902f0cf9e2235c664cebd6c6b4f6058eda73932f",
+      "scan_sha256": "634580fe4cba54a37fb840a054301258705e5086b98cd0178e4d4c2b547c4e6c"
+    },
+    {
+      "packet_id": "ticket_18",
+      "file": "synth-heldout/clean/packets/ticket_18.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_18.pdf",
+      "pages": 1,
+      "split_truth": {
+        "field_ticket": [
+          1
+        ]
+      },
+      "sha256": "7ad26f4f12ecd6b81edaad8d594db31c1e27479c634cd07b5e3f3b412a764f61",
+      "scan_sha256": "9a9bbba5dbbe89965f83857bd56ed55950d54097afd2606e2f0a90c9507384c1"
+    },
+    {
+      "packet_id": "ticket_19",
+      "file": "synth-heldout/clean/packets/ticket_19.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_19.pdf",
+      "pages": 1,
+      "split_truth": {
+        "field_ticket": [
+          1
+        ]
+      },
+      "sha256": "8539aacdf82673fd24106f290c3e84b5440673effbe34079db1db7bdc990f8b9",
+      "scan_sha256": "f53edd28ae92ddaaeaa0a499dce657b16ac14c10a71c568f3b3d8d81ad9f1f02"
+    },
+    {
+      "packet_id": "ticket_20",
+      "file": "synth-heldout/clean/packets/ticket_20.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_20.pdf",
+      "pages": 1,
+      "split_truth": {
+        "field_ticket": [
+          1
+        ]
+      },
+      "sha256": "c7e09b3b728d47e03dfe03a6719c5edd0ddbf6a206e26941914bacf36eb5fe3a",
+      "scan_sha256": "e5349ecde34f0cb5e5fefda8823bdc0c0477061f97ff30c44c2648df9235ae10"
+    },
+    {
+      "packet_id": "ticket_21",
+      "file": "synth-heldout/clean/packets/ticket_21.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_21.pdf",
+      "pages": 1,
+      "split_truth": {
+        "field_ticket": [
+          1
+        ]
+      },
+      "sha256": "8dd9b9dae62e576000c2405053cb9e35505af909dc734358e0346f87eb9352d7",
+      "scan_sha256": "0d1d6ebf28a57757d249db8f73280e45075d26f36352a1c4dbfe9112842a9b39"
+    },
+    {
+      "packet_id": "ticket_22",
+      "file": "synth-heldout/clean/packets/ticket_22.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_22.pdf",
+      "pages": 1,
+      "split_truth": {
+        "field_ticket": [
+          1
+        ]
+      },
+      "sha256": "37385bd79e495c277976d8cde43582c951de9ef58e524a2d4957fa68fbef4844",
+      "scan_sha256": "6ccff4c1a4380a0457ef1510669978b9b6f108358f94fa8cfdfeeea4da4369b2"
+    },
+    {
+      "packet_id": "ticket_23",
+      "file": "synth-heldout/clean/packets/ticket_23.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_23.pdf",
+      "pages": 1,
+      "split_truth": {
+        "field_ticket": [
+          1
+        ]
+      },
+      "sha256": "c12c9a9c57ed614c500b46fb03b14c5b2dd4377291c2df5d0a30912ce121df5f",
+      "scan_sha256": "dcb254469ca7ea1e526e0a7f9502c49ce9602f7da1356f381d15a711d6f0200e"
+    },
+    {
+      "packet_id": "ticket_24",
+      "file": "synth-heldout/clean/packets/ticket_24.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_24.pdf",
+      "pages": 1,
+      "split_truth": {
+        "field_ticket": [
+          1
+        ]
+      },
+      "sha256": "c3e20e686834e415103cd6d6a7c5283523bb94e21e25ea5b437bc6ed4d23a308",
+      "scan_sha256": "db4df84774187427b3b7c676593a5fa3e3c747e62c91c11fc9b18f91a9b0dd86"
+    },
+    {
+      "packet_id": "ticket_25",
+      "file": "synth-heldout/clean/packets/ticket_25.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_25.pdf",
+      "pages": 2,
+      "split_truth": {
+        "field_ticket": [
+          1
+        ],
+        "hauling_log": [
+          2
+        ]
+      },
+      "sha256": "d8cc7916eeb8f6d006d204dd8718845fa16b91ea2ef5b7dd7325aab7c185650e",
+      "scan_sha256": "15335c1eade124c026552628838df06fd5d9271a7617d516c5a578e32a87799c"
+    },
+    {
+      "packet_id": "ticket_26",
+      "file": "synth-heldout/clean/packets/ticket_26.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_26.pdf",
+      "pages": 1,
+      "split_truth": {
+        "field_ticket": [
+          1
+        ]
+      },
+      "sha256": "2d66ac57ece223d1b3fc780df0336539583d15efb21f212e6fa8f667994c295e",
+      "scan_sha256": "5fe49849c7a28a714e508c87d1eaa10ee7cc5f9772060fc40851857815b00550"
+    },
+    {
+      "packet_id": "ticket_27",
+      "file": "synth-heldout/clean/packets/ticket_27.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_27.pdf",
+      "pages": 2,
+      "split_truth": {
+        "field_ticket": [
+          1
+        ],
+        "hauling_log": [
+          2
+        ]
+      },
+      "sha256": "e4da1ef4ef93f7b3b0d5f7318c0caedf1ae397ba293a6174fc0593562e88f70d",
+      "scan_sha256": "a15e36e713f172cbfed8c8c06a0c258a399ef3e04530dab9cad6793e55778ae8"
+    },
+    {
+      "packet_id": "ticket_28",
+      "file": "synth-heldout/clean/packets/ticket_28.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_28.pdf",
+      "pages": 1,
+      "split_truth": {
+        "field_ticket": [
+          1
+        ]
+      },
+      "sha256": "343537c8d503e79138784a1e5b4200c62f382f842028582be65371bd91d5e33d",
+      "scan_sha256": "c2238776ee57ee5787f7082d2630ddf6e3f44eae71d710d2de7cae71767758cb"
+    },
+    {
+      "packet_id": "ticket_29",
+      "file": "synth-heldout/clean/packets/ticket_29.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_29.pdf",
+      "pages": 2,
+      "split_truth": {
+        "field_ticket": [
+          1
+        ],
+        "hauling_log": [
+          2
+        ]
+      },
+      "sha256": "c16c221487e69b121087d291b7366f0d791ef595c8563571c7e71e321adb551f",
+      "scan_sha256": "b2b4e87db139d2376ff99c3931069e05021282c59a40e4d7c960d68bb1dbf07e"
+    },
+    {
+      "packet_id": "ticket_30",
+      "file": "synth-heldout/clean/packets/ticket_30.pdf",
+      "scan_file": "synth-heldout/scan/packets/ticket_30.pdf",
+      "pages": 2,
+      "split_truth": {
+        "field_ticket": [
+          1
+        ],
+        "invoice": [
+          2
+        ]
+      },
+      "sha256": "dda95ceb158c2916490f1e34d5afe17789cc0b96d0be0c974227f54c24c60971",
+      "scan_sha256": "0c0f4b04a8d46d758b7b21665f02e7540e9c94104c01b3265fa1fedc65dd3f99"
+    },
+    {
+      "packet_id": "afe_01",
+      "file": "synth-heldout/clean/packets/afe_01.pdf",
+      "scan_file": "synth-heldout/scan/packets/afe_01.pdf",
+      "pages": 3,
+      "split_truth": {
+        "afe_cover": [
+          1
+        ],
+        "afe": [
+          2,
+          3
+        ]
+      },
+      "sha256": "b82e4fe4533145741b0f2c36e92be6eca863a44d12c5532ae8a3792c7f9054fe",
+      "scan_sha256": "a96db8053b8e2908d3c9529c426d572ccfb71de00d599be93354efae4938fe11"
+    },
+    {
+      "packet_id": "afe_02",
+      "file": "synth-heldout/clean/packets/afe_02.pdf",
+      "scan_file": "synth-heldout/scan/packets/afe_02.pdf",
+      "pages": 3,
+      "split_truth": {
+        "afe_cover": [
+          1
+        ],
+        "afe": [
+          2,
+          3
+        ]
+      },
+      "sha256": "ec4d53757ac7b351e64a3409093a59e8c4bdb8c6774c2689fcbd7b6bd4b27650",
+      "scan_sha256": "92f845b59829a06bf31865114964e0c67ea11ffdd02aac9956b71abe57447e55"
+    },
+    {
+      "packet_id": "afe_03",
+      "file": "synth-heldout/clean/packets/afe_03.pdf",
+      "scan_file": "synth-heldout/scan/packets/afe_03.pdf",
+      "pages": 3,
+      "split_truth": {
+        "afe_cover": [
+          1
+        ],
+        "afe": [
+          2,
+          3
+        ]
+      },
+      "sha256": "34117adb2daa744623306090f16d159b94ba56d6d8dacd4d7dd2c4e52acb2bcd",
+      "scan_sha256": "95fb8c8a95f5e28ac0c4c7be9d24968005b00c7feb8ab2ff115070f92e01d7a8"
+    },
+    {
+      "packet_id": "afe_04",
+      "file": "synth-heldout/clean/packets/afe_04.pdf",
+      "scan_file": "synth-heldout/scan/packets/afe_04.pdf",
+      "pages": 3,
+      "split_truth": {
+        "afe_cover": [
+          1
+        ],
+        "afe": [
+          2,
+          3
+        ]
+      },
+      "sha256": "0419b761a9b2a7557691d6667f8102e430b4ffc0a3d00f89063a65ee8e2e065d",
+      "scan_sha256": "8b11b56bb1daf8ab0779ff3a849086e76ca0e2e4bb2744b15095f23e69cd036e"
+    },
+    {
+      "packet_id": "jib_01",
+      "file": "synth-heldout/clean/packets/jib_01.pdf",
+      "scan_file": "synth-heldout/scan/packets/jib_01.pdf",
+      "pages": 2,
+      "split_truth": {
+        "jib_statement": [
+          1,
+          2
+        ]
+      },
+      "sha256": "f2297f691bbc4403a73f655e758b6047d65630b225048c49ff4d0ad8151a9b24",
+      "scan_sha256": "89020e4aeb1030e9d46f5735f189a1559a47ea73610d5125fb37359fadc80ff0"
+    },
+    {
+      "packet_id": "jib_02",
+      "file": "synth-heldout/clean/packets/jib_02.pdf",
+      "scan_file": "synth-heldout/scan/packets/jib_02.pdf",
+      "pages": 2,
+      "split_truth": {
+        "jib_statement": [
+          1,
+          2
+        ]
+      },
+      "sha256": "7feed5b2eb95b415aad6a65fb41b961399996c9a77d9decdde9b7746982adc2d",
+      "scan_sha256": "a5065eff109d1c9fa6131214c9ac82ad6ecf599f2a4ab45e4c098bd9ed2d9523"
+    },
+    {
+      "packet_id": "jib_03",
+      "file": "synth-heldout/clean/packets/jib_03.pdf",
+      "scan_file": "synth-heldout/scan/packets/jib_03.pdf",
+      "pages": 2,
+      "split_truth": {
+        "jib_statement": [
+          1,
+          2
+        ]
+      },
+      "sha256": "ed83a99b2970672de3e70c976906d4c3973b337180f554bb6fe51f0371c85c69",
+      "scan_sha256": "4ef6aca8602d8b8852b9ba001f4d9766911fd7e55d07ab9e6e8c4ba1dcd7ce84"
+    },
+    {
+      "packet_id": "jib_04",
+      "file": "synth-heldout/clean/packets/jib_04.pdf",
+      "scan_file": "synth-heldout/scan/packets/jib_04.pdf",
+      "pages": 2,
+      "split_truth": {
+        "jib_statement": [
+          1,
+          2
+        ]
+      },
+      "sha256": "8b989dca752e330522e3a72a19de92577d2e83d92e11f2c94e29ec9f78535701",
+      "scan_sha256": "456b33a41ba910d7a504a4281e7ba05c3bbef75ac64083c0f0dd0781f6643e6e"
+    },
+    {
+      "packet_id": "jib_05",
+      "file": "synth-heldout/clean/packets/jib_05.pdf",
+      "scan_file": "synth-heldout/scan/packets/jib_05.pdf",
+      "pages": 2,
+      "split_truth": {
+        "jib_statement": [
+          1,
+          2
+        ]
+      },
+      "sha256": "79611e2f7f7202103edc0b7d47445e2b0158b9c33d494ef64f706d7323cd076d",
+      "scan_sha256": "ff159c7054b3fff3fe540308302770db627dffb6d59687da06e725c3756eb4c9"
+    }
+  ],
+  "references": {
+    "book": "synth-heldout/src/book.json",
+    "planted": "synth-heldout/planted.json",
+    "doi": "synth-heldout/reference/doi.json",
+    "contract_rates": "synth-heldout/reference/contract_rates.json",
+    "afe_election": "synth-heldout/reference/afe_election.json"
+  },
+  "planted_sha256": "17dfb9fb755a4c7d7d39ef0911ed87df09c3ff72824fe0ddd011229372928832"
+}

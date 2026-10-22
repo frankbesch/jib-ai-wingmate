@@ -1,0 +1,49 @@
+{
+ "permit_number": "918289",
+ "sequence": "99",
+ "county_code": "165",
+ "county": "GAINES",
+ "lease_name": "CARA",
+ "district": "8A",
+ "operator_number": "103194",
+ "application_received_date": "2026-08-30",
+ "operator_name": "ACTIVE IRON ENERGY, LLC",
+ "application_status": "Approved",
+ "permit_issue_date": "2026-09-03",
+ "fields": [
+  {
+   "field_number": "00020001",
+   "application_well_code": "B",
+   "completion_well_code": " "
+  }
+ ],
+ "well_number": "1",
+ "total_depth": 14500,
+ "type_of_application_code": "01",
+ "type_of_application": "New Drill",
+ "surface_section": "8",
+ "surface_block": "C44",
+ "surface_survey": "PSL/ O`NEAL, G L",
+ "surface_abstract": "1819",
+ "contiguous_acres": 332.0,
+ "miles_from_town": 6.0,
+ "direction_from_town": "SE",
+ "nearest_town": "SEMINOLE",
+ "lease_perpendiculars": {
+  "feet_1": 500.0,
+  "direction_1": "SOUTH",
+  "feet_2": 471.0,
+  "direction_2": "WEST"
+ },
+ "survey_perpendiculars": {
+  "feet_1": 500.0,
+  "direction_1": "SOUTH",
+  "feet_2": 5.0,
+  "direction_2": "EAST"
+ },
+ "horizontal_well_flag": false,
+ "directional_well_flag": false,
+ "api_number": "42-165-39050",
+ "grade": "SYSTEM-EXTRACTED",
+ "basis": "RRC daf420.dat 2026-09-04, OGA049M positions"
+}

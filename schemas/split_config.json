@@ -1,0 +1,11 @@
+{
+  "$comment": "Pulse /split split_config. Topic names match truth/split/*.json keys.",
+  "split_input": [
+    {"name": "w1_permit", "description": "Form W-1 Application for Permit to Drill pages: numbered items 1-32, purpose-of-filing checkboxes, field information table, certificate block."},
+    {"name": "plat", "description": "Surveyor plat drawings: map linework, scale, north arrow, distance calls, surveyor seal."},
+    {"name": "completion_report", "description": "Form W-2 or G-1 completion report pages."},
+    {"name": "well_log", "description": "Wireline log image pages with depth tracks and curves."},
+    {"name": "correspondence", "description": "Letters, notices, problem letters, or emails."},
+    {"name": "other", "description": "Anything else, including blank or illegible pages."}
+  ]
+}

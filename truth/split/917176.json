@@ -1,0 +1,42 @@
+{
+ "permit": "917176",
+ "total_pages": 5,
+ "splits": {
+  "w1_permit": [
+   1,
+   2,
+   3
+  ],
+  "plat": [
+   4,
+   5
+  ]
+ },
+ "documents": [
+  {
+   "class": "w1_permit",
+   "file": "917176_W1_AsApprovedW1-9-3-2026_LTR.pdf",
+   "pages": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "class": "plat",
+   "file": "917176_Plat_LO_GAC_AW_1H_REV6_S_LTR.pdf",
+   "pages": [
+    4
+   ]
+  },
+  {
+   "class": "plat",
+   "file": "917176_Plat_rev917176plat_LTR.pdf",
+   "pages": [
+    5
+   ]
+  }
+ ],
+ "grade": "OBSERVED",
+ "basis": "packet assembled from separately published RRC files"
+}

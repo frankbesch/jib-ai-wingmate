@@ -1,0 +1,20 @@
+OPERATIONS / OWNER RECORD
+
+
+# Vendor invoice
+
+
+Bill To: Zelvori Basin Operations LLC
+
+
+Invoice number: **OVI-641**
+Vendor: **Orvessa Field Services LLC**
+Invoice date: **2026-08-15**
+AFE number: **ZB-26-701**
+Well: **Nacrevale 7-QH**
+
+
+<table><thead><tr><td>Ticket ref</td><td>Description</td><td>Qty</td><td>Unit</td><td>Rate</td><td>Amount</td></tr></thead><tbody><tr><td>OV-8303</td><td>Field service bundle</td><td>1</td><td>each</td><td>1,320.00</td><td>1,320.00</td></tr><tr><td>OV-8304</td><td>Field service bundle</td><td>1</td><td>each</td><td>965.00</td><td>965.00</td></tr><tr><td colspan="3">Subtotal:</td><td></td><td>2,285.00</td><td></td></tr><tr><td colspan="3">Tax:</td><td></td><td>0.00</td><td></td></tr><tr><td colspan="3">Total:</td><td></td><td>2,285.00</td><td></td></tr></tbody></table>
+
+
+SYNTHETIC STUDY DOCUMENT - NOT VALID FOR PAYMENT

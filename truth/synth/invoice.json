@@ -1,0 +1,113 @@
+{
+ "doc_id": "invoice",
+ "source_file": "06_invoice.pdf",
+ "keyed_by": "codex via ChatGPT (non-Claude hand)",
+ "keyed_from": "page images",
+ "values": {
+  "invoice_number": "INV-20260612-PRW",
+  "vendor_name": "Pecos Ridge Well Services LLC",
+  "invoice_date": "2026-06-12",
+  "afe_number": "AFE-2026-0417",
+  "well_name": "Caprock 14-2H",
+  "line_items": [
+   {
+    "ticket_ref": "PRW-88421",
+    "description": "Workover rig operator, hourly",
+    "quantity": 11,
+    "unit": "hour",
+    "rate": 145,
+    "amount": 1595
+   },
+   {
+    "ticket_ref": "PRW-88421",
+    "description": "Rig fuel surcharge",
+    "quantity": 1,
+    "unit": "each",
+    "rate": 385,
+    "amount": 385
+   },
+   {
+    "ticket_ref": "PRW-88421",
+    "description": "Tool rental, packer assembly",
+    "quantity": 2,
+    "unit": "day",
+    "rate": 425,
+    "amount": 850
+   },
+   {
+    "ticket_ref": "PRW-88437",
+    "description": "Pump truck, hourly",
+    "quantity": 6,
+    "unit": "hour",
+    "rate": 310,
+    "amount": 1860
+   },
+   {
+    "ticket_ref": "PRW-88437",
+    "description": "Fluid pumped, treated water",
+    "quantity": 240,
+    "unit": "bbl",
+    "rate": 4.75,
+    "amount": 1140
+   },
+   {
+    "ticket_ref": "PRW-88437",
+    "description": "Standby time",
+    "quantity": 1.5,
+    "unit": "hour",
+    "rate": 190,
+    "amount": 285
+   }
+  ],
+  "subtotal": 6115,
+  "tax": 504.49,
+  "total": 6619.49
+ },
+ "page_of": {
+  "invoice_number": 1,
+  "vendor_name": 1,
+  "invoice_date": 1,
+  "afe_number": 1,
+  "well_name": 1,
+  "line_items[0].ticket_ref": 1,
+  "line_items[0].description": 1,
+  "line_items[0].quantity": 1,
+  "line_items[0].unit": 1,
+  "line_items[0].rate": 1,
+  "line_items[0].amount": 1,
+  "line_items[1].ticket_ref": 1,
+  "line_items[1].description": 1,
+  "line_items[1].quantity": 1,
+  "line_items[1].unit": 1,
+  "line_items[1].rate": 1,
+  "line_items[1].amount": 1,
+  "line_items[2].ticket_ref": 1,
+  "line_items[2].description": 1,
+  "line_items[2].quantity": 1,
+  "line_items[2].unit": 1,
+  "line_items[2].rate": 1,
+  "line_items[2].amount": 1,
+  "line_items[3].ticket_ref": 1,
+  "line_items[3].description": 1,
+  "line_items[3].quantity": 1,
+  "line_items[3].unit": 1,
+  "line_items[3].rate": 1,
+  "line_items[3].amount": 1,
+  "line_items[4].ticket_ref": 1,
+  "line_items[4].description": 1,
+  "line_items[4].quantity": 1,
+  "line_items[4].unit": 1,
+  "line_items[4].rate": 1,
+  "line_items[4].amount": 1,
+  "line_items[5].ticket_ref": 1,
+  "line_items[5].description": 1,
+  "line_items[5].quantity": 1,
+  "line_items[5].unit": 1,
+  "line_items[5].rate": 1,
+  "line_items[5].amount": 1,
+  "subtotal": 1,
+  "tax": 1,
+  "total": 1
+ },
+ "uncertain": []
+}

@@ -1,0 +1,27 @@
+{
+  "doc_id": "cover_04",
+  "source_file": "65_cover_04.pdf",
+  "keyed_by": "codex blind re-key (layer A, second session)",
+  "keyed_from": "page images",
+  "values": {
+    "letter_date": "2026-09-04",
+    "operator_name": "Darsenne Basin Operations LLC",
+    "addressee": "Ultraven Fold Interests LLC",
+    "afe_number": "DB-26-904",
+    "well_name": "Ostrand 4-KH",
+    "response_due_date": "TBD",
+    "wi_decimal_stated": 0.2,
+    "net_share_stated": 4000
+  },
+  "page_of": {
+    "letter_date": 1,
+    "operator_name": 1,
+    "addressee": 1,
+    "afe_number": 1,
+    "well_name": 1,
+    "response_due_date": 1,
+    "wi_decimal_stated": 1,
+    "net_share_stated": 1
+  },
+  "uncertain": []
+}

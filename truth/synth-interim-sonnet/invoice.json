@@ -1,0 +1,38 @@
+{
+  "doc_id": "invoice",
+  "source_file": "pdfs/clean/06_invoice.pdf",
+  "keyed_by": "sonnet-5 interim keyer (Claude family) — to be replaced by a Codex pass",
+  "keyed_from": "page images",
+  "values": {
+    "invoice_number": "INV-20260612-PRW",
+    "vendor_name": "Pecos Ridge Well Services LLC",
+    "invoice_date": "2026-06-12",
+    "afe_number": "AFE-2026-0417",
+    "well_name": "Caprock 14-2H",
+    "line_items": [
+      { "ticket_ref": "PRW-88421", "description": "Workover rig operator, hourly", "quantity": 11, "unit": "hour", "rate": 145.00, "amount": 1595.00 },
+      { "ticket_ref": "PRW-88421", "description": "Rig fuel surcharge", "quantity": 1, "unit": "each", "rate": 385.00, "amount": 385.00 },
+      { "ticket_ref": "PRW-88421", "description": "Tool rental, packer assembly", "quantity": 2, "unit": "day", "rate": 425.00, "amount": 850.00 },
+      { "ticket_ref": "PRW-88437", "description": "Pump truck, hourly", "quantity": 6, "unit": "hour", "rate": 310.00, "amount": 1860.00 },
+      { "ticket_ref": "PRW-88437", "description": "Fluid pumped, treated water", "quantity": 240, "unit": "bbl", "rate": 4.75, "amount": 1140.00 },
+      { "ticket_ref": "PRW-88437", "description": "Standby time", "quantity": 1.5, "unit": "hour", "rate": 190.00, "amount": 285.00 }
+    ],
+    "subtotal": 6115.00,
+    "tax": 504.49,
+    "total": 6619.49
+  },
+  "page_of": {
+    "invoice_number": 1,
+    "vendor_name": 1,
+    "invoice_date": 1,
+    "afe_number": 1,
+    "well_name": 1,
+    "line_items": 1,
+    "subtotal": 1,
+    "tax": 1,
+    "total": 1
+  },
+  "uncertain": [
+    "tax: printed as 504.49, an implied rate of ~8.249% of subtotal (not a round number); keyed exactly as printed, not recomputed"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+ "permit": "917669",
+ "total_pages": 4,
+ "splits": {
+  "w1_permit": [
+   1,
+   2,
+   3
+  ],
+  "plat": [
+   4
+  ]
+ },
+ "documents": [
+  {
+   "class": "w1_permit",
+   "file": "917669_W1_AsApprovedW1-9-3-2026_LTR.pdf",
+   "pages": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "class": "plat",
+   "file": "917669_Plat_RUTTER 1-12 C 1JM RRC_LGR.pdf",
+   "pages": [
+    4
+   ]
+  }
+ ],
+ "grade": "OBSERVED",
+ "basis": "packet assembled from separately published RRC files"
+}

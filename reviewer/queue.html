@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>JV exception queue</title>
+<style>
+:root{--paper:#F7F5F2;--ink:#2F3437;--slate:#67727A;--rule:#D7D2CB;--moss:#5F7A61;--teal:#5B7F87;--ochre:#C8923B;--terra:#B55D43;--navy:#50687A;--card:#fff}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,"Avenir Next","Helvetica Neue",Arial,sans-serif;font-size:14px;line-height:1.45}
+header{padding:12px 18px;border-bottom:1px solid var(--rule);display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+header h1{font-size:16px;margin:0}
+.banner{background:var(--ochre);color:#2F3437;padding:4px 10px;border-radius:4px;font-weight:600}
+.muted{color:var(--slate)} .small{font-size:12px}
+main{padding:14px 18px}
+.cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:start}
+@media (max-width:1000px){.cols{grid-template-columns:1fr}}
+.col{background:#F2EFEA;border:1px solid var(--rule);border-radius:6px;padding:10px;min-height:120px}
+.col h2{font-size:13px;margin:0 0 2px;text-transform:uppercase;letter-spacing:.04em}
+.col .who{display:flex;gap:6px;align-items:center;margin:8px 0 10px}
+.card{background:var(--card);border:1px solid var(--rule);border-left:3px solid var(--teal);border-radius:5px;padding:9px 10px;margin-bottom:10px}
+.card.rule_1_decimal{border-left-color:var(--terra)} .card.rule_2_rate{border-left-color:var(--ochre)}
+.card.rule_3_afe_ref{border-left-color:var(--navy)} .card.extraction{border-left-color:var(--slate)}
+.card h3{font-size:13px;margin:0 0 4px;display:flex;justify-content:space-between;gap:8px;overflow-wrap:anywhere}
+.card .small{overflow-wrap:anywhere}
+.card .msg{margin:5px 0 7px}
+dl{display:grid;grid-template-columns:minmax(56px,auto) minmax(0,1fr);gap:2px 8px;margin:6px 0;font-size:12.5px}
+dt{color:var(--slate)} dd{margin:0;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+dd.bad{color:var(--terra);font-weight:600} dd.good{color:var(--moss);font-weight:600}
+.thumb{position:relative;display:inline-block;border:1px solid var(--rule);margin-top:6px;cursor:zoom-in;max-width:100%}
+.thumb img{display:block;width:100%}
+.box{position:absolute;border:2px solid var(--terra);background:rgba(181,93,67,.16);pointer-events:none}
+.acts{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+button{font:inherit;padding:3px 8px;border:1px solid var(--rule);background:#fff;border-radius:4px;cursor:pointer}
+button:hover:not(:disabled){border-color:var(--navy)} button:disabled{opacity:.45;cursor:not-allowed}
+input{font:inherit;padding:4px 6px;border:1px solid var(--rule);border-radius:4px}
+.pill{display:inline-block;padding:1px 7px;border-radius:10px;font-size:11.5px;background:#EEF2EC;color:var(--moss)}
+.pill.warn{background:#F5E6E1;color:var(--terra)}
+.decided{margin-top:10px;border-top:1px dashed var(--rule);padding-top:8px}
+.decided .row{font-size:12px;padding:3px 0;border-bottom:1px solid var(--rule)}
+#modal{position:fixed;inset:0;background:rgba(47,52,55,.65);display:none;align-items:center;justify-content:center;z-index:9}
+#modal.on{display:flex}
+#modalinner{background:#fff;padding:10px;border-radius:6px;max-height:92vh;max-width:92vw;overflow:auto;position:relative}
+#modalstage{position:relative} #modalstage img{display:block;max-height:80vh}
+footer{padding:10px 18px;border-top:1px solid var(--rule)}
+</style></head><body>
+<header>
+  <h1>JV exception queue</h1>
+  <span id="synth" class="banner" hidden>SYNTHETIC — synthetic documents, fixture responses</span>
+  <span id="sum" class="muted small"></span>
+  <span id="status" class="small"></span>
+</header>
+<main>
+  <p class="small muted" style="margin:0 0 10px">The three rules below are customer code, not document parser output. The parser read the paper and cited the box; the division order, the rate sheet and the AFE election are the customer's own reference data. Each column belongs to one role: a person types their own name, and the server refuses a blank name, refuses a name it could default, and refuses a decision from the wrong role.</p>
+  <div class="cols" id="cols"></div>
+</main>
+<footer class="small muted">Every decision appends one row to audit/decisions.jsonl: UTC time, run id, exception id, approver name, role, disposition, value shown, value entered, reason.</footer>
+<div id="modal"><div id="modalinner"><div id="modalstage"><img id="modalimg" alt="packet page"></div><p class="small muted" id="modalcap"></p></div></div>
+<script>
+const ROLES=[['jv_accountant','JV accountant'],['supply_chain','Supply chain'],['field','Field']];
+const $=s=>document.querySelector(s);
+let MONTH=null, EXC=null, DECIDED={};
+
+async function load(){
+  MONTH=await (await fetch('/api/month')).json();
+  EXC=await (await fetch('/api/exceptions')).json();
+  const rows=await (await fetch('/api/decisions')).json();
+  rows.forEach(r=>{ if(r.exception_id) DECIDED[r.exception_id]=r; });
+  $('#synth').hidden=!(MONTH.synthetic_documents||MONTH.synthetic_responses);
+  const s=EXC.summary||{};
+  $('#sum').textContent=`run ${EXC.run_id} · rules v${EXC.rules_version} · ${s.jib_lines||0} JIB lines, ${s.ticket_lines||0} ticket lines checked · ${s.fired||0} fired · ${s.clean||0} clean`;
+  render();
+}
+
+function money(v){ return v==null?'—':(v<0?'-':'')+'$'+Math.abs(v).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2}); }
+function pretty(v){
+  if(v===null||v===undefined) return '<span class="muted">null</span>';
+  if(typeof v==='object') return Object.entries(v).map(([k,x])=>`${k} ${typeof x==='number'?x.toLocaleString(undefined,{maximumFractionDigits:6}):x}`).join(' · ');
+  return String(v);
+}
+
+function render(){
+  const cols=$('#cols'); cols.innerHTML='';
+  for(const [role,label] of ROLES){
+    const open=EXC.exceptions.filter(e=>e.approver_role===role && !DECIDED[e.id]);
+    const done=EXC.exceptions.filter(e=>e.approver_role===role && DECIDED[e.id]);
+    const col=document.createElement('div'); col.className='col';
+    col.innerHTML=`<h2>${label}</h2><div class="small muted">${open.length} open · ${done.length} decided</div>
+      <div class="who"><label class="small">Approver <input id="name-${role}" placeholder="type your name" size="16"></label></div>
+      <div id="open-${role}"></div>
+      <div class="decided" id="done-${role}"><div class="small muted">Decided</div></div>`;
+    cols.appendChild(col);
+    open.forEach(e=>$('#open-'+role).appendChild(cardFor(e)));
+    if(!open.length) $('#open-'+role).innerHTML='<p class="small muted">Nothing open for this role.</p>';
+    done.forEach(e=>addDecided(e,DECIDED[e.id]));
+  }
+}
+
+function cardFor(e){
+  const doc=(MONTH.documents||{})[e.doc_id]||{};
+  const d=document.createElement('div'); d.className='card '+e.rule; d.id='card-'+e.id;
+  const delta=e.delta_usd==null?'':`<dt>Delta</dt><dd class="bad">${money(e.delta_usd)}</dd>`;
+  d.innerHTML=`<h3><span>${e.id} · ${e.rule}</span><span class="pill warn">open</span></h3>
+    <div class="small muted">${e.doc_id} (${doc.class||'?'}) · ${e.field_path} · packet ${doc.packet||'?'} page ${e.page==null?'?':e.page}</div>
+    <div class="msg">${e.message||''}</div>
+    <dl><dt>Observed</dt><dd class="bad">${pretty(e.observed)}</dd><dt>Expected</dt><dd class="good">${pretty(e.expected)}</dd>${delta}
+      <dt>Cited</dt><dd>${e.cited_text?('“'+e.cited_text+'”'):'<span class="muted">text not captured</span>'}</dd></dl>`;
+  if(doc.packet && e.page!=null) d.appendChild(thumb(doc.packet, e.page, e.bbox, e.id));
+  const acts=document.createElement('div'); acts.className='acts';
+  [['approved-as-is','Approve as is'],['approved-after-edit','Approve after edit'],['disputed','Dispute']].forEach(([disp,label])=>{
+    const b=document.createElement('button'); b.textContent=label; b.onclick=()=>decide(e,disp,d); acts.appendChild(b);
+  });
+  d.appendChild(acts);
+  return d;
+}
+
+function thumb(packet,page,bbox,id){
+  const t=document.createElement('div'); t.className='thumb';
+  const img=document.createElement('img'); img.alt=`packet ${packet} page ${page}`;
+  img.src=`/api/page?packet=${encodeURIComponent(packet)}&page=${page}`;
+  t.appendChild(img);
+  img.onload=()=>{ if(bbox&&bbox.length===4) t.appendChild(mkbox(bbox,img.clientWidth,img.clientHeight)); };
+  t.onclick=()=>openModal(packet,page,bbox,id);
+  return t;
+}
+function mkbox(b,W,H){ const x=document.createElement('div'); x.className='box';
+  x.style.left=(b[0]*W)+'px'; x.style.top=(b[1]*H)+'px';
+  x.style.width=Math.max(3,(b[2]-b[0])*W)+'px'; x.style.height=Math.max(3,(b[3]-b[1])*H)+'px'; return x; }
+
+function openModal(packet,page,bbox,id){
+  const stage=$('#modalstage'); stage.querySelectorAll('.box').forEach(x=>x.remove());
+  const img=$('#modalimg');
+  img.onload=()=>{ if(bbox&&bbox.length===4) stage.appendChild(mkbox(bbox,img.clientWidth,img.clientHeight)); };
+  img.src=`/api/page?packet=${encodeURIComponent(packet)}&page=${page}&big=1`;
+  $('#modalcap').textContent=`${id} · packet ${packet} page ${page}${bbox?'':' · no box captured for this field'}`;
+  $('#modal').classList.add('on');
+}
+$('#modal').onclick=()=>$('#modal').classList.remove('on');
+
+async function decide(e,disp,cardEl){
+  const box=document.getElementById('name-'+e.approver_role);
+  const approver=(box.value||'').trim();
+  if(!approver){ box.focus(); say('Type your name in the '+e.approver_role+' column first — the approval is yours, not the tool\'s.',true); return; }
+  let entered=null, reason=null;
+  if(disp==='approved-after-edit'){ entered=prompt('Corrected value for '+e.doc_id+'.'+e.field_path, e.expected&&e.expected.net_amount!=null?String(e.expected.net_amount):''); if(entered===null) return; }
+  if(disp==='disputed'){ reason=prompt('What is disputed, and what will you tell the operator?',''); if(reason===null) return; }
+  const body={approver, approver_role:e.approver_role, exception_id:e.id, disposition:disp,
+              value_shown:e.observed, value_entered:entered, reason, synthetic:!!(MONTH.synthetic_documents)};
+  const r=await fetch('/api/decision',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+  const j=await r.json();
+  if(!r.ok){ say('refused: '+j.error,true); return; }
+  DECIDED[e.id]=j; cardEl.remove(); addDecided(e,j);
+  say(`${j.ts} — ${j.approver} (${j.approver_role}) ${disp} on ${e.id}`,false);
+  const open=EXC.exceptions.filter(x=>x.approver_role===e.approver_role&&!DECIDED[x.id]);
+  if(!open.length) document.getElementById('open-'+e.approver_role).innerHTML='<p class="small muted">Nothing open for this role.</p>';
+}
+
+function addDecided(e,row){
+  const host=document.getElementById('done-'+e.approver_role);
+  const div=document.createElement('div'); div.className='row';
+  div.innerHTML=`<strong>${e.id}</strong> ${row.disposition} · ${row.approver} · <span class="muted">${row.ts}</span>`
+    + (row.value_entered?` · entered ${row.value_entered}`:'') + (row.reason?` · ${row.reason}`:'');
+  host.appendChild(div);
+}
+
+function say(t,bad){ const s=$('#status'); s.textContent=t; s.style.color=bad?'var(--terra)':'var(--moss)'; }
+load();
+</script></body></html>

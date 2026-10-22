@@ -1,0 +1,26 @@
+OPERATIONS / OWNER RECORD
+
+
+# Owner election letter
+
+
+<table><tr><td>Sent:</td><td>2026-09-02</td></tr><tr><td>From:</td><td>Darsenne Basin Operations LLC</td></tr><tr><td>Interest owner:</td><td>Ultraven Fold Interests LLC</td></tr><tr><td>Ref:</td><td>DB-26-902</td></tr><tr><td>Subject well:</td><td>Ostrand 4-KH</td></tr><tr><td>Reply by:</td><td>TBD</td></tr><tr><td>Stated participation decimal:</td><td>0.200000</td></tr><tr><td>Stated owner share:</td><td>4,000.00</td></tr></table>
+
+
+Dear interest owner,
+
+
+Please review the enclosed authorization and return your election. This letter transmits the estimate; it does not authorize billing.
+
+
+## Estimate copied for owner review
+
+
+<table><thead><tr><td>Line</td><td>Account</td><td>Description</td><td>Category</td><td>Amount</td></tr></thead><tbody><tr><td>1</td><td>710</td><td>Site preparation</td><td>intangible</td><td>4,000.00</td></tr><tr><td>2</td><td>720</td><td>Pressure service</td><td>intangible</td><td>6,000.00</td></tr><tr><td>3</td><td>730</td><td>Fluid handling</td><td>intangible</td><td>3,000.00</td></tr><tr><td>4</td><td>810</td><td>Valve assembly</td><td>tangible</td><td>5,000.00</td></tr><tr><td>5</td><td>820</td><td>Gauge package</td><td>tangible</td><td>2,000.00</td></tr><tr><td>6</td><td>830</td><td>Spare seals</td><td>tangible</td><td>0.00</td></tr></tbody></table>
+
+
+Sincerely,
+Owner relations desk
+
+
+SYNTHETIC STUDY DOCUMENT - NOT VALID FOR PAYMENT

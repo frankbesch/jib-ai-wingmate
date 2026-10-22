@@ -1,0 +1,10 @@
+{
+ "run_id": "selftest",
+ "mode": "fixture",
+ "set": "clean",
+ "synthetic": true,
+ "permits": [
+  "P1",
+  "P2"
+ ]
+}

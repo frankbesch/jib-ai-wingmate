@@ -1,0 +1,44 @@
+{
+  "documents": 71,
+  "packets": 39,
+  "pages_per_set": 80,
+  "source_printed": 452,
+  "trap_instances": {
+    "T10": 57,
+    "T3": 14,
+    "T4": 9,
+    "T6": 21,
+    "T8": 12,
+    "T5": 12,
+    "T7": 4,
+    "T9": 9,
+    "T2": 4,
+    "T1": 20
+  },
+  "mapped_trap_units": {
+    "clean": {
+      "1": 8,
+      "4": 17,
+      "5": 12,
+      "8": 251,
+      "total": 288
+    },
+    "scan": {
+      "1": 21,
+      "4": 29,
+      "5": 12,
+      "8": 254,
+      "total": 316
+    }
+  },
+  "denominators": {
+    "1": 71,
+    "4": 80,
+    "5": 39,
+    "8": 607,
+    "total": 797
+  },
+  "unmapped_cover_decoys": 8,
+  "ticket_packet_traps": 12,
+  "plain_ticket_packets": 18
+}

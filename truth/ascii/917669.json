@@ -1,0 +1,49 @@
+{
+ "permit_number": "917669",
+ "sequence": "99",
+ "county_code": "329",
+ "county": "MIDLAND",
+ "lease_name": "RUTTER 1-12 C",
+ "district": "08",
+ "operator_number": "217012",
+ "application_received_date": "2026-08-05",
+ "operator_name": "DIAMONDBACK E&P LLC",
+ "application_status": "Approved",
+ "permit_issue_date": "2026-09-03",
+ "fields": [
+  {
+   "field_number": "85280300",
+   "application_well_code": "B",
+   "completion_well_code": " "
+  }
+ ],
+ "well_number": "1JM",
+ "total_depth": 12500,
+ "type_of_application_code": "01",
+ "type_of_application": "New Drill",
+ "surface_section": "1",
+ "surface_block": "",
+ "surface_survey": "GLENDENING, W / ELLIS, N W",
+ "surface_abstract": "1374",
+ "contiguous_acres": 490.0,
+ "miles_from_town": 7.31,
+ "direction_from_town": "SW",
+ "nearest_town": "STANTON",
+ "lease_perpendiculars": {
+  "feet_1": 1270.0,
+  "direction_1": "N",
+  "feet_2": 734.0,
+  "direction_2": "E"
+ },
+ "survey_perpendiculars": {
+  "feet_1": 1270.0,
+  "direction_1": "N",
+  "feet_2": 734.0,
+  "direction_2": "E"
+ },
+ "horizontal_well_flag": true,
+ "directional_well_flag": false,
+ "api_number": "42-329-48535",
+ "grade": "SYSTEM-EXTRACTED",
+ "basis": "RRC daf420.dat 2026-09-04, OGA049M positions"
+}

@@ -1,0 +1,52 @@
+{
+ "permit_number": "917176",
+ "sequence": "98",
+ "county_code": "013",
+ "county": "ATASCOSA",
+ "lease_name": "GAC AW",
+ "district": "01",
+ "operator_number": "100797",
+ "application_received_date": "2026-08-05",
+ "operator_name": "TRAILBLAZER ENERGY RESOURCES,LLC",
+ "application_status": "Approved",
+ "permit_issue_date": "2026-07-27",
+ "fields": [
+  {
+   "field_number": "27135700",
+   "application_well_code": "B",
+   "completion_well_code": " ",
+   "completion_depth": 9200,
+   "field_district": "01",
+   "acres": 1376.93
+  }
+ ],
+ "well_number": "1H",
+ "total_depth": 9200,
+ "type_of_application_code": "01",
+ "type_of_application": "New Drill",
+ "surface_section": "1701",
+ "surface_block": "",
+ "surface_survey": "I&GN RR CO",
+ "surface_abstract": "428",
+ "contiguous_acres": 1376.93,
+ "miles_from_town": 12.7,
+ "direction_from_town": "SE",
+ "nearest_town": "PLEASANTON",
+ "lease_perpendiculars": {
+  "feet_1": 323.0,
+  "direction_1": "NE",
+  "feet_2": 931.0,
+  "direction_2": "SE"
+ },
+ "survey_perpendiculars": {
+  "feet_1": 323.0,
+  "direction_1": "NE",
+  "feet_2": 931.0,
+  "direction_2": "SE"
+ },
+ "horizontal_well_flag": true,
+ "directional_well_flag": false,
+ "api_number": "42-013-36290",
+ "grade": "SYSTEM-EXTRACTED",
+ "basis": "RRC daf420.dat 2026-09-04, OGA049M positions"
+}

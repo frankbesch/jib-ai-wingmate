@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Well-file reviewer stub</title>
+<style>
+:root{--paper:#F7F5F2;--ink:#2F3437;--slate:#67727A;--rule:#D7D2CB;--moss:#5F7A61;--teal:#5B7F87;--ochre:#C8923B;--terra:#B55D43;--navy:#50687A;--card:#fff}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,"Avenir Next","Helvetica Neue",Arial,sans-serif;font-size:14px;line-height:1.45}
+header{padding:12px 18px;border-bottom:1px solid var(--rule);display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+header h1{font-size:16px;margin:0}
+.banner{background:var(--ochre);color:#2F3437;padding:4px 10px;border-radius:4px;font-weight:600}
+main{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(320px,0.9fr);gap:14px;padding:14px 18px}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:12px}
+#stage{position:relative;overflow:auto;max-height:78vh}
+#stage img{display:block;max-width:100%}
+.box{position:absolute;border:2px solid var(--teal);background:rgba(91,127,135,.12);pointer-events:none}
+.box.hit{border-color:var(--moss)} .box.sel{border-color:var(--terra);background:rgba(181,93,67,.18)}
+table{border-collapse:collapse;width:100%} td,th{border-bottom:1px solid var(--rule);padding:4px 6px;text-align:left;vertical-align:top;font-size:13px}
+th{color:var(--slate);font-weight:600} tr.sel td{background:#F5E6E1}
+tr.flag td.v{color:var(--terra);font-weight:600}
+button{font:inherit;padding:3px 8px;border:1px solid var(--rule);background:#fff;border-radius:4px;cursor:pointer} button:hover{border-color:var(--navy)}
+input,select{font:inherit;padding:4px 6px;border:1px solid var(--rule);border-radius:4px}
+.muted{color:var(--slate)} .small{font-size:12px}
+.pill{display:inline-block;padding:1px 7px;border-radius:10px;font-size:12px;background:#EEF2EC;color:var(--moss)} .pill.warn{background:#F5E6E1;color:var(--terra)}
+</style></head><body>
+<header>
+  <h1>Well-file reviewer stub</h1>
+  <span id="synth" class="banner" hidden>SYNTHETIC FIXTURE — values are not document parser output</span>
+  <label>Packet <select id="permit"></select></label>
+  <label>Page <select id="page"></select></label>
+  <label>Approver <input id="approver" placeholder="type your name" size="18"></label>
+  <span id="status" class="muted small"></span>
+</header>
+<main>
+  <div class="card"><div id="stage"><img id="img" alt="packet page"></div></div>
+  <div class="card">
+    <div id="routing" class="small"></div>
+    <table id="fields"><thead><tr><th>Field</th><th>Value</th><th>Cite</th><th>Decision</th></tr></thead><tbody></tbody></table>
+    <p class="small muted">Accept records approved-as-is. Edit records approved-after-edit with the value you type. Route sends the field to the exception owner. Every decision appends to audit/decisions.jsonl with your name and the UTC time.</p>
+  </div>
+</main>
+<script>
+let DATA=null, rec=null, W=0, H=0, selKey=null;
+const $=s=>document.querySelector(s);
+async function load(){ DATA=await (await fetch('/api/run')).json();
+  $('#synth').hidden=!DATA.run.synthetic;
+  const sel=$('#permit'); sel.innerHTML=''; DATA.records.forEach(r=>{const o=document.createElement('option');o.value=r.permit;o.textContent=r.permit+(r.error?' (error)':'');sel.appendChild(o)});
+  sel.onchange=()=>pick(sel.value); pick(DATA.records[0].permit); }
+function pick(p){ rec=DATA.records.find(r=>r.permit===p); const pages=(rec.extract&&rec.extract.page_count)||1; const ps=$('#page'); ps.innerHTML='';
+  for(let i=1;i<=pages;i++){const o=document.createElement('option');o.value=i;o.textContent=i+' / '+pages;ps.appendChild(o)} ps.onchange=()=>showPage(+ps.value);
+  renderFields(); showPage(1); }
+function flat(o,pre=''){const out={};for(const [k,v] of Object.entries(o||{})){if(k==='fields')continue;if(v&&typeof v==='object'&&!Array.isArray(v))Object.assign(out,flat(v,pre+k+'.'));else out[pre+k]=v}return out}
+function renderFields(){ const tb=$('#fields tbody'); tb.innerHTML=''; const vals=flat(rec.schema_w1&&rec.schema_w1.values); const cites=(rec.schema_w1&&rec.schema_w1.citations)||{};
+  const sc=DATA.scorecard&&DATA.scorecard.packets.find(x=>x.permit===rec.permit); const errs=new Set((sc&&sc.field_errors||[]).map(e=>e.field));
+  $('#routing').innerHTML = sc ? `Routing: ${sc.routed_to_review?'<span class="pill warn">review</span>':'<span class="pill">straight through</span>'} ${(sc.review_reasons||[]).map(r=>'<span class="muted">· '+r+'</span>').join(' ')}` : '';
+  for(const [k,v] of Object.entries(vals)){ const tr=document.createElement('tr'); if(errs.has(k))tr.className='flag'; const c=cites[k];
+    tr.innerHTML=`<td>${k}</td><td class="v">${v===null||v===undefined?'<span class="muted">null</span>':Array.isArray(v)?v.join(', '):v}</td><td>${c?'p'+c.page:'<span class="muted">none</span>'}</td>
+      <td><button data-d="approved-as-is">Accept</button> <button data-d="approved-after-edit">Edit</button> <button data-d="routed">Route</button></td>`;
+    tr.onclick=e=>{ if(e.target.tagName==='BUTTON')return; selKey=k; document.querySelectorAll('#fields tr').forEach(x=>x.classList.remove('sel')); tr.classList.add('sel'); if(c&&c.page)$('#page').value=c.page; showPage(+$('#page').value); };
+    tr.querySelectorAll('button').forEach(b=>b.onclick=()=>decide(k,v,b.dataset.d)); tb.appendChild(tr); } }
+function showPage(n){ const img=$('#img'); img.onload=()=>{W=img.clientWidth;H=img.clientHeight;drawBoxes(n)}; img.src=`/api/page?permit=${rec.permit}&page=${n}&t=${Date.now()}`; }
+function normBox(b){ if(!b)return null; if(b.length===8){const xs=[b[0],b[2],b[4],b[6]],ys=[b[1],b[3],b[5],b[7]];b=[Math.min(...xs),Math.min(...ys),Math.max(...xs),Math.max(...ys)]} if(b.length!==4)return null; if(Math.max(...b)>1){b=[b[0]/792,b[1]/612,b[2]/792,b[3]/612]} return b; }
+function drawBoxes(n){ document.querySelectorAll('.box').forEach(x=>x.remove()); const cites=(rec.schema_w1&&rec.schema_w1.citations)||{};
+  for(const [k,c] of Object.entries(cites)){ if(!c||c.page!==n)continue; const b=normBox(c.bbox); if(!b)continue; const d=document.createElement('div'); d.className='box'+(k===selKey?' sel':''); d.title=k;
+    d.style.left=(b[0]*W)+'px'; d.style.top=(b[1]*H)+'px'; d.style.width=Math.max(4,(b[2]-b[0])*W)+'px'; d.style.height=Math.max(4,(b[3]-b[1])*H)+'px'; $('#stage').appendChild(d);} }
+async function decide(field,shown,disp){ const approver=$('#approver').value.trim(); if(!approver){$('#status').textContent='Type your name first — the approval is yours, not the tool\'s.';return}
+  let entered=null, reason=null; if(disp==='approved-after-edit'){entered=prompt('Corrected value for '+field, shown==null?'':shown); if(entered===null)return}
+  if(disp==='routed'){reason=prompt('Route reason (who owns this exception?)','');if(reason===null)return}
+  const r=await fetch('/api/decision',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({approver,permit:rec.permit,field,disposition:disp,value_shown:shown,value_entered:entered,reason,synthetic:DATA.run.synthetic})});
+  const j=await r.json(); $('#status').textContent=r.ok?`${j.ts} ${j.approver}: ${field} ${disp}`:('error: '+j.error); }
+load();
+</script></body></html>

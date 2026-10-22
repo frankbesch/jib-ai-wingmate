@@ -1,0 +1,103 @@
+{
+  "doc_id": "afe_02",
+  "source_file": "synth-pilot/clean/21_afe_02.pdf",
+  "keyed_by": "codex (author key, layer A)",
+  "keyed_from": "rendered PDF",
+  "values": {
+    "afe_number": "ZB-26-702",
+    "operator_name": "Zelvori Basin Operations LLC",
+    "well_name": "Fennovar 2-RH",
+    "api_number": null,
+    "county": "Velquorin",
+    "state": "TX",
+    "afe_date": "2026-08-02",
+    "afe_type": "Workover",
+    "total_estimate": 20000,
+    "cost_lines": [
+      {
+        "line_no": 1,
+        "account_code": "710",
+        "description": "Site preparation",
+        "category": "intangible",
+        "amount": 4000
+      },
+      {
+        "line_no": 2,
+        "account_code": "720",
+        "description": "Pressure service",
+        "category": "intangible",
+        "amount": 6000
+      },
+      {
+        "line_no": 3,
+        "account_code": "730",
+        "description": "Fluid handling",
+        "category": "intangible",
+        "amount": 3000
+      },
+      {
+        "line_no": 4,
+        "account_code": "810",
+        "description": "Valve assembly",
+        "category": "tangible",
+        "amount": 5000
+      },
+      {
+        "line_no": 5,
+        "account_code": "820",
+        "description": "Gauge package",
+        "category": "tangible",
+        "amount": 2000
+      },
+      {
+        "line_no": 6,
+        "account_code": "830",
+        "description": "Spare seals",
+        "category": "tangible",
+        "amount": 0
+      }
+    ]
+  },
+  "page_of": {
+    "afe_number": 1,
+    "operator_name": 1,
+    "well_name": 1,
+    "api_number": 1,
+    "county": 1,
+    "state": 1,
+    "afe_date": 1,
+    "afe_type": 1,
+    "total_estimate": 2,
+    "cost_lines[0].line_no": 1,
+    "cost_lines[0].account_code": 1,
+    "cost_lines[0].description": 1,
+    "cost_lines[0].category": 1,
+    "cost_lines[0].amount": 1,
+    "cost_lines[1].line_no": 1,
+    "cost_lines[1].account_code": 1,
+    "cost_lines[1].description": 1,
+    "cost_lines[1].category": 1,
+    "cost_lines[1].amount": 1,
+    "cost_lines[2].line_no": 1,
+    "cost_lines[2].account_code": 1,
+    "cost_lines[2].description": 1,
+    "cost_lines[2].category": 1,
+    "cost_lines[2].amount": 1,
+    "cost_lines[3].line_no": 2,
+    "cost_lines[3].account_code": 2,
+    "cost_lines[3].description": 2,
+    "cost_lines[3].category": 2,
+    "cost_lines[3].amount": 2,
+    "cost_lines[4].line_no": 2,
+    "cost_lines[4].account_code": 2,
+    "cost_lines[4].description": 2,
+    "cost_lines[4].category": 2,
+    "cost_lines[4].amount": 2,
+    "cost_lines[5].line_no": 2,
+    "cost_lines[5].account_code": 2,
+    "cost_lines[5].description": 2,
+    "cost_lines[5].category": 2,
+    "cost_lines[5].amount": 2
+  },
+  "uncertain": []
+}

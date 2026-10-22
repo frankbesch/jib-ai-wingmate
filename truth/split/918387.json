@@ -1,0 +1,30 @@
+{
+ "permit": "918387",
+ "total_pages": 2,
+ "splits": {
+  "w1_permit": [
+   1
+  ],
+  "plat": [
+   2
+  ]
+ },
+ "documents": [
+  {
+   "class": "w1_permit",
+   "file": "918387_W1_AsApprovedW1-9-3-2026_LTR.pdf",
+   "pages": [
+    1
+   ]
+  },
+  {
+   "class": "plat",
+   "file": "918387_Plat_58933-0003_revision 9-2-2023_signed_LTR.pdf",
+   "pages": [
+    2
+   ]
+  }
+ ],
+ "grade": "OBSERVED",
+ "basis": "packet assembled from separately published RRC files"
+}

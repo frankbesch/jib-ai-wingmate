@@ -1,0 +1,33 @@
+{
+  "doc_id": "ticket_a",
+  "source_file": "pdfs/clean/03_ticket_a.pdf",
+  "keyed_by": "sonnet-5 interim keyer (Claude family) — to be replaced by a Codex pass",
+  "keyed_from": "page images",
+  "values": {
+    "ticket_number": "PRW-88421",
+    "vendor_name": "Pecos Ridge Well Services LLC",
+    "service_date": "2026-06-09",
+    "well_name": "Caprock 14-2H",
+    "afe_number": "AFE-2026-0417",
+    "line_items": [
+      { "description": "Workover rig operator, hourly", "quantity": 11, "unit": "hour", "rate": 145.00, "amount": 1595.00 },
+      { "description": "Rig fuel surcharge", "quantity": 1, "unit": "each", "rate": 385.00, "amount": 385.00 },
+      { "description": "Tool rental, packer assembly", "quantity": 2, "unit": "day", "rate": 425.00, "amount": 850.00 }
+    ],
+    "total": 2830.00,
+    "customer_signature_present": false
+  },
+  "page_of": {
+    "ticket_number": 1,
+    "vendor_name": 1,
+    "service_date": 1,
+    "well_name": 1,
+    "afe_number": 1,
+    "line_items": 1,
+    "total": 1,
+    "customer_signature_present": 1
+  },
+  "uncertain": [
+    "customer_signature_present: signature line is blank on the printed/imaged page; keyed as false"
+  ]
+}

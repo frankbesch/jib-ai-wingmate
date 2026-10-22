@@ -1,0 +1,289 @@
+{
+  "values": {
+    "api_number": "42-013-36290",
+    "permit_number": "917176",
+    "permit_status": "Approved",
+    "operator_number": "100797",
+    "operator_name": "TRAILBLAZER ENERGY RESOURCES,LLC",
+    "lease_name": "GAC AW",
+    "well_number": "1H",
+    "total_depth": "9200",
+    "district": "01",
+    "county": "ATASCOSA",
+    "miles_from_town": "12.7",
+    "direction_from_town": "SE",
+    "nearest_town": "PLEASANTON",
+    "lease_perpendiculars": {
+      "feet_1": "323",
+      "direction_1": "NE",
+      "feet_2": "931",
+      "direction_2": "SE"
+    },
+    "survey_perpendiculars": {
+      "feet_1": "323",
+      "direction_1": "NE",
+      "feet_2": "931",
+      "direction_2": "SE"
+    },
+    "abstract_number": "A-428",
+    "contiguous_acres": "1376.93",
+    "purpose_of_filing": [
+      "New Drill"
+    ],
+    "wellbore_profile": [
+      "Horizontal"
+    ],
+    "rule_36_h2s": true,
+    "fields": [
+      {
+        "district": "01",
+        "field_number": "27135700",
+        "field_name": "EAGLEVILLE (EAGLE FORD-1)",
+        "well_type": "Oil or Gas Well",
+        "completion_depth": "9200",
+        "distance_to_nearest_well": "202.00",
+        "wells_on_lease": "7"
+      }
+    ],
+    "filer_name": "Thelma King, Engineering Tech/Regulatory Analyst",
+    "date_submitted": "Aug 05, 2026",
+    "data_validation_timestamp": "Sep 3, 2026 10:43 AM"
+  },
+  "citation_truth": {
+    "api_number": {
+      "page": 1,
+      "bbox": [
+        0.1216,
+        0.0507,
+        0.1953,
+        0.0649
+      ]
+    },
+    "permit_number": {
+      "page": 1,
+      "bbox": [
+        0.1355,
+        0.088,
+        0.1776,
+        0.1031
+      ]
+    },
+    "permit_status": {
+      "page": 1,
+      "bbox": [
+        0.8751,
+        0.0822,
+        0.9292,
+        0.0974
+      ]
+    },
+    "operator_number": {
+      "page": 1,
+      "bbox": [
+        0.1109,
+        0.1754,
+        0.153,
+        0.1905
+      ]
+    },
+    "operator_name": {
+      "page": 1,
+      "bbox": [
+        0.3053,
+        0.1762,
+        0.5571,
+        0.1913
+      ]
+    },
+    "lease_name": {
+      "page": 1,
+      "bbox": [
+        0.5698,
+        0.188,
+        0.621,
+        0.2031
+      ]
+    },
+    "well_number": {
+      "page": 1,
+      "bbox": [
+        0.8719,
+        0.1861,
+        0.888,
+        0.2012
+      ]
+    },
+    "total_depth": {
+      "page": 1,
+      "bbox": [
+        0.0865,
+        0.3543,
+        0.1146,
+        0.3694
+      ]
+    },
+    "district": {
+      "page": 1,
+      "bbox": [
+        0.1375,
+        0.4098,
+        0.1515,
+        0.425
+      ]
+    },
+    "county": {
+      "page": 1,
+      "bbox": [
+        0.2642,
+        0.409,
+        0.333,
+        0.4242
+      ]
+    },
+    "miles_from_town": {
+      "page": 1,
+      "bbox": [
+        0.1917,
+        0.437,
+        0.2132,
+        0.4502
+      ]
+    },
+    "direction_from_town": {
+      "page": 1,
+      "bbox": [
+        0.3273,
+        0.437,
+        0.3421,
+        0.4502
+      ]
+    },
+    "nearest_town": {
+      "page": 1,
+      "bbox": [
+        0.5383,
+        0.437,
+        0.6126,
+        0.4502
+      ]
+    },
+    "lease_perpendiculars.feet_1": {
+      "page": 1,
+      "bbox": [
+        0.1953,
+        0.5152,
+        0.2163,
+        0.5304
+      ]
+    },
+    "lease_perpendiculars.direction_1": {
+      "page": 1,
+      "bbox": [
+        0.3809,
+        0.5152,
+        0.3984,
+        0.5304
+      ]
+    },
+    "lease_perpendiculars.feet_2": {
+      "page": 1,
+      "bbox": [
+        0.5401,
+        0.5152,
+        0.5612,
+        0.5304
+      ]
+    },
+    "lease_perpendiculars.direction_2": {
+      "page": 1,
+      "bbox": [
+        0.7132,
+        0.5152,
+        0.73,
+        0.5304
+      ]
+    },
+    "survey_perpendiculars.feet_1": {
+      "page": 1,
+      "bbox": [
+        0.194,
+        0.5381,
+        0.2151,
+        0.5532
+      ]
+    },
+    "survey_perpendiculars.direction_1": {
+      "page": 1,
+      "bbox": [
+        0.3809,
+        0.5152,
+        0.3984,
+        0.5304
+      ]
+    },
+    "survey_perpendiculars.feet_2": {
+      "page": 1,
+      "bbox": [
+        0.5401,
+        0.5152,
+        0.5612,
+        0.5304
+      ]
+    },
+    "survey_perpendiculars.direction_2": {
+      "page": 1,
+      "bbox": [
+        0.7132,
+        0.5152,
+        0.73,
+        0.5304
+      ]
+    },
+    "abstract_number": {
+      "page": 1,
+      "bbox": [
+        0.5389,
+        0.4866,
+        0.5726,
+        0.5017
+      ]
+    },
+    "contiguous_acres": {
+      "page": 1,
+      "bbox": [
+        0.9047,
+        0.4874,
+        0.9475,
+        0.5015
+      ]
+    },
+    "filer_name": {
+      "page": 1,
+      "bbox": [
+        0.6518,
+        0.8714,
+        0.788,
+        0.9032
+      ]
+    },
+    "date_submitted": {
+      "page": 1,
+      "bbox": [
+        0.8488,
+        0.8872,
+        0.924,
+        0.9024
+      ]
+    }
+  },
+  "page_size_pt": [
+    792.0,
+    612.0
+  ],
+  "permit": "917176",
+  "grade": "SYSTEM-EXTRACTED",
+  "basis": "RRC W-1 facsimile text layer (pdftotext -layout / -bbox-layout); boxes normalized to page",
+  "notes": [
+    "2026-09-05: rule_36_h2s re-derived by column-aligned X (build_corpus._rule36); old regex never matched, page image checked for all 9"
+  ]
+}

@@ -1,0 +1,566 @@
+{
+  "REQUIRED": {
+    "afe_cover": [
+      "letter_date",
+      "operator_name",
+      "addressee",
+      "afe_number",
+      "well_name",
+      "response_due_date",
+      "wi_decimal_stated",
+      "net_share_stated"
+    ],
+    "afe": [
+      "afe_number",
+      "operator_name",
+      "well_name",
+      "api_number",
+      "county",
+      "state",
+      "afe_date",
+      "afe_type",
+      "total_estimate"
+    ],
+    "field_ticket": [
+      "ticket_number",
+      "vendor_name",
+      "service_date",
+      "well_name",
+      "afe_number",
+      "total",
+      "customer_signature_present"
+    ],
+    "hauling_log": [
+      "log_number",
+      "hauler_name",
+      "log_date",
+      "well_name",
+      "total_barrels"
+    ],
+    "invoice": [
+      "invoice_number",
+      "vendor_name",
+      "invoice_date",
+      "afe_number",
+      "well_name",
+      "subtotal",
+      "tax",
+      "total"
+    ],
+    "jib_statement": [
+      "statement_period",
+      "operator_name",
+      "property_number",
+      "well_name",
+      "owner_name",
+      "owner_number",
+      "wi_decimal",
+      "gross_total",
+      "net_total",
+      "due_date"
+    ]
+  },
+  "LISTS": {
+    "afe": [
+      "cost_lines",
+      [
+        "line_no",
+        "account_code",
+        "description",
+        "category",
+        "amount"
+      ],
+      6,
+      6
+    ],
+    "field_ticket": [
+      "line_items",
+      [
+        "description",
+        "quantity",
+        "unit",
+        "rate",
+        "amount"
+      ],
+      null,
+      2
+    ],
+    "hauling_log": [
+      "loads",
+      [
+        "load_no",
+        "time",
+        "fluid_type",
+        "barrels",
+        "destination"
+      ],
+      null,
+      4
+    ],
+    "invoice": [
+      "line_items",
+      [
+        "ticket_ref",
+        "description",
+        "quantity",
+        "unit",
+        "rate",
+        "amount"
+      ],
+      null,
+      1
+    ],
+    "jib_statement": [
+      "lines",
+      [
+        "line_no",
+        "afe_ref",
+        "account_code",
+        "description",
+        "gross_amount",
+        "owner_decimal",
+        "net_amount"
+      ],
+      8,
+      8
+    ]
+  },
+  "SCHEMAS": {
+    "afe_cover": {
+      "$comment": "Pulse /schema input_schema for an operator AFE cover letter (joint-interest owner copy). JSON Schema, nested depth <= 3. Field names match truth/synth/afe_cover.json so the scorer needs no mapping. SYNTHETIC demonstration corpus.",
+      "type": "object",
+      "properties": {
+        "letter_date": {
+          "type": "string",
+          "description": "Date printed at the top of the letter, exactly as printed (do not reformat)."
+        },
+        "operator_name": {
+          "type": "string",
+          "description": "Name of the operator sending the letter, from the letterhead or signature block, exactly as printed."
+        },
+        "addressee": {
+          "type": "string",
+          "description": "Name of the working-interest owner the letter is addressed to, exactly as printed."
+        },
+        "afe_number": {
+          "type": "string",
+          "description": "AFE number referenced in the letter, exactly as printed including any prefix and hyphens."
+        },
+        "well_name": {
+          "type": "string",
+          "description": "Well name referenced in the letter, exactly as printed."
+        },
+        "response_due_date": {
+          "type": "string",
+          "description": "Date by which the owner must return the election, exactly as printed. Null if the letter states no due date."
+        },
+        "wi_decimal_stated": {
+          "type": "number",
+          "description": "The owner's working-interest decimal as printed in this letter, six decimal places. Copy the printed decimal; never convert from a percentage and never recompute."
+        },
+        "net_share_stated": {
+          "type": "number",
+          "description": "The owner's net dollar share of the AFE estimate as printed in this letter. Digits only, no currency symbol or thousands separators."
+        }
+      },
+      "required": [
+        "letter_date",
+        "operator_name",
+        "addressee",
+        "afe_number",
+        "well_name",
+        "wi_decimal_stated",
+        "net_share_stated"
+      ]
+    },
+    "afe": {
+      "$comment": "Pulse /schema input_schema for an Authorization for Expenditure (AFE). JSON Schema, nested depth <= 3. SYNTHETIC demonstration corpus.",
+      "type": "object",
+      "properties": {
+        "afe_number": {
+          "type": "string",
+          "description": "AFE number printed in the header, exactly as printed including prefix and hyphens."
+        },
+        "operator_name": {
+          "type": "string",
+          "description": "Operator name printed in the header, exactly as printed."
+        },
+        "well_name": {
+          "type": "string",
+          "description": "Well name printed in the header, exactly as printed."
+        },
+        "api_number": {
+          "type": "string",
+          "description": "API well number as printed, e.g. NN-NNN-NNNNN."
+        },
+        "county": {
+          "type": "string",
+          "description": "County name as printed, without the word County."
+        },
+        "state": {
+          "type": "string",
+          "description": "State as printed, e.g. TX."
+        },
+        "afe_date": {
+          "type": "string",
+          "description": "AFE date as printed."
+        },
+        "afe_type": {
+          "type": "string",
+          "description": "Type of operation the AFE authorizes, as printed, e.g. Recompletion, Drill, Workover."
+        },
+        "total_estimate": {
+          "type": "number",
+          "description": "Total estimated cost as printed on the total line. Digits only. Copy the printed total; never add the cost lines yourself."
+        },
+        "cost_lines": {
+          "type": "array",
+          "description": "One item per printed row of the cost estimate table, in printed order. Return every printed row, including zero-dollar rows.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "line_no": {
+                "type": "integer",
+                "description": "Line number printed on the row."
+              },
+              "account_code": {
+                "type": "string",
+                "description": "Account or AFE code printed on the row, exactly as printed."
+              },
+              "description": {
+                "type": "string",
+                "description": "Cost description printed on the row, exactly as printed."
+              },
+              "category": {
+                "type": "string",
+                "enum": [
+                  "intangible",
+                  "tangible"
+                ],
+                "description": "The intangible or tangible grouping the row is printed under, lowercase."
+              },
+              "amount": {
+                "type": "number",
+                "description": "Row amount as printed. Digits only."
+              }
+            }
+          }
+        }
+      },
+      "required": [
+        "afe_number",
+        "operator_name",
+        "well_name",
+        "afe_date",
+        "afe_type",
+        "total_estimate",
+        "cost_lines"
+      ]
+    },
+    "field_ticket": {
+      "$comment": "Pulse /schema input_schema for a vendor field ticket (service ticket). JSON Schema, nested depth <= 3. One ticket per call. SYNTHETIC demonstration corpus.",
+      "type": "object",
+      "properties": {
+        "ticket_number": {
+          "type": "string",
+          "description": "Ticket number printed in the header, exactly as printed."
+        },
+        "vendor_name": {
+          "type": "string",
+          "description": "Service company issuing the ticket, exactly as printed."
+        },
+        "service_date": {
+          "type": "string",
+          "description": "Date of service as printed."
+        },
+        "well_name": {
+          "type": "string",
+          "description": "Well or location the work was performed on, exactly as printed."
+        },
+        "afe_number": {
+          "type": "string",
+          "description": "AFE number written on the ticket, exactly as printed. Null if the ticket carries none."
+        },
+        "line_items": {
+          "type": "array",
+          "description": "One item per printed charge row of the ticket's table, in printed order. Do NOT include the Ticket total row or any subtotal row: a row whose description reads Ticket total, Total, or Subtotal is the total field, not a line item.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "description": {
+                "type": "string",
+                "description": "Charge description printed on the row, exactly as printed."
+              },
+              "quantity": {
+                "type": "number",
+                "description": "Quantity printed on the row. Some quantities are entered by hand in pen; read the pen entry as written and do not round it."
+              },
+              "unit": {
+                "type": "string",
+                "description": "Unit of measure printed on the row, exactly as printed, e.g. hour, day, bbl, each."
+              },
+              "rate": {
+                "type": "number",
+                "description": "Unit rate printed on the row. Digits only. Copy the printed rate even when it looks wrong; never substitute a rate from another row or document."
+              },
+              "amount": {
+                "type": "number",
+                "description": "Extended amount printed on the row. Digits only. Copy the printed amount; never multiply quantity by rate yourself."
+              }
+            }
+          }
+        },
+        "total": {
+          "type": "number",
+          "description": "Ticket total as printed. Digits only. Copy the printed total; never sum the rows yourself."
+        },
+        "customer_signature_present": {
+          "type": "boolean",
+          "description": "True only if a customer or company-representative signature is actually written in the signature block. False when the block is printed but empty."
+        }
+      },
+      "required": [
+        "ticket_number",
+        "vendor_name",
+        "service_date",
+        "line_items",
+        "total"
+      ]
+    },
+    "hauling_log": {
+      "$comment": "Pulse /schema input_schema for a fluid hauling / vacuum truck log. JSON Schema, nested depth <= 3. SYNTHETIC demonstration corpus.",
+      "type": "object",
+      "properties": {
+        "log_number": {
+          "type": "string",
+          "description": "Log or manifest number printed in the header, exactly as printed."
+        },
+        "hauler_name": {
+          "type": "string",
+          "description": "Hauling company named on the log, exactly as printed."
+        },
+        "log_date": {
+          "type": "string",
+          "description": "Date of the log as printed."
+        },
+        "well_name": {
+          "type": "string",
+          "description": "Well or location fluid was hauled from, exactly as printed."
+        },
+        "loads": {
+          "type": "array",
+          "description": "One item per printed load row, in printed order. Return every printed row.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "load_no": {
+                "type": "integer",
+                "description": "Load number printed on the row."
+              },
+              "time": {
+                "type": "string",
+                "description": "Time printed on the row, exactly as printed."
+              },
+              "fluid_type": {
+                "type": "string",
+                "description": "Fluid type printed on the row, exactly as printed."
+              },
+              "barrels": {
+                "type": "number",
+                "description": "Barrels printed on the row. Digits only, keeping any printed decimal."
+              },
+              "destination": {
+                "type": "string",
+                "description": "Disposal or delivery destination printed on the row, exactly as printed."
+              }
+            }
+          }
+        },
+        "total_barrels": {
+          "type": "number",
+          "description": "Total barrels as printed on the total line. Digits only. Copy the printed total; never sum the rows yourself."
+        }
+      },
+      "required": [
+        "log_number",
+        "hauler_name",
+        "log_date",
+        "loads",
+        "total_barrels"
+      ]
+    },
+    "invoice": {
+      "$comment": "Pulse /schema input_schema for a vendor invoice that carries field tickets behind it. JSON Schema, nested depth <= 3. SYNTHETIC demonstration corpus.",
+      "type": "object",
+      "properties": {
+        "invoice_number": {
+          "type": "string",
+          "description": "Invoice number printed in the header, exactly as printed."
+        },
+        "vendor_name": {
+          "type": "string",
+          "description": "Vendor issuing the invoice, exactly as printed."
+        },
+        "invoice_date": {
+          "type": "string",
+          "description": "Invoice date as printed."
+        },
+        "afe_number": {
+          "type": "string",
+          "description": "AFE number printed on the invoice, exactly as printed. Null if absent."
+        },
+        "well_name": {
+          "type": "string",
+          "description": "Well or property billed, exactly as printed."
+        },
+        "line_items": {
+          "type": "array",
+          "description": "One item per printed invoice row, in printed order. Every row references the ticket it came from.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "ticket_ref": {
+                "type": "string",
+                "description": "Ticket number the row references, exactly as printed."
+              },
+              "description": {
+                "type": "string",
+                "description": "Row description, exactly as printed."
+              },
+              "quantity": {
+                "type": "number",
+                "description": "Quantity printed on the row. Digits only."
+              },
+              "unit": {
+                "type": "string",
+                "description": "Unit of measure printed on the row, exactly as printed."
+              },
+              "rate": {
+                "type": "number",
+                "description": "Unit rate printed on the row. Digits only. Copy the printed rate even when it differs from a rate you would expect."
+              },
+              "amount": {
+                "type": "number",
+                "description": "Extended amount printed on the row. Digits only. Copy the printed amount; never recompute it."
+              }
+            }
+          }
+        },
+        "subtotal": {
+          "type": "number",
+          "description": "Subtotal as printed. Digits only."
+        },
+        "tax": {
+          "type": "number",
+          "description": "Tax as printed. Digits only."
+        },
+        "total": {
+          "type": "number",
+          "description": "Invoice total as printed. Digits only. Copy the printed total; never sum the rows yourself."
+        }
+      },
+      "required": [
+        "invoice_number",
+        "vendor_name",
+        "invoice_date",
+        "line_items",
+        "subtotal",
+        "total"
+      ]
+    },
+    "jib_statement": {
+      "$comment": "Pulse /schema input_schema for an operator Joint Interest Billing (JIB) statement, owner copy. JSON Schema, nested depth <= 3. SYNTHETIC demonstration corpus.",
+      "type": "object",
+      "properties": {
+        "statement_period": {
+          "type": "string",
+          "description": "Billing period printed in the header, exactly as printed, e.g. June 2026."
+        },
+        "operator_name": {
+          "type": "string",
+          "description": "Operator issuing the statement, exactly as printed."
+        },
+        "property_number": {
+          "type": "string",
+          "description": "Operator property or lease number printed in the header, exactly as printed."
+        },
+        "well_name": {
+          "type": "string",
+          "description": "Well name printed in the header, exactly as printed."
+        },
+        "owner_name": {
+          "type": "string",
+          "description": "Billed owner name printed in the header, exactly as printed."
+        },
+        "owner_number": {
+          "type": "string",
+          "description": "Owner or interest number printed in the header, exactly as printed."
+        },
+        "wi_decimal": {
+          "type": "number",
+          "description": "The working-interest decimal printed in the statement HEADER, six decimal places. Copy the header value only; do not take it from a billing line."
+        },
+        "lines": {
+          "type": "array",
+          "description": "One item per printed billing row, in printed order. Return every printed row, including rows that continue onto a second page.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "line_no": {
+                "type": "integer",
+                "description": "Line number printed on the row."
+              },
+              "afe_ref": {
+                "type": "string",
+                "description": "AFE number referenced on the row, exactly as printed. Null if the row carries none."
+              },
+              "account_code": {
+                "type": "string",
+                "description": "Account code printed on the row, exactly as printed."
+              },
+              "description": {
+                "type": "string",
+                "description": "Row description, exactly as printed."
+              },
+              "gross_amount": {
+                "type": "number",
+                "description": "Gross (100 percent) amount printed on the row. Digits only."
+              },
+              "owner_decimal": {
+                "type": "number",
+                "description": "The decimal printed on this line, six places. Copy it exactly even if it differs from the header decimal or from other lines. Never substitute the header value."
+              },
+              "net_amount": {
+                "type": "number",
+                "description": "Net amount billed to the owner as printed on the row. Digits only. Copy the printed figure; never multiply gross by a decimal yourself."
+              }
+            }
+          }
+        },
+        "gross_total": {
+          "type": "number",
+          "description": "Gross total as printed on the total line. Digits only. Copy the printed total; never sum the rows yourself."
+        },
+        "net_total": {
+          "type": "number",
+          "description": "Net total billed as printed on the total line. Digits only. Copy the printed total; never sum the rows yourself."
+        },
+        "due_date": {
+          "type": "string",
+          "description": "Payment due date as printed."
+        }
+      },
+      "required": [
+        "statement_period",
+        "operator_name",
+        "property_number",
+        "well_name",
+        "owner_name",
+        "wi_decimal",
+        "lines",
+        "gross_total",
+        "net_total"
+      ]
+    }
+  }
+}

@@ -1,0 +1,139 @@
+[
+ {
+  "id": "afe_02.operator_name",
+  "document": "afe_02",
+  "field": "operator_name",
+  "pages": [
+   "pages/afe_02-p1.jpg",
+   "pages/afe_02-p2.jpg"
+  ]
+ },
+ {
+  "id": "cover_02.afe_number",
+  "document": "cover_02",
+  "field": "afe_number",
+  "pages": [
+   "pages/cover_02-p1.jpg"
+  ]
+ },
+ {
+  "id": "cover_02.response_due_date",
+  "document": "cover_02",
+  "field": "response_due_date",
+  "pages": [
+   "pages/cover_02-p1.jpg"
+  ]
+ },
+ {
+  "id": "invoice_02.invoice_number",
+  "document": "invoice_02",
+  "field": "invoice_number",
+  "pages": [
+   "pages/invoice_02-p1.jpg"
+  ]
+ },
+ {
+  "id": "ticket_07.afe_number",
+  "document": "ticket_07",
+  "field": "afe_number",
+  "pages": [
+   "pages/ticket_07-p1.jpg"
+  ]
+ },
+ {
+  "id": "ticket_08.afe_number",
+  "document": "ticket_08",
+  "field": "afe_number",
+  "pages": [
+   "pages/ticket_08-p1.jpg"
+  ]
+ },
+ {
+  "id": "ticket_08.log_number",
+  "document": "ticket_08",
+  "field": "log_number",
+  "pages": [
+   "pages/ticket_08-p1.jpg"
+  ]
+ },
+ {
+  "id": "ticket_08.ticket_number",
+  "document": "ticket_08",
+  "field": "ticket_number",
+  "pages": [
+   "pages/ticket_08-p1.jpg"
+  ]
+ },
+ {
+  "id": "ticket_09.ticket_number",
+  "document": "ticket_09",
+  "field": "ticket_number",
+  "pages": [
+   "pages/ticket_09-p1.jpg"
+  ]
+ },
+ {
+  "id": "ticket_10.afe_number",
+  "document": "ticket_10",
+  "field": "afe_number",
+  "pages": [
+   "pages/ticket_10-p1.jpg"
+  ]
+ },
+ {
+  "id": "ticket_10.ticket_number",
+  "document": "ticket_10",
+  "field": "ticket_number",
+  "pages": [
+   "pages/ticket_10-p1.jpg"
+  ]
+ },
+ {
+  "id": "ticket_11.service_date",
+  "document": "ticket_11",
+  "field": "service_date",
+  "pages": [
+   "pages/ticket_11-p1.jpg"
+  ]
+ },
+ {
+  "id": "ticket_11.ticket_number",
+  "document": "ticket_11",
+  "field": "ticket_number",
+  "pages": [
+   "pages/ticket_11-p1.jpg"
+  ]
+ },
+ {
+  "id": "ticket_11.well_name",
+  "document": "ticket_11",
+  "field": "well_name",
+  "pages": [
+   "pages/ticket_11-p1.jpg"
+  ]
+ },
+ {
+  "id": "ticket_12.afe_number",
+  "document": "ticket_12",
+  "field": "afe_number",
+  "pages": [
+   "pages/ticket_12-p1.jpg"
+  ]
+ },
+ {
+  "id": "ticket_12.log_number",
+  "document": "ticket_12",
+  "field": "log_number",
+  "pages": [
+   "pages/ticket_12-p1.jpg"
+  ]
+ },
+ {
+  "id": "ticket_12.ticket_number",
+  "document": "ticket_12",
+  "field": "ticket_number",
+  "pages": [
+   "pages/ticket_12-p1.jpg"
+  ]
+ }
+]

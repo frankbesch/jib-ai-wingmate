@@ -1,0 +1,13 @@
+{
+ "property_number": "TX-04412",
+ "well_name": "Caprock 14-2H",
+ "owners": [
+  {
+   "owner_name": "Caprock Resources LLC",
+   "owner_number": "OW-10287",
+   "interest_type": "WI",
+   "decimal": 0.25
+  }
+ ],
+ "synthetic": true
+}

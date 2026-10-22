@@ -1,0 +1,508 @@
+{
+  "ticket_01": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_02": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "haul_01": {
+    "page_count": 1,
+    "class_by_eye": "hauling_log",
+    "page_topics": [
+      "hauling_log"
+    ]
+  },
+  "ticket_03": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_04": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "haul_02": {
+    "page_count": 1,
+    "class_by_eye": "hauling_log",
+    "page_topics": [
+      "hauling_log"
+    ]
+  },
+  "ticket_05": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_06": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "haul_03": {
+    "page_count": 1,
+    "class_by_eye": "hauling_log",
+    "page_topics": [
+      "hauling_log"
+    ]
+  },
+  "ticket_07": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_08": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "invoice_01": {
+    "page_count": 1,
+    "class_by_eye": "invoice",
+    "page_topics": [
+      "invoice"
+    ]
+  },
+  "ticket_09": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_10": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "invoice_03": {
+    "page_count": 1,
+    "class_by_eye": "invoice",
+    "page_topics": [
+      "invoice"
+    ]
+  },
+  "ticket_11": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_12": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "invoice_04": {
+    "page_count": 1,
+    "class_by_eye": "invoice",
+    "page_topics": [
+      "invoice"
+    ]
+  },
+  "ticket_13": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_14": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_15": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_16": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_17": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_18": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_19": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_20": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "haul_04": {
+    "page_count": 1,
+    "class_by_eye": "hauling_log",
+    "page_topics": [
+      "hauling_log"
+    ]
+  },
+  "ticket_21": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_22": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "haul_05": {
+    "page_count": 1,
+    "class_by_eye": "hauling_log",
+    "page_topics": [
+      "hauling_log"
+    ]
+  },
+  "ticket_23": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_24": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "haul_06": {
+    "page_count": 1,
+    "class_by_eye": "hauling_log",
+    "page_topics": [
+      "hauling_log"
+    ]
+  },
+  "ticket_25": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_26": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_27": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_28": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_29": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_30": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_31": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_32": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_33": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_34": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_35": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_36": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_37": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_38": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_39": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_40": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "haul_07": {
+    "page_count": 1,
+    "class_by_eye": "hauling_log",
+    "page_topics": [
+      "hauling_log"
+    ]
+  },
+  "ticket_41": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_42": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "haul_08": {
+    "page_count": 1,
+    "class_by_eye": "hauling_log",
+    "page_topics": [
+      "hauling_log"
+    ]
+  },
+  "ticket_43": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "ticket_44": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "haul_09": {
+    "page_count": 1,
+    "class_by_eye": "hauling_log",
+    "page_topics": [
+      "hauling_log"
+    ]
+  },
+  "ticket_45": {
+    "page_count": 1,
+    "class_by_eye": "field_ticket",
+    "page_topics": [
+      "field_ticket"
+    ]
+  },
+  "invoice_02": {
+    "page_count": 1,
+    "class_by_eye": "invoice",
+    "page_topics": [
+      "invoice"
+    ]
+  },
+  "cover_01": {
+    "page_count": 1,
+    "class_by_eye": "afe_cover",
+    "page_topics": [
+      "afe_cover"
+    ]
+  },
+  "afe_01": {
+    "page_count": 2,
+    "class_by_eye": "afe",
+    "page_topics": [
+      "afe",
+      "continuation"
+    ]
+  },
+  "cover_02": {
+    "page_count": 1,
+    "class_by_eye": "afe_cover",
+    "page_topics": [
+      "afe_cover"
+    ]
+  },
+  "afe_02": {
+    "page_count": 2,
+    "class_by_eye": "afe",
+    "page_topics": [
+      "afe",
+      "continuation"
+    ]
+  },
+  "cover_03": {
+    "page_count": 1,
+    "class_by_eye": "afe_cover",
+    "page_topics": [
+      "afe_cover"
+    ]
+  },
+  "afe_03": {
+    "page_count": 2,
+    "class_by_eye": "afe",
+    "page_topics": [
+      "afe",
+      "continuation"
+    ]
+  },
+  "cover_04": {
+    "page_count": 1,
+    "class_by_eye": "afe_cover",
+    "page_topics": [
+      "afe_cover"
+    ]
+  },
+  "afe_04": {
+    "page_count": 2,
+    "class_by_eye": "afe",
+    "page_topics": [
+      "afe",
+      "continuation"
+    ]
+  },
+  "jib_01": {
+    "page_count": 2,
+    "class_by_eye": "jib_statement",
+    "page_topics": [
+      "jib_statement",
+      "continuation"
+    ]
+  },
+  "jib_02": {
+    "page_count": 2,
+    "class_by_eye": "jib_statement",
+    "page_topics": [
+      "jib_statement",
+      "continuation"
+    ]
+  },
+  "jib_03": {
+    "page_count": 2,
+    "class_by_eye": "jib_statement",
+    "page_topics": [
+      "jib_statement",
+      "continuation"
+    ]
+  },
+  "jib_04": {
+    "page_count": 2,
+    "class_by_eye": "jib_statement",
+    "page_topics": [
+      "jib_statement",
+      "continuation"
+    ]
+  },
+  "jib_05": {
+    "page_count": 2,
+    "class_by_eye": "jib_statement",
+    "page_topics": [
+      "jib_statement",
+      "continuation"
+    ]
+  }
+}

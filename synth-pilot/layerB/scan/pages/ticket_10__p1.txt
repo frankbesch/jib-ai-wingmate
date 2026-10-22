@@ -1,0 +1,22 @@
+OPERATIONS / OWNER RECORD
+
+
+# Field service ticket
+
+
+REPRINT
+
+
+Replacement office copy. No additional service authorized.
+
+
+<table><tr><td>Dispatch docket:</td><td>OV-8310</td></tr><tr><td>Service firm:</td><td>Orvessa Field Services LLC</td></tr><tr><td>Serviced:</td><td>2026-08-09</td></tr><tr><td>Asset:</td><td>Nacrevale 7-QH</td></tr><tr><td>Ref:</td><td>ZB-26-701</td></tr></table>
+
+
+<table><thead><tr><td>Description</td><td>Qty</td><td>Unit</td><td>Rate</td><td>Amount</td></tr></thead><tbody><tr><td>Pressure unit service</td><td>6</td><td></td><td>175.00</td><td>1,050.00</td></tr><tr><td>Hose kit rental</td><td>1</td><td>day</td><td>90.00</td><td>90.00</td></tr><tr><td>Amount due:</td><td colspan="3">1,140.00</td><td></td></tr></tbody></table>
+
+
+Customer signature: ____________________
+
+
+SYNTHETIC STUDY DOCUMENT - NOT VALID FOR PAYMENT
