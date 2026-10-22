@@ -55,7 +55,7 @@ plus synthetic documents built in this repo.
   under Known limitations; this page and the hygiene files are new.
 - **Scorer selftest:** 13 values computed by hand, reproduced exactly. [Receipt](tests/selftest/README.md).
 - **Synthetic month:** 2 planted money errors, both flagged by the rules. [Receipt](synth/planted.json).
-- **CI:** offline tests and a secret scan. Pending its first run.
+- **CI:** offline tests and a secret scan. Passed on main, 2026-10-22. [Runs](https://github.com/frankbesch/jib-ai-wingmate/actions/workflows/ci.yml).
 
 ## Measured results
 
