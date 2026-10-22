@@ -10,10 +10,11 @@ useDefault = true
 id = "generic-api-key"
 
 # The quoted 'rekey_fields.md' filename string. The rule reads the tuple of
-# input file names at heldout2/tests/test_orchestrator.py line 47 as a key.
+# input file names at demo/heldout2/tests/test_orchestrator.py line 47 as a key
+# (heldout2/ before the restructure; history keeps the old path).
 [[rules.allowlists]]
 description = "the 'rekey_fields.md' filename string"
 condition = "AND"
-paths = ['''heldout2/tests/test_orchestrator\.py''']
+paths = ['''^(demo/)?heldout2/tests/test_orchestrator\.py$''']
 regexTarget = "line"
 regexes = ['''['"]rekey_fields\.md['"]''']

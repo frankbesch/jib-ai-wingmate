@@ -13,8 +13,8 @@ from quoin_readme import THEMES, BLUE, OCHRE, pair, panels, steps
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent.parent
-TEST = "tests/test_reconcile.py"
-PLANTED = "synth/planted.json"
+TEST = "demo/tests/test_reconcile.py"
+PLANTED = "demo/synth/planted.json"
 
 # (rule, lines checked, lines flagged, flagged label, [(file, line, text that must be on it)])
 RULES = [
