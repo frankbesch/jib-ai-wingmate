@@ -1,0 +1,19 @@
+# Secret scan config: every default gitleaks rule, plus one allowlist for a
+# known false positive of one rule, generic-api-key. Nothing else is
+# allowlisted; every other rule and every other line is scanned as default.
+title = "jib-ai-wingmate"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "generic-api-key"
+
+# The quoted 'rekey_fields.md' filename string. The rule reads the tuple of
+# input file names at heldout2/tests/test_orchestrator.py line 47 as a key.
+[[rules.allowlists]]
+description = "the 'rekey_fields.md' filename string"
+condition = "AND"
+paths = ['''heldout2/tests/test_orchestrator\.py''']
+regexTarget = "line"
+regexes = ['''['"]rekey_fields\.md['"]''']

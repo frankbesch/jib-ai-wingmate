@@ -1,0 +1,7 @@
+# Third-party imports, pinned to the versions installed where the gates ran (Python 3.14).
+# pypdf: build_corpus.py, synth/src/render.py, synth-heldout/audit/repro_stamp.py
+pypdf==6.16.2
+# Pillow: audit/pack.py, truth/spot_check_page.py, synth-heldout/audit/make_review.py
+Pillow==12.3.0
+# Optional, live cost replay only (typed/claude_api_replay.py): anthropic
+# Optional, diagram font embedding only (docs/diagrams/quoin_readme.py): fonttools
