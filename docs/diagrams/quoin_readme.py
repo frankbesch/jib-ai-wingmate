@@ -118,9 +118,9 @@ def embed(body):
 
 # Quoin tokens (chrome) and Quoin chart palette (data marks); quoin/tokens.json.
 THEMES = {
-    "light": dict(paper="#FCFBF9", ink="#2B2926", ink2="#6A625A", rule="#D2CCC3", tint="#EBE6DD",
+    "light": dict(paper="#FBFBFE", ink="#22232E", ink2="#5C5F78", rule="#D0D2E6", tint="#E4E5F3",
                   series=["#33703F", "#0084A9", "#916A0B", "#90302B", "#23749E"]),
-    "dark": dict(paper="#0E1C2B", ink="#E8E2D6", ink2="#A8A296", rule="#2D4152", tint="#1F3142",
+    "dark": dict(paper="#12142A", ink="#E2E4F4", ink2="#A3A8C6", rule="#30365A", tint="#202542",
                  series=["#6DA361", "#17A1C8", "#9C7300", "#D17276", "#559ACA"]),
 }
 GREEN, BLUE, OCHRE, RED, STEEL = range(5)
