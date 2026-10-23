@@ -3,18 +3,18 @@
 A well-file demo kit: drilling-permit packets in, cited fields out, a named person approves each exception.
 
 ![Status: beta](https://img.shields.io/badge/status-beta-orange.svg?style=flat)
-[![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg?style=flat)](typed/typed_questions.py#L539)
-[![pypdf, PDF merge](https://img.shields.io/badge/pypdf-PDF_merge-blue.svg?style=flat)](build_corpus.py#L287)
-[![Pillow, page crops](https://img.shields.io/badge/Pillow-page_crops-blue.svg?style=flat)](audit/pack.py#L168)
-[![HTTP client, retries and spend cap](https://img.shields.io/badge/HTTP_client-retries_and_spend_cap-blue.svg?style=flat)](typed/jev_backend.py#L252)
-[![MCP server config](https://img.shields.io/badge/MCP-parser_server_config-blue.svg?style=flat)](mcp/.mcp.json#L1)
-[![Citation scoring, IoU](https://img.shields.io/badge/citations-IoU_scoring-blue.svg?style=flat)](score.py#L87)
-[![Selftest, CHECK and EXPECT](https://img.shields.io/badge/selftest-CHECK%2FEXPECT-blue.svg?style=flat)](score.py#L294)
-[![Fixture and live modes, socket guard](https://img.shields.io/badge/fixture%2Flive_modes-socket_guard-blue.svg?style=flat)](typed/jev_backend.py#L54)
-[![Reviewer UI, stdlib http.server](https://img.shields.io/badge/reviewer_UI-stdlib_http.server-blue.svg?style=flat)](reviewer/serve.py#L27)
-[![Named-approver audit trail](https://img.shields.io/badge/approvals-named_approver_audit_trail-blue.svg?style=flat)](reviewer/serve.py#L115)
-[![Reconcile, three money rules](https://img.shields.io/badge/reconcile-3_money_rules-blue.svg?style=flat)](reconcile.py#L127)
-[![unittest](https://img.shields.io/badge/tests-unittest-blue.svg?style=flat)](heldout2/tests/test_controls.py#L2)
+[![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg?style=flat)](demo/typed/typed_questions.py#L539)
+[![pypdf, PDF merge](https://img.shields.io/badge/pypdf-PDF_merge-blue.svg?style=flat)](demo/build_corpus.py#L287)
+[![Pillow, page crops](https://img.shields.io/badge/Pillow-page_crops-blue.svg?style=flat)](demo/audit/pack.py#L168)
+[![HTTP client, retries and spend cap](https://img.shields.io/badge/HTTP_client-retries_and_spend_cap-blue.svg?style=flat)](demo/typed/jev_backend.py#L252)
+[![MCP server config](https://img.shields.io/badge/MCP-parser_server_config-blue.svg?style=flat)](demo/mcp/.mcp.json#L1)
+[![Citation scoring, IoU](https://img.shields.io/badge/citations-IoU_scoring-blue.svg?style=flat)](demo/score.py#L87)
+[![Selftest, CHECK and EXPECT](https://img.shields.io/badge/selftest-CHECK%2FEXPECT-blue.svg?style=flat)](demo/score.py#L294)
+[![Fixture and live modes, socket guard](https://img.shields.io/badge/fixture%2Flive_modes-socket_guard-blue.svg?style=flat)](demo/typed/jev_backend.py#L54)
+[![Reviewer UI, stdlib http.server](https://img.shields.io/badge/reviewer_UI-stdlib_http.server-blue.svg?style=flat)](demo/reviewer/serve.py#L27)
+[![Named-approver audit trail](https://img.shields.io/badge/approvals-named_approver_audit_trail-blue.svg?style=flat)](demo/reviewer/serve.py#L115)
+[![Reconcile, three money rules](https://img.shields.io/badge/reconcile-3_money_rules-blue.svg?style=flat)](demo/reconcile.py#L127)
+[![unittest](https://img.shields.io/badge/tests-unittest-blue.svg?style=flat)](demo/heldout2/tests/test_controls.py#L2)
 
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/diagrams/pipeline-dark.svg"/><img width="400" align="top" src="docs/diagrams/pipeline-light.svg" alt="Diagram: a permit packet goes through a document parser, schema extraction with citations, scoring and reconcile rules, to a named reviewer. Text version below."/></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="docs/diagrams/reconcile-dark.svg"/><img width="400" align="top" src="docs/diagrams/reconcile-light.svg" alt="Chart: lines checked and lines flagged by each reconcile rule on the synthetic month. Text version below."/></picture></p>
 
@@ -53,8 +53,8 @@ plus synthetic documents built in this repo.
 
 - **Beta.** The code is copied as run, with the publication edits listed
   under Known limitations; this page and the hygiene files are new.
-- **Scorer selftest:** 13 values computed by hand, reproduced exactly. [Receipt](tests/selftest/README.md).
-- **Synthetic month:** 2 planted money errors, both flagged by the rules. [Receipt](synth/planted.json).
+- **Scorer selftest:** 13 values computed by hand, reproduced exactly. [Receipt](demo/tests/selftest/README.md).
+- **Synthetic month:** 2 planted money errors, both flagged by the rules. [Receipt](demo/synth/planted.json).
 - **CI:** offline tests and a secret scan. Passed on main, 2026-10-22. [Runs](https://github.com/frankbesch/jib-ai-wingmate/actions/workflows/ci.yml).
 
 ## Measured results
@@ -87,6 +87,8 @@ measurement.
 
 <details><summary>Components</summary>
 
+All code and data live in `demo/`; paths in this README are relative to it.
+
 | Component | Where |
 |---|---|
 | Corpus builder (from local RRC files) | `build_corpus.py` |
@@ -110,10 +112,11 @@ measurement.
 ## Quick start
 
 - Python 3.12 or later.
-- `pip install -r requirements.txt` (Pillow, pypdf).
+- From the repo root: `pip install -r requirements.txt` (Pillow, pypdf).
 - No key and no network for any step below.
 
 ```bash
+cd demo
 # 1. Scorer selftest.
 python3 score.py --selftest
 # expect: SELFTEST PASS
@@ -132,7 +135,7 @@ python3 tests/test_reconcile.py
 # expect: 11/11 passed
 ```
 
-Step 2 writes `runs/fixture-synth-01/`; `runs/` is gitignored.
+Step 2 writes `demo/runs/fixture-synth-01/`; `runs/` is gitignored.
 
 ## Measured run
 
@@ -142,6 +145,7 @@ and committed fixtures, so they need no key. On this machine they took
 about 460 seconds.
 
 ```bash
+# from demo/
 python3 -m unittest discover \
   -s heldout2/tests -p 'test_*.py'
 # expect: Ran 124 tests
@@ -181,11 +185,11 @@ python3 -m unittest discover \
 
 ## More
 
-- [Scorer selftest](tests/selftest/README.md): each expected value, worked by hand.
-- [Synthetic month truth](truth/synth/README.md): how the Caprock keys were made.
-- [Held-out synthetic corpus](synth-heldout/README.md): documents, packets, seeds.
-- [Analyst setup](mcp/README.md): MCP config and the offline fallback.
-- [Security policy](SECURITY.md) and [environment variables](.env.example).
+- [Scorer selftest](demo/tests/selftest/README.md): each expected value, worked by hand.
+- [Synthetic month truth](demo/truth/synth/README.md): how the Caprock keys were made.
+- [Held-out synthetic corpus](demo/synth-heldout/README.md): documents, packets, seeds.
+- [Analyst setup](demo/mcp/README.md): MCP config and the offline fallback.
+- [Security policy](.github/SECURITY.md) and [environment variables](.env.example).
 
 ## License
 

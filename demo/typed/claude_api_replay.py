@@ -31,7 +31,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from typed_questions import (CLASSES, TOPICS, NEEDS_REVIEW, SYSTEM_PROMPT, ERROR_UNIT,  # noqa: E402
                              Malformed, score, flatten)
 
-ARTIFACTS = pathlib.Path(__file__).resolve().parents[2] / 'artifacts/typed-questions-2026-09-28/live-results'
+ARTIFACTS = pathlib.Path(__file__).resolve().parents[3] / 'artifacts/typed-questions-2026-09-28/live-results'
 DEFAULT_SETS = ['g5-row4-collapsed/live-synth-03', 'g5-row4-collapsed/live-synth-scan-01']
 PRICES = {  # input, output, cache write 5m, cache write 1h, cache read
     'claude-fable-5-1': (10.00, 50.00, 12.50, 20.00, 0.25),

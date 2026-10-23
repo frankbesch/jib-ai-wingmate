@@ -24,20 +24,24 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Scorer selftest, hand-computed values
+        working-directory: demo
         run: python3 -B score.py --selftest
 
       - name: Synthetic month, fixture mode
+        working-directory: demo
         run: |
           python3 -B make_fixtures.py --set synth
           python3 -B pipeline.py --mode fixture --set synth --run-id fixture-synth-01
           python3 -B tests/test_synth_pipeline.py
 
       - name: Reconcile rules
+        working-directory: demo
         run: python3 -B tests/test_reconcile.py
 
       # test_orchestrator.py is macOS-only (sandbox-exec, DARWIN_USER_TEMP_DIR);
       # see Known limitations in README.md.
       - name: Held-out tests (audit, controls, score)
+        working-directory: demo
         run: python3 -B -m unittest discover -s heldout2/tests -p 'test_[acs]*.py'
 
   secret-scan:
