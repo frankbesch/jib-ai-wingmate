@@ -21,7 +21,7 @@ entry per file with its URL and fetch date. All three were fetched on
 Drilling Permit Master daily file from mft.rrc.texas.gov, and the OGA049M
 manual from www.rrc.texas.gov.
 
-The terms, quoted as read on 2026-10-22:
+The terms, quoted (web pages as read on 2026-10-22):
 
 - RRC site policies (https://www.rrc.texas.gov/site-policies/): "RRC grants
   permission to copy and distribute the information on its website for
@@ -33,6 +33,12 @@ The terms, quoted as read on 2026-10-22:
   source of the content, including the URL for the content or nearest entry
   point leading to the content if a URL is not available, and the date the
   content was copied."
+- RRC Public Assistance, in a reply to the author on 2026-10-23: "raw
+  factual public datasets and data available on the RRC website may be
+  downloaded and reused in commercial data products." The reply says the
+  "noncommercial use" wording in the site policies "is geared more towards
+  branding, graphic design elements, and RRC-created expressive content,
+  such as manuals and educational guides."
 
 Not endorsed. This repository is not endorsed by the State of Texas, the
 Railroad Commission of Texas, or any state agency.
@@ -41,8 +47,11 @@ Not the RRC's records. The paths below hold values extracted and re-keyed
 from RRC files, not the files themselves. The fixtures in
 demo/fixtures/responses/ are altered on purpose: each one says so in its
 own "synthetic": true and "perturbations" fields. Do not read any of them as
-an RRC record. Reuse these paths for noncommercial purposes only, and check
-the RRC's current terms first.
+an RRC record. The RRC reply above allows reuse of raw factual data like
+these values, commercial use included. Before you reuse them, credit the
+source as above. Also check the RRC's current terms and any notice that
+comes with the source dataset or portal. The OGA049M manual is not in this
+repository; only its field positions are used.
 
 1. demo/corpus/manifest.json
    Source URLs, hashes, page counts, and class labels of the RRC files.
