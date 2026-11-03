@@ -528,6 +528,11 @@ class TestRealPieces(unittest.TestCase):
             sess = pathlib.Path(tmp) / 'session'
             sess.mkdir()
             T, D = rh.darwin_temp_dir(), os.path.realpath(os.path.expanduser('~/Documents'))
+            # a readable file under ~/Documents to probe; the repo itself may live elsewhere (~/Developer, D-372)
+            doc_probe = SCRIPT if str(SCRIPT).startswith(D) else next(
+                (pathlib.Path(D) / n for n in ('.localized',) if (pathlib.Path(D) / n).is_file()), None)
+            if doc_probe is None:
+                self.skipTest('no readable file under ~/Documents to probe')
             self.assertTrue(T and not T.endswith('/'))
             prof = pathlib.Path(tmp) / 'p.sb'
             prof.write_text(rh.RENDER_PROFILE.replace('{R}', os.path.realpath(sess)).replace('{T}', T).replace('{D}', D))
@@ -549,7 +554,7 @@ class TestRealPieces(unittest.TestCase):
                 'print(t(lambda: open("inside.txt", "w").write("x")), t(home), t(lambda: open(sys.argv[2]).read()), t(tcp),'
                 ' t(lambda: open("/dev/null", "w").write("x")), t(cache))\n')
             try:
-                r = subprocess.run(['sandbox-exec', '-f', str(prof), sys.executable, '-c', probe, home_probe, str(SCRIPT), str(port),
+                r = subprocess.run(['sandbox-exec', '-f', str(prof), sys.executable, '-c', probe, home_probe, str(doc_probe), str(port),
                                     cache_probe],
                                    cwd=sess, capture_output=True, text=True, env=rh.strip_env(extra=rh.RENDER_ENV), timeout=60)
             finally:
@@ -558,7 +563,7 @@ class TestRealPieces(unittest.TestCase):
                     if os.path.exists(f):
                         os.unlink(f)
             self.assertEqual(r.returncode, 0, r.stderr)
-            self.assertTrue(str(SCRIPT).startswith(D))
+            self.assertTrue(str(doc_probe).startswith(D))
             # write inside R, write to home, read under Documents, TCP connect, write /dev/null, write in the user cache dir
             self.assertEqual(r.stdout.split(), ['ok', 'denied', 'denied', 'denied', 'ok', 'denied'])
 
