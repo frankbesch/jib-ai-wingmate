@@ -1,0 +1,5 @@
+# GitHub language stats (linguist). The code lives under demo/, which linguist
+# treats as documentation by default, so the repo showed no language.
+demo/** linguist-documentation=false
+# Synthetic permit packets rendered as HTML are fixtures, not source.
+demo/synth-*/** linguist-generated=true
